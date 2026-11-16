@@ -1,0 +1,34 @@
+# 25 - Text Mining / Material Complementar pos aula_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+PÓS-AULA  
+Text Mining, Sentiment Analysis e NLP II 
+Professor Guilherme Bezerra de Lima 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+Links disponíveis de livre acesso na internet: 
+ 
+• 
+Link do projeto: https://guilhermeonrails.github.io/pre-processamento/  
+• 
+Link do Repositório: https://github.com/guilhermeonrails/pre-
+processamento 
+• 
+Análise de sentimentos: 
+https://colab.research.google.com/drive/1q_inokFdOqyqRiKVdc-
+IrReLGI5ixf4R?usp=sharing  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*A responsabilidade pela idoneidade, originalidade e licitude dos conteúdos didáticos apresentados é do professor. 
+. 

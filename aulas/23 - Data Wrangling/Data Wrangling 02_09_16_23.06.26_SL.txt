@@ -1,0 +1,99 @@
+# 23 - Data Wrangling / Data Wrangling 02,09,16,23.06.26_SL.pdf
+
+=== pág 1 ===
+
+Data Wrangling
+Prof. Dr. Wilson Tarantin Junior
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Data Wrangling
+•
+É o processo de transformar a base de dados de sua estrutura original (dados brutos) para uma nova 
+estrutura mais adequada que permita a extração de informações
+•
+Raramente os dados brutos estão disponíveis na estrutura mais apropriada para as análises
+•
+Portanto, é uma etapa de preparação, organização, manipulação dos bancos de dados
+•
+Ocorre antes da análise exploratória dos dados, criação de gráficos e modelagem
+•
+Quanto melhor for a etapa de data wrangling, melhores serão os dados e maior tende a ser a 
+qualidade da análise e das informações extraídas → dados mais consistentes e confiáveis
+•
+Não é uma atividade padronizada! Dado o contexto, diferentes etapas são aplicadas
+3
+
+=== pág 4 ===
+
+Data Wrangling
+•
+Atividades comuns no processo de tratamento dos dados
+•
+Coleta e importação: os dados podem ser provenientes de diversas fontes e em vários formatos. 
+Exemplos: dados em XLSX, CSV ou Parquet provenientes de sites especializados, APIs, ERPs e 
+CRMs (consultas SQL), entre outros
+•
+Junção: os dados provenientes das diferentes fontes precisam ser organizados para possibilitar 
+a união de observações e variáveis. Exigem variáveis que sejam “chaves” para o relacionamento 
+entre as tabelas
+•
+Transformação: contempla as etapas de modificação dos dados. Exemplos: limpeza dos dados, 
+criação e alteração de variáveis, seleção de observações, agregações, resumos...
+4
+
+=== pág 5 ===
+
+CRISP-DM (Cross-Industry Standard Process for Data Mining)
+5
+Fonte: https://commons.wikimedia.org/wiki/File:CRISP-DM_Process_Diagram.png
+
+=== pág 6 ===
+
+Data Wrangling
+6
+Fonte: https://online.hbs.edu/blog/post/data-wrangling
+
+=== pág 7 ===
+
+Python
+•
+Biblioteca para data wrangling
+•
+Embora muitas bibliotecas sejam úteis no processo de manipulação de dados, utilizaremos o 
+pandas como ferramenta principal
+•
+Manual do usuário: https://pandas.pydata.org/docs/user_guide/index.html
+•
+Material de consulta: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+7
+
+=== pág 8 ===
+
+8
+Sugestões de Leituras/Referências
+•
+CHEN, D. Pandas for Everyone: Python Data Analysis. Addison-Wesley Professional, 2017.
+•
+FÁVERO, L. P.; BELFIORE, P. Manual de análise de dados: estatística e machine learning com 
+Excel®, SPSS®, Stata®, R® e Python®. 2 ed. LTC, 2024.
+•
+GRUS, J. Data Science do zero: noções fundamentais com Python. 2 ed. Alta Books, 2021.
+•
+HARRISON, M. Effective Pandas: Patterns for Data Manipulation. Treading on Python (Livro 2).
+•
+McKINNEY, W. Python Para Análise de Dados: Tratamento de Dados com Pandas, NumPy & Jupyter. 
+Novatec Editora, 2023.
+•
+VANDERPLAS, J. Python Data Science Handbook: Essential Tools for Working with Data. 2 ed. 
+O'Reilly Media, 2023.
+
+=== pág 9 ===
+
+Obrigado!
+Wilson Tarantin Jr. | linkedin.com/in/wilson-tarantin-junior-359476190

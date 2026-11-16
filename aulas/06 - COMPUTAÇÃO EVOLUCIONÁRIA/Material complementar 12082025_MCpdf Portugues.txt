@@ -1,0 +1,26 @@
+# 06 - COMPUTAÇÃO EVOLUCIONÁRIA / Material complementar 12082025_MCpdf Portugues.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+Computação Evolucionária II 
+Professora Renata da Encarnação Onety 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+Artigos: 
+ 
+• 
+Campelo, F.; Aranha, C. 2023. Lessons from the Evolutionary 
+Computation Bestiary. Link 
+• 
+Deb. K.; Pratap, A.; Agarwal, S.; Meyarivan, T. 2002. A Fast and Elitist 
+Multiobjective Genetic Algorithm: NSGA-II. Link 
+ 
+ 
+Vídeo: 
+ 
+• 
+The Programming Piglet. 2019. Genetic algorithms explained in 6 
+minutes (...and 28 seconds). Link 
+ 

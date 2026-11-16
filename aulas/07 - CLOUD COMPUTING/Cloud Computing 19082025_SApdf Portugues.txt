@@ -1,0 +1,1544 @@
+# 07 - CLOUD COMPUTING / Cloud Computing 19082025_SApdf Portugues.pdf
+
+=== pág 1 ===
+
+Cloud Computing I
+Rodrigo Vale
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Agenda do Curso
+A Fundação da Nuvem (O que é? Modelos de Serviço)
+Arquitetura e Componentes Essenciais (Modelos de Implantação e Pilares)
+A Nuvem na Prática (Serverless e Demo ao Vivo)
+Gestão, Segurança e o Futuro (Custos, Próximos Passos)
+3
+
+=== pág 4 ===
+
+Introdução à 
+Computação em Nuvem
+4
+
+=== pág 5 ===
+
+O que é Computação em Nuvem?
+Chega de servidores na sala ao lado!
+Definição: É a entrega de serviços de computação (servidores, armazenamento, software) pela internet, 
+com um modelo de pagamento sob demanda.
+Analogia: Pense na energia elétrica. Você não constrói uma usina em casa. Você simplesmente se 
+conecta à rede e paga apenas pelo que usa. A nuvem é a "rede de computação".
+5
+
+=== pág 6 ===
+
+Quais os problemas que a computação em nuvem tenta 
+resolver?
+On-Premises (O Modelo Antigo):
+●
+Comprar hardware caro (CAPEX)
+●
+Manutenção e espaço físico
+●
+Lento para escalar
+●
+Você é responsável por TUDO.
+Cloud Computing (O Modelo Novo):
+●
+Pagar pelo uso (OPEX)
+●
+Sem manutenção de hardware
+●
+Escalabilidade em minutos
+●
+Responsabilidade compartilhada.
+6
+
+=== pág 7 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+1. Alto Custo Inicial e Desperdício de Recursos
+O Problema: No modelo tradicional, para lançar uma nova aplicação ou serviço, era preciso comprar 
+servidores, roteadores, discos de armazenamento e outros equipamentos caros. Isso exigia um 
+grande investimento de capital (CAPEX) antes mesmo de saber se o projeto seria um sucesso.
+A Solução da Nuvem: A nuvem troca o investimento de capital (CAPEX) por uma despesa operacional 
+(OPEX). Em vez de comprar tudo, você "aluga" a capacidade computacional e paga apenas pelo que 
+utiliza, como uma conta de luz. Isso elimina a necessidade de grandes investimentos iniciais e reduz 
+drasticamente a barreira de entrada para inovação.
+7
+
+=== pág 8 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+2. Dificuldade de Escalar (para Cima e para Baixo)
+O Problema: Imagine que seu site tem um pico de acessos durante a Black Friday. Com servidores 
+locais, você teria duas opções ruins:
+a.
+Comprar máquinas extras que ficariam ociosas 99% do ano.
+b.
+Não comprar e correr o risco de o site cair por excesso de tráfego.
+A Solução da Nuvem: Elasticidade. Na nuvem, você pode configurar seus serviços para escalar 
+automaticamente. Quando a demanda aumenta, mais recursos são alocados em minutos. Quando a 
+demanda diminui, os recursos são liberados e você para de pagar por eles. Isso garante alta 
+disponibilidade sem desperdício.
+8
+
+=== pág 9 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+3. Lentidão e Falta de Agilidade
+O Problema: O processo de adquirir, instalar e configurar um novo servidor físico podia levar 
+semanas ou até meses, atrasando projetos e a capacidade da empresa de responder 
+rapidamente às mudanças do mercado.
+A Solução da Nuvem: Velocidade e Agilidade. Na nuvem, é possível provisionar uma máquina 
+virtual poderosa, um banco de dados ou uma rede inteira em questão de minutos, com apenas 
+alguns cliques. Isso permite que equipes de desenvolvimento testem ideias, criem ambientes e 
+lancem produtos muito mais rápido.
+9
+
+=== pág 10 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+4. Manutenção e Gestão Complexa da Infraestrutura
+O Problema: Ter um data center local significa ser responsável por tudo: garantir a refrigeração, a 
+energia elétrica (incluindo no-breaks), a segurança física, a troca de peças defeituosas e a 
+atualização de hardware. Isso desvia o foco da equipe de TI do que realmente importa: o negócio.
+A Solução da Nuvem: Os provedores de nuvem (como AWS, Azure e Google Cloud) cuidam de toda 
+a infraestrutura física. Sua equipe pode se concentrar em desenvolver aplicações e soluções, em 
+vez de "manter as luzes acesas".
+10
+
+=== pág 11 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+5. Baixa Confiabilidade e Recuperação de Desastres
+O Problema: O que acontece se o seu único data center sofrer um incêndio, uma inundação ou uma 
+queda de energia prolongada? Para a maioria das empresas, construir um segundo data center para 
+redundância era caro demais.
+A Solução da Nuvem: Alta Disponibilidade e Recuperação de Desastres. Os provedores de nuvem 
+possuem múltiplos data centers espalhados pelo mundo. É fácil e acessível replicar seus dados e 
+aplicações em diferentes regiões geográficas, garantindo que, se uma falhar, a outra assume 
+automaticamente, mantendo seu negócio funcionando.
+11
+
+=== pág 12 ===
+
+Quais os problemas que a computação em nuvem tenta resolver?
+6. Acesso Limitado e Dificuldade de Colaboração
+O Problema: No modelo antigo, o acesso a dados e sistemas estava frequentemente restrito à rede 
+interna da empresa, dificultando o trabalho remoto e a colaboração entre equipes distribuídas 
+globalmente.
+A Solução da Nuvem: Acesso Global. Como os serviços em nuvem são acessados pela internet, equipes 
+podem trabalhar de qualquer lugar do mundo, a qualquer hora e em qualquer dispositivo. Ferramentas de 
+colaboração baseadas em nuvem (como Google Workspace e Microsoft 365) se tornaram o padrão.
+12
+
+=== pág 13 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+1. Dependência da Conexão com a Internet
+Este é o ponto mais fundamental. Se a sua conexão com a internet falhar, o acesso aos seus dados, 
+aplicações e serviços na nuvem será interrompido. Para operações críticas, isso significa que a empresa 
+precisa investir em links de internet redundantes e de alta qualidade, adicionando um custo e um ponto 
+de falha que não existiam com servidores locais.
+13
+
+=== pág 14 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+2. Riscos de Segurança e Privacidade
+Embora os provedores de nuvem invistam pesadamente em segurança, a responsabilidade final pela 
+configuração correta é do cliente (o famoso "Modelo de Responsabilidade Compartilhada").
+●
+Configurações Incorretas: A principal causa de vazamento de dados na nuvem não são ataques 
+hackers sofisticados, mas sim erros humanos simples, como deixar um banco de dados aberto 
+para a internet.
+●
+Privacidade dos Dados: Seus dados estão armazenados em servidores de terceiros. Isso pode ser 
+uma preocupação para indústrias com regulamentações rígidas (como saúde e finanças) sobre 
+onde os dados podem residir fisicamente (soberania de dados).
+●
+Ameaças Internas: Um funcionário com credenciais de acesso pode, acidentalmente ou 
+maliciosamente, causar danos significativos.
+14
+
+=== pág 15 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+3. Vendor Lock-in (Aprisionamento Tecnológico)
+Uma vez que você constrói sua arquitetura usando os serviços específicos e proprietários de um 
+provedor (como AWS Lambda, Google BigQuery ou Azure Cosmos DB), torna-se extremamente difícil, 
+caro e demorado migrar para outro provedor. Essa dependência pode deixar sua empresa refém de:
+●
+Aumentos de preços: O fornecedor pode aumentar os preços, e o custo da migração pode ser 
+maior do que simplesmente aceitar o novo valor.
+●
+Mudanças no serviço: Um serviço do qual você depende pode ser descontinuado ou ter suas 
+funcionalidades alteradas.
+15
+
+=== pág 16 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+4. Custos Podem Sair do Controle
+A promessa de "pagar apenas pelo que usa" pode se transformar em uma armadilha. A facilidade de 
+criar novos recursos com apenas um clique pode levar a um crescimento descontrolado dos gastos 
+(cloud sprawl).
+●
+Custos Ocultos: Além do custo da máquina virtual, há custos de transferência de dados (egress 
+traffic), armazenamento, IPs estáticos, balanceadores de carga, etc. Prever o custo final pode ser 
+complexo.
+●
+Recursos Ociosos: É muito comum que equipes de desenvolvimento criem servidores para testes e 
+se esqueçam de desligá-los, gerando custos 24/7 para recursos que não estão sendo utilizados.
+16
+
+=== pág 17 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+5. Menor Controle e Flexibilidade
+Ao usar a nuvem, você abre mão do controle total sobre o hardware e a infraestrutura subjacente. Para 
+empresas com necessidades muito específicas de hardware ou desempenho, que exigem otimizações de 
+baixo nível, a nuvem pública pode não oferecer a granularidade necessária. Você está limitado às 
+configurações e opções que o provedor oferece.
+17
+
+=== pág 18 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+6. Problemas de Latência
+Embora os provedores de nuvem tenham data centers em todo o mundo, a física ainda se aplica. Se sua 
+aplicação precisa de tempos de resposta de microssegundos e seus usuários estão longe do data center 
+mais próximo, a latência (o tempo que os dados levam para ir e voltar) pode ser um problema. Aplicações 
+de alta frequência, como no mercado financeiro ou em automação industrial, podem sofrer com isso.
+18
+
+=== pág 19 ===
+
+Quais as desvantagens de se usar a computação em nuvem?
+7. Complexidade de Gerenciamento
+Um ambiente de nuvem, especialmente um que usa múltiplos serviços (multicloud) ou uma arquitetura 
+híbrida, é complexo. Gerenciar a segurança, os custos, as permissões e a performance em um ambiente 
+distribuído e em constante mudança exige uma equipe com habilidades especializadas (como FinOps, 
+engenheiros de segurança em nuvem), que podem ser caras e difíceis de encontrar.
+19
+
+=== pág 20 ===
+
+Os Gigantes da Nuvem
+Amazon Web Services (AWS): A pioneira e líder de mercado.
+Microsoft Azure: Forte presença no mundo corporativo e integração com produtos Microsoft.
+Google Cloud Platform (GCP): Destaque em dados, Machine Learning e contêineres.
+20
+
+=== pág 21 ===
+
+Os Modelos de 
+Serviço
+21
+
+=== pág 22 ===
+
+A Pirâmide de Serviços
+Topo: SaaS (Software como Serviço) - Menos controle, mais conveniência
+Meio: PaaS (Plataforma como Serviço)
+Base: IaaS (Infraestrutura como Serviço) - Mais controle, menos conveniência
+https://www.geeksforgeeks.org/software-engineering/difference-between-iaas-paas-and-saas/
+22
+
+=== pág 23 ===
+
+IaaS: Infraestrutura como Serviço
+O que é? Os blocos de construção fundamentais. Você aluga a infraestrutura de TI: servidores (VMs), 
+redes e armazenamento.
+Analogia: Alugar o terreno e as ferramentas. Você constrói a casa como quiser.
+Você Gerencia: Sistema Operacional, Aplicações, Dados.
+Exemplos: Amazon EC2, Azure VMs, Google Compute Engine.
+23
+
+=== pág 24 ===
+
+PaaS: Plataforma como Serviço
+O que é? Uma plataforma completa para desenvolver e implantar aplicações sem se preocupar com a 
+infraestrutura por baixo.
+Analogia: Alugar uma casa pré-fabricada. A estrutura está pronta, você só decora.
+Você Gerencia: Apenas suas Aplicações e Dados.
+Exemplos: Heroku, Google App Engine, AWS Elastic Beanstalk.
+24
+
+=== pág 25 ===
+
+SaaS: Software como Serviço
+O que é? Um software completo, pronto para usar, que você acessa pela internet.
+Analogia: Alugar um apartamento mobiliado. É só entrar e usar.
+Você Gerencia: Nada da infraestrutura. Apenas usa o serviço.
+Exemplos: Gmail, Office 365, Salesforce, Netflix.
+25
+
+=== pág 26 ===
+
+O que são soluções totalmente gerenciadas?
+De forma direta, soluções totalmente gerenciadas são serviços de tecnologia onde o provedor 
+(geralmente uma empresa de computação em nuvem como AWS, Google Cloud ou Azure) assume a 
+responsabilidade por quase toda a operação, manutenção e gerenciamento da infraestrutura subjacente.
+Isso significa que você, como cliente, pode usar o serviço sem se preocupar com tarefas complexas 
+como:
+●
+Provisionamento de servidores: Instalar e configurar máquinas.
+●
+Atualizações de software e patches de segurança: Manter o sistema operacional e os programas 
+seguros.
+●
+Escalabilidade: Adicionar ou remover capacidade conforme a demanda aumenta ou diminui.
+●
+Backups e recuperação de desastres: Garantir que seus dados estejam seguros e possam ser 
+restaurados.
+●
+Monitoramento e alta disponibilidade: Assegurar que o serviço esteja sempre funcionando.
+26
+
+=== pág 27 ===
+
+Exemplos de soluções totalmente gerenciadas
+O Cloud SQL é o serviço de banco de dados relacional totalmente gerenciado do Google Cloud Platform (GCP)
+A principal vantagem é foco e agilidade. Em vez de sua equipe gastar tempo e recursos gerenciando bancos de 
+dados — uma tarefa complexa e crítica —, ela pode se concentrar em desenvolver a aplicação que usa esses dados.
+Cloud SQL resolve os seguintes problemas:
+●
+Instalação e Configuração: Você não precisa instalar o software do banco de dados ou configurar 
+servidores.
+●
+Atualizações e Patches de Segurança: O Google aplica automaticamente todas as atualizações e correções 
+de segurança necessárias para manter seu banco de dados protegido.
+●
+Backups e Restauração: Ele realiza backups automáticos e permite que você restaure seu banco de dados 
+para um ponto específico no tempo com apenas alguns cliques, o que é crucial para a recuperação de 
+desastres.
+●
+Escalabilidade: Se sua aplicação começar a receber mais tráfego, você pode aumentar a potência do seu 
+banco de dados (CPU, RAM, armazenamento) sem tirá-lo do ar.
+●
+Alta Disponibilidade (High Availability): Você pode configurar facilmente uma instância de "failover". Se a 
+sua instância principal falhar, uma réplica em outra zona assume automaticamente, garantindo que sua 
+aplicação continue funcionando.
+●
+Segurança: O Google oferece múltiplas camadas de segurança, incluindo firewalls de rede, criptografia de 
+dados em trânsito e em repouso, e integração com o sistema de permissões do GCP (IAM).
+27
+
+=== pág 28 ===
+
+Modelos de 
+Implantação
+28
+
+=== pág 29 ===
+
+Módulo 3: Modelos de Implantação
+Nuvem Pública
+●
+O que é? A infraestrutura pertence e é operada pelo provedor de nuvem (AWS, Azure, GCP). Os 
+recursos são compartilhados por múltiplos clientes ("multi-tenant").
+●
+Vantagens: Menor custo, escalabilidade quase infinita, sem manutenção.
+●
+Ideal para: Startups, websites, novas aplicações.
+29
+
+=== pág 30 ===
+
+Módulo 3: Modelos de Implantação
+Nuvem Privada
+●
+O que é? A infraestrutura é de uso exclusivo de uma única organização. Pode estar no data 
+center local da empresa ou ser hospedada por terceiros.
+●
+Vantagens: Máximo controle, segurança e privacidade.
+●
+Ideal para: Bancos, governos, empresas com dados muito sensíveis.
+30
+
+=== pág 31 ===
+
+Módulo 3: Modelos de Implantação
+Nuvem Híbrida
+●
+O que é? O melhor dos dois mundos! Conecta a infraestrutura local (Nuvem Privada) com a 
+Nuvem Pública.
+●
+Vantagens: Flexibilidade. Mantenha dados sensíveis localmente e use a nuvem para escalar o 
+processamento ou para recuperação de desastres.
+●
+Exemplo de Uso: Uma varejista usa servidores locais para as lojas, mas move o processamento 
+pesado do e-commerce para a nuvem pública durante a Black Friday.
+31
+
+=== pág 32 ===
+
+Os Pilares da 
+Infraestrutura
+32
+
+=== pág 33 ===
+
+Pilar 1: Computação (Compute)
+●
+O "Cérebro" da sua operação.
+●
+Máquinas Virtuais (VMs): Um computador completo (CPU, memória, disco, rede) que roda em um 
+data center. É a base da nuvem.
+●
+Contêineres: Uma forma mais leve de virtualização. Empacotam o código e suas dependências. 
+33
+
+=== pág 34 ===
+
+Pilar 2: Armazenamento (Storage)
+●
+Onde seus dados vivem.
+●
+Armazenamento de Objetos: Quase infinito, ideal para guardar arquivos (fotos, vídeos, backups). 
+Ex: AWS S3.
+●
+Armazenamento de Blocos: Os "discos rígidos" das suas máquinas virtuais. Rápido e de alto 
+desempenho. Ex: AWS EBS.
+●
+Armazenamento de Arquivos: Um disco de rede compartilhado, acessível por múltiplas VMs ao 
+mesmo tempo. Ex: AWS EFS.
+34
+
+=== pág 35 ===
+
+Pilar 3: Rede (Networking)
+Como tudo se conecta de forma segura.
+●
+Virtual Private Cloud (VPC): Sua fatia privada e isolada da nuvem pública. Ninguém de fora 
+acessa seus recursos.
+●
+Sub-redes: "Bairros" dentro da sua VPC para organizar recursos (ex: uma sub-rede pública para 
+servidores web, uma privada para bancos de dados).
+●
+Grupos de Segurança: O firewall da sua VM. Define quais portas estão abertas para o tráfego de 
+entrada e saída (ex: liberar a porta 80 para acesso web).
+35
+
+=== pág 36 ===
+
+Serverless e Bancos 
+de Dados
+36
+
+=== pág 37 ===
+
+Computação sem Servidor (Serverless)
+A Grande Ideia: Execute código, não gerencie servidores.
+Apesar do nome "sem servidor", os servidores ainda existem. A diferença é que o provedor de nuvem 
+(AWS, Google, Azure) é totalmente responsável por gerenciá-los.
+●
+Como Funciona?
+●
+1. Você escreve o código: Cria uma pequena função que realiza uma tarefa específica.
+●
+2. Você define um gatilho (Trigger): Escolhe o que fará seu código rodar (ex: um clique no site, 
+um novo arquivo salvo, uma hora específica do dia).
+●
+3. A nuvem faz o resto: Quando o gatilho é acionado, o provedor de nuvem aloca 
+instantaneamente os recursos necessários para executar sua função e depois os libera.
+37
+
+=== pág 38 ===
+
+Onde o Serverless Brilha: Exemplos Práticos
+Processamento de Dados em Tempo Real
+●
+Exemplo: Redimensionar uma imagem automaticamente.
+●
+Gatilho: Um usuário faz o upload de uma foto para um bucket de armazenamento (Amazon S3, Cloud 
+Storage).
+●
+Ação (Função): Uma função é acionada, lê a imagem, cria versões em miniatura (thumbnails) e as salva em 
+outro bucket.
+APIs e Backends para Aplicações Web/Mobile
+●
+Exemplo: O backend de um formulário de "Fale Conosco".
+●
+Gatilho: Uma requisição HTTP (POST) enviada pelo site.
+●
+Ação (Função): A função pega os dados do formulário, valida, salva em um banco de dados e envia um e-mail 
+de confirmação.
+Tarefas Agendadas e Automação (Jobs)
+●
+Exemplo: Gerar um relatório financeiro diário.
+●
+Gatilho: Um agendador de tempo (Cron) que dispara todo dia à meia-noite.
+●
+Ação (Função): A função coleta dados de vendas do dia, compila um PDF e o envia por e-mail para a equipe 
+de gestão.
+38
+
+=== pág 39 ===
+
+Vantagens da Arquitetura Serverless
+Custo-Eficiência Extrema (Pague pelo Uso)
+●
+Você é cobrado apenas pelos milissegundos em que seu código está realmente executando.
+●
+Se não houver tráfego, o custo é zero. Acaba o desperdício com servidores ociosos.
+Escalabilidade Automática e Infinita
+●
+A plataforma escala de zero a milhares de requisições por segundo de forma instantânea e sem 
+nenhuma configuração manual.
+●
+Perfeito para lidar com picos de tráfego inesperados (ex: campanhas de marketing, eventos 
+virais).
+Redução da Carga Operacional (Foco no Código)
+●
+Sua equipe não precisa se preocupar com provisionamento, atualizações de sistema operacional, 
+patches de segurança ou manutenção de servidores.
+●
+Isso acelera o ciclo de desenvolvimento e permite que os desenvolvedores foquem no que 
+realmente importa: criar valor para o negócio.
+39
+
+=== pág 40 ===
+
+Desvantagens e Considerações
+"Cold Starts" (Inicialização a Frio)
+●
+Se uma função não é usada por um tempo, pode haver um pequeno atraso (latência) na primeira execução, 
+pois a plataforma precisa preparar o ambiente. Pode ser um problema para aplicações muito sensíveis à 
+latência.
+Limitações de Execução
+●
+As funções têm um tempo máximo de execução (geralmente de 5 a 15 minutos). Não são adequadas para 
+tarefas muito longas e contínuas.
+●
+Existem também limites de memória e tamanho do pacote de código.
+Complexidade em Monitoramento e Depuração (Debugging)
+●
+Investigar problemas em um sistema distribuído com dezenas de pequenas funções pode ser mais complexo 
+do que em uma aplicação monolítica. Exige ferramentas especializadas.
+"Vendor Lock-in" (Aprisionamento Tecnológico)
+●
+As funções são frequentemente integradas a outros serviços do mesmo provedor de nuvem, o que pode 
+dificultar a migração para um concorrente no futuro.
+40
+
+=== pág 41 ===
+
+Bancos de Dados como Serviço (DBaaS)
+Diga adeus à administração de bancos de dados!
+O provedor de nuvem oferece bancos de dados totalmente gerenciados. Eles cuidam de:
+●
+Instalação e patches de segurança
+●
+Backups automáticos
+●
+Alta disponibilidade e replicação
+Tipos:
+●
+SQL (Relacional): Para dados estruturados (tabelas, linhas, colunas). Ex: AWS RDS, Azure SQL.
+●
+NoSQL (Não-relacional): Para dados flexíveis (documentos, chave-valor). Ex: AWS DynamoDB, 
+MongoDB Atlas.
+41
+
+=== pág 42 ===
+
+Bancos de Dados Relacionais (SQL): A Base da Organização
+O que são?
+●
+O modelo de banco de dados mais tradicional e difundido.
+●
+Os dados são armazenados em tabelas com uma estrutura rígida e predefinida, compostas por 
+linhas (registros) e colunas (atributos).
+Conceito Chave: Schema Fixo
+●
+Antes de inserir qualquer dado, você deve definir a estrutura da tabela (o "schema").
+●
+Exemplo: Uma tabela Usuarios terá colunas fixas como ID (número), Nome (texto) e Email (texto). 
+Cada novo usuário deve seguir essa regra.
+A Linguagem: SQL (Structured Query Language)
+●
+É a linguagem universal para consultar e manipular dados em bancos relacionais.
+●
+Garantia de Confiança: ACID
+●
+As transações seguem as propriedades ACID (Atomicidade, Consistência, Isolamento, 
+Durabilidade), o que garante a máxima integridade e confiabilidade dos dados. Perfeito para 
+transações financeiras.
+42
+
+=== pág 43 ===
+
+Bancos de Dados Relacionais: Vantagens e Exemplos
+Exemplos e Casos de Uso:
+●
+Sistemas de E-commerce: Gerenciamento de clientes, produtos, pedidos e estoque.
+●
+Aplicações Bancárias: Onde a consistência transacional é absolutamente crítica.
+●
+Sistemas de RH e ERP: Dados estruturados de funcionários, finanças e operações.
+●
+Bancos de Dados Populares: MySQL, PostgreSQL, SQL Server, Oracle, Google Cloud SQL.
+Vantagens:
+●
+Consistência e Integridade: A estrutura rígida e as propriedades ACID garantem que os dados sejam sempre 
+confiáveis e previsíveis.
+●
+Linguagem Padronizada: O SQL é uma linguagem madura, poderosa e amplamente conhecida no mercado.
+●
+Ideal para Consultas Complexas: A natureza relacional facilita a execução de JOINs e consultas que cruzam 
+dados de múltiplas tabelas.
+Desvantagens:
+●
+Rigidez: Alterar a estrutura (schema) depois de definida é um processo complexo e lento.
+●
+Escalabilidade Horizontal Difícil: É mais fácil escalar "para cima" (comprando um servidor mais potente, o que 
+é caro) do que "para os lados" (distribuindo em várias máquinas).
+43
+
+=== pág 44 ===
+
+Bancos de Dados Não Relacionais (NoSQL)
+Bancos de Dados Não Relacionais (NoSQL): Flexibilidade e Escala
+O que são?
+●
+Uma nova geração de bancos de dados que não usam o modelo de tabelas relacionais.
+●
+Projetados para lidar com grandes volumes de dados não estruturados ou semi-estruturados com alta 
+velocidade.
+Conceito Chave: Schema Flexível
+●
+Não há uma estrutura predefinida. Cada registro pode ter atributos diferentes.
+●
+Exemplo: Em uma coleção de Produtos, um produto pode ter "cor" e "tamanho", enquanto outro pode ter 
+"voltagem" e "garantia", sem a necessidade de colunas vazias.
+O Mantra: Disponibilidade e Velocidade
+●
+Frequentemente, priorizam a disponibilidade e a velocidade de resposta sobre a consistência imediata 
+(modelo BASE: Basically Available, Soft state, Eventually consistent).
+Analogia: Pense em uma pasta de documentos (JSON). Cada documento tem suas próprias informações e estrutura, 
+mas todos estão armazenados no mesmo lugar e podem ser pesquisados rapidamente.
+44
+
+=== pág 45 ===
+
+NoSQL: Tipos, Onde Usar, Vantagens e Desvantagens
+Principais Tipos e Exemplos:
+●
+Documentos: Armazena dados em documentos flexíveis (JSON/BSON).
+○
+Exemplo: MongoDB, Firebase Firestore. Ideal para perfis de usuário, catálogos.
+●
+Chave-Valor: O mais simples. Uma chave única aponta para um valor.
+○
+Exemplo: Redis, Amazon DynamoDB. Perfeito para cache e sessões de usuário.
+●
+Colunar: Otimizado para ler e agregar colunas de dados rapidamente.
+○
+Exemplo: Cassandra, Google Bigtable. Ótimo para telemetria e dados de IoT.
+●
+Grafo: Modelado em nós e arestas para representar relacionamentos complexos.
+○
+Exemplo: Neo4j, Amazon Neptune. Usado em redes sociais e sistemas de recomendação.
+45
+
+=== pág 46 ===
+
+NoSQL: Tipos, Onde Usar, Vantagens e Desvantagens
+Vantagens:
+○
+Flexibilidade Máxima: Adapta-se facilmente a novos tipos de dados sem a 
+necessidade de migrações complexas.
+○
+Escalabilidade Horizontal Massiva: Projetado para ser distribuído em clusters 
+de máquinas mais baratas.
+○
+Alta Performance: Otimizado para operações de leitura e escrita em larga 
+escala.
+Desvantagens:
+○
+Consistência Eventual: Pode não ser adequado para sistemas que exigem 
+consistência transacional imediata (como transações bancárias).
+○
+Sem Linguagem Padrão: Cada banco NoSQL tem sua própria forma de 
+consulta.
+○
+Consultas de JOIN: Geralmente não são suportadas ou são ineficientes.
+46
+
+=== pág 47 ===
+
+Demonstração Rápido
+1. Login no Console
+2. Escolher o serviço de Máquina Virtual (EC2, Azure VM, etc.)
+3. Configurar a VM:
+○
+Escolher um Sistema Operacional (ex: Linux Ubuntu)
+○
+Selecionar o tamanho da instância (tipo de CPU/Memória)
+4. Configurar a Rede:
+○
+Criar um Grupo de Segurança
+○
+Liberar a porta 80 (HTTP) para acesso web
+5. Lançar e Conectar!
+○
+Acessar o IP público da máquina pelo navegador.
+47
+
+=== pág 48 ===
+
+Kubernetes
+48
+
+=== pág 49 ===
+
+O que é Kubernetes?
+https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+49
+
+=== pág 50 ===
+
+Componentes do Kubernetes
+https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+50
+
+=== pág 51 ===
+
+Kubernetes na Prática
+Cluster
+Node
+Painel de Controle
+...
+Service Mesh
+Operação
+POD
+Container
+Container
+POD
+Container
+Node
+POD
+Container
+Container
+POD
+Container
+51
+
+=== pág 52 ===
+
+Malha de Serviços (Service Mesh)
+https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh
+52
+
+=== pág 53 ===
+
+CI/CD
+53
+
+=== pág 54 ===
+
+O que é CI/CD
+Práticas combinadas de integração contínua e entrega contínua
+Integração contínua (CI), é a prática de mesclar todas as cópias de trabalho dos desenvolvedores em 
+uma linha principal compartilhada, várias vezes ao dia
+Entrega contínua (CD), é uma prática de engenharia de software na qual as equipes, de desenvolvimento 
+de software, produzem um entregável em ciclos curtos, garantindo que o software possa ser lançado com 
+segurança a qualquer momento.
+54
+
+=== pág 55 ===
+
+Modo tradicional de desenvolvimento
+desenvolvedor
+desenvolvedor
+mudança
+mudança
+merge
+teste
+deployment
+teste
+monitoramento
+Build
+Build
+55
+
+=== pág 56 ===
+
+CI/CD
+desenvolvedor
+desenvolvedor
+mudança
+mudança
+merge
+deployment
+teste
+monitoramento
+Artifact
+storage
+teste
+segurança
+verificação 
+de
+políticas
+Untrusted
+Artifact
+storage
+Audit
+Log
+Build
+56
+
+=== pág 57 ===
+
+CI/CD - Multi-Cloud
+desenvolvedor
+desenvolvedor
+mudança
+mudança
+merge
+deployment
+teste
+monitoramento
+Artifact
+storage
+teste
+segurança
+verificação 
+de
+políticas
+Data Center
+deployment
+monitoramento
+Cloud Provider
+Build
+57
+
+=== pág 58 ===
+
+Segurança e Custos
+58
+
+=== pág 59 ===
+
+Modelo de Responsabilidade Compartilhada
+○
+O Provedor é responsável pela segurança DA Nuvem:
+○
+Hardware, infraestrutura física, data centers seguros.
+○
+Você é responsável pela segurança NA Nuvem:
+○
+Seus dados, configuração de rede (firewall), senhas e permissões de acesso.
+○
+Moral da história: A nuvem pode ser segura, mas a configuração errada é sua 
+responsabilidade.
+59
+
+=== pág 60 ===
+
+O Conceito Mais Importante de Segurança
+https://www.researchgate.net/figure/Figura-16-Divisao-de-responsabilidades-entre-usuarios-e-provedores-A-Figura-16_fig4_283274571
+60
+
+=== pág 61 ===
+
+Gestão de Identidade e Acesso (IAM)
+Definição Central:
+IAM é o framework de segurança que garante que as identidades certas (usuários, aplicações) tenham 
+o acesso certo (permissões) aos recursos certos (serviços, dados), no momento certo.
+Os 3 Elementos Fundamentais:
+1. Identidade (Principal): Quem está pedindo acesso?
+●
+Não é apenas um humano. Pode ser um usuário, um grupo de usuários ou um serviço (uma 
+aplicação, uma máquina virtual).
+2. Permissão: O que essa identidade pode fazer?
+●
+A ação específica permitida. Exemplos: Ler, Escrever, Deletar, Iniciar Máquina.
+3. Recurso: Em qual objeto a ação pode ser executada?
+●
+O ativo específico. Exemplos: um arquivo, um banco de dados, uma máquina virtual.
+61
+
+=== pág 62 ===
+
+Gestão de Identidade e Acesso (IAM)
+O Princípio Mais Importante: Menor Privilégio (PoLP)
+●
+"Conceda apenas as permissões mínimas e estritamente necessárias para que uma identidade 
+realize seu trabalho, e nada mais."
+62
+
+=== pág 63 ===
+
+Os 3 Pilares do IAM: Autenticação, Autorização e Auditoria
+1. Autenticação: "Você é quem diz ser?"
+●
+É o processo de verificar a identidade.
+●
+Como?
+○
+Algo que você sabe: Senha.
+○
+Algo que você tem: Token, App de autenticação (MFA).
+○
+Algo que você é: Biometria.
+●
+Regra de Ouro: A Autenticação Multifator (MFA) não é opcional, é essencial.
+2. Autorização: "Agora que sei quem você é, o que você pode fazer?"
+●
+É o processo de conceder as permissões após a autenticação.
+●
+Como? Através de Políticas (documentos que listam permissões) e Papéis/Roles (um conjunto de 
+políticas que uma identidade pode assumir temporariamente).
+3. Auditoria: "Quem fez o quê, onde e quando?"
+●
+É o registro e a revisão de todas as atividades de acesso.
+●
+Por quê? Fundamental para investigações de segurança, conformidade com regulações (LGPD) e 
+detecção de anomalias.
+63
+
+=== pág 64 ===
+
+Vantagens de um IAM Robusto e Melhores Práticas
+Principais Vantagens:
+●
+Segurança Reforçada: Reduz drasticamente a superfície de ataque. Se uma conta for 
+comprometida, o dano é limitado pelo princípio do menor privilégio.
+●
+Conformidade Regulatória (Compliance): Ajuda a atender a requisitos de leis como LGPD, GDPR 
+e HIPAA, que exigem controle estrito sobre o acesso a dados.
+●
+Eficiência Operacional: Centraliza e simplifica a gestão de permissões, facilitando a entrada e 
+saída de funcionários e a alteração de funções.
+●
+Melhor Experiência do Usuário: Permite o uso de Single Sign-On (SSO), onde o usuário faz login 
+uma única vez para acessar múltiplos sistemas.
+Melhores Práticas Essenciais:
+●
+Ative o MFA para todas as contas, especialmente as de administrador.
+●
+Nunca use permissões genéricas (*.*) em ambientes de produção. Seja específico.
+●
+Use Grupos e Papéis (Roles) em vez de atribuir permissões diretamente a usuários individuais. É 
+mais fácil de gerenciar e auditar.
+●
+Revise as permissões periodicamente e remova acessos que não são mais necessários.
+64
+
+=== pág 65 ===
+
+IAM na Prática: Cenários do Dia a Dia
+Cenário 1: Aplicação na Nuvem
+●
+Problema: Uma aplicação rodando em uma Máquina Virtual precisa ler arquivos de um bucket de 
+armazenamento privado.
+●
+Solução Ruim: Colocar chaves de acesso secretas diretamente no código da aplicação. Se o 
+código vazar, as chaves também vazam.
+●
+Solução IAM Correta:
+○
+Criar um Papel (Role) com uma Política que permite apenas a ação de Leitura no bucket 
+específico.
+○
+Atribuir este Papel à Máquina Virtual.
+○
+A aplicação herda as permissões de forma automática e segura, sem precisar de chaves 
+secretas.
+65
+
+=== pág 66 ===
+
+IAM na Prática: Cenários do Dia a Dia
+Cenário 2: O Novo Analista de Dados
+○
+Problema: Um novo analista precisa de acesso apenas para leitura em um 
+banco de dados de vendas.
+○
+Solução Ruim: Dar ao novo analista acesso de administrador "para garantir".
+○
+Solução IAM Correta:
+■
+Adicionar o usuário do analista a um Grupo chamado 
+AnalistasDeDados.
+■
+Atribuir a este Grupo uma Política que permite apenas ações de 
+Consulta (Query) no banco de dados de vendas.
+■
+O analista recebe exatamente o que precisa. Se mudar de função, basta 
+removê-lo do grupo.
+66
+
+=== pág 67 ===
+
+Gestão de Custos na Nuvem (FinOps): Do Caos ao Controle
+A Mudança de Paradigma: De CAPEX para OPEX
+●
+Modelo Antigo (CAPEX): Compra de ativos físicos (servidores). Custo fixo, previsível e 
+com grande investimento inicial.
+●
+Modelo Novo (OPEX): Pagamento pelo uso de serviços (nuvem). Custo variável, 
+flexível, mas que pode crescer rapidamente e sem controle.
+O Problema Central: A Surpresa no Fim do Mês
+●
+A facilidade de criar recursos com um clique pode levar a um "vazamento" de custos.
+●
+Sem uma gestão ativa, é fácil gastar muito mais do que o planejado.
+O que é FinOps (Cloud Cost Management)?
+●
+É a prática de trazer responsabilidade financeira para o modelo de gastos variáveis da 
+nuvem.
+●
+É uma cultura que une equipes de Engenharia, Finanças e Negócios para tomar 
+decisões inteligentes sobre os gastos.
+●
+O objetivo não é apenas "gastar menos", mas sim "gastar melhor", garantindo o máximo 
+de valor para cada real investido.
+67
+
+=== pág 68 ===
+
+Você Não Pode Gerenciar o que Não Vê
+A Base de Tudo: Tags (Etiquetas)
+●
+O que são? Rótulos (chave-valor) que você anexa a cada recurso na nuvem.
+●
+Exemplos: projeto: campanha-marketing, ambiente: producao, centro_custo: 4512.
+●
+Por que são cruciais? Permitem que você filtre e aloque cada centavo da sua fatura para o 
+projeto, time ou departamento correto. Sem tags, sua fatura é um grande mistério.
+Ferramentas de Visualização e Orçamento
+●
+Dashboards de Custos: Use as ferramentas nativas (AWS Cost Explorer, Azure Cost 
+Management) para visualizar tendências, identificar picos e entender quais serviços custam mais.
+●
+Alertas de Orçamento: Configure notificações automáticas para avisar quando um projeto ou a 
+conta inteira atinge um limite de gasto (ex: 80% do orçamento mensal). É sua principal rede de 
+segurança contra surpresas.
+●
+Exemplo de Alerta: "Atenção: O projeto novo-app-teste já consumiu 90% do seu orçamento de R$ 
+500,00."
+68
+
+=== pág 69 ===
+
+Otimização: Eliminando o Desperdício
+Estratégias Práticas para Reduzir Custos
+●
+1. Rightsizing (Dimensionamento Correto)
+○
+Problema: É comum criar máquinas virtuais muito mais potentes do que o necessário ("só por 
+segurança").
+○
+Solução: Use ferramentas de monitoramento para analisar o uso real de CPU e memória. Se uma 
+máquina usa apenas 10% de sua capacidade, diminua seu tamanho para um modelo mais barato.
+○
+Exemplo: Mudar uma VM de t3.xlarge para t3.medium pode economizar mais de 75% do custo.
+●
+2. Caça aos "Recursos Zumbis"
+○
+Problema: Discos de armazenamento não atachados a nenhuma VM, IPs elásticos não utilizados, 
+snapshots antigos... Todos geram custos e são frequentemente esquecidos.
+○
+Solução: Crie rotinas (manuais ou automáticas) para identificar e deletar esses recursos ociosos.
+●
+3. Agendamento (Ligar/Desligar)
+○
+Problema: Ambientes de desenvolvimento e teste não precisam rodar 24/7.
+○
+Solução: Automatize para que esses ambientes sejam desligados fora do horário de trabalho (noites e 
+fins de semana).
+○
+Exemplo: Desligar um ambiente por 12 horas toda noite e nos fins de semana reduz o custo em quase 
+70%.
+69
+
+=== pág 70 ===
+
+FinOps: Mais que uma Ferramenta, uma Cultura
+Responsabilidade Compartilhada
+●
+Modelo Antigo: A equipe de finanças recebe a conta e cobra a engenharia.
+●
+Modelo FinOps: Os engenheiros são donos dos seus custos. Eles têm acesso a 
+dashboards e são responsáveis pelo impacto financeiro de suas decisões de 
+arquitetura.
+Automação e Governança
+●
+Exemplo: Criar políticas que impeçam a criação de recursos sem as tags corretas. Isso 
+força a organização desde o início.
+●
+Exemplo: Scripts que automaticamente deletam ambientes de teste que estão rodando 
+por mais de 3 dias.
+O Ciclo Contínuo da Otimização
+●
+FinOps não é um projeto com início, meio e fim. É um ciclo contínuo:
+○
+Informar: Ganhar visibilidade (tags, dashboards).
+○
+Otimizar: Agir para reduzir o desperdício (rightsizing, agendamento).
+○
+Operar: Automatizar e escalar as boas práticas (governança).
+●
+Este ciclo se repete constantemente, promovendo uma cultura de melhoria contínua.
+70
+
+=== pág 71 ===
+
+Arquiteturas 
+Comuns
+71
+
+=== pág 72 ===
+
+Balanceamento de carga
+72
+
+=== pág 73 ===
+
+Dimensionamento automático de VM
+73
+
+=== pág 74 ===
+
+Escalando Banco de Dados
+74
+
+=== pág 75 ===
+
+Escalando Banco de Dados
+75
+
+=== pág 76 ===
+
+Multi-Cloud
+76
+
+=== pág 77 ===
+
+O que é Multi-Cloud?
+Multi-Cloud é o uso de vários serviços de computação em nuvem e armazenamento em uma única 
+arquitetura heterogênea. Isso também se refere à distribuição de ativos de nuvem, software, aplicativos, 
+etc. em vários ambientes de hospedagem em nuvem. 
+Provedores de serviços de Multi-Cloud podem hospedar três tipos de serviços:
+●
+Infraestrutura como serviço (IaaS)
+●
+Plataforma como serviço (PaaS)
+●
+Function as a service (FaaS)
+●
+Software as a Service (SaaS)
+https://en.wikipedia.org/wiki/Multi-Cloud
+77
+
+=== pág 78 ===
+
+Multi-cloud em um entendimento mais amplo
+Cloud Bursting
+Execução em Múltiplos 
+Ambientes
+Edge Computing IoT
+Jurisdicional/Soberania 
+de dados
+Requisitar serviços em 
+nuvem
+Requisitar 
+dependências legadas
+Desenvolvimento Multi-
+Cloud
+Backup e Recuperação 
+de desastres 
+Execução em múltiplos 
+data centers
+78
+
+=== pág 79 ===
+
+Por que empresas estão indo para Multi-Cloud?
+Best-of-Breed: Em um mercado dinâmico e complexo dificilmente um único provedor irá dominar todo o 
+“supply chain” de soluções
+Evitar Lock-in: Desenvolver soluções totalmente dependentes de apenas um único provedor limita 
+decisões estratégicas e capacidade de negociar preços
+Exigência de Clientes: Empresas como Walmart não tem interesse de utilizar SaaS hospedados na 
+AWS (por exemplo) e demandam que provedores de SaaS utilizem estratégias de Multi-Cloud
+https://www.gartner.com/en/conferences/apac/infrastructure-operations-cloud-india/gartner-insights/swg-why-organizations-choose-a-Multi-Cloud-strategy
+79
+
+=== pág 80 ===
+
+Padrões de multi-cloud
+https://cloud.google.com/architecture/hybrid-and-multi-cloud-patterns-and-practices
+80
+
+=== pág 81 ===
+
+Arquitetura comum de Multi-Cloud
+Public Cloud 1
+On Prem
+Public Cloud 2
+Banco de dados 3
+Banco de dados 2
+Banco de dados 1
+Usuário A
+Workload A
+Workload A
+Workload A
+Workload B
+Workload B
+Workload B
+Autenticação
+81
+
+=== pág 82 ===
+
+Razões para adotar Multi-Cloud
+1.
+ROI otimizado
+2.
+Segurança Superior
+3.
+Baixa latência
+4.
+Autonomia
+5.
+Menos sujeito a desastres
+6.
+Agilidade no Lançamento de novos produtos
+https://www.cloudindustryforum.org/content/five-reasons-why-multi-cloud-infrastructure-future-enterprise-it
+82
+
+=== pág 83 ===
+
+Razões para não adotar Multi-Cloud
+1.
+Custo de Egress
+2.
+Garantia de governança e conformidade
+3.
+Ferramentas de fornecedores em ilhas
+4.
+Falta de gerenciamento de aplicativos
+5.
+Escassez de pessoal qualificado
+https://www.actualtech.io/5-big-challenges-of-multi-cloud-management/
+83
+
+=== pág 84 ===
+
+Cloud Bursting
+OnPrem
+Nuvem 1
+Mestre
+Réplica
+OnPrem
+Nuvem 1
+Mestre
+Mestre
+OnPrem
+Nuvem 1
+Partição A
+Partição B
+Aplicativo
+Aplicativo
+Aplicativo
+84
+Aplicativo
+Aplicativo
+Aplicativo
+
+=== pág 85 ===
+
+Análise de dados
+Coleta do Dado 
+Puro
+Processamento
+Limpeza de 
+Dados
+Explorar Dados
+Modelar & 
+Algorítmo
+Visualizar
+Produto
+85
+
+=== pág 86 ===
+
+Análise de dados em Multi-Cloud
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Visualizar
+Produto
+86
+
+=== pág 87 ===
+
+Análise de dados em Multi-Cloud
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Visualizar
+Produto
+87
+
+=== pág 88 ===
+
+Análise de dados em Multi-Cloud
+Coleta do 
+Dado 
+Puro
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Visualizar
+Produto
+88
+
+=== pág 89 ===
+
+Análise de dados em Multi-Cloud
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Coleta do 
+Dado 
+Puro
+Processa
+mento
+Limpeza 
+de Dados
+Explorar 
+Dados
+Modelar & 
+Algorítmo
+Visualizar
+Produto
+89
+
+=== pág 90 ===
+
+Estudo de Caso
+90
+
+=== pág 91 ===
+
+Caso 1
+SQL
+Ambiente
+Data Analytics
+CI/CD
+Aplicação monolíticas
+Data Center
+File 
+System
+(Objetos)
+91
+
+=== pág 92 ===
+
+Caso 1
+SQL
+Ambiente
+Data Analytics
+CI/CD
+Aplicação monolíticas
+Data Center
+File 
+System
+(Objetos)
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+Aplicação Micro Serviços
+SQL
+NoSQL
+Objetos
+92
+
+=== pág 93 ===
+
+Caso 1
+SQL
+Ambiente
+Data Analytics
+CI/CD
+Aplicação monolíticas
+Data Center
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+SQL
+NoSQL
+Direct Connect
+File 
+System
+(Objetos)
+Objetos
+Aplicação Micro Serviços
+Autent.
+93
+
+=== pág 94 ===
+Caso 1
+SQL
+Ambiente
+Data Analytics
+CI/CD
+Aplicação monolíticas
+Data Center
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+SQL
+NoSQL
+Direct Connect
+File 
+System
+(Objetos)
+Objetos
+Aplicação Micro Serviços
+Autent.
+SaaS
+Data Catalog
+VPN
+Cloud Provider 2
+AI/ML
+Direct Connect
+AI/ML
+94
+
+=== pág 95 ===
+
+Caso 2
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+SQL
+NoSQL
+Objetos
+Aplicação Micro Serviços
+EDGE ETL
+AI/ML
+EDGE Data
+95
+
+=== pág 96 ===
+
+Caso 2
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+SQL
+NoSQL
+Objetos
+Aplicação Micro Serviços
+EDGE ETL
+AI/ML
+EDGE Data
+Cloud Provider 2
+Cloud Provider N
+...
+EDGE Data
+EDGE Data
+VPN
+VPN
+96
+
+=== pág 97 ===
+
+Caso 2
+Cloud Provider 1
+Ambiente
+Data Analytics
+CI/CD
+SQL
+NoSQL
+Objetos
+Aplicação Micro Serviços
+EDGE ETL
+AI/ML
+EDGE Data
+Cloud Provider 2
+Cloud Provider N
+...
+EDGE Data
+EDGE Data
+VPN
+VPN
+Aplicação Micro Serviços
+EDGE ETL
+Aplicação Micro Serviços
+EDGE ETL
+97
+
+=== pág 98 ===
+
+Obrigado!
+Rodrigo Vale | linkedin.com/in/rodrigovale

@@ -1,0 +1,36 @@
+# 19 - Modelos Logisticos Binarios e Multinomiais / Material complementar_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR  
+Supervised Machine Learning: Modelos Logísticos 
+Binários e Multinomiais 
+Professor Luiz Paulo Fávero 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+Christensen, R. 1997. Log-linear models and logistic regression. 2. ed. 
+New York: Springer-Verlag. 
+Fávero, L.P.; Belfiore, P. 2019 Data science for business and decision 
+making. Cambridge: Academic Press. 
+Fávero L. P.; Belfiore, P. 2024. Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. Rio de 
+Janeiro: GEN. 
+Garson, G.D. 2012. Logistic regression: binary & multinomial. Asheboro: 
+Statistical Associates Publishing. 
+Gujarati, D.N. 2011. Econometria básica. 5. ed. Porto Alegre: Bookman. 
+Hilbe, J.M. 2009. Logistic regression models. London: Chapman & Hall / 
+CRC Press. 
+Hosmer, D.W.; Lemeshow, S.; Sturdivant, R.X. 2013. Applied logistic 
+regression. 3. ed. New York: John Wiley & Sons. 
+Hosmer, D.W.; Taber, S.; Lemeshow, S. 1991. The importance of assessing 
+the fit of logistic regression models: a case study. American Journal of 
+Public Health, v. 81, p. 1630-1635. 
+Kleinbaum, D.G.; Klein, M. 2010. Logistic regression: a self-learning text. 
+3. ed. New York: Springer. 
+Fávero, L.P. 2019. Machine Learning e modelos supervisionados: o uso 
+correto do GLM na tomada de decisão. It Forum. Disponível em 
+https://itforum.com.br/colunas/machine-learning-e-modelos-supervisionados-
+o-uso-correto-do-glm-na-tomada-de-decisao  
+ 
+ 

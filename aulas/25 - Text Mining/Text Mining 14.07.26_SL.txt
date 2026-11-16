@@ -1,0 +1,410 @@
+# 25 - Text Mining / Text Mining 14.07.26_SL.pdf
+
+=== pág 1 ===
+
+Text Mining, Sentiment
+Analysis e NLP I
+Guilherme Bezerra de Lima
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+Text 
+Mining
+Professor Guilherme Lima
+3
+
+=== pág 4 ===
+
+x
+4
+Minhas redes
+guilhermelimadev
+guilherme-lima-developer
+
+=== pág 5 ===
+
+5
+01
+Comunicação e uma linguagem
+Fundamental para o text mining
+
+=== pág 6 ===
+
+Uma língua não é 
+apenas um conjunto 
+de palavras. 
+Ela representa a 
+cultura, as tradições e 
+a união de um povo. 
+6
+
+=== pág 7 ===
+
+Carrega a história e a 
+identidade de uma 
+comunidade, 
+tornando-se parte 
+essencial do que ela é.
+7
+
+=== pág 8 ===
+
+Contextualizar
+8
+
+=== pág 9 ===
+
+Valério
+Um cientista de dados em uma empresa
+9
+
+=== pág 10 ===
+
+10
+
+=== pág 11 ===
+
+11
+
+=== pág 12 ===
+
+Linguagem de 
+programação
+12
+
+=== pág 13 ===
+
+Linguagem natural
+13
+
+=== pág 14 ===
+
+Binário
+14
+
+=== pág 15 ===
+
+Algumas áreas da ciência da computação…
+NPL
+Processamento 
+de Linguagem 
+Natural
+Análise de 
+Sentimento
+Identificação de 
+emoções 
+textuais
+LLMs
+Redes neurais 
+para texto
+Text Mining
+Extração de 
+informações 
+textuais
+15
+
+=== pág 16 ===
+
+Algumas áreas da ciência da computação…
+NLP – Processa e entende a linguagem humana por meio de algoritmos 
+computacionais.
+Análise de Sentimento – Detecta emoções e opiniões em textos, 
+classificando como positivas, negativas ou neutras.
+LLMs – Modelos de IA treinados em grandes volumes de texto para gerar 
+e compreender linguagem natural.
+Text Mining – Extrai padrões, insights e informações úteis a partir de 
+grandes quantidades de texto.
+16
+
+=== pág 17 ===
+
+Text Mining
+Extrair informações valiosas de textos
+17
+
+=== pág 18 ===
+
+Sobrecarga de informações
+18
+
+=== pág 19 ===
+
+19
+Vivemos em uma era de sobrecarga de 
+informações. 
+19
+
+=== pág 20 ===
+
+20
+A maior parte dos dados gerados 
+está em formato textual, seja em 
+redes sociais, documentos 
+empresariais ou artigos 
+científicos. 
+20
+
+=== pág 21 ===
+
+Mas como extrair conhecimento 
+desse volume gigantesco de 
+textos? 
+21
+
+=== pág 22 ===
+
+Text Mining surge como a solução para extrair valor e 
+conhecimento desses dados.
+22
+
+=== pág 23 ===
+
+23
+Processo de descobrir 
+padrões, informações úteis 
+e conhecimento a partir de 
+grandes volumes de dados 
+textuais.
+23
+
+=== pág 24 ===
+
+Garimpar
+ouro em 
+meio a um
+rio de texto.
+24
+
+=== pág 25 ===
+
+Análise de Sentimentos
+Extração de Informação
+Sumarização de Textos
+Detecção de Fraudes e Spam
+Onde o Text Mining Brilha?
+Classificação de Textos
+Modelagem de Tópicos
+1
+2
+3
+4
+5
+6
+25
+
+=== pág 26 ===
+
+Coleta de 
+Dados 
+Textuais
+Pré-processamento 
+de Texto
+Modelagem e 
+Análise
+Avaliação e 
+Interpretação 
+dos Resultados
+Insights e 
+Conhecimento
+26
+
+=== pág 27 ===
+
+Pré-processamento de Texto
+27
+
+=== pág 28 ===
+
+Lowercasing
+Padronizar o texto.
+Texto original: "Eu amo DS!"
+Após lowercasing: ["eu", "amo", "ds",  "!"]
+Pré-processamento de Texto
+28
+
+=== pág 29 ===
+
+Lowercasing
+Remoção de 
+Pontuação
+Padronizar o texto.
+Texto original: "Eu amo DS!"
+Após lowercasing: ["eu", "amo", "ds",  "!"]
+Eliminar sinais de pontuação.
+Texto original: "Eu amo DS!"
+Após remoção: ["eu", "amo", "ds"]
+Pré-processamento de Texto
+29
+
+=== pág 30 ===
+
+Tokenização
+Dividir um texto em unidades menores
+Texto original: "Eu amo MBA!"
+Após tokenização: ["Eu", "amo", "MBA",  "!"]
+Pré-processamento de Texto
+30
+
+=== pág 31 ===
+
+Tokenização
+Stopwords
+Dividir um texto em unidades menores
+Texto original: "Eu amo DS!"
+Após tokenização: ["Eu", "amo", "DS",  "!"]
+palavras comuns que não agregam 
+muito significado ao conteúdo
+Exemplo: "a", "o", "e", "de", "que", "em"
+Pré-processamento de Texto
+31
+
+=== pág 32 ===
+
+Stemming
+Reduzir palavras à sua raiz
+Texto original: "Eu amo DS!"
+Após lowercasing: Eu am DS
+Pré-processamento de Texto
+32
+
+=== pág 33 ===
+
+Stemming
+Lemmatization
+Reduzir palavras à sua raiz
+Texto original: "Eu amo DS!"
+Após lowercasing: ["eu", "amo", "ds",  
+"!"]
+Reduz a palavra à sua forma 
+canônica
+"Amasse" → Stemming: "am" 
+Lemmatization: "amar"
+Pré-processamento de Texto
+33
+
+=== pág 34 ===
+
+Cada etapa ajuda a preparar o 
+texto para análise!
+34
+
+=== pág 35 ===
+
+"Eu estou aprendendo processamento de linguagem natural!"
+"Os algoritmos de machine learning são incríveis."
+"O cachorro correu rapidamente pelo parque."
+"Hoje eu comprei um livro sobre NLP."
+"As árvores estão balançando com o vento forte."
+Texto Bruto (Original)
+35
+
+=== pág 36 ===
+
+Lowercasing
+36
+
+=== pág 37 ===
+
+"eu estou aprendendo processamento de linguagem natural!"
+"os algoritmos de machine learning são incríveis."
+"o cachorro correu rapidamente pelo parque."
+"hoje eu comprei um livro sobre nlp."
+"as árvores estão balançando com o vento forte."
+Lowercasing
+37
+
+=== pág 38 ===
+
+Remoção de Pontuação
+38
+
+=== pág 39 ===
+
+"eu estou aprendendo processamento de linguagem natural"
+"os algoritmos de machine learning sao incriveis"
+"o cachorro correu rapidamente pelo parque"
+"hoje eu comprei um livro sobre nlp"
+"as arvores estao balancando com o vento forte"
+Remoção de Pontuação
+39
+
+=== pág 40 ===
+
+Tokenization
+40
+
+=== pág 41 ===
+
+[eu, estou, aprendendo, processamento, de, linguagem, natural]
+[os, algoritmos, de, machine, learning, sao, incriveis]
+[o, cachorro, correu, rapidamente, pelo, parque]
+[hoje, eu, comprei, um, livro, sobre, nlp]
+[as, arvores, estao, balancando, com, o, vento, forte]
+Tokenization
+41
+
+=== pág 42 ===
+
+Stopwords
+42
+
+=== pág 43 ===
+
+aprendendo processamento linguagem natural
+algoritmos machine learning incriveis
+cachorro correu rapidamente parque
+comprei livro nlp
+arvores balancando vento forte
+Stopwords
+43
+
+=== pág 44 ===
+
+Stemming
+44
+
+=== pág 45 ===
+
+aprend, process, linguag, natur
+algoritm, machin, learn, incriv
+cachorr, corr, rapid, parqu
+compr, livr, nlp
+arvor, balanc, vent, fort
+Stemming
+45
+
+=== pág 46 ===
+
+Lemmatization
+46
+
+=== pág 47 ===
+
+aprender, processamento, linguagem, natural
+algoritmo, machine, learning, incrível
+cachorro, correr, rápido, parque
+comprar, livro, nlp
+árvore, balançar, vento, forte
+Lemmatization
+47
+
+=== pág 48 ===
+
+Cada etapa melhora a preparação dos dados para análise.
+48
+
+=== pág 49 ===
+
+Vamos
+processar
+um texto
+49
+
+=== pág 50 ===
+
+Obrigado!
+Guilherme Bezerra de Lima| linkedin.com/in/guilherme-lima-developer

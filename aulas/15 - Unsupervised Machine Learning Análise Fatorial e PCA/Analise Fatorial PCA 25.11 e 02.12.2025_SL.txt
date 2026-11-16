@@ -1,0 +1,437 @@
+# 15 - Unsupervised Machine Learning Análise Fatorial e PCA / Analise Fatorial PCA 25.11 e 02.12.2025_SL.pdf
+
+=== pág 1 ===
+
+UNSUPERVISED 
+MACHINE LEARNING: 
+Análise Fatorial e PCA
+Prof. Dr. Wilson Tarantin Junior
+ 
+=== pág 2 ===
+
+
+Lei nº 9610/98
+ 
+=== pág 3 ===
+
+Contextualização
+• Quando aplicar a análise fatorial?
+• Quando as variáveis forem métricas: depende das correlações de Pearson
+• Trata-se do agrupamento das variáveis originais em fatores, então busca-se analisar 
+o comportamento conjunto dessas variáveis. Os objetivos podem ser:
+• Redução estrutural, ou seja, diminuição da dimensão do banco de dados 
+• Análise de construtos pela identificação das variáveis alocadas aos fatores
+• Elaboração de rankings para classificação com base nos fatores extraídos
+• Criação de fatores ortogonais para posterior uso em modelos supervisionados
+3
+ 
+=== pág 4 ===
+
+Contextualização
+•
+A figura ilustra uma aplicação onde foram selecionados apenas os 2 primeiros fatores extraídos 
+da análise fatorial PCA, visando uma redução de dimensionalidade do banco de dados
+4
+ 
+=== pág 5 ===
+
+Contextualização
+• Exemplos de aplicação
+• Geração de indicadores socioeconômicos
+• Avaliação de desempenho acadêmico
+• Gestão de marcas (pesquisa de opinião e percepção)
+• Testes psicológicos (traços psicológicos ou construtos não observáveis)
+• ...
+5
+ 
+=== pág 6 ===
+
+Contextualização
+• Análise fatorial por componentes principais
+• Componentes principais: método de determinação dos fatores que se baseia na criação 
+de fatores não correlacionados a partir da combinação linear das variáveis originais
+• Análise fatorial PCA: modelo não supervisionado de machine learning
+• O intuito é encontrar um padrão latente no que se refere às relações entre as variáveis
+• A técnica não tem caráter preditivo para observações que não estejam presentes na 
+amostra. Se mudarem as observações (e/ou as variáveis), novos fatores atualizados 
+devem ser gerados
+6
+ 
+=== pág 7 ===
+
+Implementação da Técnica
+7
+ 
+=== pág 8 ===
+
+Matriz de correlações de Pearson
+• Procedimento inicial
+• A PCA fundamenta-se na existência de correlações entre variáveis originais para a 
+criação dos fatores
+• Coeficiente de correlação de Pearson: relação linear entre duas variáveis métricas
+• Correlações mais próximos dos valores extremos (-1; +1) propiciam a extração de 
+um único fator, pois indicam existência de relação entre as variáveis
+• Correlações mais próximos de zero propiciam a extração de diferentes fatores, pois 
+indicam que a relação entre as variáveis é (praticamente) inexistente
+8
+ 
+=== pág 9 ===
+
+Matriz de correlações de Pearson
+• Criação da matriz
+• Representação da matriz de correlações (ρ) para K variáveis métricas e a expressão de 
+cálculo do coeficiente de correlação de Pearson para pares de variáveis
+𝝆=
+𝟏
+𝝆𝟏𝟐
+…
+𝝆𝟏𝒌
+𝝆𝟐𝟏
+𝟏
+…
+𝝆𝟐𝒌
+⋮
+⋮
+⋱
+⋮
+𝝆𝒌𝟏
+𝝆𝒌𝟐
+…
+𝟏
+   
+𝝆𝟏𝟐=
+σ𝒊=𝟏
+𝒏
+𝑿𝟏𝒊−ഥ𝑿𝟏. 𝑿𝟐𝒊−ഥ𝑿𝟐
+σ𝒊=𝟏
+𝒏
+𝑿𝟏𝒊−ഥ𝑿𝟏
+𝟐 .
+σ𝒊=𝟏
+𝒏
+𝑿𝟐𝒊−ഥ𝑿𝟐
+𝟐
+9
+ 
+=== pág 10 ===
+
+Adequação global da análise
+• A extração de fatores é adequada?
+• Para que que a análise fatorial seja viável, devem existir valores mais elevados (em 
+direção a -1 e +1) e estatisticamente significantes na matriz de correlações
+• Para avaliar a adequação global da análise fatorial nos dados, utiliza-se o teste de 
+esfericidade de Bartlett
+• Os coeficientes de correlação de Pearson são estatisticamente diferentes de zero?
+• Compara-se a matriz de correlações com a matriz identidade de mesma dimensão; 
+espera-se que tais matrizes sejam estatisticamente diferentes para que a análise 
+fatorial seja aplicável
+10
+ 
+=== pág 11 ===
+
+Adequação global da análise
+• Teste de esfericidade de Bartlett
+𝑯𝟎: 𝝆=
+𝟏
+𝝆𝟏𝟐
+…
+𝝆𝟏𝒌
+𝝆𝟐𝟏
+𝟏
+…
+𝝆𝟐𝒌
+⋮
+⋮
+⋱
+⋮
+𝝆𝒌𝟏
+𝝆𝒌𝟐
+…
+𝟏
+= 𝑰=
+𝟏
+𝟎
+…
+𝟎
+𝟎
+𝟏
+…
+𝟎
+⋮
+⋮
+⋱
+⋮
+𝟎
+𝟎
+…
+𝟏
+𝑯𝟏: 𝝆=
+𝟏
+𝝆𝟏𝟐
+…
+𝝆𝟏𝒌
+𝝆𝟐𝟏
+𝟏
+…
+𝝆𝟐𝒌
+⋮
+⋮
+⋱
+⋮
+𝝆𝒌𝟏
+𝝆𝒌𝟐
+…
+𝟏
+≠𝑰=
+𝟏
+𝟎
+…
+𝟎
+𝟎
+𝟏
+…
+𝟎
+⋮
+⋮
+⋱
+⋮
+𝟎
+𝟎
+…
+𝟏
+𝝌𝑩𝒂𝒓𝒕𝒍𝒆𝒕𝒕
+𝟐
+= −
+𝒏−𝟏−
+𝟐 . 𝒌+𝟓
+𝟔
+. 𝒍𝒏𝑫   com  
+𝒌 . (𝒌−𝟏)
+𝟐
+    graus de liberdade
+11
+ 
+=== pág 12 ===
+
+Autovalores
+• A matriz de correlações (ρ) de dimensão K x K apresenta K autovalores (λ) obtidos como:
+• Solução do det(ρ – λ . I) = 0, que é equivalente a 
+𝟏−𝝀
+𝝆𝟏𝟐
+…
+𝝆𝟏𝒌
+𝝆𝟐𝟏
+𝟏−𝝀
+…
+𝝆𝟐𝒌
+⋮
+⋮
+⋱
+⋮
+𝝆𝒌𝟏
+𝝆𝒌𝟐
+…
+𝟏−𝝀
+= 𝟎
+• De onde obtém-se a equação característica da matriz; suas raízes são os autovalores
+• Os autovalores mostram o percentual da variância compartilhada pelas variáveis 
+originais para a formação de cada fator extraído, ou seja, mostram a quantidade 
+de informação contida em cada fator → quantidade de variância que é explicada 
+por cada fator
+12
+ 
+=== pág 13 ===
+
+Autovetores
+• Os autovetores da matriz de correlações (ρ) são obtidos para cada um dos autovalores
+• 𝒗𝟏𝒌, 𝒗𝟐𝒌 , 𝒗𝒌𝒌 são os autovetores para o K-ésimo autovalor (λ) e são obtidos como:
+𝟏−𝝀
+𝝆𝟏𝟐
+…
+𝝆𝟏𝒌
+𝝆𝟐𝟏
+𝟏−𝝀
+…
+𝝆𝟐𝒌
+⋮
+⋮
+⋱
+⋮
+𝝆𝒌𝟏
+𝝆𝒌𝟐
+…
+𝟏−𝝀
+.
+𝒗𝟏𝒌
+𝒗𝟐𝒌
+⋮
+𝒗𝒌𝒌
+=
+𝟎
+𝟎
+⋮
+𝟎
+ →
+𝟏−𝝀. 𝒗𝟏𝒌+ 𝝆𝟏𝟐. 𝒗𝟐𝒌+ ⋯+ 𝝆𝟏𝒌. 𝒗𝒌𝒌= 𝟎
+𝝆𝟐𝟏. 𝒗𝟏𝒌+ 𝟏−𝝀. 𝒗𝟐𝒌+ ⋯+ 𝝆𝟐𝒌. 𝒗𝒌𝒌= 𝟎
+⋮
+𝝆𝒌𝟏. 𝒗𝟏𝒌+ 𝝆𝒌𝟐. 𝒗𝟐𝒌+ ⋯+ 𝟏−𝝀. 𝒗𝒌𝒌= 𝟎
+• Os autovetores contêm as combinações das variáveis originais que expressam 
+os principais padrões das correlação nos dados, ou seja, como as variáveis se 
+comportam juntas e os contrastes entre elas. Assim, apresentam as dimensões 
+latentes do relacionamento entre as variáveis originais
+13
+ 
+=== pág 14 ===
+
+Obtenção dos fatores
+• Para extrair os fatores são necessários os scores fatoriais
+• Scores fatoriais: são os parâmetros que relacionam o fator com as variáveis originais, 
+representados em um modelo linear
+• Para K variáveis originais, existem, no máximo, K fatores (F1, F2, ... , FK)
+• Os scores fatoriais são obtidos a partir dos autovalores e autovetores provenientes da 
+matriz de correlações
+14
+ 
+=== pág 15 ===
+
+Scores fatoriais
+• Definindo os scores
+• A partir dos autovalores e autovetores, obtém-se os scores fatoriais s1k, s2k, ... , skk 
+• São gerados K grupos de scores (é o limite máximo dos K fatores possíveis)
+𝒔𝟏=
+𝒔𝟏𝟏
+𝒔𝟐𝟏
+⋮
+𝒔𝒌𝟏
+=
+𝒗𝟏𝟏
+𝝀𝟏
+𝒗𝟐𝟏
+𝝀𝟏
+⋮
+𝒗𝒌𝟏
+𝝀𝟏
+ 
+𝒔𝟐=
+𝒔𝟏𝟐
+𝒔𝟐𝟐
+⋮
+𝒔𝒌𝟐
+=
+𝒗𝟏𝟐
+𝝀𝟐
+𝒗𝟐𝟐
+𝝀𝟐
+⋮
+𝒗𝒌𝟐
+𝝀𝟐
+ 
+𝒔𝒌=
+𝒔𝟏𝒌
+𝒔𝟐𝒌
+⋮
+𝒔𝒌𝒌
+=
+𝒗𝟏𝒌
+𝝀𝒌
+𝒗𝟐𝒌
+𝝀𝒌
+⋮
+𝒗𝒌𝒌
+𝝀𝒌
+15
+ 
+=== pág 16 ===
+
+Obtenção dos fatores
+• Relações lineares para os K fatores
+• O valor do fator F é obtido com as variáveis X transformadas pelo Z-Score (ZX)
+• Tais fatores são ortogonais entre si, ou seja, não são correlacionados
+𝑭𝟏𝒊= 𝒗𝟏𝟏
+𝝀𝟏
+ . 𝒁𝑿𝟏𝒊+ 𝒗𝟐𝟏
+𝝀𝟏
+ . 𝒁𝑿𝟐𝒊+ ⋯+ 𝒗𝒌𝟏
+𝝀𝟏
+ . 𝒁𝑿𝒌𝒊
+𝑭𝟐𝒊= 𝒗𝟏𝟐
+𝝀𝟐
+ . 𝒁𝑿𝟏𝒊+ 𝒗𝟐𝟐
+𝝀𝟐
+ . 𝒁𝑿𝟐𝒊+ ⋯+ 𝒗𝒌𝟐
+𝝀𝟐
+ . 𝒁𝑿𝒌𝒊
+𝑭𝒌𝒊= 𝒗𝟏𝒌
+𝝀𝒌
+ . 𝒁𝑿𝟏𝒊+ 𝒗𝟐𝒌
+𝝀𝒌
+ . 𝒁𝑿𝟐𝒊+ ⋯+ 𝒗𝒌𝒌
+𝝀𝒌
+ . 𝒁𝑿𝒌𝒊
+16
+ 
+=== pág 17 ===
+
+Seleção de fatores
+• Todos os K fatores serão utilizados?
+• Embora seja possível estabelecer a priori quantos fatores são desejados, é fundamental 
+realizar uma análise por meio da magnitude dos autovalores
+• Lembrando: os autovalores indicam o percentual da variância compartilhada pelas 
+variáveis originais para a formação de cada fator
+• Neste sentido, fatores formados a partir de autovalores menores do que 1 podem não 
+ter representatividade. O critério de Kaiser (ou critério da raiz latente) indica que sejam 
+considerados apenas fatores correspondentes a autovalores > 1
+• Autovalor > 1: fator explica mais variância do que uma variável original isoladamente
+17
+ 
+=== pág 18 ===
+
+Cargas fatoriais
+• Análise da composição dos fatores
+• As cargas fatoriais mostram as correlações de Pearson entre os fatores e as variáveis 
+originais
+• Pode ser interpretada como a importância de cada variável original para a constituição 
+daquele fator em particular
+• Quanto maior a carga fatorial, mais aquele fator é influenciado pela variável original
+18
+ 
+=== pág 19 ===
+
+Comunalidades
+• Composição dos fatores selecionados
+• Ao utilizar o critério da raiz latente, apenas os fatores que são derivados de autovalores 
+maiores que 1 serão considerados
+• As comunalidades mostram a variância total compartilhada, para cada variável, em 
+todos os fatores extraídos e selecionados com base no critério da raiz latente
+• É possível analisar se houve perda de variância, por variável, após a exclusão dos 
+fatores por meio do critério da raiz latente
+• Quanta informação das variáveis originais são retidas nos fatores selecionados?
+19
+ 
+=== pág 20 ===
+
+Criação de rankings
+• Soma ponderada e ordenamento
+• Para criar rankings a partir dos fatores obtidos utilizando o critério da soma ponderada e 
+ordenamento, para cada observação da amostra, calcula-se:
+• Ri = (F1i x % var. comp. F1) + (F2i x % var. comp. F2)  + ... + (Fki x % var. comp. Fk)
+• Em resumo, multiplica-se o resultado obtido para cada fator pelo respectivo percentual 
+de variância compartilhada e depois é realizado o ordenamento do resultado da variável
+20
+ 
+=== pág 21 ===
+
+Referência / Sugestão de Leitura
+• Fávero, Luiz Paulo; Belfiore, Patrícia. (2024). Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. 2 ed. Rio de Janeiro: LTC.
+• Para revisar os conceitos de álgebra linear:
+• Anton, Howard; Rorres, Chris (2012). Álgebra Linear com Aplicações. 10 ed. Bookman.
+• Steinbruch, Alfredo; Winterle, Paulo (1995). Álgebra Linear. 1 ed. Pearson Universidades.
+21
+ 
+=== pág 22 ===
+
+Obrigado!
+Wilson Tarantin Junior | linkedin.com/in/wilson-tarantin-junior-359476190
+ 

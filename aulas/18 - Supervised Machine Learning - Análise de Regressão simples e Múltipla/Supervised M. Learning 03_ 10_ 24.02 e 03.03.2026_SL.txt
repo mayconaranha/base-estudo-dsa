@@ -1,0 +1,1050 @@
+# 18 - Supervised Machine Learning - Análise de Regressão simples e Múltipla / Supervised M. Learning 03, 10, 24.02 e 03.03.2026_SL.pdf
+
+=== pág 1 ===
+
+Supervised Machine 
+Learning:
+Análise de Regressão Simples
+e Múltipla
+Prof. Dr. Luiz Paulo Fávero
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+3
+
+=== pág 4 ===
+
+“Diferentes pesquisadores, a partir de uma mesma base de
+dados,
+podem
+estimar
+diferentes
+modelos
+e,
+consequentemente, obter diferentes valores previstos do
+fenômeno em estudo. O objetivo é estimar modelos que,
+embora simplificações da realidade, apresentem a melhor
+aderência possível entre os valores reais e os valores
+previstos”.
+Silberzahn, R.; Uhlmann, E. L. Many hands make
+tight work. Nature, v. 526, p. 189-191, Out 2015.
+Reflexão
+Modelos Supervisionados
+4
+
+=== pág 5 ===
+
+“Todos os modelos são simplificações.
+Em essência, todos os modelos estão 
+errados, mas alguns são úteis.”
+George E. P. Box
+(18/10/1919 – 28/03/2013)
+5
+
+=== pág 6 ===
+
+Reflexão
+Modelos Supervisionados
+6
+
+=== pág 7 ===
+
+Reflexão
+Modelos Supervisionados
+7
+
+=== pág 8 ===
+
+Reflexão
+Modelos Supervisionados
+8
+
+=== pág 9 ===
+
+Reflexão
+Modelos Supervisionados
+9
+
+=== pág 10 ===
+
+1 - Fundamentação teórica e conceitos em modelos de regressão;
+2 - Especificação dos modelos GLM;
+3 - Estimação dos parâmetros;
+4 – Variáveis preditoras qualitativas: variáveis dummy;
+5 - Procedimento Stepwise;
+6 - Teste de normalidade dos resíduos;
+7 - Modelos não lineares e transformação de Box-Cox;
+8 - Diagnósticos de multicolinearidade e heterocedasticidade;
+9 - Estimações em
+Agenda:
+10
+
+=== pág 11 ===
+
+X1
+X2
+X3
+X4
+Xk
+Y
+Modelos Supervisionados de Machine 
+Learning
+Modelos Lineares Generalizados (GLM)
+11
+
+=== pág 12 ===
+
+𝒀= 𝒇(𝑿𝟏, 𝑿𝟐, 𝑿𝟑, … , 𝑿𝒌)
+Modelos Lineares Generalizados (GLM)
+12
+
+=== pág 13 ===
+
+RELAÇÃO DE
+CAUSA E EFEITO?
+13
+
+=== pág 14 ===
+
+Correlação não Implica Causalidade
+Messerli, 
+F. 
+(2012). 
+Chocolate
+Consumption, Cognitive Function,
+and
+Nobel
+Laureates.
+The
+New
+England Journal of Medicine,
+v.
+367, p. 1562-1564.
+14
+
+=== pág 15 ===
+
+15
+
+=== pág 16 ===
+
+C:\Users\Luiz Paulo\Desktop\CAPA DATA SCIENCE\CAPA DATA SCIENCE FOR BUSINESS AND DECISION MAKING.png
+Modelos Supervisionados de Machine 
+Learning
+Modelos Lineares Generalizados (GLM)
+16
+
+=== pág 17 ===
+
+https://www.grupogen.com.br/manual-de-analise-de-dados-favero-e-belfiore
+Cupom de desconto para os alunos dos MBAs USP/Esalq
+Cupom FAVERO30 - 30% de desconto
+Validade: 30/04/2026
+Manual de Análise de Dados
+17
+
+=== pág 18 ===
+
+Regressão Linear Simples
+Objetivo: 
+Desenvolver uma equação linear que apresente a relação entre uma variável 
+dependente e uma variável explicativa.
+Equação linear de uma reta num plano cartesiano:
+𝒀𝒊= 𝜶+ 𝜷. 𝑿𝒊+ 𝒖𝒊 
+em que temos um intercepto (𝛼), um coeficiente de inclinação da reta (𝛽), uma 
+variável explicativa X e um termo de erro u.
+18
+
+=== pág 19 ===
+
+ARQUIVO
+“tempodist.xls”
+19
+
+=== pág 20 ===
+
+20
+
+=== pág 21 ===
+
+Análise de Regressão:
+Coeficiente de Ajuste do Modelo (R²)
+Indica o percentual de variância da variável Y que é devido ao 
+comportamento de variação conjunta da(s) variável(is) 
+explicativa(s) X. Varia de 0 a 1 e, quanto maior o coeficiente, 
+maior o poder preditivo do modelo de regressão, ou seja, 
+maior o poder de explicação do comportamento da variável 
+dependente frente ao comportamento da(s) variável(is) 
+explicativa(s).
+21
+
+=== pág 22 ===
+
+Análise de Regressão:
+Coeficiente de Ajuste do Modelo 
+(R²)
+22
+
+=== pág 23 ===
+
+Análise de Regressão:
+Estimação dos Parâmetros
+Critérios:
+1 – Soma dos erros igual a zero:  
+2 – Soma dos erros ao quadrado sendo a mínima possível:
+Parâmetros  e  podem ser estimados por meio do método dos 
+mínimos quadrados ordinários (MQO), em que a somatória dos 
+quadrados dos termos de erro é minimizada.
+1
+0
+n
+i
+i
+u
+=
+=
+
+2
+1
+mín
+n
+i
+i
+u
+=
+=
+
+23
+
+=== pág 24 ===
+
+SOLVER
+24
+
+=== pág 25 ===
+
+Análise de Regressão:
+Cálculo do R²
+(
+)
+(
+)
+(
+)
+2
+2
+1
+2
+2
+1
+1
+ˆ
+R
+ˆ
+n
+i
+i
+n
+n
+i
+i
+i
+i
+Y
+Y
+Y
+Y
+u
+=
+=
+=
+−
+=
+−
++
+
+
+
+25
+
+=== pág 26 ===
+
+Apenas Parâmetros e R² ?
+26
+
+=== pág 27 ===
+
+Apenas Parâmetros e R² ?
+27
+
+=== pág 28 ===
+
+Modelos de Regressão
+         no    
+28
+
+=== pág 29 ===
+
+▪Teste F: Permite analisar se pelo menos um dos ’s é estatisticamente 
+significante para a explicação do comportamento de Y.
+▪ Hipóteses: 
+H0: 𝛽1 = 𝛽2 = 𝛽3 = ⋯= 𝛽𝑘= 0
+   
+ 
+H1: pelo menos um 𝛽≠0
+Na rejeição da hipótese nula, pelo menos um dos ’s será 
+estatisticamente diferente de zero para explicar o comportamento 
+de Y → p-valor abaixo do nível crítico (5% (0,05), usualmente).
+Significância Estatística
+do Modelo
+29
+
+=== pág 30 ===
+
+▪ Teste 
+t: 
+Permite 
+analisar 
+se 
+cada 
+um 
+dos 
+parâmetros, 
+individualmente, é estatisticamente diferente de zero (no caso de 
+regressão simples, apresenta a mesma significância da estatística F).
+▪Hipóteses: 
+H0: 𝛽= 0
+   
+ 
+H1: 𝛽≠0
+Avalia-se a significância estatística de cada parâmetro do 
+modelo, para determinado nível de significância → p-valor abaixo 
+do nível crítico para cada parâmetro (5% (0,05), usualmente).
+Significância Estatística
+dos Parâmetros do Modelo
+30
+
+=== pág 31 ===
+
+Qual a diferença entre um modelo de regressão simples 
+para um modelo de regressão múltipla? 
+A inclusão de novas variáveis explicativas no modelo!
+A forma funcional passa a ser a seguinte:
+Yi =  + 1.X1i + 2.X2i + 3.X3i + ... + k.Xki + ui
+Regressão Múltipla
+31
+
+=== pág 32 ===
+
+Quando houver o intuito de se compararem os resultados das 
+estimações de dois modelos com quantidades distintas de 
+parâmetros e/ou obtidos a partir de amostras com tamanhos 
+diferentes, faz-se necessário o uso do R² ajustado.
+Comparação entre Modelos
+(
+)
+2
+2
+.
+1
+R
+1
+1
+R
+1
+ajust
+n
+n
+k
+−
+= −
+
+−
+−−
+n: tamanho da amostra;
+k: quantidade de variáveis X explicativas.
+32
+
+=== pág 33 ===
+
+Variáveis Preditoras Qualitativas:
+Variáveis Dummy em Modelos de Regressão
+33
+
+=== pág 34 ===
+
+▪ Modelagem com variáveis explicativas (X) 
+qualitativas.
+▪ É muito comum observar que diversas 
+variáveis explicativas podem se apresentar de 
+maneira qualitativa (exemplo: rating de crédito, 
+setor de atuação, etc.).
+▪ Dado que tais características não possuem 
+média e nem variância, como incorporá-las ao 
+modelo de regressão?
+Variáveis Explicativas (X) Qualitativas
+34
+
+=== pág 35 ===
+
+Variáveis dummy
+São variáveis categóricas que representam um 
+atributo por meio de combinação binária (0 para a 
+ausência ou 1 para presença).
+E quando tivermos uma variável categórica 
+com mais de uma categoria?
+Neste caso, devemos incluir n – 1 dummies, em que 
+n é a quantidade de categorias existentes na variável 
+original.
+Variáveis Explicativas (X) Qualitativas
+35
+
+=== pág 36 ===
+
+Modelos Não Lineares e
+Transformações de Box-Cox
+36
+
+=== pág 37 ===
+
+Modelos Não Lineares
+37
+
+=== pág 38 ===
+
+Modelos Não Lineares e
+Transformações de Box-Cox
+*
+1
+Box Cox
+Y
+Y
+
+
+−
+−
+=
+Qual o valor de  ( varia entre -∞ e +∞) que maximiza a 
+aderência da distribuição da nova variável Y* à normalidade?
+38
+
+=== pág 39 ===
+
+Especificação Linear ( = 1)
+Especificação Quadrática ( = 2)
+Especificação Cúbica ( = 3)
+Especificação de Raiz ( = 0,5)
+Especificação Inversa ( = -1)
+Especificação Semilogarítmica ( = 0)
+Expansão de Taylor
+1
+1
+2
+2
+.
+.
+...
+.
+k
+i
+k
+X
+X
+Y
+X
+
+
+
+
++
++
++
++
+=
+1
+1
+2
+2
+2
+.
+.
+...
+.
+k
+k
+i
+X
+X
+X
+Y
+
+
+
+
++
++
++
++
+=
+1
+1
+2
+3
+2
+.
+.
+...
+.
+k
+k
+i
+X
+X
+X
+Y
+
+
+
+
++
++
++
++
+=
+1
+1
+2
+2
+.
+..
+1
+.
+.
+.
+k
+k
+i
+X
+X
+Y
+X
+
+
+
+
++
++
++
++
+=
+1
+1
+2
+2
+.
+.
+...
+.
+k
+i
+k
+X
+X
+Y
+X
+
+
+
+
++
++
++
++
+=
+(
+)
+1
+1
+2
+2
+.
+.
+l
+...
+.
+n
+i
+k
+k
+X
+X
+X
+Y
+
+
+
+
+=
++
++
++
++
+Modelos Não Lineares e
+Transformações de Box-Cox
+39
+
+=== pág 40 ===
+
+1
+1
+2
+2
+.
+.
+...
+1
+.
+k
+k
+i
+i
+X
+X
+Y
+X
+u
+
+
+
+
+
+
++
++
++
++
+=
++
+−
+Modelos Não Lineares e
+Transformações de Box-Cox
+40
+
+=== pág 41 ===
+
+Diagnóstico de
+Multicolinearidade
+•
+Multicolinearidade: 
+consequência 
+da 
+existência 
+de 
+alta 
+correlação entre duas ou mais variáveis explicativas (preditoras).
+•
+Possibilidade de interpretações erradas pela eventual distorção 
+dos sinais dos parâmetros.
+•
+Erros nas predições.
+•
+Como detectar a multicolinearidade?
+◦Sinais inesperados dos coeficientes.
+◦Testes t não significantes e teste F significante.
+41
+
+=== pág 42 ===
+
+1
+3
+2
+1
+1
+1
+2
+1
+1
+2
+1
+3
+32
+31
+2
+22
+21
+1
+12
+11
+1
+3
+2
+1
+...
+...
+.
+...
+1
+...
+...
+...
+...
+...
+...
+1
+...
+1
+...
+1
+...
+nx
+n
+x
+k
+k
+nxk
+nk
+n
+n
+k
+k
+k
+nx
+n
+u
+u
+u
+u
+b
+b
+b
+a
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+Y
+Y
+Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++
++
+Y = X.b + U
+i
+ki
+k
+i
+i
+i
+u
+X
+X
+X
+Y
++
++
++
++
++
+=
+.
+...
+.
+.
+2
+2
+1
+1
+
+
+
+
+ = (X’X)-1(X’Y)
+Diagnóstico de
+Multicolinearidade
+42
+
+=== pág 43 ===
+
+Fontes Geradoras da
+Multicolinearidade
+1 - Existência de variáveis que apresentam a mesma tendência 
+durante alguns períodos, em decorrência da seleção de uma 
+amostra que inclua apenas observações referentes a estes 
+períodos.
+2 - Utilização de amostras com reduzido número de observações.
+3 - Utilização de valores defasados em algumas das variáveis 
+explicativas como “novas” explicativas.
+43
+
+=== pág 44 ===
+
+Consequências da
+Multicolinearidade (Exemplo)
+(1) Correlação Baixa:
+de onde vem que det(X’X) = 25 e, portanto:
+
+
+
+
+=
+3
+2
+4
+1
+X
+
+
+
+
+=
+25
+10
+10
+5
+X
+X'
+(
+)
+
+
+
+
+−
+−
+=
+−
+2
+0
+4
+0
+4
+0
+1
+1
+,
+,
+,
+X
+X'
+𝒀𝒊= 𝜶+ 𝜷𝟏. 𝑿𝟏𝒊+ 𝜷𝟐. 𝑿𝟐𝒊
+44
+
+=== pág 45 ===
+
+Consequências da
+Multicolinearidade (Exemplo)
+(2) Correlação Muito Alta:
+de onde vem que det(X’X) = 0,01 e, portanto:
+
+
+
+
+=
+9
+7
+2
+4
+1
+,
+X
+
+
+
+
+=
+41
+78
+8
+19
+8
+19
+5
+,
+,
+,
+X
+X'
+(
+)
+
+
+
+
+−
+−
+=
+−
+500
+980
+.1
+980
+.1
+841
+.7
+1
+X
+X'
+45
+
+=== pág 46 ===
+
+Consequências da
+Multicolinearidade
+1 – As significâncias estatísticas dos parâmetros  = (X’X)-1X’Y são 
+sensíveis às correlações entre as variáveis explicativas.
+2 – Os elementos da diagonal principal da matriz (X’X)-1 aparecem 
+no denominador da estatística t. Como a presença da 
+multicolinearidade gera valores muito altos na diagonal da referida 
+matriz, como vimos, ocorre a redução no valor da estatística t, sem 
+alteração no cálculo da estatística F.
+46
+
+=== pág 47 ===
+
+Identificação da
+Multicolinearidade
+Regressões auxiliares entre cada uma das explicativas e as demais explicativas:
+X2 = 1 + 2.X3 + ... + k-1.Xk
+X3 = 1 + 2.X2 + ... + k-1.Xk
+...
+Xk = 1 + 2.X2 + ... + k-1.Xk-1
+em que o Rp² é o coeficiente de ajuste da regressão da variável explicativa Xp (p = 
+2, 3, ..., k) com as demais variáveis explicativas.
+Estatísticas VIF (Variance Inflation Factor) e Tolerance:
+Tolerance = 1 – Rp²
+VIF = 1 / Tolerance
+47
+
+=== pág 48 ===
+
+Diagnóstico de
+Heterocedasticidade
+Variável
+explicada
+Variável
+explicativa
+Variável
+explicada
+Variável
+explicativa
+Variável
+dependente
+Variável
+dependente
+Variável
+explicativa
+Variável
+explicativa
+48
+
+=== pág 49 ===
+
+49
+Sugestões de Leituras/Referências
+•
+FÁVERO, L. P.; BELFIORE, P. Data science for business and decision making. Cambridge: Academic Press, 
+2019.
+•
+FÁVERO, L. P.; BELFIORE, P. Manual de análise de dados: estatística e machine learning com Excel®, SPSS®, 
+Stata®, R® e Python®. Rio de Janeiro: GEN, 2024.
+•
+GUJARATI, D. N. Econometria básica. 5. ed. Porto Alegre: Bookman, 2011.
+•
+HEISS, F.; BRUNNER, D. Using Python for introductory econometrics. Independently Published, 2020.
+•
+KUTNER, M. H.; NACHTSHEIN, C. J.; NETER, J. Applied linear regression models. 4. ed. Chicago: Irwin, 2004.
+•
+McNULTY, K. Handbook of regression modeling in people analytics: with examples in R and Python. New York: 
+CRC Press, 2022.
+•
+OSWALD, F.; VIERS, V.; ROBIN, J.-M.; VILLEDIEU, P.; KENEDI, G. Introduction to econometrics with R. Syllabus, 
+2020. https://scpoecon.github.io/ScPoEconometrics/
+•
+WOOLDRIDGE, J. M. Introductory econometrics: a modern approach. 5. ed. Mason: Cengage Learning, 2012.
+•
+https://itforum.com.br/coluna/machine-learning-e-modelos-supervisionados-o-uso-correto-do-glm-na-tomada-de-
+decisao/
+
+=== pág 50 ===
+
+Obrigado!
+Prof. Dr. Luiz Paulo Fávero |

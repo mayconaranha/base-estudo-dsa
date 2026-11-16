@@ -1,0 +1,1551 @@
+# 26 - Pesquisa Operacional e Modelos de Otimização / Pesquisa Operacional 18.08.2026_SL.pdf
+
+=== pág 1 ===
+
+Pesquisa Operacional e 
+Modelos de Otimização II
+Prof. Dr. Cassiano Augusto Isler
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+3
+
+Agenda da aula
+• Métodos de Solução de Modelos de Otimização
+• Solução Gráfica
+• Motivação para Solução Analítica
+• Softwares para Resolução de Modelos de Otimização
+• Solver
+• Biblioteca Python
+• Exemplos de Solução de Modelos Matemáticos
+
+=== pág 4 ===
+Métodos de Solução de
+Modelos de Otimização
+Solução Gráfica
+Motivação para Solução Analítica
+4
+4
+
+
+=== pág 5 ===
+5
+
+Métodos de Solução de Modelos de Otimização
+Entender o problema
+Identificar em palavras as respostas
+que se busca para o problema
+Descrever a função
+objetivo (em palavras)
+Descrever cada restrição
+(em palavras)
+Identificar as
+variáveis de decisão
+Escrever a equação (linear) da função
+objetivo em função das variáveis de decisão
+Escrever a equação (linear) de 
+cada restrição em termos das 
+variáveis de decisão
+MODELO MATEMÁTICO
+• Relembrando as etapas para construção de um modelo de otimização
+
+=== pág 6 ===
+6
+
+Métodos de Solução de Modelos de Otimização
+• Exemplo – Problema de Corte de Bobinas de Aço 
+Uma pequena metalúrgica busca maximizar sua receita com a venda de dois tipos fitas de 
+aço, que se diferenciam pela qualidade do acabamento de corte. Essas fitas são obtidas a 
+partir do corte de bobinas de grande largura, utilizando duas máquinas disponíveis na 
+produção. A primeira máquina, mais antiga, possui capacidade de corte diário de até 
+4.000 metros de fita, enquanto a segunda, mais moderna, consegue cortar até 6.000 
+metros por dia. O lucro obtido pela venda das fitas depende da máquina utilizada: a 
+produção na máquina antiga gera um lucro de R$0,3 por metro cortado, enquanto a 
+produção na máquina moderna rende R$0,5 por metro cortado. No que se refere à mão 
+de obra, cada mil metros de fita cortada na máquina antiga requer 3 homens-hora, ao 
+passo que a máquina moderna consome apenas 2 homens-hora por mil metros. 
+Considerando que a disponibilidade diária de mão de obra é de 18 homens-hora para 
+operar ambas as máquinas, o objetivo é determinar quanto produzir em cada máquina de 
+modo a maximizar o lucro total da metalúrgica.
+Fonte: adaptado de Goldbarg, M.C; Luna, H.P.L. (2005) Otimização combinatória e programação linear: modelos e algoritmos. 2.ed. Rio de Janeiro: Elsevier. Pág. 104.
+
+=== pág 7 ===
+7
+
+Métodos de Solução de Modelos de Otimização
+• VARIÁVEIS DE DECISÃO
+ 
+Quantidade metros de fita cortados na máquina antiga (𝑥)
+ 
+Quantidade metros de fita cortados na máquina moderna (𝑦)
+ 
+• FUNÇÃO OBJETIVO
+ 
+“... quanto produzir em cada máquina de modo a maximizar o lucro total da metalúrgica”
+A função objetivo é maximizar o lucro total diário da metalúrgica dado que cada metro de fita cortada gera 
+receita de R$0,3 na máquina antiga e R$0,5 na máquina moderna.
+ 
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+• Exemplo – Problema de Corte de Bobinas de Aço 
+
+=== pág 8 ===
+8
+
+Métodos de Solução de Modelos de Otimização
+• Restrição de Capacidade de Corte da Máquina Antiga: “... antiga, possui capacidade de corte diário de até 
+4.000 metros de fita ...”
+𝑥≤ 4000 (metros)
+• Restrição de Capacidade de Corte da Máquina Moderna: “... moderna consegue cortar até 6.000 metros por 
+dia ...”
+𝑦≤ 6000 (metros)
+• Restrição de Disponibilidade de Mão-de-Obra: “... cada mil metros de fita cortada na máquina antiga requer 3 
+homens-hora, ao passo que a máquina moderna consome apenas 2 homens-hora por mil metros. Considerando 
+que a disponibilidade diária de mão de obra é de 18 homens-hora ...”
+3
+1000 𝑥+
+2
+1000 𝑦≤18 → 3𝑥+ 2𝑦≤18000 (homens-hora)
+• Restrição de Domínio das Variáveis: somente valores maiores ou igual a zero (não negativas).
+𝑥, 𝑦≥ 0
+• RESTRIÇÕES
+• Exemplo – Problema de Corte de Bobinas de Aço 
+
+=== pág 9 ===
+9
+
+Métodos de Solução de Modelos de Otimização
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+(Maximização do lucro total diário da metalúrgica )
+sujeito a
+ 
+ 𝑥 ≤ 4000 
+ 
+(Restrição de Capacidade de Corte da Máquina Antiga)
+ 
+ 𝑦≤ 6000 
+ 
+(Restrição de Capacidade de Corte da Máquina Moderna)
+ 
+3𝑥+ 2𝑦≤18000 
+(Restrição de Disponibilidade de Mão-de-Obra)
+ 
+𝑥, 𝑦≥ 0 
+ 
+(Restrição de Domínio das Variáveis)
+• Exemplo – Problema de Corte de Bobinas de Aço 
+• MODELO MATEMÁTICO
+
+=== pág 10 ===
+10
+
+Métodos de Solução de Modelos de Otimização
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 sujeito a 
+ 𝑥 ≤ 4000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 𝑦≤ 6000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 3𝑥+ 2𝑦≤18000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 𝑥, 𝑦≥ 0 
+ 
+• Como obter a solução que maximiza a função objetivo?
+• Qual a combinação de valores de 𝒙 e 𝒚 que maximiza o valor de 𝒁?
+• Algumas possibilidades:
+• Enumeração (inviável pela quantidade infinita de combinações possíveis)
+• Método Gráfico
+• Solução Analítica
+
+=== pág 11 ===
+11
+
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+
+=== pág 12 ===
+12
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+
+=== pág 13 ===
+13
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+
+=== pág 14 ===
+14
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+
+=== pág 15 ===
+15
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+
+=== pág 16 ===
+16
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+3𝑥+ 2𝑦= 18000
+𝑥𝐴; 𝑦𝐴= (2000; 4000)
+A
+3 . 2000 + 2 . 4000 = 6000 + 8000 = 14000 < 18000
+
+=== pág 17 ===
+17
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+sujeito a 
+ 
+𝑥≥ 0 
+ 
+𝑦≥0 
+ 
+𝑥 ≤ 4000
+ 
+𝑦≤ 6000 
+ 
+3𝑥+ 2𝑦≤18000
+Região Factível
+
+=== pág 18 ===
+18
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Como representar a função 
+objetivo?
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦
+Construa retas cujos pares 
+(𝑥; 𝑦) resultem no mesmo 
+valor de 𝑍.
+
+=== pág 19 ===
+19
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Como representar a função 
+objetivo?
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦
+𝑥𝐴; 𝑦𝐴=
+0; 3000
+            𝑍= 0,3.0 + 0,5. 3000           
+= 0 + 1500
+               = 1500
+𝑥𝐵; 𝑦𝐵= 5000; 0
+ 
+𝑍= 0,3.5000 + 0,5. 0
+ = 1500 + 0
+                      = 1500
+B
+𝑍=1500
+A
+
+=== pág 20 ===
+20
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Como representar a função 
+objetivo?
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦
+𝑥𝐶; 𝑦𝐶=
+0; 6000
+            𝑍= 0,3.0 + 0,5.6000
+           
+= 0 + 3000 = 3000
+𝑥𝐷; 𝑦𝐷=
+5000; 3000
+           𝑍 = 0,3.5000 + 0,5.3000
+                = 1500 + 1500
+                = 3000
+D
+𝑍=3000
+𝑍=1500
+C
+
+=== pág 21 ===
+21
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Como representar a função 
+objetivo?
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦
+𝑥𝐶; 𝑦𝐶=
+0; 6000
+            𝑍= 0,3.0 + 0,5.6000
+           
+= 0 + 3000 = 3000
+𝑥𝐷; 𝑦𝐷=
+5000; 3000
+           𝑍 = 0,3.5000 + 0,5.3000
+                = 1500 + 1500
+                = 3000
+𝒁 aumenta
+𝑍=3000
+𝑍=1500
+D
+C
+
+=== pág 22 ===
+22
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO GRÁFICA
+Onde está a solução 
+ótima?
+Maximizar 𝑍= 0,3𝑥+ 0,5𝑦
+Solução ótima
+(𝒙∗; 𝒚∗) = (2000; 6000)
+𝑍∗= 0,3.2000 + 0,5.6000
+            = 600 + 3000
+            =3600
+𝑍∗=3600
+limite de aumento de 𝒁
+(𝒙∗, 𝒚∗)
+𝑍=3000
+𝑍=1500
+
+=== pág 23 ===
+23
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• Solução Analítica
+Método Simplex
+Percorre os vértices da 
+região factível até que a 
+função objetivo não 
+possa ser melhorada (ter 
+o valor aumentado) 
+considerando as 
+restrições do modelo.
+
+=== pág 24 ===
+24
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO ANALÍTICA
+Método Simplex
+Solução inicial
+𝑥1; 𝑦1 = 0; 0
+𝑍 = 0,3.0 + 0,5.0 = 0
+1
+
+=== pág 25 ===
+25
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO ANALÍTICA
+Método Simplex
+Movimento para direção de 
+maior crescimento da função 
+objetivo
+𝑥2; 𝑦2 = 0; 6000
+𝑍 = 0,3.0 + 0,5.6000
+= 3000
+1
+2
+
+=== pág 26 ===
+26
+
+𝑦
+𝑥
+Metros cortados na máquina antiga
+Metros cortados na máquina moderna
+1000
+2000
+3000
+4000
+0
+2000
+3000
+4000
+1000
+5000
+6000
+5000
+Métodos de Solução de Modelos de Otimização
+• SOLUÇÃO ANALÍTICA
+Método Simplex
+Movimento para direção de maior 
+crescimento da função objetivo
+𝑥3; 𝑦3 = 𝑥∗; 𝑦∗= 2000; 6000
+𝑍∗= 0,3.2000 + 0,5.6000
+= 3600
+Solução ótima!
+3
+limite de aumento de 𝒁
+(𝒙∗; 𝒚∗)
+1
+2
+
+=== pág 27 ===
+Softwares para Resolução de
+Modelos de Otimização
+Solver
+Biblioteca Python
+27
+27
+
+
+=== pág 28 ===
+28
+
+Softwares para resolução de modelos de otimização
+• Resolver os problemas graficamente não é viável (modelos realistas possuem muitas variáveis e restrições)
+• Implementação dos métodos de solução (Simplex e outros) em linguagens de programação e softwares
+Solver do Excel
+Pacotes e softwares especializados
+
+=== pág 29 ===
+29
+
+Softwares para resolução de modelos de otimização
+• Solver do Excel – Instalação
+1.Opções do Excel: No Excel, clique em “Arquivo" (File) e, em seguida, em "Opções" (Options).
+2.Suplementos: No painel esquerdo, clique em "Suplementos" (Add-Ins).
+3.Gerir Suplementos do Excel: Na parte inferior do painel, selecione "Suplementos do Excel" (Excel Add-Ins) 
+e clique em "Ir..." (Go...).
+4.Suplementos Disponíveis: Na janela "Suplementos do Excel", marque a caixa de seleção ao lado de 
+"Solver" (Solver Add-in).
+5.OK: Clique em "OK" para concluir a instalação.
+ZooSimples. 2023. Como instalar o suplemento solver no EXCEL. 
+Disponível em: https://www.youtube.com/watch?v=aV-KzmqcZ_Y
+
+=== pág 30 ===
+30
+
+Softwares para resolução de modelos de otimização
+• Solver do Excel – Exemplo Corte de Bobinas de Aço
+
+=== pág 31 ===
+31
+
+Softwares para resolução de modelos de otimização
+• Solver do Excel – Exemplo Corte de Bobinas de Aço
+
+=== pág 32 ===
+32
+
+Softwares para resolução de modelos de otimização
+• Solver do Excel – Exemplo Corte de Bobinas de Aço
+
+=== pág 33 ===
+33
+
+Softwares para resolução de modelos de otimização
+• Solver do Excel – Exemplo Corte de Bobinas de Aço
+Solver 
+Objetivo
+Variáveis 
+de decisão
+Restrições
+Método 
+de 
+solução
+
+=== pág 34 ===
+34
+
+Softwares para resolução de modelos de otimização
+Requisito
+Python 3.9 ou superior
+Instalação
+pip install pulp
+• Pacote PuLP para solução de modelos de programação linear
+
+=== pág 35 ===
+35
+
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Definição do 
+modelo
+prob = LpProblem(“Corte_Bobinas", LpMaximize)
+variável do modelo 
+PuLP
+função PuLP
+nome do modelo
+objetivo
+
+=== pág 36 ===
+36
+
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Variáveis de 
+decisão
+x = LpVariable("x", lowBound=lower, upbound = upper, cat='Continuous')
+variável de decisão 
+PuLP
+função PuLP
+nome da variável
+valor mínimo
+(opcional)
+tipo de variável
+(contínua, inteira, binária)
+valor máximo
+(opcional)
+
+=== pág 37 ===
+37
+
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Função objetivo
+prob += 0.3 * x + 0.5 * y
+variável do modelo 
+PuLP
+modelo “recebe adicionando a 
+função objetivo”
+combinação de variáveis 
+e respectivos pesos
+
+=== pág 38 ===
+38
+
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Restrições
+variável do modelo 
+PuLP
+modelo “recebe 
+adicionando a restrição”
+combinação de variáveis 
+e respectivos pesos
+prob += 3 * x + 2 * y <= 18000
+condição
+limite
+
+=== pág 39 ===
+39
+
+prob .solve
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Solução
+variável do modelo 
+PuLP
+resolve o 
+modelo
+
+=== pág 40 ===
+40
+
+Softwares para resolução de modelos de otimização
+• Pacote PuLP para solução de modelos de programação linear
+• Funções básicas
+Resultados
+LpStatus[prob.status]
+x.varValue
+value(prob.objective)
+status da solução
+valor da variável de decisão
+valor da função objetivo
+
+=== pág 41 ===
+41
+
+Softwares para resolução de modelos de otimização
+• Exemplo Corte de Bobinas de Aço
+
+=== pág 42 ===
+42
+
+Softwares para resolução de modelos de otimização
+• Exemplo Corte de Bobinas de Aço
+importa pacote
+define problema
+define variáveis de decisão
+define função objetivo
+adiciona restrições
+resolve o problema
+imprime resultados
+
+=== pág 43 ===
+
+Exemplos de Solução de
+Modelos Matemáticos
+43
+43
+
+
+=== pág 44 ===
+44
+
+Exemplos de Solução de Modelos Matemáticos
+• Exemplo – Horas de Estudo
+Com seus conhecimentos de curso, um aluno estima que poderia se preparar para o exame 
+de uma disciplina 𝑫𝟏em 20 horas de estudo intensivo. Para outra disciplina 𝑫𝟐ele precisa 
+de 25 horas. Para passar, precisa obter no mínimo 50 pontos de 100 em cada uma das 
+disciplinas. Além disso, deseja alcançar a maior média ponderada possível, sendo que as 
+disciplinas 𝑫𝟏e 𝑫𝟐têm peso 3 e 5, respectivamente. Ele dispõe de apenas 30 horas para 
+estudar. Qual a melhor distribuição de horas de estudo considerando a proporcionalidade 
+entre o esforço e o rendimento dos seus estudos?
+Fonte: Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. Disponível em: https://www.mpsantos.com.br/Plinear.pdf. Página 29.
+
+=== pág 45 ===
+45
+
+Exemplos de Solução de Modelos Matemáticos
+• VARIÁVEIS DE DECISÃO
+ 
+Quantidade de horas dedicadas à disciplina 1 (𝐻1)
+ 
+Quantidade de horas dedicadas à disciplina 2 (𝐻2)
+• FUNÇÃO OBJETIVO
+“Qual a melhor distribuição de horas de estudo considerando a proporcionalidade entre o esforço e o rendimento 
+dos seus estudos?”
+A função objetivo é maximizar a média ponderada.
+ 
+Maximizar 𝑍 = 
+3. 5.𝐻1 +5.(4.𝐻2)
+3+5
+=
+15.𝐻1+20.𝐻2
+8
+        onde 𝐻1 = quantidade de horas dedicadas à disciplina 1
+                                
+ 
+            
+ 
+            
+ 𝐻2 = quantidade de horas dedicadas à disciplina 2
+• Exemplo – Horas de Estudo
+
+=== pág 46 ===
+46
+
+Exemplos de Solução de Modelos Matemáticos
+• Restrição de Tempo Disponível: “... dispõe de apenas 30 horas ...”
+𝐻1 + 𝐻2 ≤ 30 (horas de estudo)
+• Restrição de pontos mínimos : “... mínimo 50 pontos de 100 em cada uma das disciplinas...”
+Disciplina 1: 5.𝐻1 ≥ 50 → 𝐻1 ≥10 (horas de estudo)
+Disciplina 1: 4.𝐻2 ≥ 50 → 𝐻2 ≥12,5 (horas de estudo)
+• Restrição de Domínio das Variáveis: somente valores maiores ou igual a zero (não negativas).
+𝐻1, 𝐻2 ≥ 0
+• RESTRIÇÕES
+• Exemplo – Horas de Estudo
+
+=== pág 47 ===
+47
+
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+(Maximização da média ponderada)
+sujeito a
+ 
+ 𝐻1 ≥10
+(Restrição de Nota Mínima na Disciplina 1)
+ 
+ 𝐻2 ≥12,5
+(Restrição de Nota Mínima na Disciplina 2)
+ 
+ 𝐻1+𝐻2 ≤ 30 
+ 
+(Restrição de Tempo Disponível)
+ 
+ H1, 𝐻2 ≥ 0
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+• Exemplo – Horas de Estudo
+
+=== pág 48 ===
+48
+
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 𝐻1 + 𝐻2 ≤ 30 
+ 
+ 
+𝐻1, 𝐻2 ≥ 0 
+ 
+• Exemplo – Horas de Estudo
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+• SOLUÇÃO GRÁFICA
+
+=== pág 49 ===
+49
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 𝐻1 + 𝐻2 ≤ 30 
+ 
+ 
+𝐻1, 𝐻2 ≥ 0 
+ 
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+
+=== pág 50 ===
+50
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 𝐻1 + 𝐻2 ≤ 30 
+ 
+ 
+𝐻1, 𝐻2 ≥ 0 
+ 
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+
+=== pág 51 ===
+51
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 𝐻1 + 𝐻2 ≤ 30 
+ 
+ 
+𝐻1, 𝐻2 ≥ 0 
+ 
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+Região Factível
+𝐻1 + 𝐻2 = 30 
+𝐻1
+𝐴; 𝐻2
+𝐴= (10, ; 15)
+A
+10 + 15 = 25 < 30
+
+=== pág 52 ===
+52
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+𝐻1
+𝐴; 𝐻2
+𝐴=
+0; 20
+              𝑍= (15.0 + 20.20)/8
+           
+= (0 + 400)/8 = 50
+𝐻1
+𝐵; 𝐻2
+𝐵=
+10; 12,5
+             𝑍 = (15.10 + 20.12,5)/8
+                  = (150 + 250)/8=50
+ 
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+A
+B
+𝑍= 50
+
+=== pág 53 ===
+53
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+𝑍= 60
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+𝐻1
+𝐶; 𝐻2
+𝐶=
+15; 12,75
+              𝑍= (15.15 + 20.12,75)/8
+           
+= (225 + 255)/8 = 60
+𝐻1
+𝐷; 𝐻2
+𝐷=
+25; 5,25
+             𝑍 = (15.25 + 20.5,25)/8
+                  = (375 + 105)/8 = 60 
+D
+C
+𝑍= 50
+
+=== pág 54 ===
+54
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+𝒁 aumenta
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+𝑍= 60
+𝑍= 50
+
+=== pág 55 ===
+55
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• SOLUÇÃO GRÁFICA
+• Exemplo – Horas de Estudo
+limite de aumento de 𝒁
+(𝑯𝟏
+∗; 𝑯𝟐
+∗)
+𝑍∗= 68,75
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+Solução ótima
+(𝑯𝟏
+∗; 𝑯𝟐
+∗) = (𝟏𝟎; 𝟐𝟎)
+𝑍∗= 15.10 + 20.20 /8
+= (150 + 400)/8
+                 = 68,75
+𝑍= 50
+𝑍= 60
+
+=== pág 56 ===
+56
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• Exemplo – Horas de Estudo
+Método Simplex
+Percorre os vértices da 
+região factível até que a 
+função objetivo não 
+possa ser melhorada (ter 
+o valor aumentado) 
+considerando as 
+restrições do modelo.
+• SOLUÇÃO ANALÍTICA
+
+=== pág 57 ===
+57
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• Exemplo – Horas de Estudo
+Solução inicial
+𝐻1
+1; 𝐻2
+1 = 10, 12,5
+𝑍 = (15.10 + 20. 12,5)/8
+= (150 + 250)/8
+= 50
+• SOLUÇÃO ANALÍTICA
+1
+
+=== pág 58 ===
+58
+
+𝐻1
+Horas de estudo na disciplina 1
+Horas de estudo na disciplina 2
+5
+0
+10
+15
+20
+5
+25
+30
+10
+15
+20
+25
+30
+35
+𝐻2
+Exemplos de Solução de Modelos Matemáticos
+• Exemplo – Horas de Estudo
+• SOLUÇÃO ANALÍTICA
+Movimento para direção de maior 
+crescimento da função objetivo
+(𝐻1
+2; 𝐻2
+2) = (𝐻1
+∗; 𝐻2
+∗) = (10; 20)
+𝑍∗ = (15.10 + 20. 20)/8
+= (150 + 400)/8
+= 68,75
+Solução ótima!
+limite de aumento de 𝒁
+(𝑯𝟏
+∗; 𝑯𝟐
+∗)
+2
+1
+
+=== pág 59 ===
+59
+
+Exemplos de Solução de Modelos Matemáticos
+• SOLUÇÃO Solver Excel
+• Exemplo – Horas de Estudo
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 𝐻1 + 𝐻2 ≤30 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 
+H1, 𝐻2 ≥0 
+ 
+
+=== pág 60 ===
+60
+
+Exemplos de Solução de Modelos Matemáticos
+Maximizar 𝑍 = 15.𝐻1+20.𝐻2
+8
+ 
+sujeito a
+ 
+ 𝐻1 + 𝐻2 ≤30 
+ 
+ 𝐻1 ≥10 
+ 
+ 𝐻2 ≥12,5 
+ 
+ 
+H1, 𝐻2 ≥0 
+ 
+• SOLUÇÃO PuLP
+• Exemplo – Horas de Estudo
+
+=== pág 61 ===
+
+Leitura Recomendada
+Bibliografia
+Motivação para próxima aula
+61
+61
+
+
+=== pág 62 ===
+62
+
+Leitura Recomendada
+Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. 
+Disponível em: https://www.mpsantos.com.br/Plinear.pdf (Capítulo 1, pág. 1 – 9; Capítulo 
+2, pág. 33 – 43).
+Goldbarg, M.C; Luna, H.P.L. (2005) Otimização combinatória e programação linear: modelos 
+e algoritmos. 2.ed. Rio de Janeiro: Elsevier. (Capítulo 3, pág. 96–105)
+
+=== pág 63 ===
+63
+
+Bibliografia
+Bradley, S. P.; Hax, A. C.; & Magnanti (1977). Applied Mathematical Programming Addison-Wesley 
+Pub. Co. Reading, Mass. http://web.mit.edu/15.053/www/AMP.htm
+Arenales, M. N.; Armentano, V. A.; Morabito Neto, R.; & Yanasse, H. H. (2007). Pesquisa Operacional. 
+Elsevier, 1ª edição.
+Winston, W. L. (2004). Operations research: Applications and Algorithms. Thomson Learning, Inc.
+
+=== pág 64 ===
+64
+
+Motivação para próxima aula
+• Venda de livros
+Qual a combinação de caixas leves (L) e mistas 
+(M) que maximiza a quantidade de livros?
+Maximizar 6𝐿 + 7𝑀
+sujeito a
+ 
+ 𝐿 + 𝑀 ≤  10 
+ 
+𝑀 ≤  7 
+ 
+ 
+5𝑀 + 65 ≥ 80 
+ 
+ 
+6𝐿 + 2𝑀 + 40 ≥ 80 
+ 
+𝐿, 𝑀 ∈ ℤ+
+• Nova ala de hospital
+Qual a combinação de tipos de quartos construídos que 
+maximiza a receita mensal? 
+Maximizar 𝑅 = 7500𝑞1+6000𝑞2+4500𝑞3
+sujeito a
+10𝑞1+ 15𝑞2 + 18𝑞3 ≤1200
+𝑞1 + 𝑞2 + 𝑞3 ≥ 70
+𝑞1 ≤ 30
+𝑞1 + 2𝑞2 + 3𝑞3 ≥ 120
+𝑞1, 𝑞2,𝑞3 ∈ℤ+ 
+• O que acontece quando as variáveis de decisão são números inteiros?
+• Como resolver o problema quando há mais de duas variáveis?
+
+=== pág 65 ===
+
+Obrigado!
+Prof. Cassiano Augusto Isler | linkedin.com/in/cassiano-isler/

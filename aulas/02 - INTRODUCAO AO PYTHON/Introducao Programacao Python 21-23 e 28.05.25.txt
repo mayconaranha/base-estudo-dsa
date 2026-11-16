@@ -1,0 +1,297 @@
+# 02 - INTRODUCAO AO PYTHON / Introducao Programacao Python 21-23 e 28.05.25.pdf
+
+=== pág 1 ===
+
+Introdução à Programação 
+com Python
+Prof. Dr. Wilson Tarantin Junior
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Introdução ao Machine Learning
+3
+
+=== pág 4 ===
+
+Machine learning
+4
+• Definição
+• Podem ser encontradas muitas definições para o conceito machine learning
+• Porém, de forma geral, pode-se entender como a utilização dos dados e de algoritmos 
+(que contêm métodos estatísticos) para a produção de informações relevantes para a 
+tomada de decisão
+• Por exemplo: analisando a interdependência entre os dados e/ou criando modelos 
+preditivos
+• Envolve a coleta de dados, o tratamento dos dados brutos e a escolha e implementação 
+da técnica adequada às características dos dados
+
+=== pág 5 ===
+
+Banco de dados
+• Definição e composição
+• O banco de dados é o objeto onde estão armazenadas as informações de interesse 
+para a análise em questão
+• Em muitos casos, o banco de dados contém uma amostra, que nada mais é do que um 
+subconjunto extraído da população
+• O banco de dados é composto por variáveis e por observações
+• Observações: as unidades que têm suas características e atributos medidos
+• Variáveis: características/atributos observados, medidos ou categorizados
+5
+
+=== pág 6 ===
+
+Banco de dados
+• Estrutura para uso
+• Normalmente, o banco de dados é montado com variáveis em colunas e observações 
+em linhas em uma estrutura tabular
+6
+
+=== pág 7 ===
+
+Tipos de variáveis
+• As variáveis podem ser divididas em
+• Métricas: são as variáveis quantitativas, isto é, apresentam características que podem 
+ser mensuradas ou contadas
+• Não métricas: são as variáveis qualitativas, indicam características que não podem ser 
+medidas. Tais variáveis contêm categorias, por isto, muitas vezes, são chamadas de 
+variáveis categóricas
+• A identificação do tipo de variável é fundamental para a escolha da ferramenta 
+estatística que será utilizada na análise dos dados
+7
+
+=== pág 8 ===
+
+Variáveis qualitativas
+• Características principais
+• As variáveis qualitativas têm sua representação feita por meio de tabelas de distribuição 
+de frequências ou gráficos
+• Não é possível calcular medidas de resumo como média ou desvio padrão para elas
+• Exemplos: escalas likert, nacionalidade, cor do veículo, profissão...
+8
+
+=== pág 9 ===
+
+Variáveis quantitativas
+• Características principais
+• As variáveis quantitativas podem ser representadas por diversas ferramentas, como 
+gráficos, medidas de posição ou localização, dispersão e de forma. A seguir, alguns 
+exemplos:
+• Medidas de posição ou localização: média, mediana e quartis
+• Medidas de dispersão: variância e desvio padrão
+• Medidas de forma: assimetria e curtose
+• Exemplos: idade, renda em Reais, número de habitantes no município, distância em 
+metros, rentabilidade percentual de uma empresa...
+9
+
+=== pág 10 ===
+
+Detalhando as variáveis
+• Outras características relevantes
+• Variáveis qualitativas: dicotômica ou policotômica; nominal ou ordinal
+• Dicotômica: duas categorias (binária); Policotômica: mais de duas categorias
+• Nominal: não estabelece relação de grandeza/ordem; Ordinal: estabelece ordem
+• Variáveis quantitativas: discretas ou contínuas
+• Discretas: possuem conjunto finito e numerável de valores, em geral, são obtidas a 
+partir de dados de contagem (0, 1, 2, 3, 4, 5...)
+• Contínuas: assumem valores pertencentes ao intervalo de números reais
+10
+
+=== pág 11 ===
+
+Variáveis e técnicas
+• Como identificar a técnica adequada
+• Modelos não supervisionados de machine learning
+• Também conhecidos como modelos exploratórios ou técnicas de interdependência
+• Estuda relação entre variáveis, mas sem a intenção de criar modelos confirmatórios
+• Não há inferência dos resultados encontrados para observações de fora da amostra
+• Objetivos: redução dos dados, classificação ou agrupamento de observações e 
+variáveis, correlação ou associação entre variáveis
+11
+
+=== pág 12 ===
+
+Variáveis e técnicas
+• Como identificar a técnica adequada
+• Modelos supervisionados de machine learning
+• Conhecidos como modelos confirmatórios ou técnicas de dependência
+• O objetivo é estimar modelos, equações, com o intuito de elaborar previsões
+• Portanto, há inferência dos resultados para outras observações de fora da amostra
+12
+
+=== pág 13 ===
+
+Classificação de algoritmos
+13
+GLM
+GLMM
+Classification e 
+Regression Trees
+Redes Neurais
+Hierarchical 
+Clustering
+K-Means Clustering
+PCA
+ANACOR e MCA
+Bagging e
+Random Forests
+Boosting
+SUPERVISIONADOS
+NÃO SUPERVISIONADOS
+Regressões Lineares e 
+Não Lineares
+Modelos Logísticos 
+Binários e Multinomiais
+Modelos para Dados de 
+Contagem e Zero-Inflated
+Support Vector 
+Machines – SVM
+
+=== pág 14 ===
+
+Classificação de algoritmos
+14
+GLM
+GLMM
+Classification e 
+Regression Trees
+Redes Neurais
+Hierarchical 
+Clustering
+K-Means Clustering
+ANACOR e MCA
+Bagging e
+Random Forests
+Boosting
+NÃO SUPERVISIONADOS
+Regressões Lineares e 
+Não Lineares
+Modelos Logísticos 
+Binários e Multinomiais
+Modelos para Dados de 
+Contagem e Zero-Inflated
+Support Vector 
+Machines – SVM
+VARIÁVEIS QUANTITATIVAS
+VARIÁVEIS QUALITATIVAS
+PCA
+
+=== pág 15 ===
+
+Não supervisionados
+15
+Clustering
+PCA
+ANACOR
+
+=== pág 16 ===
+
+Classificação de algoritmos
+16
+GLM
+GLMM
+Classification e 
+Regression Trees
+Redes Neurais
+Hierarchical 
+Clustering
+K-Means Clustering
+PCA
+ANACOR e MCA
+Bagging e
+Random Forests
+Boosting
+SUPERVISIONADOS
+Regressões Lineares e 
+Não Lineares
+Modelos Logísticos 
+Binários e Multinomiais
+Modelos para Dados de 
+Contagem e Zero-Inflated
+Support Vector 
+Machines – SVM
+OUTCOME QUANTITATIVO
+OUTCOME QUALITATIVO
+
+=== pág 17 ===
+
+Supervisionados
+17
+Y = f(X1, X2, ... , Xk)
+Métrica
+Categórica
+
+=== pág 18 ===
+
+Referência
+• Fávero, Luiz Paulo; Belfiore, Patrícia. (2024). Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. 2 ed. Rio de Janeiro: LTC.
+18
+
+=== pág 19 ===
+
+Introdução ao Python
+19
+
+=== pág 20 ===
+
+Apresentação
+• Python: é a linguagem de programação que vamos utilizar
+• Neste curso, vamos implementá-lo por meio do Spyder (IDE)
+• Software que torna o uso do Python mais simples para o usuário
+• Para instalar o Spyder, vamos baixá-lo por meio da plataforma Anaconda
+• Acessar o tutorial de instalação do Anaconda disponibilizado em conjunto com 
+os materiais de aula!
+20
+
+=== pág 21 ===
+
+Ajuste: Ver > Layouts da janela > Rstudio
+21
+Ambiente com 
+objetos e gráficos
+Ficam os scripts: 
+linguagem Python 
+Arquivos do 
+project e help 
+Console: executa o Python
+
+=== pág 22 ===
+
+Acessando um project
+• Sempre que acessar um projeto em execução, acesse o project:
+• Retire a pasta do arquivo compactado (caso esteja)
+• No Spyder acesse: Projetos > Abrir Projeto > Selecione a pasta
+• Os arquivos contidos no project aparecerão no ambiente
+22
+
+=== pág 23 ===
+
+Pacotes
+• Alguns pacotes que utilizaremos:
+• Pandas: manipulação e análise de dados
+• Numpy: funções matemáticas e dados
+• Matplotlib: visualização de dados em gráficos
+• Seaborn: também é um pacote gráfico
+• Plotly: gráficos interativos
+23
+
+=== pág 24 ===
+
+Documentação
+• Leituras e documentação para consulta
+• https://pandas.pydata.org/docs/index.html
+• https://numpy.org/doc/stable/
+• https://matplotlib.org/
+• https://seaborn.pydata.org/
+• https://plotly.com/python/
+24
+
+=== pág 25 ===
+
+Obrigado!
+Wilson Tarantin Jr. | linkedin.com/in/wilson-tarantin-junior-359476190

@@ -1,0 +1,315 @@
+# 14 - Unsupervised Machine Learning Clustering / Clustering 11 e 18.11.2025_SL.pdf
+
+=== pág 1 ===
+
+Unsupervised Machine 
+Learning: Clustering
+Prof. Dr. Wilson Tarantin Junior
+ 
+=== pág 2 ===
+
+
+Lei nº 9610/98
+ 
+=== pág 3 ===
+
+Contextualização
+• Quando aplicar a análise de cluster?
+• Quando o objetivo for agrupar as observações em grupos homogêneos internamente 
+e heterogêneos entre si
+• Portanto, espera-se obter:
+• Dentro do grupo: observações semelhantes com base nas variáveis utilizadas
+• Entre grupos distintos: observações diferentes com base nas variáveis utilizadas
+3
+ 
+=== pág 4 ===
+
+Contextualização
+4
+ 
+=== pág 5 ===
+
+Contextualização
+• Exemplos de aplicação
+• Segmentação de clientes para marketing
+• Análises socioeconômicas e demográficas de regiões
+• Detecção de fraudes em transações (transações atípicas)
+• Controle de qualidade no processo produtivo
+• Identificação de grupos de pacientes para prevenção de doenças
+• ...
+5
+ 
+=== pág 6 ===
+
+Contextualização
+• Técnica exploratória (não supervisionada)
+• A análise de cluster busca identificar o padrão latente de agrupamento presente nos 
+dados: não há a especificação prévia de quais grupos devem ser formados
+• Técnica exploratória: não tem caráter preditivo para observações de fora da amostra
+• Se observações forem adicionadas/retiradas da amostra, novo agrupamento deve 
+ser formado, pois a mudança de observações pode alterar a composição dos grupos
+• Se forem alteradas as variáveis da análise, novo agrupamento deve ser realizado, 
+porque a inclusão/retirada de variáveis pode alterar a composição dos grupos
+6
+ 
+=== pág 7 ===
+
+Métodos
+• Analisaremos dois métodos para a obtenção de agrupamentos
+• Método Hierárquico Aglomerativo
+• A quantidade de clusters é definida ao longo da análise (passo a passo)
+• É um método mais analítico e com característica bastante exploratória
+• Método Não Hierárquico K-means
+• Define-se a priori quantos cluster serão formados
+• É um método mais objetivo, pois baseia-se em minimização
+7
+ 
+=== pág 8 ===
+
+Método Hierárquico Aglomerativo
+8
+ 
+=== pág 9 ===
+
+Tratamento inicial dos dados
+• Análise das variáveis que serão estudadas
+• Antes de iniciar os procedimentos, é importante realizar uma análise das unidades de 
+medidas das variáveis
+• Se estiverem em unidades de medidas distintas, é importante realizar a padronização 
+das variáveis antes de iniciar a análise de cluster
+• Aplica-se o ZScore (torna variáveis com média = 0 e desvio padrão = 1)
+9
+𝒁𝑿𝒋𝒊=
+𝑿𝒋𝒊−ഥ𝑿𝒋
+𝒔𝒋
+ഥ𝑿𝒋 é a média da variável j
+𝒔𝒋 é o desvio padrão da variável j
+ 
+=== pág 10 ===
+
+Escolhas inerentes ao método
+• A análise de cluster hierárquica depende de escolhas
+• Escolha da medida de dissimilaridade (distância)
+• Refere-se à distância entre as observações, com base nas variáveis escolhidas
+• Portanto, indica o quanto as observações são diferentes entre si
+• Escolha do método de encadeamento das observações
+• Refere-se à especificação da medida de distância quando houver cluster formados
+10
+ 
+=== pág 11 ===
+
+Esquema de aglomeração
+• Hierárquico aglomerativo: observações separadas → um único cluster
+• Considerando n observações na amostra, inicia-se com n clusters (estágio 0)
+• Na sequência, une-se as duas observações com menor distância (n – 1 clusters)
+• Em seguida, um novo grupo é formado pela união de duas novas observações ou pela 
+inclusão de uma observação ao cluster formado na etapa anterior (sempre pela menor 
+distância). O método de encadeamento indica qual é a distância a ser considerada
+• Repete-se a etapa anterior n – 1 vezes até restar 1 cluster com todas as observações
+• O dendrograma é o gráfico que permite visualizar a formação dos clusters
+11
+ 
+=== pág 12 ===
+
+Exemplo de dendrograma
+12
+Pessoa 1
+Pessoa 2
+Pessoa 3
+Pessoa 4
+Pessoa 5
+ 
+=== pág 13 ===
+
+Medidas de dissimilaridade
+• Identifica a distância entre observações
+• Distância euclidiana: 𝒅𝒑𝒒=
+σ𝒋=𝟏
+𝒌
+(𝒁𝑿𝒋𝒑−𝒁𝑿𝒋𝒒)𝟐
+• Distância euclidiana quadrática: 𝒅𝒑𝒒= σ𝒋=𝟏
+𝒌
+(𝒁𝑿𝒋𝒑−𝒁𝑿𝒋𝒒)𝟐
+• Distância de Manhattan (City Block): 𝒅𝒑𝒒= σ𝒋=𝟏
+𝒌
+|𝒁𝑿𝒋𝒑−𝒁𝑿𝒋𝒒|
+13
+ 
+=== pág 14 ===
+
+Medidas de dissimilaridade 
+• Identifica a distância entre observações
+• Distância de Chebychev: 𝒅𝒑𝒒= 𝒎𝒂𝒙 |𝒁𝑿𝒋𝒑−𝒁𝑿𝒋𝒒|
+• Distância de Canberra: 𝒅𝒑𝒒= σ𝒋=𝟏
+𝒌
+|𝒁𝑿𝒋𝒑−𝒁𝑿𝒋𝒒|
+𝒁𝑿𝒋𝒑+ 𝒁𝑿𝒋𝒒
+• A correlação de Pearson entre as observações também pode ser utilizada (mas é uma 
+medida de semelhança, portanto, ajusta-se sua interpretação antes de usá-la)
+14
+ 
+=== pág 15 ===
+
+Métodos de encadeamento
+• Identifica qual distância utilizar quando já existem clusters formados durante os estágios 
+aglomerativos
+• Nearest neighbor (single linkage): privilegia menores distâncias, recomendável em 
+casos de observações distintas
+• Furthest neigbor (complete linkage): privilegia maiores distâncias, recomendável 
+em casos de observações parecidas
+• Between groups (average linkage): junção de grupos pela distância média entre 
+todos os pares de observações do grupo em análise
+15
+ 
+=== pág 16 ===
+
+Métodos de encadeamento
+16
+Fonte: Fávero & Belfiore (2024, Capítulo 9)
+ 
+=== pág 17 ===
+
+Métodos de encadeamento
+• Esquemas hierárquicos aglomerativos
+• Nearest neighbor (single linkage): vizinho mais próximo
+• d(MN)W = mínimo{dMW ; dNW}
+• Furthest neighbor (complete linkage): vizinho mais distante
+• d(MN)W = máximo{dMW ; dNW}
+• Between groups (average linkage): média das distâncias
+• d(MN)W = média{dMW ; dNW}
+17
+ 
+=== pág 18 ===
+
+Quantos clusters escolher?
+• Esquemas hierárquicos aglomerativos
+• Como critério para a escolha do número final de clusters em uma análise hierárquica 
+pode-se adotar o tamanho dos saltos de distância para a aglomeração (com base no 
+dendrograma)
+• Saltos elevados podem indicar o agrupamento de observações com características 
+diferentes, isto é, há a união de observações mais distintas
+• Muitas vezes, é importante comparar dendrogramas obtidos por diferentes métodos de 
+encadeamento
+18
+ 
+=== pág 19 ===
+
+Análise dos agrupamentos
+• Quais variáveis contribuem?
+• Após a clusterização, é importante comparar se a variabilidade dentro do grupo é 
+menor do que a variabilidade entre grupos com base nas variáveis da análise
+• Aplica-se um teste F para análise de variância: 𝑭 = 
+𝑽𝒂𝒓𝒊𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅𝒆 𝒆𝒏𝒕𝒓𝒆 𝒈𝒓𝒖𝒑𝒐𝒔
+𝑽𝒂𝒓𝒊𝒂𝒃𝒊𝒍𝒊𝒅𝒂𝒅𝒆 𝒅𝒆𝒏𝒕𝒓𝒐 𝒅𝒐𝒔 𝒈𝒓𝒖𝒑𝒐𝒔
+• Graus de liberdade no numerador: K – 1
+• Graus de liberdade no denominador: n – K
+• É possível analisar quais variáveis mais contribuíram para a formação de pelo menos 
+um dos clusters: maiores valores da estatística F (em conjunto com sua significância)
+19
+K = nº de clusters
+n = tamanho da amostra 
+ 
+=== pág 20 ===
+
+Método Não Hierárquico K-means
+20
+ 
+=== pág 21 ===
+
+Tratamento inicial dos dados
+• Análise das variáveis que serão estudadas
+• Antes de iniciar os procedimentos, é importante realizar uma análise das unidades de 
+medidas das variáveis
+• Se estiverem em unidades de medidas distintas, é importante realizar a padronização 
+das variáveis antes de iniciar a análise de cluster
+• Aplica-se o ZScore (torna variáveis com média = 0 e desvio padrão = 1)
+21
+𝒁𝑿𝒋𝒊=
+𝑿𝒋𝒊−ഥ𝑿𝒋
+𝒔𝒋
+ഥ𝑿𝒋 é a média da variável j
+𝒔𝒋 é o desvio padrão da variável j
+ 
+=== pág 22 ===
+
+Esquemas de aglomeração
+• Esquema não hierárquico K-means
+• A quantidade (K) de clusters deve ser escolhida a priori e é utilizada como base 
+para a identificação dos centros de aglomeração (centroides)
+• Os K centroides iniciais são determinados aleatoriamente; as observações são 
+alocadas aos clusters iniciais com base no centroide mais próximo
+• Após o agrupamento inicial, recalcula-se o valor de cada centroide com base na 
+média dos pontos de cada grupo
+• Ao recalcular o valor do centroide, as observações podem mudar de cluster se 
+estiverem mais próximas de outro centroide. Torna-se um processo iterativo...
+22
+ 
+=== pág 23 ===
+
+Esquemas de aglomeração
+• Esquema não hierárquico K-means
+• O processo K-means encerra-se quando não for possível realocar qualquer observação 
+por estar mais próxima do centroide de outro cluster; deste modo, os centroides não se 
+alteram mais
+• A solução final indica que a soma dos quadrados de cada observação até o centro do 
+cluster alocada (WCSS) foi minimizada
+23
+ 
+=== pág 24 ===
+
+Ilustração do K-means
+24
+• Ao recalcular o valor do centroide para o ponto médio do cluster, as observações 
+mudam de cluster, pois passam a estar mais próximas do centroide recalculado
+ 
+=== pág 25 ===
+
+Ilustração do K-means
+25
+• A convergência ocorre quando todas as observações já estão mais próximas do seu 
+próprio centroide do que de outros, de modo que não há realocações
+ 
+=== pág 26 ===
+
+Identificação da quantidade de clusters
+• Técnicas para a identificação da quantidade de clusters no K-means
+• Método de Elbow: calcula-se a soma total dos quadrados dentro dos clusters (WCSS) 
+para várias opções de K (quantidade de clusters). Em seu gráfico, busca-se uma dobra 
+(“cotovelo”), ou seja, o ponto a partir do qual a diminuição na WCSS não é mais tão 
+expressiva, mesmo aumentando a quantidade de clusters
+• Método da Silhueta: para cada observação, calcula-se: (b) sua distância média para o 
+cluster mais próximo onde não esteja alocada; (a) sua distância média dentro do cluster 
+onde está alocada
+• Em seguida, calcula-se o coeficiente de silhueta médio para todas as observações. O 
+procedimento é realizado para várias opções de K
+26
+silhueta =
+(𝐛−𝐚)
+𝐦𝐚𝐱(𝐚,𝐛)
+Quanto mais próximo de 1, melhor a 
+clusterização. Quanto mais próximo de -1, pior!
+ 
+=== pág 27 ===
+
+Considerações
+• Alguns aspectos relevantes
+• A análise de cluster é bastante sensível à presença de outliers
+• Quando há variáveis categóricas, aplica-se a Análise de Correspondência
+• O output do método hierárquico pode ser utilizado como input para o método não 
+hierárquico para a identificação inicial da quantidade de clusters
+• O método não hierárquico k-means pode ser aplicado em amostras maiores, pois o 
+dendrograma pode tornar-se difícil de analisar quando há muitas observações
+27
+ 
+=== pág 28 ===
+
+Referência / Sugestão de Leitura
+• Fávero, Luiz Paulo; Belfiore, Patrícia. (2024). Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. 2 ed. Rio de Janeiro: LTC.
+28
+ 
+=== pág 29 ===
+
+Obrigado!
+Wilson Tarantin Junior | linkedin.com/in/wilson-tarantin-junior-359476190
+ 

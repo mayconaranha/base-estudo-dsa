@@ -1,0 +1,87 @@
+# 20 - Supervised Machine Learning Modelos para Dados de Contagem / Material complementar 24 e 31.03.2026_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR  
+Supervised Machine Learning: Modelos para Dados de 
+Contagem 
+Professor Luiz Paulo Fávero 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+• 
+Cameron, A.C.; Trivedi, P.K. 2013. Regression analysis of count data. 
+2. ed. Cambridge: Cambridge University Press. 
+ 
+• 
+Cameron, A.C.; Trivedi, P.K. 1990. Regression-based tests for 
+overdispersion in the Poisson model. Journal of Econometrics, v. 46, n. 3, 
+p. 347-364. 
+ 
+• 
+Desmarais, B.A.; Harden, J.J. 2013. Testing for zero inflation in count 
+models: bias correction for the Vuong test. v. 13, n. 4, p. 810-835. 
+ 
+• 
+Famoye, F.; Singh, K. P. 2006. Zero-inflated generalized Poisson 
+regression model with an application to domestic violence data. Journal of 
+Data Science, v. 4, n. 1, p. 117-130. 
+ 
+• 
+Fávero, L.P.; Belfiore, P. 2019. Data science for business and decision 
+making. Cambridge: Academic Press. 
+ 
+• 
+Fávero, L.P.; Belfiore, P. 2024. Manual de análise de dados: estatística 
+e machine learning com Excel®, SPSS®, Stata®, R® e Python®. Rio de Janeiro: 
+GEN.. 
+ 
+• 
+Fávero, L.P.; Belfiore, P.; Santos, M.A. 2020. Overdisp: a Stata (and 
+Mata) package for direct detection of overdispersion in Poisson and 
+negative binomial regression models. Statistics, Optimization & Information 
+Computing, v. 8, p. 773-789. 
+ 
+• 
+Fávero, L.P.; Duarte, A.; Santos, H.P. 2024. A new computational 
+algorithm for assessing overdispersion and zero-inflation in machine 
+learning count models with Python. Computers, v. 13(4), n. 88, p. 1-15. 
+ 
+• 
+Gardner, W.; Mulvey, E.P.; Shaw, E.C. 1995. Regression analyses of 
+counts and rates: Poisson, overdispersed Poisson, and negative binomial 
+models. Psychological Bulletin, v. 118, n. 3, p. 392-404. 
+ 
+
+=== pág 3 ===
+• 
+Gupta, P.L.; Gupta, R.C.; Tripathi, R.C. 1996. Analysis of zero-adjusted 
+count data. Computational Statistics & Data Analysis, v. 23, n. 2, p. 207-218. 
+ 
+• 
+Lambert, D. 1992. Zero-inflated Poisson regression, with an 
+application to defects in manufacturing. Technometrics, v. 34, n. 1, p. 1-14. 
+ 
+• 
+Tang, W.; He, H.; Tu, X.M. 2012. Applied categorical and count data 
+analysis. Boca Raton: Chapman & Hall / CRC Press. 
+ 
+• 
+Vuong, Q.H. 1989. Likelihood ratio tests for model selection and non-
+nested hypotheses. Econometrica, v. 57, n. 2, p. 307-333. 
+ 
+• 
+Xie, F.C.; Wei, B.C.; Lin, J.G. 2008. Assessing influence for 
+pharmaceutical data in zero-inflated generalized Poisson mixed models. 
+Statistics in Medicine, v. 27, n. 18, p. 3656-3673. 
+ 
+• 
+Yau, K.; Wang, K.; Lee, A. 2003. Zero-inflated negative binomial mixed 
+regression modeling of over-dispersed count data with extra zeros. 
+Biometrical Journal, v. 45, n. 4, p. 437-452. 
+ 
+• 
+Fávero, L.P. 2019. Machine Learning e modelos supervisionados: o 
+uso correto do GLM na tomada de decisão. It Forum. Link 
+ 
+ 

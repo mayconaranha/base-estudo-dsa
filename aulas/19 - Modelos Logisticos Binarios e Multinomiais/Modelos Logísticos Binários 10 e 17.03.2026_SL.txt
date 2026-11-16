@@ -1,0 +1,380 @@
+# 19 - Modelos Logisticos Binarios e Multinomiais / Modelos Logísticos Binários 10 e 17.03.2026_SL.pdf
+
+=== pág 1 ===
+
+Supervised Machine Learning:
+Modelos Logísticos Binários
+e Multinomiais
+Prof. Dr. Luiz Paulo Fávero
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+MODELOS 
+LOGÍSTICOS
+Fundamentação teórica e conceitos
+Especificações dos modelos
+Modelos logísticos binários e multinomiais
+Estimação por máxima verossimilhança
+Cutoff, sensitividade, especificidade e curva ROC
+Estimações em Python
+3
+
+=== pág 4 ===
+
+𝒀= 𝒇(𝑿𝟏, 𝑿𝟐, 𝑿𝟑, … , 𝑿𝒌)
+Modelos Lineares Generalizados (GLM)
+4
+GLM
+
+=== pág 5 ===
+
+Regressão Logística Binária
+5
+
+=== pág 6 ===
+
+•
+Técnica  supervisionada de machine learning utilizada para 
+explicar ou predizer a probabilidade de ocorrência de 
+determinado evento, em função de uma ou mais variáveis 
+explicativas.
+•
+Variável dependente Y: binária.
+ 
+→ Resultados interpretados em termos
+ 
+de probabilidades.
+•
+Variáveis preditoras X: métricas ou não métricas.
+Regressão Logística Binária
+6
+
+=== pág 7 ===
+
+▪Atribuição de probabilidades:
+Estimar a probabilidade de ocorrência de determinado
+evento, ou de que uma observação venha a se enquadrar
+nessa ou naquela categoria.
+▪Classificação em categorias: 
+Classificar indivíduos ou observações em categorias 
+específicas.
+Objetivos da Técnica
+7
+
+=== pág 8 ===
+
+8
+
+=== pág 9 ===
+
+Conceito de Probabilidade
+▪Seja Y a resposta a um estímulo (sim ou não) - pode 
+ser a preferência por um produto, adimplência, 
+aprovação em um curso, etc.
+▪p: probabilidade da resposta “sim”.
+▪1 – p: probabilidade da resposta “não”.
+9
+
+=== pág 10 ===
+
+▪Chance (odds) de ocorrência de um evento:
+(Evento)
+Conceito de Chance (Odds)
+Exemplos: se p = 0,50; chance = 1 (1 para 1)
+se p = 0,75; chance = 3 (3 para 1)
+                    se p = 0,25; chance = ⅓ (1 para 3)  
+𝑐ℎ𝑎𝑛𝑐𝑒=
+𝑝
+1 −𝑝
+(Não Evento)
+10
+
+=== pág 11 ===
+
+▪
+Logito: logaritmo natural da chance de ocorrência de 
+uma resposta do tipo “sim”.
+ln 1
+1
+1
+1
+1
+logito
+Z
+Z
+Z
+Z
+p
+logito
+Z
+p
+p
+e
+e
+odds
+p
+e
+p
+e
+e−
+
+
+=
+=
+
+
+−
+
+
+=
+=
+=
+−
+=
+=
++
++
+Vetor com 
+variáveis 
+explicativas
+Conceito de Logito
+E, a partir do logito, define-se a expressão da
+probabilidade de ocorrência do evento em
+estudo, em função das variáveis explicativas.
+11
+
+=== pág 12 ===
+
+1
+1
+2
+2
+-(
+.......
+)
+1
+1
+1
+1
+i
+i
+i
+k
+ki
+i
+Z
+X
+X
+X
+p
+e
+e 
+
+
+−
++
++
++
++
+=
+=
++
++
+A função logística 
+assume valores entre 
+0 e 1 para qualquer Z
+entre −∞e +∞
+A
+curva
+logística,
+ou
+sigmoide,
+descreve
+a
+relação
+entre
+a
+probabilidade associada à ocorrência
+de
+determinando
+evento
+e
+um
+conjunto de variáveis preditoras.
+O Modelo de Regressão Logística Binária
+12
+
+=== pág 13 ===
+
+▪
+Definida para que se estabeleça a probabilidade de ocorrência de determinado evento 
+e a  importância das variáveis explicativas para esta ocorrência.
+▪
+Estimação dos parâmetros: processo iterativo para maximizar o acerto da 
+probabilidade de ocorrência de um evento à sua real ocorrência (Método de Máxima 
+Verossimilhança).
+▪
+Os resultados atribuíveis à variável dependente estarão entre 0 e 1.
+▪
+Análise do ajuste do modelo: testes de significância dos parâmetros e tabela de 
+classificação (matriz de confusão).
+1
+1
+2
+2
+-(
+.......
+)
+1
+1
+1
+1
+i
+i
+i
+k
+ki
+i
+Z
+X
+X
+X
+p
+e
+e 
+
+
+−
++
++
++
++
+=
+=
++
++
+Função Logística
+13
+
+=== pág 14 ===
+
+14
+
+=== pág 15 ===
+
+Regressão Logística
+Multinomial
+15
+
+=== pág 16 ===
+
+▪
+Variável dependente se apresenta na forma qualitativa com mais de duas categorias.
+▪
+Por exemplo, para três possíveis respostas (labels 0, 1 ou 2, por exemplo), e sendo 0 a 
+categoria de referência escolhida, teremos duas outras possibilidades de evento em 
+relação a esta categoria (1 ou 2).
+▪
+Dessa forma, são definidos dois vetores de variáveis explicativas, com os respectivos 
+parâmetros estimados (dois logitos):
+▪
+Logo, o número de logitos estimados será (M – 1), sendo M o número de categorias de Y.
+1
+1
+11
+1
+1
+2
+2
+12
+1
+2
+i
+i
+k
+ki
+i
+i
+k
+ki
+Z
+X
+X
+Z
+X
+X
+
+
+
+
+
+
+=
++
+++
+=
++
+++
+Regressão Logística Multinomial
+16
+
+=== pág 17 ===
+
+▪
+Sendo                               a probabilidade de ocorrência do evento, temos que:
+▪
+Probabilidade de ocorrência da categoria 0 (referência):
+▪
+Probabilidade de ocorrência da categoria 1:
+▪
+Probabilidade de ocorrência da categoria 2:
+𝑝𝑖=
+𝑒𝑍𝑖
+1 + 𝑒𝑍𝑖
+ 
+𝑃𝑖0 =
+1
+1 + 𝑒𝑍1𝑖+ 𝑒𝑍2𝑖
+ 
+𝑃𝑖1 =
+𝑒𝑍1𝑖
+1 + 𝑒𝑍1𝑖+ 𝑒𝑍2𝑖
+ 
+𝑃𝑖2 =
+𝑒𝑍2𝑖
+1 + 𝑒𝑍1𝑖+ 𝑒𝑍2𝑖
+ 
+Funções Logísticas Multinomiais
+17
+
+=== pág 18 ===
+
+▪
+Como na regressão logística binária, deve-se avaliar o resultado do teste ² para 
+o modelo de regressão logística multinomial, bem como os resultados dos testes 
+z para os parâmetros estimados das variáveis preditoras.
+▪
+Interpretação: os parâmetros das variáveis devem ser analisados em relação à 
+categoria de referência da variável dependente.
+▪
+Eficiência do modelo: a classificação das observações deve ser realizada a 
+partir da maior probabilidade estimada para cada observação (aqui, ao contrário 
+da regressão logística binária, não faz sentido a definição de um cutoff).
+Interpretação e
+Eficiência Global do Modelo Multinomial
+18
+
+=== pág 19 ===
+
+EXCEL
+19
+
+=== pág 20 ===
+
+Obrigado!
+Prof. Dr. Luiz Paulo Fávero |

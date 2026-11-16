@@ -1,0 +1,1538 @@
+# 11 - LIDERANÇA EM DSA / Liderança em DSA 14.10.2025_SL.pdf
+
+=== pág 1 ===
+
+Liderança em Data Science
+Prof. Fátima Jinnyat
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Administradora, é Pós–graduada no Máster em Tecnologia da 
+Educação/FAAP. Participou do 46th Creative Problem Solving Institute 
+- Creative Leadership da CEF (Creative Education Foundation) na N. 
+York University e do Programa de Formação de Facilitadores em 
+Criatividade/ FAAP. Co- autora do livro “Manual do Varejo no 
+Brasil”- capítulo “ O varejo de Luxo”.
+Professora dos cursos de Pós e MBA do EISNTEIN, PECEGE/ESALQ, 
+FIA/FEA-USP/UNIFESP. Como consultora ministra cursos/palestras no 
+Brasil e AL sobre temas diversos: complexidade, liderança, 
+criatividade, inteligência emocional entre outros temas.
+Estudiosa independente de neurociência, complexidade, 
+formação em coach ontológico e mentoria.
+Voluntária do ADUS – Instituto de Reintegração 
+de Refugiados no Brasil. (www.adus.org.br)
+www.jinnyat.com.br  
+3
+
+
+=== pág 4 ===
+
+• Dedique um tempo para assisti-la, evitando distrações, 
+interrupções e mantendo o foco. A tentação de fazer 
+muitas coisas ao mesmo tempo é enorme, portanto 
+disciplina é fundamental!
+• Observe que alguns slides contém referências para 
+   consulta: links das  fontes pesquisadas, livros, vídeos.
+• Só a leitura dos slides restringe muito a compreensão, 
+   textos de apoio são também importantes para uma
+   compreensão do todo.
+SUGESTÕES 
+PARA TIRAR 
+PROVEITO DA 
+AULA.
+4
+
+
+=== pág 5 ===
+
+O CONTEXTO
+Plano de aula
+DESAFIOS DO LÍDER 
+CONTEMPORÂNEO;
+O AVANÇO 
+TECNOLÓGICO
+NECESSIDADE DE 
+HUMANIZAÇÃO DA 
+LIDERANÇA
+AMBIDESTRIA MENTAL
+NOVAS ORTODOXIAS;
+SOBRE A NATUREZA DOS 
+PROBLEMAS;
+UMA NOVA ESTÉTICA NA 
+RELAÇÃO COM AS 
+EQUIPES.
+DEBATE X DIÁLOGO;
+COLABORAÇÃO;
+CONSTRUINDO UMA 
+INTELIGÊNCIA 
+COLETIVA.
+1
+2
+OS LÍDERES E AS 
+PESSOAS
+3
+O FUTURO
+5
+
+
+=== pág 6 ===
+
+ABORDAGEM 
+E OBJETIVOS
+Os modelos de gestão tradicionais privilegiam os aspectos objetivos da 
+vida organizacional. Entretanto, diante da incerteza crescente, e de 
+nossa incapacidade de lidar com ela, há que se desenvolver os aspectos 
+subjetivos, discutindo a humanização da gestão. 
+•
+Porque é importante construir relacionamentos mais humanizados? 
+•
+Como isso impacta nos resultados do negócio? 
+•
+Qual é a relação com os aumentos graduais dos níveis de ansiedade,
+estresse e desmotivação nas empresas? 
+•
+Qual é o papel do líder?
+Dialogar sobre o que significa, de fato, uma liderança humanizada inclui 
+entender como as pessoas reagem a contextos em transformação, 
+reduzindo a ansiedade e o estresse, sem eliminar a necessidade de 
+gerenciar tarefas, resultados, processos, competências, e outras formas 
+de padronização dominantes.
+6
+
+
+=== pág 7 ===
+
+Estilos de ser e pensar
+Perceber a realidade e tomar decisões
+PESSOAS OBSTINADAS
+(tough minded)
+PESSOAS SENSÍVEIS
+( tender minded)
+OBJETIVAS
+RACIONAIS
+FATALISTAS
+CÉTICAS
+DOGMÁTICAS
+SUBJETIVISTAS
+FAVORÁVEIS AO
+LIVRE ARBÍTRIO
+“ Hoje é moda desvalorizar a cultura de humanidades e cultivar 
+a fascinação pela tecnologia. Se nossas sociedades escolherem esta visão, 
+nossas vidas serão comandadas por algoritmos. Não mais seremos 
+guiados por sentimentos e significados, dos quais
+ emergem os valores humanos.”
+Tipologia psicológica proposta por Willian James/Livro: Pragmatism
+77
+
+
+=== pág 8 ===
+
+O CONTEXTO
+8
+1
+8
+
+
+=== pág 9 ===
+9
+
+O QUE É UMA 
+CRISE?
+“ É um momento em que as 
+incertezas aumentam.”
+Edgar Morin (1921), filósofo da complexidade
+9
+
+
+=== pág 10 ===
+
+AVALIA-SE A 
+INTELIGÊNCIA E O 
+CONHECIMENTO  DE UM 
+HOMEM PELA 
+QUANTIDADE DE 
+INCERTEZAS QUE ELE É 
+CAPAZ DE SUPORTAR.
+Immanuel Kant.
+10
+
+
+=== pág 11 ===
+
+“ A VELHA ORDEM JÁ NÃO 
+EXISTE E A NOVA AINDA 
+ESTÁ PARA NASCER.”
+Antonio Gramsci ( 1891-1937), filósofo italiano
+“DADA NOSSA EXPERIÊNCIA 
+HISTÓRICA, APRENDER A VIVER 
+NO CAOS TALVEZ NÃO SEJA 
+TÃO NOCIVO QUANTO 
+CONFORMAR-SE À DISCIPLINA 
+DE UMA ORDEM.”
+M. Castells, ( 1.942),sociólogo espanhol
+11
+
+
+=== pág 12 ===
+
+NÃO É O FIM DO MUNDO, MAS O FIM DE UM MUNDO.
+AlainTouraine(1925-2023), especialista em sociologia do trabalho autor de Um novo Paradigma 
+12
+
+
+=== pág 13 ===
+
+“ Em geral os pessimistas estão certos e os otimistas errados. 
+Mas todas as grandes mudanças foram levadas 
+a cabo pelos otimistas.”
+consagrado escritor, jornalista e 
+colunista do N.York Times 
+e vencedor de 3 Prêmios Pulitzer.
+13
+
+
+=== pág 14 ===
+
+O QUE SENTIMOS E PENSAMOS 
+DIANTE DA INCERTEZA
+“Ainda valorizamos o modelo mecanicista, 
+   que é insuficiente para lidar com os 
+   desafios do cenário atual.” 
+“Boa parte dos gestores diante da 
+mudança, se restringe às metodologias 
+habituais sem questioná-las. Copiar o 
+outro.”
+“Falta desenvolver a liderança 
+adaptativa. Precisamos ampliar 
+o repertório.”
+“A frustração gerada pela incapacidade 
+para solucionar problemas complexos, nos 
+leva a investir mais na microgestão 
+acreditando que somente aí está o problema.” 
+“Receamos perder nossos 
+empregos pela nossa 
+incapacidade em acompanhar a 
+sua velocidade ( IA).”
+“ Qual será o impacto da tecnologia
+na forma como trabalhamos?”
+“ Como gerenciar
+ o clima? “ 
+“Sabemos apontar as consequências,
+mas temos dificuldade para identificar as causas.”
+14
+14
+
+
+=== pág 15 ===
+
+AS 3 DORES 
+DA INCERTEZA
+Ansiedade
+Desconfiança
+Desânimo
+O líder tem a responsabilidade de 
+gerenciar os contextos nos quais 
+está inserido, ajudando aos agentes 
+envolvidos (equipe, colegas, 
+superiores e profissionais de outras 
+áreas) a lidar com as 3 dores da 
+incerteza.
+Beatriz Garcia, especialista em complexidade e 
+consultora organizacional
+15
+15
+
+
+=== pág 16 ===
+
+MEDO DA 
+INSTABILIDADE
+“ No momento atual nossas vidas estão 
+mudando rapidamente e novas informações 
+aparecem constantemente, criando uma 
+dissonância cognitiva entre os fatos e as nossas 
+próprias percepções e emoções, que 
+constantemente o cérebro tenta conciliar, 
+gerando ansiedade e exaustão.”
+Palestra David Rock durante a pandemia.
+Neuroleadership Institute
+16
+16
+
+
+=== pág 17 ===
+AGINDO EM SITUAÇÕES DE CRISE
+(David Rock, neurocientista)
+CALMA EXAGERADA
+(under-reacting)
+ADAPTAÇÃO
+(adaptive)
+ANSIEDADE EXAGERADA
+(over - reacting)
+• Não dizer nada ou falar que 
+não vai mudar nada.
+• Não mudar nada de fato, 
+continuar “tocando a vida”.
+• Empatia mínima com as 
+pessoas.
+• Evitar alarmar as pessoas.
+• Minimizar a situação.
+• Aproximar-se das pessoas.
+• Empatizar e “etiquetar” (dar 
+significado ao que está 
+acontecendo).
+• Ajudar as pessoas a se 
+preparar para a realidade 
+seja ela qual for, desenhando 
+cenários que ajudem  a 
+entender o que vem pela 
+frente e qual será o seu papel.
+• Contatar obsessivamente as 
+pessoas.
+• Criar pânico e se manter na 
+mente reptiliana: 
+atacar/fugir.
+• Focar nas notícias negativas.
+• Cancelar as conversas 
+“expansivas”.
+17
+
+
+=== pág 18 ===
+
+Template de slides – tema 1
+“ Tomaremos decisões sobre coisas que desconhecemos 
+e para a qual não estamos preparados.”
+https://www.youtube.com/watch?v=oT33_MrqyHo 
+Amy Webb
+FUTURE TODAY 
+ESTRATEGIC GROUP
+18
+
+
+=== pág 19 ===
+
+19
+https://www.pwc.com.br/pt/estudos/preocupacoes-ceos/ceo-survey-2024.html 
+27 º
+CEO SURVEY
+16/01/24
+4.700 líderes empresariais em todo mundo.
+•
+PREOCUPADOS COM A CONTINUIDADE DE SEUS 
+NEGÓCIOS. (41% no Brasil e 45% no mundo)
+•
+PRECISAM SER MAIS OUSADOS, MESMO COM 
+ALTO RISCO.
+2 megatendências
+MUDANÇAS CLIMÁTICAS 
+DISRUPÇÃO TECNOLÓGICA
+(IA GENERATIVA)
+19
+
+
+=== pág 20 ===
+
+https://sloanreview.mit.edu/projects/the-new-leadership-playbook-for-the-digital-age/ 
+DESORIENTAÇÃO
+o que será necessário para vencer
+ e liderar na economia digital.
+A digitalização, concorrentes emergentes, a 
+necessidade de velocidade e agilidade 
+vertiginosas e uma força de trabalho cada vez 
+mais diversificada e exigente exigem dos 
+líderes mais do que a maioria pode oferecer.
+A necessidade de mudança é 
+urgente, e o tempo está se 
+esgotando para líderes que se 
+apegam a antigas formas de 
+trabalhar e liderar.
+Os líderes pioneiros de hoje reconhecem 
+cada vez mais que, para transformar suas 
+organizações de forma crível, eles devem 
+transformar a si mesmos e suas equipes 
+de forma crível.
+O NOVO MANUAL DE LIDERANÇA PARA A ERA DIGITAL: 
+REIMAGINANDO O QUE É PRECISO PARA LIDERAR (2020) 
+Há uma percepção de despreparo.
+20
+20
+
+
+=== pág 21 ===
+
+https://sloanreview.mit.edu/projects/the-new-leadership-playbook-for-the-digital-age/
+O NOVO MANUAL DE LIDERANÇA PARA A ERA DIGITAL:
+ADAPTAÇÃO ÀS MUDANÇAS
+Mudança na cultura organizacional 
+e nos fluxos de trabalho.
+Desenvolver a capacidade 
+adaptativa.
+LACUNAS DE HABILIDADES
+Os líderes precisam identificar estas 
+lacunas, promovendo treinamento e 
+desenvolvimento de novas 
+habilidades.
+GESTÃO DA MUDANÇA
+Coragem de mudar a estrutura e os 
+processos organizacionais, comunicar 
+de forma clara envolvendo as 
+pessoas em todo o processo. 
+GESTÃO DA INFORMAÇÃO
+Os líderes precisam desenvolver 
+estratégias para coletar, 
+armazenar, analisar e interpretar 
+grandes quantidades de dados, 
+de maneira significativa e 
+acionável.
+DESAFIOS
+21
+21
+
+
+=== pág 22 ===
+
+LÍDER DE 
+SI MESMO
+Construindo a própria
+identidade
+22
+
+
+=== pág 23 ===
+
+Empresas ainda são paternalistas e 
+vivem segundo a lógica masculina 
+racional: “tudo o que é bom é 
+racional (herança Iluminista), produz 
+bens e portanto gera valor. 
+Tudo o que é emocional é feminino, 
+não produz valor, portanto é 
+secundário.”
+Os valores femininos como fantasia, 
+subjetividade, estética produz ideias 
+novas. A racionalidade não cria o 
+novo. Ela executa o novo.
+Domenico de Masi,(1938-2023) sociólogo 
+especialista em criatividade nas organizações.
+23
+
+
+=== pág 24 ===
+
+JB Pritzker é fundador do Pritzker Group, 
+com investimentos em tecnologia e private 
+equity, e herdeiro da rede de hotéis Hyatt. 
+É governador de Illinois desde 2019, 
+reeleito em 2022, com foco em inclusão 
+social, infraestrutura e educação. Segundo 
+a Forbes, sua fortuna é estimada em 
+US$ 3,7 bilhões.
+Fonte: Marcelo Zenkner. 2025. Como identificar um idiota. 
+Disponível no instagram:
+https://www.linkedin.com/posts/marcelo-zenkner-
+4bb79928_gentileza-empatia-integridade-ugcPost-
+7353727389341749270-
+_e4O?utm_medium=ios_app&rcm=ACoAAAVmYTYBNY5Xw
+9hSPYkz-
+z76_bV0FHpAH4w&utm_source=social_share_send&utm_c
+ampaign=whatsapp 
+24
+
+
+=== pág 25 ===
+
+TODA INTERAÇÃO HUMANA GERA INFLUÊNCIA. 
+CONSCIENTE OU INCONSCIENTEMENTE, ENVIAMOS MENSAGENS.
+25
+
+
+=== pág 26 ===
+
+LÍDERES…são pessoas que por palavras e/ou exemplo pessoal 
+INFLUENCIARAM acentuadamente os comportamentos, pensamentos e/ou 
+sentimentos de um número significativo de SERES HUMANOS.”
+Howard Gardner, neurocientista no livro Mentes que lideram
+•
+Denis Mukengere Mukwege é um médico 
+ginecologista congolês, célebre pela ação 
+humanitária na República Democrática do Congo, 
+onde gere um hospital em Bukavu.
+•
+Prêmio Nobel da Paz, Prêmio Sakharov, Prêmio 
+das Nações Unidas de Direitos Humanos, Freedom 
+from Want
+26
+
+
+=== pág 27 ===
+
+“ LÍDERES 
+são pessoas que 
+MUDAM MENTES.”
+Howard Gardner neuropsicólogo (Harvard)
+ no livro Mentes que Mudam
+27
+
+
+=== pág 28 ===
+Pense nas pessoas 
+que conhece e que 
+têm grande 
+capacidade de 
+influência.
+O que faz dela uma pessoa 
+influente?
+Comportamentos, atitudes, 
+sentimentos...
+Date
+28
+
+
+=== pág 29 ===
+
+NOSSAS MENTES FORAM CRIADAS PARA OPERAR NO PALEOLÍTICO 
+E MUITOS COMPORTAMENTOS CONTINUAM PRESERVADOS. 
+29
+
+
+=== pág 30 ===
+
+“SOMOS MÁQUINAS DE REAGIR.”
+W. URY
+99% do tempo que pensamos, o PENSAMENTO É REATIVO. somente em 
+1% do tempo, o pensamento é GERENCIADO.
+Escolhemos o que queremos pensar em 1% do tempo.
+30
+
+
+=== pág 31 ===
+
+CONEXÕES SÓ SÃO 
+POSSÍVEIS ATRAVÉS DAS 
+EMOÇÕES.
+VÍNCULOS.
+31
+
+
+=== pág 32 ===
+
+“A dificuldade em lidar com os
+outros existe apenas porque 
+não somos bem resolvidos 
+com nós mesmos.”
+Willian Ury - Antropólogo, um dos maiores 
+Negociadores; Harvard Negociation Program
+32
+
+
+=== pág 33 ===
+
+COMO AS EMOÇÕES AFETAM 
+A CAPACIDADE DE INFLUÊNCIA?
+PERCEBEMOS, INTERPRETAMOS A 
+FORMA, O TIMBRE E O TOM DAS 
+RESPOSTAS MEDIANTE O CONTEXTO 
+EMOCIONAL DA NOSSA MENTE.
+Quanto mais fortes as emoções e 
+sentimentos envolvidos na linguagem, 
+maior a dificuldade em encontrar 
+elementos comuns.” 
+C. Rogers( 1902-1987),psicólogo, livro/ 
+Ruídos na Comunicação
+OUVIMOS O QUE 
+“QUEREMOS” OUVIR!
+33
+
+
+=== pág 34 ===
+
+A CAPACIDADE DE INFLUÊNCIA DO LÍDER ESTÁ 
+DIRETAMENTE RELACIONADA À SUA NATUREZA 
+EMOCIONAL. 
+34
+
+
+=== pág 35 ===
+
+Autoconsciência
+Autogestão
+MENTALIDADE – Domínios da IE e suas competências 
+(sentir)
+Autoconsciência emocional
+Autoavaliação precisa
+Autoconfiança
+Autocontrole emocional
+Transparência
+Adaptabilidade
+Superação
+Iniciativa
+Otimismo
+CAPACIDADES 
+QUE 
+DETERMINAM 
+COMO
+LIDAMOS 
+CONOSCO.
+INTRAPESSOAL
+35
+
+
+=== pág 36 ===
+
+Consciência social 
+Admin. Relacion.
+MENTALIDADE 
+(sentir)
+Empatia
+Consciência organizacional
+Consciência de Serviço
+Liderança inspiradora
+Influência
+Desenv. dos demais
+Catalisação de mudanças
+Gerenc. De conflitos
+Trabalho em equipe/
+Colaboração
+CAPACIDADES 
+QUE 
+DETERMINAM
+NOSSO
+RELACIONA
+MENTO COM 
+OS OUTROS.
+INTERPESSOAL
+36
+
+
+=== pág 37 ===
+
+A sensação de que a responsabilidade está de 
+fato, sendo compartilhada, aumenta a iniciativa 
+em abraçar novos desafios.
+A identidade do grupo pautada pela 
+confiança, aumenta a resiliência e a gestão 
+das ameaças externas.
+A qualidade do vínculo emocional influencia o 
+comportamento do grupo.
+37
+
+
+=== pág 38 ===
+
+Reaprender a aprender
+lifelonglearning
+Para lidar com cenários 
+transformadores precisaremos 
+de atualização, novas 
+capacidades técnicas e 
+sobretudo socias.
+Ambidestria
+Abraçar a alternância e aceitar 
+ambiguidade.
+“O passado traz nossa história, 
+o presente a nova realidade e o 
+futuro será construído por nós.”
+Autodesenvolvimento
+Olhar para dentro e fora.
+Vulnerabilidades
+Buscar o autoconhecimento
+Estar aberto ao diverso
+MENTALIDADE
+(agir)
+#comunicação
+#influencia
+#agentedemudança
+38
+
+
+=== pág 39 ===
+
+Amy Cuddy, psicóloga social, atuou como membro 
+do corpo docente da Rutgers University,
+Kellog School of Management e da
+Harvard Business Scholl.
+39
+
+
+=== pág 40 ===
+
+AMEAÇA
+RECOMPENSA
+Respondemos psicologicamente
+ aos estímulos emocionais,
+ nos AFASTANDO DO PERIGO 
+ou nos aproximando 
+da RECOMPENSA.
+40
+
+
+=== pág 41 ===
+
+90% DAS IMPRESSÕES 
+que formamos dos outros 
+estão apoiadas em sua 
+FORÇA e em sua 
+capacidade AFETIVA.
+É MELHOR SER 
+TEMIDO OU AMADO?
+41
+
+
+=== pág 42 ===
+
+Mecanismos cognitivos e neurais 
+ocasionam o juízo instantâneo 
+quando estamos frente ao 
+outro.
+O cérebro é mais rápido para 
+detectar a AFINIDADE (afeto)
+ do que a “FORÇA”
+(competência).
+42
+
+
+=== pág 43 ===
+
+ALTA FORÇA + BAIXA 
+AFETIVIDADE
+temor, afastamento, 
+cautela.
+Desperta sensações de 
+inveja, mescla de respeito 
+e ressentimento.
+ALTA AFETIVIDADE + BAIXA 
+FORÇA
+Compaixão, piedade.
+Visto como fraco, 
+vulnerável, pouco 
+competente.
+EQUILÍBRIO
+43
+
+
+=== pág 44 ===
+
+A CONFIANÇA, decorrente da 
+AFINIDADE, aumenta a abertura, 
+a cooperação, a fluidez da 
+comunicação, a partilha de 
+informações, a cooperação.
+A CONFIANÇA facilita a troca e a 
+aceitação de ideias, abrindo a “mente 
+e os ouvidos” do interlocutor.
+BOA INFLUÊNCIA COMEÇA 
+COM AFETIVIDADE.
+44
+
+
+=== pág 45 ===
+
+RECONHECIMENTO DOS MEDOS
+Possíveis questionamentos
+(explícitos ou velados)
+• Será que eu vou dar conta?
+• Tenho que negar tudo o que 
+aprendi e começar do zero?
+• Onde isso vai dar?
+• Onde busco pontos de apoio?
+45
+
+
+=== pág 46 ===
+
+CUIDANDO DA DIMENSÃO EMOCIONAL
+EM SITUAÇÕES DE MUDANÇA OU CRISE
+✓Não gostamos das mudanças alheias à nossa iniciativa e vontade.
+✓O desequilíbrio, a aparente falta de controle em relação ao futuro, a 
+incerteza são vistas como ameaças. Emergem os medos individuais e 
+coletivos.
+✓Importante identificar a natureza dos bloqueios emocionais e 
+resistências.
+✓Comunicação e esclarecimento em todos os níveis e continuamente.
+✓Investir em treinamento, coaching e mentoria. (peer-to-peer coaching, 
+rodas de conversa).
+✓Validar os esforços e comemorar os pequenos e grandes avanços. 
+46
+
+
+=== pág 47 ===
+
+iderança é um processo coletivo que envolve a identidade social
+compartilhada e permite que cada indivíduo exerça influência sobre 
+os demais. Essa identidade comum se refere à compreensão do indivíduo 
+sobre si mesmo como pertencente ao grupo.
+47
+
+
+=== pág 48 ===
+
+OS LÍDERES E
+AS PESSOAS
+48
+2
+48
+
+
+=== pág 49 ===
+
+REVENDO 
+ORTODOXIAS
+REVENDO ORTODOXIAS
+49
+
+
+=== pág 50 ===
+
+50
+Confiamos muito, quase 
+exclusivamente, no pensamento 
+analítico, que apenas refina o 
+conhecimento atual, produzindo 
+melhorias no status quo, sendo que 
+os resultados muitas vezes são  
+decepcionantes.
+O PODER DAS CRENÇAS
+50
+
+
+=== pág 51 ===
+
+O teste de uma inteligência 
+diferenciada é 
+a capacidade de manter duas 
+ideias opostas em mente, 
+ao mesmo tempo, e ainda 
+manter a 
+capacidade de funcionar. 
+F. Scott. Fitzgerald
+51
+
+
+=== pág 52 ===
+
+Tirania do “OU” ou a 
+Genialidade do “E” 
+O “ou” acredita que não se 
+pode viver com duas ideias 
+contraditórias  ao mesmo 
+tempo. As coisas devem ser A 
+ou B, nunca ambos.
+O “E” é mais flexível e sabe 
+lidar com dois opostos ao 
+mesmo tempo, encarando - os 
+como complementares.
+Fonte: Feitas para durar
+Collins & Porras
+52
+
+
+=== pág 53 ===
+
+A ILUSÃO DO 
+CONTROLE.
+53
+
+
+=== pág 54 ===
+
+54
+
+
+=== pág 55 ===
+A COMPLEXIDADE DESTES 
+TEMPOS APRESENTA 
+PROBLEMAS  QUE NÃO 
+SABEMOS RESOLVER. 
+55
+
+
+=== pág 56 ===
+
+LÓGICA TRADICIONAL NA SOLUÇÃO 
+DE PROBLEMAS É MAXIMIZAR OS 
+GANHOS E LIMITAR AS PERDAS.
+56
+
+
+=== pág 57 ===
+
+O PENSAMENTO LINEAR MUITO ÚTIL NA LINHA DE 
+MONTAGEM, NÃO CONTRIBUI PARA ENTENDER A PARTE 
+SUBJETIVA DO CONTEXTO EM QUE VIVEMOS.
+57
+
+
+=== pág 58 ===
+
+PROBLEMA COMPLEXO
+PROBLEMA COMPLEXO
+58
+
+
+=== pág 59 ===
+
+PROBLEMA SIMPLES
+PROBLEMA SIMPLES
+PROBLEMA SIMPLES
+59
+
+
+=== pág 60 ===
+
+ÓBVIO/SIMPLES
+✓São independentes, previsíveis e 
+podem ser resolvidos. 
+✓Resolvidos, tendem a desaparecer.
+✓Contexto conhecido, há histórico.
+✓São facilmente isolados.
+✓ Instruções devem ser seguidas e 
+garantem o sucesso
+✓A solução não contempla alternativas.
+ELES TÊM UMA RESPOSTA CERTA QUE 
+FORNECE A SOLUÇÃO.
+FICAM A CARGO DE PESSOAS 
+OPERACIONAIS.
+✓Contexto desconhecido.
+✓  Têm características interdependentes.
+✓  Ao longo do tempo, as variáveis tendem a oscilar.
+✓Os planos raramente funcionam de acordo com as 
+expectativas.
+✓Os métodos para a solução de problemas não são 
+suficientes. Experimentação.
+✓Não há um ponto final.
+✓ Problemas complexos  não são solucionáveis e por 
+isso, devem ser gerenciados.
+✓São necessárias alternativas para otimizar e 
+gerenciar a situação ao longo do tempo.
+PRÁTICAS EMERGENTES E ADAPTATIVAS.
+FICAM A CARGO DOS LÍDERES.
+COMPLEXO
+60
+
+
+=== pág 61 ===
+
+Gaps do líder na solução 
+de problemas
+✓Dificuldade em lidar com decisões e respostas 
+diversas.
+✓Entender que não há uma fórmula universal 
+para todas as situações.
+✓Aceitar as próprias limitações, entendendo que 
+não tem todas as respostas.
+✓Tendência a supersimplificar, buscando a 
+previsibilidade e ordem.
+✓Dificuldade em aceitar que as circunstâncias 
+mudam.
+✓Ansiedade para encontrar a solução.
+61
+
+
+=== pág 62 ===
+
+AS 
+DIFERENTES 
+PERSPECTIVAS 
+EM RELAÇÃO 
+AO CONTROLE
+Experimentação, criatividade, risco são 
+naturais na tomada de decisão em 
+contextos desconhecidos.
+Mas a falta de planejamento pode levar 
+ao erro, quando não é seguro falhar.
+Procurar controlar a incerteza, hipervalorizando 
+a linearidade pode engessar o processo de 
+decisão, desconsiderando o que é novo, 
+subliminar, imprevisível.
+O que pode levar ao caos
+ e à desordem.
+62
+
+
+=== pág 63 ===
+Lado administrativo 
+Lado adaptativo
+COMPLEXITY LEADERSHIP
+• Formal, convencional, oficial.
+• Sua função é produzir eficiência.
+• Executa as funções administrativas.
+• Envolve as estruturas burocráticas e as pessoas 
+operacionais.
+• Comunica-se por meio de um discurso oficial, 
+formal, explícito da organização. 
+• Essas NARRATIVAS são lineares e centralizadoras, 
+dizem como as coisas devem ser feitas na 
+organização.
+• Informal, criativo, não convencional.
+• Sua função é produzir inovação.
+• Pensa e executa as funções adaptativas.
+• Abriga as pessoas criativas.
+• Comunica-se por meio de um discurso informal e 
+tácito da organização.
+• São as ANTENARRATIVAS ( projeções e apostas 
+sobre o futuro) e HISTÓRIAS ORGANIZACIONAIS 
+( informais, não estruturadas, permeadas de 
+incerteza), dizem como as coisas são realmente 
+feitas na organização.
+Burocracia em excesso limita a criatividade, criatividade em excesso limita a eficiência.
+O que é “complexity leadership” (I)/Humberto Mariotti
+63
+
+
+=== pág 64 ===
+Quais as 
+narrativas e as 
+histórias que são 
+contadas em sua 
+organização?
+Date
+64
+
+
+=== pág 65 ===
+
+PARA LIDAR COM CENÁRIOS DE INCERTEZA
+65
+
+
+=== pág 66 ===
+
+ATITUDES E CAPACIDADES NECESSÁRIAS
+66
+•
+Ser realista, o que implica em aceitar e adaptar-se à complexidade/incerteza.
+•
+Usar múltiplas abordagens. Entender que todas as opiniões  merecem análise. 
+•
+Promover conversas abertas, ambientes de confiança.
+•
+Entender que muitas vezes opostos antagônicos, podem ser 
+   complementares.
+•
+Usar a intuição, mas entender que às vezes ela pode levar 
+    à indecisão.
+•
+Entender que a incerteza e a diversidade de perspectivas 
+   são inerentes à natureza humana.
+•
+Estar atento e consciente e ao mesmo tempo ser rigoroso, 
+    criativo e compreensivo.
+•
+Lidar com os dilemas de que não se pode ter tudo. (trade off)
+66
+
+
+=== pág 67 ===
+
+PONTOS DE ATENÇÃO
+67
+• Identificar as resistências/modo sobrevivência que 
+    leva à polarização.
+• Evitar a lógica binária, que deriva da insegurança 
+    e da necessidade das certezas.
+• Evitar consensos rasos e insuficientes para formar as 
+    bases de colaboração e mudança. Daí podem resultar 
+    mal-entendidos, falta de ação e más decisões.
+• Levar em conta os fatores emocionais resultantes do 
+    desconforto, da dissonância e da vulnerabilidade 
+    que a incerteza provoca.
+67
+
+
+=== pág 68 ===
+
+COMPLEXITY 
+LEADERSHIP
+68
+A principal tarefa de uma liderança integradora
+é promover a interação entre as narrativas e as 
+histórias; entre o lado formal e informal 
+da organização. A clareza organizacional emerge
+dessas interações. 
+MAIS CLAREZA SIGNIFICA MENOS ESTRESSE 
+ORGANIZACIONAL E PORTANTO 
+MAIS PRODUTIVIDADE.
+68
+
+
+=== pág 69 ===
+
+O QUE AS PESSOAS QUEREM?
+69
+
+
+=== pág 70 ===
+
+Comunidade
+Os seguidores 
+anseiam por  
+pertencer. Sentir-se 
+parte de algo 
+maior. 
+Os líderes devem 
+ajudá-los a 
+conectar-se com os 
+outros (não somente 
+com eles), bem  
+como, com o 
+propósito geral da 
+organização.
+NECESSIDADES DOS COLABORADORES
+Source:  Goffee, Rob and Jones, Gareth.  Why Should Anyone Be Led by You? 
+Autenticidade
+ Os seguidores querem 
+ser liderados por seres 
+humanos, não por 
+títulos ou credenciais. 
+Os líderes devem ser 
+capazes de 
+identificar/separar as 
+diferenças pessoais, as 
+debilidades e as 
+fortalezas para 
+inspirar  a equipe a 
+aportar energia e 
+talentos.
+Significado
+Os seguidores querem 
+crer que seu esforço é 
+reconhecido. 
+Os líderes devem 
+valorizar as 
+contribuições de uma 
+maneira significativa, 
+com retroalimentação 
+altamente 
+personalizada.
+Entusiasmo
+ Os seguidores necessitam 
+de um estímulo para ativar 
+um desempenho 
+excepcional. 
+Os líderes que expressam 
+sua própria paixão, valores 
+e visão proporcionam a 
+energia e entusiasmo que 
+os colaboradores anseiam. 
+70
+
+
+=== pág 71 ===
+
+MUDA O PARADIGMA DA FORMAÇÃO DAS EQUIPES
+(o líder não tem todas as respostas)
+✓Inteligência de enxame. (auto-organização)
+✓Soluções emergem das interações humanas.
+✓Interações estimulam a adaptabilidade, 
+aprendizagem e inovação.
+✓Lider e liderados se alternam na construção
+    do conhecimento.
+✓O líder integra e empodera.
+✓Capacita as pessoas a melhorar suas ações 
+coletivas.
+✓Fomenta a inteligência distribuída e co-criada.
+✓As equipes são interdisciplinares.
+71
+
+
+=== pág 72 ===
+
+Enchentes - tempestade Harvey pelo Texas, mostrou os 
+comportamentos de grupo das formigas-de-fogo, que 
+encontraram na união de esforços uma forma de evitar 
+o afogamento.
+Usando seus próprios corpos, os insetos se empilham 
+para criar uma espécie de balsa e flutuam pelas áreas 
+inundadas.
+Entomologistas dizem que se trata de um 
+comportamento comum da espécie
+Segundo Jim Hardie, especialista da Royal 
+Entomological Society, explica à BBC que as balsas 
+podem ser formadas por até 100 mil formigas. Com a 
+gordura de seus corpos, elas criam uma rede resistente 
+à água que protege a rainha do grupo. E, assim, 
+viajam em busca de um novo local para cavar seus 
+formigueiros.
+https://g1.globo.com/natureza/noticia/como-formigas-criam-balsas-para-
+sobreviver-as-inundacoes-causadas-pela-tempestade-harvey.ghtml 
+AUTO – ORGANIZAÇÃO DOS GRUPOS
+“ swarm intelligence” ou inteligência de enxame
+72
+
+
+=== pág 73 ===
+Os 3 tipos de liderança
+Classification: 
+INTERNAL USE ONLY
+Administrativa
+Adaptativa
+Capacitadora
+•
+Complexity leadership vê a liderança como um fenômeno distribuído.
+• Ligado às funções 
+clássicas de gestão, 
+coordenação, 
+planejamento, eficiência, 
+alinhamento, controle, 
+estrutura e processos.
+• Emerge de 
+comportamentos 
+coletivos, adaptativos, 
+criativos e de 
+aprendizagem, que 
+nascem da necessidade 
+de que a organização 
+tem de ajustar-se ao 
+estresse e desafios do 
+ambiente.
+•
+Permeia todos os níveis da 
+organização. Cria condições 
+para a mudança e facilita a 
+disseminação do conhecimento e 
+da criatividade.
+•
+Conecta e influencia as outras 
+duas, mas não exerce comando. 
+•
+Metaliderança: facilita a 
+emergência de ações que 
+reforçam a eficiência da 
+organização, sem descartar a 
+sua criatividade.
+O QUE É “COMPLEXITY LEADERSHIP II” : o que precisamos aprender/ H. Mariotti
+73
+
+
+=== pág 74 ===
+
+O case de RH na CSN
+"Um dia dei a ideia de fazermos um 
+concurso de moda para escolher o novo 
+uniforme. O conselho me chamou de louca, 
+mas eu havia constatado que os funcionários 
+tinham baixa autoestima justamente pelo 
+uniforme: eram velhos, horrendos, doados de 
+funcionário para outro. E oriundos da época 
+da CSN estatal. Foi quando contratei a 
+Gloria Kalil, que chefiou um grupo de 
+estilistas. Confeccionamos, teve votação 
+online e até desfile dentro da usina. Virou 
+case de RH e, dois meses depois, o clima era 
+outro. As pessoas iam trabalhar arrumadas, 
+mais felizes".
+ÉPOCA NEGÓCIOS/ 11/08/2026
+MARIA SILVIA BASTOS MARQUES
+https://www.youtube.com/watch?v=5wa8EBYnm5U 
+74
+
+
+=== pág 75 ===
+
+O FUTURO
+75
+3
+75
+
+
+=== pág 76 ===
+
+Precisamos de mais 
+diálogo e menos debate.
+76
+76
+
+
+=== pág 77 ===
+
+Palavra que significa “derrotar”, 
+ou mesmo como “discussão”, que 
+possui a mesma raiz de 
+“percussão” e “concussão” - 
+“quebrar coisas.”
+Debate
+Deriva de duas raízes 
+gregas: “dia” e “logos”, 
+sugerindo “fluxo” de 
+significado.
+Diálogo
+X
+Parece que ainda não aprendemos a pensar juntos. 
+Defendemos nossas ideias de modo emocional, quando o 
+diálogo não requer que as pessoas concordem umas com 
+as outras. Em vez disso, encoraja as pessoas a 
+participarem de um conjunto de significados 
+compartilhados que conduz a uma ação alinhada.
+David Bohm, físico pesquisador da física quântica e filosofia da mente.
+77
+
+
+=== pág 78 ===
+
+Aprender a ouvir até o fim, sem 
+concordar nem discordar de 
+imediato, é antes de mais nada, uma 
+posição de respeito ao outro.
+78
+
+
+=== pág 79 ===
+
+As armadilhas do Reducionismo
+• Reduzimos o que percebemos à nossa 
+capacidade de entendimento, ou seja, a 
+forma como é estruturada a nossa mente.
+• Reduzir algo ao nosso conhecimento é o 
+mesmo que reduzi-lo à nossa ignorância, 
+ou às dimensões de nosso ego.
+Reampliação, consiste em conferir o que foi 
+compreendido, envolvendo também a 
+compreensão dos outros, por meio do  
+diálogo, de outras formas de interação e 
+convivência.
+79
+
+
+=== pág 80 ===
+80
+
+AS PESSOAS 
+EMOCIONALMENTE 
+INTELIGENTES COOPERAM, 
+POIS DÁ MUITO MAIS 
+TRABALHO E PERDA DE 
+ENERGIA QUANDO NÃO 
+COOPERAMOS.
+O DESGASTE DA 
+DISCÓRDIA É BRUTAL.
+80
+
+
+=== pág 81 ===
+
+Steven Pinker, um dos maiores cientistas cognitivos 
+Fonte:  Como a mente funciona.
+“ Os objetivos 
+instalados 
+no homo sapiens, essa 
+espécie resolvedora de 
+problemas, não são  
+apenas alimentação, 
+luta, fuga e 
+comportamento sexual.
+No topo da lista 
+constam : 
+Entender o meio e 
+assegurar a 
+cooperação dos 
+outros.” 
+81
+
+
+=== pág 82 ===
+
+O PARADIGMA DA EMPATIA
+É o comportamento de esforçar-se para compreender as razões e emoções de 
+outras pessoas, assim como suas motivações, desejos e intenções.
+É um comportamento e não um sentimento. Ela envolve a nossa inteligência 
+emocional e possibilita grande habilidade social para obter a reciprocidade 
+com outras pessoas dentro da nossa comunicação pessoal.
+Isso não significa que teremos o mesmo sentimento da pessoa ou que cativamos 
+determinado sentimento por ela. Significa apenas que estamos tendo 
+um comportamento empático diante dela.
+82
+
+
+=== pág 83 ===
+
+Cenários de alta incerteza, decisões co-criadas.
+COLABORAÇÃO 
+83
+
+
+=== pág 84 ===
+
+COLABORAR E 
+COOPERAR SÃO 
+SINÔNIMOS QUASE 
+PERFEITOS, POIS A 
+AMBOS É COMUM A 
+NOÇÃO DE “AJUDA”, DE 
+FAZER JUNTO COM O 
+OUTRO. 
+COOPERAR significa cumprir sua parte para que 
+os demais possam fazer o mesmo, chegando ao 
+resultado esperado. 
+COLABORAR é mais do que isso. Significa se 
+preocupar em entender todo o processo, 
+encontrando maneiras de fazer com que a sua 
+parte tenha um impacto ainda mais positivo para 
+os demais.
+Fonte: Betta Tecnologia. Diferença entre Cooperação e Colaboração. 
+84
+
+
+=== pág 85 ===
+
+COLABORAÇÃO
+ E DIVERSIDADE
+POUCA 
+DIVERSIDADE
+Pode incorrer em 
+mais riscos, pois as 
+mentalidades se 
+reforçam mutuamente.
+Pode emergir a 
+polarização.
+Calam-se os divergentes.
+Excesso de otimismo.
+BOA 
+DIVERSIDADE
+Mais criativos.
+Maior nº de 
+alternativas 
+originais.
+Possibilidades.
+Cautela.
+Realista.
+Maiores chances 
+de acerto.
+85
+
+
+=== pág 86 ===
+
+FOMOS MOLDADOS PARA A COOPERAÇÃO,  DESDE QUE 
+COMPARTILHEMOS OS MESMOS VALORES  E TAMBÉM INTERESSES.
+86
+
+
+=== pág 87 ===
+
+Sony Pictures Brasil. 2013. Capitão Phillips | Trailer 1 Legendado | 08 de novembro nos Cinemas. Disponível no 
+Youtube: https://www.youtube.com/watch?v=noLJBSIM-lY  
+87
+
+
+=== pág 88 ===
+
+O QUE NOS CONECTA?
+Conexões com os outros 
+através de valores comuns, 
+afinidades, uma vez que é 
+quase impossível definir o que 
+são valores universais.
+CAPITÃO PHILIPS/ uma cinebiografia do 
+marinheiro mercante capitão Richard Phillips, 
+levado como refém por piratas somalis durante o 
+sequestro do Maersk Alabama em 2009.
+88
+
+
+=== pág 89 ===
+
+✓O nível de afeto entre os pares e divisões 
+hierárquicas são determinantes para a
+    efetuação de uma prática colaborativa.
+✓A cooperação está embutida em nossos 
+genes, mas não pode funcionar presa a 
+comportamentos rotineiros; precisa 
+desenvolver-se e ser aprofundada.
+✓As empresas têm papel fundamental no 
+desenvolvimento desta habilidade.
+✓No ambiente de trabalho, a colaboração 
+pode ser uma forma de suprir as 
+capacidades que nos faltam.
+AS EMPRESAS PODEM CRIAR ROTINAS 
+E NOVOS HÁBITOS QUE ESTIMULEM A 
+COOPERAÇÃO.
+PROMOVENDO ESPAÇOS PARA 
+ENCONTROS, ESTIMULAR RELAÇÕES 
+DIALÓGICAS, PROPOR DESAFIOS 
+GRUPAIS CRIATIVOS.
+Base conceitual: Richard Sennet, Richard Sennett é um sociólogo e historiador norte-americano, romancista e músico, 
+professor da London School of Economics, do MIT e da New York University
+89
+
+
+=== pág 90 ===
+
+“É uma inteligência distribuída por toda a parte, incessantemente valorizada, coordenada 
+em tempo real, que resulta em uma mobilização efetiva das competências. Em outras 
+palavras: o meu conhecimento, somado ao seu produz um terceiro conhecimento que 
+conectado aos outros conhecimentos do grupo e potencializado pela tecnologia produz um 
+espaço de compartilhamento de uma inteligência.”
+Pierre Lévy, filósofo da cibercultura e ex- ministro da educação na França.
+90
+
+
+=== pág 91 ===
+
+Ações dos líderes 
+transformadores
+Escuta ativa
+Ouvir com o coração e a mente
+Informação contínua
+Em qual ponto estamos?
+Calibrar expectativas
+Progressos, receios
+Endossar os esforços e os resultados
+Praticar o reconhecimento
+Solução de problemas em grupo
+Colaboração
+Estimular maior autonomia
+Empoderamento e delegação
+Imaginar futuros possíveis
+Pensamento visionário
+Cooperação
+Estimular e acreditar no potencial humano
+91
+
+
+=== pág 92 ===
+Líderes, entre a 
+mentalidade vigente e 
+a necessária, o que 
+precisa mudar?
+92
+
+
+=== pág 93 ===
+
+Navegar é preciso, viver 
+não é preciso. 
+Fernando Pessoa
+93
+
+
+=== pág 94 ===
+
+“O medo de um futuro que 
+tememos só pode ser superado 
+com imagens de um futuro que 
+queremos.”
+Wilhelm Barkhoff, (1916-1994)
+Advogado alemão que baseando-se nos conceitos da Antroposofia criou o 
+Banco GLS, reformador do sistema de bem-estar social alemão e inspirador 
+para o movimento do banco ético.
+94
+
+
+=== pág 95 ===
+
+Conhecimento Perpétuo. 2017. Tudo o que compartilhamos (legendado) | TV2 Danmark. Disponível no Youtube
+https://www.youtube.com/watch?v=lJilaqnPif4 
+Tudo o que compartilhamos
+95
+
+
+=== pág 96 ===
+
+Obrigada!
+Prof. Fátima Jinnyat | linkedin.com/in/fatima-jinnyat-8408401a 

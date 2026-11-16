@@ -1,0 +1,41 @@
+# 25 - Text Mining / Material Complementar Pos aula 14.07.2026_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+PÓS-AULA  
+Text Mining, Sentiment Analysis e NLP I  
+Prof. Guilherme Bezerra de Lima 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+Links disponíveis de livre acesso na internet: 
+ 
+• 
+https://raw.githubusercontent.com/guilhermeonrails/api/refs/heads/main/dados-
+globais.json 
+• 
+https://www.x-rates.com/table/?from=USD&amount=1 
+• 
+https://dolarhoje.com/dolar-turismo/ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*A responsabilidade pela idoneidade, originalidade e licitude dos conteúdos didáticos apresentados é do professor. 
+. 

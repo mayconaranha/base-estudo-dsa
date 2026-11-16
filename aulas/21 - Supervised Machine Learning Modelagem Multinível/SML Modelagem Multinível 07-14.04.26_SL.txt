@@ -1,0 +1,815 @@
+# 21 - Supervised Machine Learning Modelagem Multinível / SML Modelagem Multinível 07-14.04.26_SL.pdf
+
+=== pág 1 ===
+
+Supervised Machine Learning:
+Modelagem Multinível
+Prof. Dr. Luiz Paulo Fávero
+=== pág 2 ===
+
+
+Lei nº 9610/98
+=== pág 3 ===
+
+3
+=== pág 4 ===
+
+Reflexão
+0
+20
+40
+60
+80
+100
+Valores Previstos (Fitted Values)
+0
+20
+40
+60
+80
+100
+Valores Reais
+45º
+Modelo 1
+Modelo 2
+Modelo 3
+4
+=== pág 5 ===
+
+Contexto
+Unsupervised
+Machine Learning
+Análise de 
+Conglomerados
+Componentes 
+Principais
+Análise de 
+Correspondência
+Supervised
+Modelos Lineares 
+Generalizados (GLM)
+Modelos Lineares 
+Generalizados 
+Multinível (GLMM)
+5
+=== pág 6 ===
+
+São modelos que reconhecem a 
+existência de estrutura multinível ou 
+hierárquica nos dados.
+Stephen W. Raudenbush
+University of Chicago
+Anthony S. Bryk
+Stanford University
+Hierarchical linear models: applications and data analysis 
+methods. 2. ed. Thousand Oaks: Sage Publications, 2002.
+O que são Modelos Multinível?
+6
+=== pág 7 ===
+
+Estrutura Multinível
+Nível 1
+Nível 2
+Nível 3
+7
+=== pág 8 ===
+
+8
+=== pág 9 ===
+
+9
+=== pág 10 ===
+
+0.0
+20.0
+40.0
+60.0
+80.0
+100.0
+5
+10
+15
+20
+25
+30
+Variável de Firma
+Variável de Indivíduo
+Estrutura Multinível
+10
+=== pág 11 ===
+
+Variável de Indivíduo
+0.0
+20.0
+40.0
+60.0
+80.0
+100.0
+5
+10
+15
+20
+25
+30
+Variável de Firma
+Variável de Indivíduo
+Estrutura Multinível
+11
+=== pág 12 ===
+
+0.0
+20.0
+40.0
+60.0
+80.0
+100.0
+5
+10
+15
+20
+25
+30
+Variável de Firma
+Variável de Indivíduo
+Estrutura Multinível
+12
+=== pág 13 ===
+
+13
+=== pág 14 ===
+
+14
+=== pág 15 ===
+
+15
+=== pág 16 ===
+
+16
+=== pág 17 ===
+
+Se as variâncias dos termos aleatórios 0j e 1j forem
+estatisticamente
+diferentes
+de
+zero,
+procedimentos
+tradicionais de estimação dos parâmetros do modelo, como
+mínimos quadrados ordinários, não serão adequados.
+Barbara G. Tabachnick
+California State University
+Linda S. Fidell
+California State University
+Using multivariate statistics. 6. ed. Boston: 
+Pearson, 2013.
+Variância dos Termos Aleatórios
+17
+=== pág 18 ===
+
+Apenas a inserção de dummies de grupo não capturaria os
+efeitos contextuais, visto que não permitiria que se separassem os
+efeitos
+observáveis
+dos
+não
+observáveis
+sobre
+a
+variável
+dependente.
+Sophia Rabe-Hesketh
+U. C. Berkeley
+Anders Skrondal
+Norwegian Institute of Public Health
+University of Oslo
+U. C. Berkeley
+Multilevel and longitudinal modeling using Stata. 3. ed. 
+College Station: Stata Press, 2012.
+Dummies?
+18
+=== pág 19 ===
+
+Os modelos multinível permitem, portanto, o desenvolvimento de novos e
+mais bem elaborados constructos para predição e tomada de decisão.
+“Dentro de uma estrutura de modelo com equação única, parece não haver uma
+conexão entre indivíduos e a sociedade em que vivem. Neste sentido, o uso de
+equações em níveis permite que o pesquisador ‘pule’ de uma ciência a outra:
+alunos e escolas, famílias e bairros, firmas e países. Ignorar esta relação significa
+elaborar análises incorretas sobre o comportamento dos indivíduos e, igualmente,
+sobre os comportamentos dos grupos. Somente o reconhecimento destas
+recíprocas influências permite a análise correta dos fenômenos.”
+Daniel Courgeau
+Institut National D´Études
+Démographiques
+Methodology and epistemology of multilevel analysis.
+London: Kluwer Academic Publishers, 2003.
+Por que Utilizar?
+19
+=== pág 20 ===
+
+20
+=== pág 21 ===
+
+Business, Economics & Management
+Aplicações
+Periódico
+Índice h5
+(Google Scholar)
+% / Modelos 
+Supervisionados
+Journal of Business Research
+239
+10,78%
+Technological Forecasting and Social Change
+209
+12,71%
+Journal of Retailing and Consumer Services
+168
+14,04%
+Business Strategy and the Environment
+159
+12,15%
+Energy Economics
+159
+11,83%
+Finance Research Letters
+152
+3,75%
+American Economic Review
+146
+6,88%
+International Journal of Hospitality Management
+138
+4,59%
+Management Science
+138
+8,15%
+International Journal of Production Economics
+137
+8,57%
+9,26%
+21
+=== pág 22 ===
+
+Periódico
+Índice h5
+(Google Scholar)
+% / Modelos 
+Supervisionados
+IEEE Conf. on Comp. Vision and Pattern Recog.
+450
+4,78%
+Neural Information Processing Systems
+371
+3,56%
+Int. Conf. on Learning Representations
+362
+6,22%
+Advanced Materials
+330
+4,83%
+Journal of Cleaner Production
+298
+3,42%
+IEEE Access
+288
+2,53%
+International Conference on Machine Learning
+272
+8,24%
+Advanced Functional Materials
+263
+3,54%
+European Conference on Computer Vision
+262
+2,89%
+IEEE/CVF Int. Conf. on Computer Vision
+256
+3,38%
+4,28%
+Aplicações
+Enginering & Computer Science
+22
+=== pág 23 ===
+
+Periódico
+Índice h5
+(Google Scholar)
+% / Modelos 
+Supervisionados
+The New England Journal of Medicine
+441
+1,97%
+The Lancet
+375
+2,34%
+Cell
+317
+2,41%
+JAMA
+301
+2,75%
+Nature Medicine
+279
+0,98%
+International Journal of Molecular Sciences
+277
+1,75%
+Proceedings of the National Academy of Sciences
+268
+0,73%
+Int. Journal of Env. Research and Public Health
+258
+0,45%
+PLOS ONE
+244
+0,43%
+BMJ
+224
+2,34%
+1,70%
+Aplicações
+Health & Medical Sciences
+23
+=== pág 24 ===
+
+Periódico
+Índice h5
+(Google Scholar)
+% / Modelos 
+Supervisionados
+Business Strategy and the Environment
+159
+0,97%
+Computers & Education
+152
+0,34%
+Education and Information Technologies
+143
+0,41%
+Technology in Society
+139
+0,75%
+Resources Policy
+133
+0,98%
+Nature Human Behaviour
+132
+0,75%
+Journal of Business Ethics
+127
+0,73%
+Land Use Policy
+120
+0,45%
+Energy Research & Social Science
+117
+0,43%
+Education Sciences
+116
+0,97%
+0,64%
+Aplicações
+Social Sciences
+24
+=== pág 25 ===
+
+- Estrutura dos dados.
+- Não consideração de natureza multinível nos dados.
+- Capacidade
+computacional
+por
+vezes
+insuficiente,
+principalmente quando da existência de interações profundas.
+Emmanuel Lazega
+Institut d’Études Politiques de Paris
+Tom Snijders
+University of Oxford
+Multilevel network analysis for the social sciences: theory, 
+methods and applications. New York: Springer, 2016.
+Pouca Utilização: Qual a Razão?
+25
+=== pág 26 ===
+
+RAJAN, R.G.; ZINGALES, L.
+What do we know about capital structure? Some evidence from international data.
+Journal of Finance, v. 50-5, p. 1421-1460, 1995.
+(
+)
+(
+)
+(
+)
+(
+)
+0
+1
+2
+3
+4
+.
+.
+.
+.
+i
+i
+i
+i
+i
+i
+Leverage
+Tangible Assets
+Market to Book
+                   
+Log Sales
+ROA
+
+
+
+
+
+
+=
++
++
++
++
++
+- Compustat
+Global
+e
+MSCI;
+- 4.557 empresas;
+- 7 países;
+- período: 1987-1991.
+Country
+Local Market Index
+Number of Firms
+United States
+S&P 500
+2.583
+Japan
+Nikkei 500
+514
+Germany
+FAZ Share Index
+191
+France
+CAC General Index
+225
+Italy
+MIB Current Index
+118
+United Kingdom
+FT 500
+608
+Canada
+TSE 300
+318
+Aplicação
+26
+=== pág 27 ===
+
+0
+00
+0
+j
+j
+γ
+
+
+=
++
+1
+10
+1
+j
+j
+γ
+
+
+=
++
+(
+)
+(
+)
+(
+)
+(
+)
+0
+1
+2
+3
+4
+.
+.
+.
+.
+ij
+j
+j
+j
+ij
+ij
+j
+j
+ij
+ij
+ij
+Leverage
+Tangible Assets
+Market to Book
+                   
+Log Sales
+ROA
+
+
+
+
+
+
+=
++
++
++
++
++
+2
+20
+2
+j
+j
+γ
+
+
+=
++
+3
+30
+3
+j
+j
+γ
+
+
+=
++
+4
+40
+4
+j
+j
+γ
+
+
+=
++
+(
+)
+(
+)
+(
+)
+(
+)
+0
+1
+2
+3
+4
+.
+.
+.
+.
+i
+i
+i
+i
+i
+i
+Leverage
+Tangible Assets
+Market to Book
+                   
+Log Sales
+ROA
+
+
+
+
+
+
+=
++
++
++
++
++
+Nível 1
+Nível 2
+Aplicação
+27
+=== pág 28 ===
+
+RAJAN, R.G.; ZINGALES, L.
+What do we know about capital structure? Some evidence from international data.
+Journal of Finance, v. 50-5, p. 1421-1460, 1995.
+Aplicação
+28
+=== pág 29 ===
+
+Aplicação
+29
+=== pág 30 ===
+
+Andrew Gelman
+Multilevel Conference, 31 Out 2015, Columbia University, NYC.
+Interações Profundas e 
+Capacidade de Processamento
+Métodos de Estimação dos 
+Parâmetros
+Clusterização da Amostra
+Estimação de 
+modelos com a 
+melhor aderência 
+possível entre os 
+valores reais e 
+previstos
+Desafios em Modelagem Multinível
+30
+=== pág 31 ===
+
+31
+=== pág 32 ===
+
+32
+=== pág 33 ===
+
+Substituindo...
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛽0𝑗+ 𝜀𝑖𝑗
+𝛽0𝑗= 𝛾00 + 𝜈0𝑗
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛾00 + 𝜈0𝑗+ 𝜀𝑖𝑗
+Nível 1
+Substituindo...
+Nível 1
+Nível 2
+Modelo Nulo
+Modelagem HLM2
+LINHA 
+324 DO 
+SCRIPT 
+33
+=== pág 34 ===
+
+Modelo com Interceptos e Inclinações Aleatórios
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛽0𝑗+ 𝛽1𝑗. horas𝑖𝑗+ 𝜀𝑖𝑗
+𝛽0𝑗= 𝛾00 + 𝜈0𝑗
+𝛽1𝑗= 𝛾10 + 𝜈1𝑗
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛾00 + 𝛾10. horas𝑖𝑗+ 𝜈0𝑗+ 𝜈1𝑗. ℎ𝑜𝑟𝑎𝑠𝑖𝑗+ 𝜀𝑖𝑗
+Substituindo...
+Nível 1
+Nível 2
+Modelagem HLM2
+LINHA 
+415 DO 
+SCRIPT 
+34
+=== pág 35 ===
+
+Modelo Final HLM2
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛽0𝑗+ 𝛽1𝑗. horas𝑖𝑗+ 𝜀𝑖𝑗
+𝛽0𝑗= 𝛾00 + 𝛾01.texp𝑗+ 𝜈0𝑗
+𝛽1𝑗= 𝛾10 + 𝛾11.texp𝑗+ 𝜈1𝑗
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑖𝑗= 𝛾00 + 𝛾10. horas𝑖𝑗+ 𝛾01.texp𝑗+γ11.texp𝑗. horas𝑖𝑗
++ 𝜈0𝑗+ 𝜈1𝑗. horas𝑖𝑗+ 𝜀𝑖𝑗
+Substituindo...
+Nível 1
+Nível 2
+Modelagem HLM2
+LINHA 
+511 DO 
+SCRIPT 
+35
+=== pág 36 ===
+
+HLM2 x OLS x OLS com Dummies
+36
+=== pág 37 ===
+
+37
+=== pág 38 ===
+
+1
+2
+...
+T1
+2
+...
+T2
+...
+...
+TJ
+1
+2
+J
+..........
+Período t
+(Nível 1)
+Indivíduo j
+(Nível 2)
+Grupo k
+(Nível 3)
+1
+.................
+K
+Modelagem HLM3 com Medidas Repetidas
+1
+1
+2
+Período t
+Nível 1
+Indivíduo j
+Nível 2
+Grupo k
+Nível 3
+38
+=== pág 39 ===
+
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑡𝑗𝑘= 𝛽0𝑗𝑘+ 𝜀𝑡𝑗𝑘
+𝛽0𝑗𝑘= 𝛾00𝑘+ 𝜈0𝑗𝑘
+𝛾00𝑘= 𝛿000 + 𝜏00𝑘
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑡𝑗𝑘= 𝛿000 + 𝜈0𝑗𝑘+ 𝜏00𝑘+ 𝜀𝑡𝑗𝑘
+Substituindo...
+Nível 1
+Nível 2
+Nível 3
+Modelagem HLM3 com Medidas Repetidas
+Modelo Nulo
+LINHA 1159 
+DO SCRIPT 
+39
+=== pág 40 ===
+
+Modelo de Tendência Linear com Interceptos e Inclinações Aleatórios
+(Growth Model)
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑡𝑗𝑘= 𝛽0𝑗𝑘+ 𝛽1𝑗𝑘. 𝑚𝑒𝑠𝑗𝑘+ 𝜀𝑡𝑗𝑘
+𝛽0𝑗𝑘= 𝛾00𝑘+ 𝜈0𝑗𝑘
+𝛽1𝑗𝑘= 𝛾10𝑘
+𝛾00𝑘= 𝛿000 + 𝜏00𝑘
+𝛾10𝑘= 𝛿100 + 𝜏10𝑘
+desempenho𝑡𝑗𝑘= 𝛿000 + 𝛿100. 𝑚𝑒𝑠𝑗𝑘+
+𝜈0𝑗𝑘+ 𝜏00𝑘+ 𝜏10𝑘. 𝑚𝑒𝑠𝑗𝑘+ 𝜀𝑡𝑗𝑘
+Substituindo...
+Nível 1
+Nível 2
+Nível 3
+LINHA 1246 
+DO SCRIPT 
+Modelagem HLM3 com Medidas Repetidas
+40
+=== pág 41 ===
+
+Modelo de Tendência Linear com Interceptos e Inclinações Aleatórios e as 
+Variáveis ativ de Nível 2 e texp de Nível 3 (Modelo Final)
+𝑑𝑒𝑠𝑒𝑚𝑝𝑒𝑛ℎ𝑜𝑡𝑗𝑘= 𝛽0𝑗𝑘+ 𝛽1𝑗𝑘. 𝑚𝑒𝑠𝑗𝑘+ 𝜀𝑡𝑗𝑘
+𝛽0𝑗𝑘= 𝛾00𝑘+ 𝜈0𝑗𝑘
+𝛽1𝑗𝑘= 𝛾10𝑘+ 𝛾11𝑘.𝑎𝑡𝑖𝑣𝑗𝑘
+𝛾00𝑘= 𝛿000 + 𝜏00𝑘
+𝛾10𝑘= 𝛿100 + 𝛿101.texp𝑘+ 𝜏10𝑘
+𝛾11𝑘= 𝛿110
+desempenho𝑡𝑗𝑘= 𝛿000 + 𝛿100. 𝑚𝑒𝑠𝑗𝑘+δ110. ati𝑣𝑗𝑘. 𝑚𝑒𝑠𝑗𝑘+ 𝛿101.texp𝑘. 𝑚𝑒𝑠𝑗𝑘+
+𝜈0𝑗𝑘+ 𝜏00𝑘+ 𝜏10𝑘. 𝑚𝑒𝑠𝑗𝑘+ 𝜀𝑡𝑗𝑘
+Substituindo...
+Nível 1
+Nível 2
+Nível 3
+LINHA 1302 
+DO SCRIPT 
+Modelagem HLM3 com Medidas Repetidas
+41
+=== pág 42 ===
+
+HLM3 com Medidas Repetidas x OLS com Dummies
+42
+=== pág 43 ===
+
+FINALIZANDO...
+43
+=== pág 44 ===
+
+Reflexão Multinível
+“Devemos expandir o círculo do nosso amor até que
+ele englobe todo o nosso bairro; do bairro, por sua vez,
+deve desdobrar-se para toda a cidade; da cidade para
+o estado, e assim, sucessivamente, até que o objeto do
+nosso amor inclua todo o universo.”
+Mahatma Gandhi
+(1869 – 1948)
+44
+=== pág 45 ===
+
+Obrigado!
+Prof. Dr. Luiz Paulo Fávero |
+45

@@ -1,0 +1,1008 @@
+# 27 - Árvores, Redes e Ensemble Models / Árvores, Redes e Ensemble 01-08.09.2026_SL.pdf
+
+=== pág 1 ===
+
+Árvores, Redes e 
+Ensemble Models II – III
+Prof.ª Dra. Valquíria Alencar
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Agenda
+01.
+Conceitos Fundamentais
+O que são modelos de ensemble e por que combinar modelos?
+02.
+Técnicas de Ensemble
+Voting, averaging, bagging, boosting e stacking
+03.
+Random Forest
+Algoritmo para redução de variância
+04.
+Aplicação Prática
+Treinamento de modelo com Random Forest
+05.
+XGBoost
+Biblioteca para treinar ensembles de árvores com foco em performance
+06.
+Aplicação Prática
+Treinamento de modelo com XGBoost
+
+3
+
+=== pág 4 ===
+
+01
+Por que combinar modelos?
+Do modelo único ao poder do ensemble
+
+4
+
+=== pág 5 ===
+
+O QUE DISCUTIMOS NA AULA ANTERIOR
+Limitações de uma árvore individual
+Overfitting
+A árvore pode crescer demais e começar a 
+"decorar" os dados de treinamento , em vez de 
+aprender padrões gerais.
+Sensibilidade a pequenas mudanças
+Pequenas alterações no conjunto de 
+treinamento podem gerar uma árvore 
+completamente diferente .
+
+5
+
+=== pág 6 ===
+
+DE ONDE VÊM OS ERROS DE UM MODELO?
+Trade-off viés-variância
+Baixa variância
+Alta variância
+Baixo 
+viés
+Alto 
+viés
+Alto viés = previsões consistentes, mas fora do alvo
+Alta variância = previsões espalhadas e inconsistentes
+• Modelos
+de
+alto
+viés
+normalmente
+são
+muito
+simplistas para capturar os padrões verdadeiros
+dos
+dados.
+Eles
+ajustam
+mal
+o
+conjunto
+de
+treinamento, levando a uma baixa precisão de
+treinamento e teste.
+• Modelos
+de
+alta
+variância
+são
+excessivamente
+flexíveis e se ajustam muito de perto aos dados de
+treinamento, incluindo o ruído. Eles ajustam demais o
+conjunto
+de
+treinamento
+e
+não
+conseguem
+generalizar
+para
+dados
+não
+vistos,
+levando
+ao
+overfitting e a previsões com variabilidade alta.
+
+6
+
+=== pág 7 ===
+
+O QUE BUSCAMOS
+Um equilíbrio entre viés e 
+variância
+Reduzir o viés tende a aumentar a variância — e 
+vice-versa. Não dá para zerar os dois.
+Buscamos o ponto de equilíbrio : nem simples 
+demais, nem flexível demais.
+Os ensembles nos ajudam a chegar mais perto desse 
+equilíbrio do que um modelo isolado.
+
+7
+
+=== pág 8 ===
+
+Como podemos 
+melhorar isso?
+
+8
+
+=== pág 9 ===
+
+Imagine que você precisa tomar uma decisão difícil. Em 
+vez de pedir a opinião de uma só pessoa, você consulta 
+várias. A decisão final é a opinião da maioria.
+Esse é o princípio do ensemble: combinar vários modelos fracos para criar um 
+modelo forte.
+
+9
+
+=== pág 10 ===
+
+ANALOGIA
+O júri
+Um único jurado pode ter vieses ou cometer 
+erros.
+Quando 12 jurados votam, os erros individuais 
+tendem a diminuir. O veredito coletivo é mais 
+confiável do que a opinião de qualquer pessoa 
+sozinha.
+✓
+✓
+✕
+✓
+✓
+✓
+✓
+✕
+✓
+✓
+✓
+✓
+Veredito: 10 × 2
+
+10
+
+=== pág 11 ===
+
+Dados
+→
+Modelo 1
+Modelo 2
+Modelo 3
+→
+Agregação
+→
+Predição final
+Combinar múltiplos modelos para obter uma predição 
+mais robusta e precisa
+
+11
+
+=== pág 12 ===
+
+DEFINIÇÃO
+O que é ensemble?
+Ensemble treina múltiplos modelos e combina suas predições em uma 
+única saída.
+Modelos diferentes erram em pontos diferentes — ao fazer a média ou 
+votação entre vários modelos, os erros individuais tendem a se cancelar.
+
+12
+
+=== pág 13 ===
+
+02
+Técnicas de ensemble
+Explorando voting/averaging, bagging, boosting e stacking
+
+13
+
+=== pág 14 ===
+
+Estratégias de ensemble learning
+Voting / Averaging
+É a forma mais 
+simples de ensemble. 
+Vários modelos são 
+treinados de forma 
+independente e suas 
+previsões são 
+combinadas. Em 
+classificação, usa-se 
+a votação ; em 
+regressão, a média 
+das previsões.
+Bagging
+Treina vários modelos 
+do mesmo tipo 
+usando diferentes 
+amostras do conjunto 
+de treinamento. A 
+combinação das 
+previsões reduz a 
+variabilidade e 
+melhora a 
+generalização.
+Boosting
+Treina modelos de 
+forma sequencial , em 
+que cada novo modelo 
+busca corrigir os erros 
+dos anteriores. Essa 
+estratégia aumenta 
+gradualmente o 
+desempenho do 
+modelo final.
+Stacking
+Combina diferentes 
+modelos usando um 
+meta-modelo , que 
+aprende a melhor 
+forma de integrar as 
+previsões dos modelos 
+base para obter uma 
+resposta final mais 
+precisa.
+
+14
+
+=== pág 15 ===
+
+Tipos de ensembles
+
+15
+
+=== pág 16 ===
+
+03
+Voting e averaging
+A forma mais simples de combinar modelos
+
+16
+
+=== pág 17 ===
+
+CLASSIFICAÇÃO · VOTAÇÃO
+Do voto individual à decisão final
+Cada modelo vota em uma classe — a mais votada vence.
+Dados de treino
+→
+Regressão logística
+→
+Classe A
+Árvore de decisão
+→
+Classe B
+KNN
+→
+Classe A
+→
+Votação
+→
+Classe A
+
+17
+
+=== pág 18 ===
+
+REGRESSÃO · MÉDIA
+Da previsão individual à média final
+Cada modelo prevê um número — a saída é a média das previsões.
+→
+Regressão linear
+→
+R$ 320 mil
+Árvore de regressão
+→
+R$ 290 mil
+KNN
+→
+R$ 350 mil
+→
+Média
+→
+R$ 320 mil
+Dados de treino
+
+18
+
+=== pág 19 ===
+
+Hard voting, soft voting e averaging
+CLASSIFICAÇÃO
+Hard voting
+Cada modelo vota em uma classe; 
+a mais votada vence.
+Modelo A: Doença 
+Modelo B: Saudável 
+Modelo C: Doença 
+Resultado: Doença (2×1)
+CLASSIFICAÇÃO
+Soft voting
+Faz a média das probabilidades de 
+cada modelo. Mais preciso quando 
+os modelos são bem calibrados.
+P(Doença): 0,9 · 0,4 · 0,7 
+Média: 0,67 →Doença
+REGRESSÃO
+Averaging
+A previsão final é a das previsões 
+numéricas.
+Modelo A: R$ 320 mil 
+Modelo B: R$ 290 mil 
+Modelo C: R$ 350 mil 
+Média: R$ 320 mil
+
+19
+
+=== pág 20 ===
+
+04
+Bagging
+Reduzindo variância com amostragem
+
+20
+
+=== pág 21 ===
+
+Bagging: Bootstrap Aggregating
+1
+Bootstrap
+Cria N amostras aleatórias com 
+reposição a partir dos dados 
+originais.
+→
+2
+Treinar
+Treina um modelo independente 
+em cada amostra bootstrap —
+em paralelo.
+→
+3
+Agregar
+Combina previsões por votação 
+(classificação) ou média 
+(regressão).
+O que é bootstrap?
+Amostragem com reposição : cada amostra tem o mesmo tamanho dos dados originais, mas 
+~63% dos registros são únicos e o restante se repete — gerando diversidade entre os modelos.
+
+21
+
+=== pág 22 ===
+
+PASSO A PASSO · 1 DE 2
+Amostragem com reposição
+Dados originais
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+↓
+sorteia 10 vezes, devolvendo o registro a cada sorteio
+Amostra bootstrap 1
+3
+7
+1
+3
+9
+7
+5
+3
+10
+7
+repetidos (3 e 7)
+2, 4, 6 e 8 ficaram de fora
+
+22
+
+=== pág 23 ===
+
+PASSO A PASSO · 2 DE 2
+Dentro e fora da amostra: o conceito OOB
+~63%
+~37%
+entram na amostra bootstrap treinam o 
+modelo
+ficam de fora out-of-
+bag (OOB)
+Validação gratuita
+As amostras OOB nunca foram vistas pelo 
+modelo — servem como conjunto de teste 
+embutido , sem separar dados de validação.
+
+23
+
+=== pág 24 ===
+
+Agregação reduz variância
+Árvores individuais
+Previsões espalhadas em torno do valor real
+→
+Média do ensemble
+Desvios se compensam — previsão estável
+O bagging mantém o viés de cada modelo, mas reduz drasticamente a variância do conjunto.
+
+24
+
+=== pág 25 ===
+
+05
+Boosting
+Aprendizado sequencial e correção de erros
+
+25
+
+=== pág 26 ===
+
+PASSO A PASSO · 1 DE 2
+Um modelo simples e seus erros
+Modelo 1
+árvore rasa (weak learner)
+→
+✓
+✓
+✕
+✓
+✕
+✓
+acertos e erros nos dados de treino
+→
+Os erros ganham mais peso e 
+viram a prioridade do próximo 
+modelo.
+
+26
+
+=== pág 27 ===
+
+PASSO A PASSO · 2 DE 2
+Cada modelo corrige o anterior
+Modelo 1
+aprende o padrão 
+geral
+→
+erros
+Modelo 2
+foca nos erros do 
+modelo 1
+→
+resíduo
+Modelo 3
+corrige o resíduo 
+do modelo 2
+→
+Saída ponderada
+A previsão final é a soma ponderada de todos os modelos da sequência.
+
+27
+
+=== pág 28 ===
+
+Como o erro vai diminuindo?
+Nº de estimadores (iterações)
+Erro
+Queda rápida no início
+Cada estimador ataca o resíduo do anterior —
+sobra cada vez menos para corrigir.
+Depois, estabiliza
+Com muitos estimadores, o ganho diminui — e 
+o modelo pode passar a decorar ruído.
+Freios do boosting
+Learning rate e early stopping param o 
+processo no ponto certo.
+
+28
+
+=== pág 29 ===
+
+GRADIENTE DESCENDENTE
+Learning rate: descendo a duna até o vale
+De olhos vendados na duna, você sente a inclinação do chão — o gradiente dá a direção do passo; o learning rate dá o 
+tamanho do passo. No boosting, cada passo é uma nova árvore — o learning rate controla o quanto ela contribui.
+Nós enxergamos o vale todo; quem desce sente apenas a inclinação sob os pés.
+Passos minúsculos
+ 
+Seguro, mas leva mais tempo para 
+chegar ao ponto mais baixo —
+aprendizado lento e caro.
+Passos gigantescos
+ 
+Atravessa o fundo e para do 
+outro lado — fica oscilando de 
+um lado para o outro, sem 
+descansar no ponto mais baixo.
+Passos equilibrados
+ 
+Desce com boa velocidade e 
+chega ao ponto mais baixo sem 
+ultrapassá-lo. É o que buscamos.
+Repare nos passos minúsculos: perto do topo o gradiente é grande e você anda bastante; perto do fundo o terreno fica plano, o
+gradiente diminui e os passos encurtam sozinhos. O tamanho real da passada = learning rate (fixo) × inclinação naquele ponto.
+
+29
+
+=== pág 30 ===
+
+Três gerações de boosting
+AdaBoost
+1995
+Repondera as observações: erros ganham mais peso na próxima rodada.
+Gradient Boosting
+2001
+Cada novo modelo ajusta diretamente o resíduo (gradiente da função de perda).
+XGBoost
+2014
+Gradient boosting otimizado: regularização + engenharia de alto desempenho.
+
+30
+
+=== pág 31 ===
+
+06
+Stacking
+Meta-aprendizado: modelos que aprendem a combinar modelos
+
+31
+
+=== pág 32 ===
+
+Dois níveis de modelos
+NÍVEL 0
+Regressão logística
+Árvore de decisão
+KNN
+↓
+previsões dos modelos base viram features
+↓
+NÍVEL 1
+Meta-modelo
+↓
+Predição final
+
+32
+
+=== pág 33 ===
+
+Meta-modelo sem vazamento de dados
+O risco
+Se o meta-modelo treina com previsões feitas sobre 
+os dados de treino dos modelos base , recebe 
+previsões otimistas demais.
+Vazamento de dados →ensemble superestimado
+A solução: out-of-fold
+Validação cruzada: cada previsão que alimenta o 
+meta-modelo vem de um fold que o modelo base 
+não viu no treino.
+treino
+treino
+prevê
+treino
+treino
+
+33
+
+=== pág 34 ===
+
+07
+Random Forest
+Conhecendo o algoritmo
+
+34
+
+=== pág 35 ===
+
+A dupla aleatoriedade do Random Forest
+1 · LINHAS
+Bootstrap de observações
+Cada árvore treina em uma amostra bootstrap 
+diferente das linhas.
+2 · COLUNAS
+Subconjunto de variáveis por split
+Idade
+Sexo
+IMC
+Colesterol
+Em cada divisão, só um subconjunto aleatório de 
+features é candidato ao split.
+Duas camadas de aleatoriedade →árvores descorrelacionadas →ensemble mais eficaz.
+
+35
+
+=== pág 36 ===
+
+Bagging tradicional × Random Forest
+Bagging tradicional
+•Bootstrap apenas das linhas
+•Cada split considera todas as variáveis
+•Variáveis fortes dominam →árvores 
+correlacionadas
+Random Forest
+•Bootstrap das linhas + sorteio de variáveis por 
+split
+•Árvores exploram caminhos diferentes
+•Árvores descorrelacionadas →maior redução de 
+variância
+
+36
+
+=== pág 37 ===
+
+BAGGING + ALEATORIEDADE NA SELEÇÃO DE VARIÁVEIS
+Como funciona o Random Forest
+1
+Cria N amostras bootstrap dos dados
+2
+Em cada divisão, considera apenas um subconjunto 
+aleatório de variáveis
+3
+Treina uma árvore completa (profunda) em cada 
+amostra
+4
+Agrega as previsões de todas as árvores
+Inovação-chave
+O sorteio de variáveis em cada divisão 
+descorrelaciona as árvores.
+Árvores mais diversas produzem um ensemble 
+mais eficaz na redução de variância.
+
+37
+
+=== pág 38 ===
+
+AJUSTE DE HIPERPARÂMETROS
+Hiperparâmetros do Random Forest
+n_estimators
+Define o número de árvores que 
+formarão a floresta. Mais árvores 
+geralmente deixam a previsão mais 
+estável, mas aumentam o tempo de 
+treinamento e gasto computacional.
+max_features
+Define quantas variáveis serão 
+consideradas como candidatas em 
+cada divisão da árvore . Valores muito 
+altos tornam as árvores mais 
+parecidas; valores menores 
+aumentam a variedade do conjunto.
+max_depth
+Define o número máximo de níveis de 
+cada árvore. Árvores muito profundas 
+podem memorizar os dados de 
+treinamento. Árvores mais rasas são 
+mais simples, mas podem deixar de 
+capturar padrões importantes.
+min_samples_split
+Define o número mínimo de 
+observações que um nó precisa ter 
+para poder ser dividido. Valores 
+maiores dificultam novas divisões e 
+geram árvores mais simples. Valores 
+menores permitem árvores mais 
+detalhadas.
+min_samples_leaf
+Define o número mínimo de 
+observações que uma folha final deve 
+conter. Valores maiores produzem 
+previsões mais gerais e estáveis. 
+Valores muito pequenos podem gerar 
+regras específicas demais.
+bootstrap
+Define se cada árvore será treinada 
+com uma amostra aleatória dos 
+dados, selecionada com reposição . 
+Quando True , cada árvore recebe 
+uma amostra diferente, aumentando a 
+diversidade da floresta e 
+caracterizando o mecanismo de 
+bagging.
+
+38
+
+=== pág 39 ===
+
+>>
+Da teoria ao código
+Será que um ensemble com Random Forest consegue superar o 
+resultado de uma árvore individual?
+
+39
+
+=== pág 40 ===
+
+08
+XGBoost
+Conhecendo a biblioteca eXtreme Gradient Boosting
+
+40
+
+=== pág 41 ===
+
+A BIBLIOTECA
+O que é o XGBoost
+Biblioteca otimizada e 
+distribuída de gradient
+boosting — eficiente e 
+flexível.
+Trata valores faltantes 
+nativamente e dispensa 
+a dummização de 
+variáveis categóricas.
+Traz regularização L1 e L2 
+embutida, controlando a 
+complexidade das 
+árvores e protegendo 
+contra overfitting.
+Escala para grandes 
+volumes de dados em 
+ambientes distribuídos 
+(Ex: Hadoop).
+
+41
+
+=== pág 42 ===
+
+A ideia central do XGBoost
+Gradient
+boosting
+com árvores 
+como base
++
+Regularização 
+L1/L2
+árvores sob 
+controle
++
+Engenharia
+paralelização · 
+cache · sparsity
+=
+Boosting rápido e 
+regularizado
+
+42
+
+=== pág 43 ===
+
+O CONTROLE DE COMPLEXIDADE DO XGBOOST
+Regularização L1/L2
+objetivo =
+erro nos dados
++
+penalidade pela complexidade
+Cada folha tem um peso (w), que indica o quanto ela influencia a previsão final. A regularização funciona como um 
+“freio”, penalizando pesos muito altos. Assim, o modelo evita previsões exageradas sem evidência suficiente nos dados.
+Regularização L1 reg_alpha
+•Ajuda o modelo a se tornar mais simples ao penalizar a 
+soma dos valores absolutos dos pesos das folhas das 
+árvores.
+•Algumas contribuições podem ser reduzidas até zero, 
+fazendo com que o modelo ignore padrões fracos, 
+ruidosos ou pouco relevantes .
+•Assim, a L1 funciona como um mecanismo de seleção e 
+simplificação , ajudando a reduzir o overfitting.
+Regularização L2 reg_lambda
+•Penaliza pesos muito grandes nas folhas das árvores, 
+reduzindo a influência excessiva de qualquer parte 
+específica do modelo.
+•Diferente da L1, ela normalmente não zera contribuições, 
+mas suaviza os valores , tornando o modelo mais estável 
+e menos sensível a variações ou padrões extremos nos 
+dados de treino.
+•É uma das formas mais comuns de controlar a 
+complexidade do modelo, pois evita que as árvores 
+façam correções exageradas a cada etapa do boosting.
+•Com isso, o modelo tende a generalizar melhor para 
+dados novos .
+
+43
+
+=== pág 44 ===
+
+AJUSTE DE HIPERPARÂMETROS
+Hiperparâmetros do XGBoost
+n_estimators
+Número máximo de árvores 
+construídas em sequência . 
+Mais árvores permitem mais 
+correções, mas aumentam o 
+custo computacional
+learning_rate
+Controla o peso da 
+contribuição de cada nova 
+árvore para a previsão final. 
+Um valor alto faz mudanças 
+grandes; um valor baixo faz 
+ajustes menores e mais 
+cuidadosos.
+max_depth
+Define o número máximo de 
+níveis de cada árvore. Árvores 
+muito profundas podem 
+memorizar os dados de 
+treinamento. Árvores mais 
+rasas são mais simples, mas 
+podem deixar de capturar 
+padrões importantes.
+min_child_weight
+Define a quantidade mínima 
+de informação que deve 
+existir em um nó filho para 
+que uma divisão seja aceita. 
+Valores maiores tornam o 
+modelo mais conservador, 
+criando árvores mais simples.
+subsample
+Define a fração das 
+observações de treinamento 
+usada para construir cada 
+árvore. Valores menores que 1 
+adicionam aleatoriedade, 
+reduzem a dependência de 
+casos específicos e podem 
+ajudar a controlar o 
+overfitting.
+colsample_bytree
+Define a fração das variáveis 
+disponíveis para construir 
+cada árvore . Isso aumenta a 
+diversidade entre as árvores. 
+Valores menores podem 
+reduzir overfitting, mas valores 
+muito baixos podem impedir 
+que o modelo encontre 
+variáveis importantes.
+reg_alpha / reg_lambda
+Regularização L1 / L2. Controla 
+complexidade e overfitting . 
+L1: Valores maiores favorecem 
+modelos mais simples e 
+podem reduzir a influência de 
+variáveis pouco relevantes. L2: 
+Valores maiores tornam as 
+previsões mais suaves e 
+conservadoras, ajudando a 
+reduzir o overfitting.
+Modelo sensível a tuning
+Use early stopping e 
+validação cruzada para 
+calibrar!
+
+44
+
+=== pág 45 ===
+
+>>
+Da teoria ao código
+Com Random Forest, alcançamos 83% de recall e 96% de acurácia.
+Será que o XGBoost consegue superar esse resultado?
+
+45
+
+=== pág 46 ===
+
+APLICAÇÃO PRÁTICA
+XGBoost em Python
+Interface familiar
+Mesmo fit / predict do scikit-learn.
+Early stopping
+Para de adicionar árvores quando a 
+validação para de melhorar.
+Mesmas métricas
+Acurácia, matriz de confusão, ROC 
+(Classificação) MSE, RMSE, MAE (Regressão)
+
+46
+
+=== pág 47 ===
+
+Decision Tree × Random Forest × XGBoost
+CRITÉRIO
+Decision Tree
+Random Forest
+XGBoost
+Tipo
+Modelo único
+Ensemble bagging
+Ensemble boosting
+Treinamento
+Construção recursiva da árvore, 
+escolhendo o melhor split em 
+cada nó
+Paralelo
+Sequencial, cada árvore corrige erros 
+anteriores
+Viés / variância
+Baixo viés, alta variância
+Reduz variância
+Reduz principalmente viés; pode controlar 
+variância com regularização
+Overfitting
+Alto risco
+Menor risco que uma árvore 
+única
+Pode sofrer overfitting sem 
+regularização/tuning
+Interpretabilidade
+Alta
+Média/baixa, explicável 
+por feature importance
+Média/baixa, explicável por feature 
+importance
+Velocidade de treino
+Rápida
+Média a alta, mas 
+paralelizável
+Média; otimizada, mas sequencial *Pode ser 
+rápido na prática, mas depende bastante 
+do volume de dados e dos 
+hiperparâmetros.
+Sensível a 
+hiperparâmetros
+Pouco
+Média
+Muito
+Quando usar
+Baseline, explicabilidade
+Alta performance
+
+47
+
+=== pág 48 ===
+
+Do simples ao máximo desempenho
+COMECE SIMPLES
+Decision Tree
+baseline e explicabilidade
+→
+GENERALIZE
+Random Forest
+robustez sem muito tuning
+→
+MAXIMIZE
+XGBoost
+alta performance
+
+48
+
+=== pág 49 ===
+
+49
+Sugestões de Leituras/Referências
+Livro-base
+•
+GÉRON, A. Mãos à obra: aprendizado de máquina com Scikit-Learn, Keras & TensorFlow. 2. ed. Rio de Janeiro: Alta 
+Books, 2021.
+Documentação técnica
+•
+SCIKIT-LEARN. Ensemble methods. Disponível em: https://scikit-learn.org/stable/modules/ensemble.html
+Referência oficial com a descrição dos estimadores usados nos notebooks: VotingClassifier, BaggingClassifier, 
+RandomForestClassifier, GradientBoostingClassifier e StackingClassifier.
+•
+XGBOOST DEVELOPERS. XGBoost Documentation. Disponível em: https://xgboost.readthedocs.io/en/stable/. 
+Documentação oficial do XGBoost.
+Leitura complementar
+•
+CHEN, T.; GUESTRIN, C. XGBoost: A Scalable Tree Boosting System. In: Proceedings of the 22nd ACM SIGKDD 
+International Conference on Knowledge Discovery and Data Mining, 2016, p. 785-794.                                            
+Disponível em: https://arxiv.org/abs/1603.02754. Artigo original do XGBoost. Leitura recomendada para entender as 
+escolhas de projeto que tornaram o algoritmo padrão em competições e aplicações industriais.
+
+=== pág 50 ===
+
+Obrigada!
+Prof.ª Dra. Valquíria Alencar | linkedin.com/in/valquiria-alencar

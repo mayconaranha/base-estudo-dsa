@@ -1,0 +1,638 @@
+# 16 - Unsupervised Machine Learning Análise de Correspondência Simples e Múltipla / Unsupervised Machine Learning 13.01.2026_SL.pdf
+
+=== pág 1 ===
+
+UNSUPERVISED MACHINE 
+LEARNING: Análise de 
+Correspondência Simples 
+e Múltipla
+Prof. Dr. Wilson Tarantin Junior
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Contextualização
+• Quando aplicar a análise de correspondência?
+• Quando o objetivo for analisar variáveis categóricas (qualitativas)
+• O intuito é verificar se há associação estatisticamente significativa entre as variáveis e 
+suas categorias, criando um mapa perceptual para visualizar tais associações
+• Caso exista uma variável quantitativa que deva participar da análise, é necessário que 
+ela passe, previamente, por um procedimento de categorização
+• Exemplo: a idade é uma variável quantitativa (25, 42, 50, 73, 81 anos); poderia ser 
+categorizada como faixas de idade: 0-30 anos, 31-60 anos, 61-90 anos...
+3
+
+=== pág 4 ===
+
+Contextualização
+• A figura ilustra um mapa perceptual formado por duas variáveis categóricas; a proximidade 
+entre as categorias das variáveis indica o motivo da associação
+4
+
+=== pág 5 ===
+
+Contextualização
+• A análise de correspondência é uma técnica não supervisionada (exploratória)
+• Avalia a relação conjunta entre as variáveis (interdependência)
+• Não há a especificação de modelos do tipo Y = f(X)
+• Não é adequada para fins de inferência
+• Se novas observações forem adicionadas aos dados, é adequado refazer a análise
+5
+
+=== pág 6 ===
+
+Contextualização
+• Exemplos de aplicação
+• Faixa de renda e acesso ao crédito
+• Tipo de escola frequentada e aprovação no vestibular
+• Severidade dos sintomas da doença e comorbidades
+• Qualidade do produto, nível de satisfação do cliente e recomendação de compra
+• Outros...
+6
+
+=== pág 7 ===
+
+Contextualização
+• Evita o problema de ponderação arbitrária na análise de variáveis qualitativas
+• Por exemplo: variáveis geradas em escala likert
+• Concordo plenamente; concordo parcialmente; não concordo, nem discordo; 
+discordo parcialmente; discordo plenamente
+• Cada ponto da escala é uma categoria da variável na análise de correspondência
+• A mesma lógica aplica-se a qualquer variável qualitativa
+7
+
+=== pág 8 ===
+
+Análise de Correspondência Simples
+8
+
+=== pág 9 ===
+
+Contextualização
+• Também conhecida como ANACOR
+• Quando o objetivo for estudar a associação entre duas variáveis e suas categorias
+• É possível separar a ANACOR em duas etapas:
+ 
+1. Análise da significância estatística da associação entre as variáveis e suas 
+categorias a partir do teste qui-quadrado (χ2)
+ 
+2. Elaboração e interpretação do mapa perceptual
+9
+
+=== pág 10 ===
+
+Teste qui-quadrado para associação
+10
+
+=== pág 11 ===
+
+Análise da associação
+• Tabela de contingência
+• Inicia-se com as frequências absolutas observadas para cada par de categorias das 
+variáveis: trata-se de uma tabela de classificação cruzada (cross-tabulation)
+11
+Variável B
+Categoria 1
+Categoria 2
+Categoria 3
+...
+Categoria J
+Total
+Variável A
+Categoria 1
+n11
+n12
+n13
+...
+n1J
+ΣL1
+Categoria 2
+n21
+n22
+n23
+...
+n2J
+ΣL2
+Categoria 3
+n31
+n32
+n33
+...
+n3J
+ΣL3
+...
+...
+...
+...
+...
+...
+...
+Categoria I
+nI1
+nI2
+nI3
+...
+nIJ 
+ΣLI
+Total
+ΣC1
+ΣC2
+ΣC3
+...
+ΣCJ
+N
+
+=== pág 12 ===
+
+Análise da associação
+• Tabela de frequências absolutas esperadas
+• Para a célula referente às categorias 1 das duas variáveis, a frequência absoluta 
+esperada é:
+𝒇𝒓𝒆𝒒. 𝒂𝒃𝒔𝒐𝒍𝒖𝒕𝒂 𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒂𝟏𝟏= σ 𝑳𝟏 . σ 𝑪𝟏
+𝑵
+• O mesmo cálculo é realizado para cada par de categorias da tabela de contingência, 
+mantendo-se as respectivas correspondências de linha e coluna no numerador
+12
+
+=== pág 13 ===
+
+Análise da associação
+• Tabela de resíduos
+• Para a célula referente às categorias 1 das duas variáveis, o valor do resíduo é:
+𝒓𝒆𝒔í𝒅𝒖𝒐𝟏𝟏= 𝒇𝒓𝒆𝒒. 𝒂𝒃𝒔𝒐𝒍𝒖𝒕𝒂 𝒐𝒃𝒔𝒆𝒓𝒗𝒂𝒅𝒂𝟏𝟏−𝒇𝒓𝒆𝒒. 𝒂𝒃𝒔𝒐𝒍𝒖𝒕𝒂 𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒂𝟏𝟏
+• O mesmo cálculo é realizado para cada par de categorias da tabela de contingência
+13
+
+=== pág 14 ===
+
+Análise da associação
+• Tabela com os valores χ2
+• Para a célula referente às categorias 1 das duas variáveis, o valor da estatística χ2 é:
+𝝌𝟏𝟏
+𝟐=
+(𝒓𝒆𝒔í𝒅𝒖𝒐𝟏𝟏)²
+𝒇𝒓𝒆𝒒. 𝒂𝒃𝒔𝒐𝒍𝒖𝒕𝒂𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒂𝟏𝟏
+• O mesmo cálculo é realizado para cada par de categorias da tabela de contingência
+• Em seguida, os valores de todas as células são somados para obter o valor χ2 total
+• O χ2 total é a estatística de teste usada para avaliar a significância da associação 
+entre as variáveis qualitativas
+14
+
+=== pág 15 ===
+
+Análise da associação
+• Teste de hipótese
+• Com base no valor χ2 total, realiza-se o seguinte teste:
+• H0: as variáveis se associam de forma aleatória (são independentes)
+• H1: a associação entre as variáveis não se dá de forma aleatória (há dependência)
+• Dados o nível de significância e os graus de liberdade, se o valor da estatística χ2 for 
+maior do que o valor crítico, há associação significante entre as duas variáveis (H1)
+• Valor crítico da distribuição χ2 com (I – 1) . (J – 1) graus de liberdade
+15
+
+=== pág 16 ===
+
+Aprofundando a análise de associação
+• Resíduos padronizados e resíduos padronizados ajustados
+• Enquanto a análise do χ2 permite verificar se há ou não a dependência entre as duas 
+variáveis, a análise de resíduos padronizados ajustados permite aprofundar a análise 
+com foco nas categorias das variáveis
+• Como as categorias de uma variável se relacionam com as categorias da outra 
+variável?
+• Observa-se o excesso de ocorrências de casos nos cruzamentos entre as categorias 
+das variáveis para identificar a associação entre categorias
+16
+
+=== pág 17 ===
+
+Aprofundando a análise de associação
+• Tabela de resíduos padronizados
+• Para a célula referente às categorias 1 das duas variáveis, o resíduo padronizado é:
+𝒓𝒆𝒔í𝒅𝒖𝒐 𝒑𝒂𝒅𝒓𝒐𝒏𝒊𝒛𝒂𝒅𝒐𝟏𝟏=
+𝒓𝒆𝒔í𝒅𝒖𝒐𝟏𝟏
+𝒇𝒓𝒆𝒒. 𝒂𝒃𝒔𝒐𝒍𝒖𝒕𝒂 𝒆𝒔𝒑𝒆𝒓𝒂𝒅𝒂𝟏𝟏
+• O mesmo cálculo é realizado para cada par de categorias da tabela de contingência
+17
+
+=== pág 18 ===
+
+Aprofundando a análise de associação
+• Tabela de resíduos padronizados ajustados
+• Para a célula referente às categorias 1 das duas variáveis, o resíduo padronizado 
+ajustado é:
+𝒓𝒆𝒔í𝒅𝒖𝒐 𝒑𝒂𝒅𝒓𝒐𝒏𝒊𝒛𝒂𝒅𝒐 𝒂𝒋𝒖𝒔𝒕𝒂𝒅𝒐𝟏𝟏= 𝒓𝒆𝒔í𝒅𝒖𝒐 𝒑𝒂𝒅𝒓𝒐𝒏𝒊𝒛𝒂𝒅𝒐𝟏𝟏
+𝟏−ΣC1
+𝑵
+. 𝟏−ΣL1
+𝑵
+• O mesmo cálculo é realizado para cada par de categorias da tabela de contingência
+18
+
+=== pág 19 ===
+
+Aprofundando a análise de associação
+• Tabela de resíduos padronizados ajustados
+• Análise: se o valor do resíduo padronizado ajustado em certa célula for maior do que 
+1,96, interpreta-se que existe associação significativa, ao nível de significância de 5%, 
+entre as duas categorias que interagem na célula; se for menor do que 1,96 não há 
+associação estatisticamente significativa entre elas
+• 1,96 é o valor crítico da normal padrão para o nível de significância de 5%
+19
+
+=== pág 20 ===
+
+Elaboração do mapa perceptual
+20
+
+=== pág 21 ===
+
+Autovalores
+• Determinar os autovalores (λ)
+• A quantidade (m) de autovalores depende da quantidade de categorias nas variáveis
+• m = min(I – 1, J – 1)
+• Os autovalores referem-se às inércias (variâncias) principais parciais e são base para 
+determinar a inércia principal total e o percentual da inércia principal total em cada 
+dimensão do mapa perceptual
+• Portanto, interpreta-se quanta informação está representada em cada eixo do mapa 
+perceptual e o quanto as primeiras dimensões explicam a associação entre variáveis
+21
+
+=== pág 22 ===
+
+Autovalores
+• Determinar os autovalores (λ)
+• Como base para o cálculo dos autovalores, inicialmente, define-se a matriz A
+• Um modo de obter a matiz A, baseando-se nas etapas anteriores, é fazer para cada 
+célula da matriz de resíduos padronizados o seguinte cálculo:
+𝒎𝒂𝒕𝒓𝒊𝒛 𝑨𝟏𝟏= 𝒓𝒆𝒔í𝒅𝒖𝒐 𝒑𝒂𝒅𝒓𝒐𝒏𝒊𝒛𝒂𝒅𝒐𝟏𝟏
+𝑵
+• A partir da matriz A, obtém-se a matriz W: W = A' . A
+22
+
+=== pág 23 ===
+
+Autovalores
+• Determinar os autovalores (λ)
+• Com base na matriz W, os autovalores são obtidos pela solução: det(W – λ . I ) = 0
+• I é a matriz identidade
+• Exemplo para uma tabela de contingência 3x3:
+𝒘𝟏𝟏−𝝀
+𝒘𝟏𝟐
+𝒘𝟏𝟑
+𝒘𝟐𝟏
+𝒘𝟐𝟐−𝝀
+𝒘𝟐𝟑
+𝒘𝟑𝟏
+𝒘𝟑𝟐
+𝒘𝟑𝟑−𝝀
+= 𝟎
+23
+
+=== pág 24 ===
+
+Autovalores
+• Determinar os autovalores (λ)
+• Pelos autovalores encontra-se o percentual da inércia principal total de cada dimensão
+% 𝒅𝒂 𝒊𝒏é𝒓𝒄𝒊𝒂 𝒑𝒐𝒓 𝒅𝒊𝒎𝒆𝒏𝒔ã𝒐= 𝝀𝒅𝒊𝒎𝒆𝒏𝒔ã𝒐
+𝝀𝒕𝒐𝒕𝒂𝒍
+• Quanto maior a inércia principal total e o χ2, mais forte é a associação entre as variáveis
+𝒊𝒏é𝒓𝒄𝒊𝒂 𝒑𝒓𝒊𝒏𝒄𝒊𝒑𝒂𝒍 𝒕𝒐𝒕𝒂𝒍=
+ 𝝌𝟐
+𝑵          𝒊𝒏é𝒓𝒄𝒊𝒂 𝒑𝒓𝒊𝒏𝒄𝒊𝒑𝒂𝒍 𝒕𝒐𝒕𝒂𝒍= 𝝀𝟏+ 𝝀𝟐+ ⋯+ 𝝀𝒎
+24
+
+=== pág 25 ===
+
+Massas
+• Determinar as massas das variáveis em linha e em coluna
+• As massas representam a influência que cada categoria exerce sobre as demais 
+categorias de sua variável
+• Com base nos “totais” da tabela de contingência, para a categoria 1 das variáveis, 
+obtém-se as massas:
+𝑴𝒂𝒔𝒔𝒂 𝑳𝒊𝒏𝒉𝒂𝟏= 𝜮𝑳𝟏
+𝑵 
+𝑴𝒂𝒔𝒔𝒂 𝑪𝒐𝒍𝒖𝒏𝒂𝟏= 𝜮𝑪𝟏
+𝑵
+• O mesmo cálculo é realizado para as demais categorias das variáveis para que se 
+obtenha as matrizes de massas das linhas (Dl) e massas das colunas (Dc)
+25
+
+=== pág 26 ===
+
+Autovetores
+• Determinar os autovetores
+• É possível encontrar os autovetores a partir dos autovalores (λ) calculados, de modo 
+que cada autovalor gera seus autovetores
+• Para o autovalor k define-se seu respectivo valor singular 𝝈𝒌=
+𝝀𝒌 e é feito o seguinte:
+• Substitui o autovalor na matriz (W – λ . I), multiplica por um vetor coluna e iguala a zero. 
+Resolvendo o sistema de equações, é possível encontrar o autovetor da variável coluna 
+(v). Com base nele, encontra-se o autovetor da variável linha (u):
+𝒖𝒌= 𝑴𝒂𝒕𝒓𝒊𝒛 𝑨 .
+𝒗𝒌
+𝝈𝒌
+ 
+26
+
+=== pág 27 ===
+
+Coordenadas
+• Obter as coordenadas das categorias: variável em linha na tabela
+• Coordenadas das abscissas (X)
+𝑿𝒍=
+𝝈𝟏 . 𝟏
+𝑫𝒍
+. 𝒖𝟏
+• Coordenadas das ordenadas (Y)
+𝒀𝒍=
+𝝈𝟐 . 𝟏
+𝑫𝒍
+. 𝒖𝟐
+• E assim sucessivamente para as m dimensões (m = quantidade de autovalores)
+27
+
+=== pág 28 ===
+
+Coordenadas
+• Obter as coordenadas das categorias: variável em coluna na tabela
+• Coordenadas das abscissas (X)
+𝑿𝒄=
+𝝈𝟏 .
+𝟏
+𝑫𝒄
+. 𝒗𝟏
+• Coordenadas das ordenadas (Y)
+𝒀𝒄=
+𝝈𝟐 .
+𝟏
+𝑫𝒄
+. 𝒗𝟐
+• E assim sucessivamente para as m dimensões (m = quantidade de autovalores)
+28
+
+=== pág 29 ===
+
+Análise de Correspondência Múltipla
+29
+
+=== pág 30 ===
+
+Contextualização
+• Na Análise de Correspondência Múltipla (ACM) o objetivo é analisar a associação entre 
+mais de duas variáveis categóricas
+• Só participam da ACM as variáveis que apresentarem associação estatisticamente 
+significativa com pelo menos uma outra variável contida na análise
+• Antes de elaborar a ACM é importante realizar o teste χ2 para cada par de variáveis. 
+Se alguma delas não apresentar associação estatisticamente significativa com pelo 
+menos uma outra, então não é incluída na ACM (retira da análise)
+• A ACM apresenta a mesma lógica de análise definida na ANACOR
+30
+
+=== pág 31 ===
+
+Análise de Correspondência Múltipla
+• 1º método: matriz binária Z → coordenadas-padrão
+• A matriz binária é obtida pela transformação das variáveis qualitativas em variáveis 
+binárias, ou seja, valores 0 ou 1 (ausência ou presença do atributo, respectivamente)
+• Supondo que a matriz binária Z seja a tabela de contingência da ANACOR, é possível 
+obter a inércia principal parcial das dimensões, autovalores, autovetores e, portanto, as 
+coordenadas no mapa perceptual dessa matriz
+• Quantidade de dimensões (λ) = J – Q, em que “J” é a quantidade total de categorias em 
+todas as variáveis e “Q” a quantidade de variáveis
+𝒊𝒏é𝒓𝒄𝒊𝒂 𝒑𝒓𝒊𝒏𝒄𝒊𝒑𝒂𝒍 𝒕𝒐𝒕𝒂𝒍= 𝑱−𝑸
+𝑸
+31
+
+=== pág 32 ===
+
+Análise de Correspondência Múltipla
+• Matriz binária Z: exemplo com 7 observações na amostra
+32
+ID
+Variável A
+Variável B
+Variável C
+Categ. 1
+Categ. 2
+Categ. 1
+Categ. 2
+Categ. 3
+Categ. 1
+Categ. 2
+Categ. 3
+Categ. 4
+1
+1
+0
+0
+1
+0
+1
+0
+0
+0
+2
+0
+1
+0
+0
+1
+0
+1
+0
+0
+3
+0
+1
+1
+0
+0
+0
+0
+1
+0
+4
+1
+0
+0
+0
+1
+0
+0
+0
+1
+5
+0
+1
+0
+1
+0
+0
+1
+0
+0
+6
+1
+0
+0
+1
+0
+0
+0
+1
+0
+7
+1
+0
+1
+0
+0
+1
+0
+0
+0
+
+=== pág 33 ===
+
+Análise de Correspondência Múltipla
+• 2º método: matriz de Burt → coordenadas principais
+• A matriz de Burt é definida como: B = Z' . Z
+• É possível combinar em uma única matriz o cruzamento de todos os pares variáveis e 
+suas categorias, obtendo uma matriz que contém as frequências absolutas observadas 
+para todos os cruzamentos
+• Ao considerar a matriz de Burt como uma tabela de contingência, é possível realizar 
+uma ANACOR e obter as coordenadas das categorias das variáveis
+33
+
+=== pág 34 ===
+
+Análise de Correspondência Múltipla
+• Matriz de Burt: obtida com base na matriz Z do exemplo anterior
+34
+Variável A
+Variável B
+Variável C
+Categ. A1
+Categ. A2
+Categ. B1
+Categ. B2
+Categ. B3
+Categ. C1
+Categ. C2
+Categ. C3
+Categ. C4
+Variável A
+Categ. A1
+4
+0
+1
+2
+1
+2
+0
+1
+1
+Categ. A2
+0
+3
+1
+1
+1
+0
+2
+1
+0
+Variável B
+Categ. B1
+1
+1
+2
+0
+0
+1
+0
+1
+0
+Categ. B2
+2
+1
+0
+3
+0
+1
+1
+1
+0
+Categ. B3
+1
+1
+0
+0
+2
+0
+1
+0
+1
+Variável C
+Categ. C1
+2
+0
+1
+1
+0
+2
+0
+0
+0
+Categ. C2
+0
+2
+0
+1
+1
+0
+2
+0
+0
+Categ. C3
+1
+1
+1
+1
+0
+0
+0
+2
+0
+Categ. C4
+1
+0
+0
+0
+1
+0
+0
+0
+1
+
+=== pág 35 ===
+
+35
+Sugestões de Leituras/Referências
+Referência:
+• Fávero, Luiz Paulo; Belfiore, Patrícia. (2024). Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. 2 ed. Rio de Janeiro: LTC.
+Sugestões de Leitura:
+• Anton, H.; Rorres, C. (2012). Álgebra Linear com Aplicações. 10 ed. Bookman.
+• Benzécri, J. P. (1992) Correspondence analysis handbook. 2 ed. Marcel Dekker.
+• Greenacre, M. J. (1984) Theory and applications of correspondence analysis. Academic Press.
+• Steinbruch, A.; Winterle, P. (1995). Álgebra Linear. 1 ed. Pearson Universidades.
+
+=== pág 36 ===
+
+Obrigado!
+Wilson Tarantin Junior | linkedin.com/in/wilson-tarantin-junior-359476190

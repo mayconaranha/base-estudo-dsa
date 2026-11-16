@@ -1,0 +1,736 @@
+# 20 - Supervised Machine Learning Modelos para Dados de Contagem / Supervised Machine Learning 24 e 31.03.2026_SL.pdf
+
+=== pág 1 ===
+
+Supervised Machine Learning:
+Modelos para Dados de Contagem
+Prof. Dr. Luiz Paulo Fávero
+=== pág 2 ===
+
+
+Lei nº 9610/98
+=== pág 3 ===
+
+•
+Fundamentação teórica e conceitos;
+•
+Especificação dos modelos;
+•
+Modelos dos tipos Poisson e binomial negativo;
+•
+Estimação por máxima verossimilhança;
+•
+O fenômeno de superdispersão nos dados;
+•
+Modelos inflacionados de zeros;
+•
+Estimações em Python.
+MODELOS PARA DADOS DE CONTAGEM
+3
+=== pág 4 ===
+
+𝒀= 𝒇(𝑿𝟏, 𝑿𝟐, 𝑿𝟑, … , 𝑿𝒌)
+Modelos Lineares Generalizados (GLM)
+4
+GLM
+(1781-1840)
+=== pág 5 ===
+
+Os modelos de regressão Poisson e binomial negativo fazem parte do 
+que é conhecido por modelos de regressão para dados de contagem, e 
+têm por objetivo analisar o comportamento, em função de variáveis 
+preditoras, de determinada variável dependente que se apresenta na 
+forma quantitativa, com valores discretos e não negativos. Deve ser 
+definida também a exposição (unidade temporal, espacial, social, etc.).
+Modelos para Dados de Contagem
+5
+=== pág 6 ===
+
+•
+Avaliação da quantidade de vezes que um grupo de pacientes idosos vai ao médico por ano, em 
+função da idade de cada um deles, do sexo e das características dos seus planos de saúde.
+•
+Estudo sobre a quantidade de ofertas públicas de ações que são realizadas em uma amostra de 
+países emergentes em determinado ano, com base em seus desempenhos econômicos, como 
+inflação, taxa de juros, produto interno bruto e taxa de investimento estrangeiro.
+Note que a quantidade de visitas ao médico ou a quantidade de IPOs são as variáveis 
+dependentes nos dois casos, sendo representadas por dados quantitativos, discretos, não 
+negativos e com exposição anual. Ou seja, são dados de contagem!
+Modelos para Dados de Contagem:
+Exemplos e Aplicações
+6
+=== pág 7 ===
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+Ecologia
+Mercado Imobiliário
+Modelos para Dados de Contagem:
+Exemplos e Aplicações
+7
+=== pág 8 ===
+
+( )
+1
+1
+2
+2
+ˆ
+ln
+.
+.
+...
+.
+i
+i
+i
+k
+ki
+Y
+X
+X
+X
+
+
+
+
+=
++
++
++
++
+Distribuições Poisson e Binomial 
+Negativa
+8
+=== pág 9 ===
+
+Determinada observação i (i = 1, 2, ..., n, em que n 
+é o tamanho da amostra) possui a seguinte 
+probabilidade de ocorrência de uma contagem m 
+em uma determinada exposição (período, área, 
+região, entre outros exemplos):
+em que  é o número esperado de ocorrências ou 
+a taxa média estimada de incidência do 
+fenômeno em estudo para uma dada exposição.
+(
+)
+!
+m
+.
+e
+m
+Y
+p
+m
+i
+i
+i 
+
+−
+=
+=
+A Distribuição Poisson
+9
+=== pág 10 ===
+
+( )
+(
+)
+1
+1
+2
+2
+ˆ
+ln
+ln
+.
+.
+...
+.
+i
+i
+poisson
+i
+i
+k
+ki
+Y
+X
+X
+X
+
+
+
+
+
+=
+=
++
++
++
++
+O Modelo Poisson:
+𝐸𝑌= ෍
+𝑚=0
+∞
+𝑚. 𝑒−𝜆. 𝜆𝑚
+𝑚!
+= 𝜆. ෍
+𝑚=1
+∞𝑒−𝜆. 𝜆𝑚−1
+𝑚−1!
+= 𝜆. 1 = 𝜆
+𝑉𝑎𝑟𝑌= σ𝑚=0
+∞
+𝑚.
+𝑒−𝜆.𝜆𝑚
+𝑚!
+. 𝑚−𝜆2 = σ𝑚=0
+∞
+𝑚.
+𝑒−𝜆.𝜆𝑚
+𝑚!
+. (
+)
+𝑚2 −2. 𝑚. 𝜆+
+𝜆2 𝜆2. σ𝑚=2
+∞
+𝑒−𝜆.𝜆𝑚−2
+𝑚−2!
++ 𝜆. σ𝑚=1
+∞
+𝑒−𝜆.𝜆𝑚−1
+𝑚−1!
+−𝜆2 = 𝜆
+Média:
+Variância:
+A Distribuição Poisson e 
+o Modelo Poisson
+10
+=== pág 11 ===
+
+EXCEL
+11
+=== pág 12 ===
+
+Cameron e Trivedi (1990) salientam que, se ocorrer o fenômeno da superdispersão nos dados, 
+o parâmetro estimado  deste modelo auxiliar sem intercepto será estatisticamente diferente 
+de zero, a determinado nível de significância (5%, usualmente).
+(
+)
+2
+*
+i
+i
+i
+poisson
+i
+i
+poisson
+Y
+Y
+Y
+
+
+
+
+−
+−
+
+
+
+
+=
+*
+i
+i
+poisson
+Y
+
+=
+
+Teste de 
+Superdispersão
+CAMERON, A. C.; TRIVEDI, P. K. Regression-based tests for overdispersion in the Poisson model. Journal of 
+Econometrics, v. 46, n. 3, p. 347-364, 1990.
+(Estimação OLS sem intercepto)
+12
+=== pág 13 ===
+
+Para determinada observação i (i = 1, 2, ..., n, em que n é o tamanho da amostra), a função 
+da distribuição de probabilidade da variável dependente Y será dada por:
+(
+)
+(
+)
+.
+1
+.
+.
+1 !
+i
+m
+i
+i
+m
+e
+p Y
+m
+
+
+
+
+
+−
+−
+=
+=
+−
+A Distribuição Poisson-Gama ou
+Binomial Negativa
+em que  é chamado de parâmetro de forma ( > 0) e 
+ é chamado de parâmetro de taxa de decaimento ( 
+> 0).
+13
+=== pág 14 ===
+
+Modelos NB2
+( )
+bneg
+E Y
+
+=
+( )
+(
+)
+2
+1
+bneg
+bneg
+Var Y
+
+
+
+
+
+=
++
+
+=
+• Média:
+• Variância:
+A Distribuição Poisson-Gama ou
+Binomial Negativa
+14
+=== pág 15 ===
+
+( )
+(
+)
+1
+1
+2
+2
+ˆ
+ln
+ln
+.
+.
+...
+.
+i
+i
+bneg
+i
+i
+k
+ki
+Y
+X
+X
+X
+
+
+
+
+
+=
+=
++
++
++
++
+O Modelo Poisson-Gama ou
+Binomial Negativo
+15
+=== pág 16 ===
+
+16
+=== pág 17 ===
+
+Modelos Inflacionados de Zeros
+17
+=== pág 18 ===
+
+São considerados uma combinação entre um modelo para dados de contagem e um modelo 
+para dados binários, já que são utilizados para investigar as razões que levam a determinada 
+quantidade de ocorrências (contagens) de um fenômeno, bem como as razões que levam (ou 
+não) à ocorrência propriamente dita deste fenômeno, independentemente da quantidade de 
+contagens observadas.
+Enquanto um modelo Poisson inflacionado de zeros é estimado a partir da combinação de uma 
+distribuição Bernoulli com uma distribuição Poisson, um modelo binomial negativo 
+inflacionado de zeros é estimado por meio da combinação de uma distribuição Bernoulli com 
+uma distribuição Poisson-Gama.
+LAMBERT, D. Zero-inflated Poisson regression, with an application to defects in manufacturing.
+Technometrics, v. 34, n. 1, p. 1-14, 1992.
+Modelos Inflacionados de Zeros
+18
+=== pág 19 ===
+
+A definição sobre a existência ou não de uma quantidade excessiva de zeros na 
+variável dependente Y é elaborada por meio de um teste específico, conhecido por 
+teste de Vuong (1989), que representará um importante output a ser analisado na 
+estimação de modelos de regressão para dados de contagem, quando houver a 
+suspeita de existência de inflação de zeros.
+VUONG, Q. H. Likelihood ratio tests for model selection and non-nested hypotheses.
+Econometrica, v. 57, n. 2, p. 307-333, 1989.
+Modelos Inflacionados de Zeros
+19
+=== pág 20 ===
+
+Em relação especificamente aos modelos de regressão Poisson inflacionados de 
+zeros, podemos definir que, enquanto a probabilidade p de ocorrência de nenhuma 
+contagem para dada observação i (i = 1, 2, ..., n, em que n é o tamanho da amostra), 
+ou seja, p(Yi = 0), é calculada levando-se em consideração a soma de um componente 
+dicotômico com um componente de contagem e, portanto, deve-se definir a 
+probabilidade plogit de não ocorrer nenhuma contagem devido exclusivamente ao 
+componente dicotômico, a probabilidade p de ocorrência de determinada 
+contagem m (m = 1, 2, ...), ou seja, p(Yi = m), segue a própria expressão da 
+probabilidade da distribuição Poisson, multiplicada por (1 – plogit).
+Modelos Inflacionados de Zeros
+do Tipo Poisson (ZIP)
+20
+=== pág 21 ===
+
+(
+)
+(
+)
+(
+) (
+)
+0
+1
+.
+.
+1
+.
+,
+1, 2, ...
+!
+i
+i
+i
+i
+i
+i
+logit
+logit
+m
+i
+i
+logit
+p Y
+p
+p
+e
+e
+p Y
+m
+p
+         m
+ 
+ 
+m
+
+
+−
+−
+
+=
+=
++
+−
+
+
+=
+=
+−
+=
+
+(
+)
+1
+1
+2
+2
+.
+.
+...
+.
+1
+1
+i
+i
+i
+q
+qi
+logit
+W
+W
+W
+p
+e
+
+
+
+−
++
++
++ +
+=
++
+Os modelos de regressão Poisson inflacionados de zeros apresentam dois processos 
+geradores de zeros, sendo um devido à distribuição binária (neste caso, são gerados os 
+chamados zeros estruturais) e outro devido à distribuição Poisson (nesta situação, são 
+gerados dados de contagem, entre os quais os chamados zeros amostrais).
+(
+)
+1
+1
+2
+2
+.
+.
+...
+.
+i
+i
+k
+ki
+i
+X
+X
+X
+poisson
+e 
+
+
+
++
++
++ +
+=
+Modelos Inflacionados de Zeros
+do Tipo Poisson (ZIP)
+21
+=== pág 22 ===
+
+Já em relação aos modelos de regressão do tipo binomial negativo inflacionados 
+de zeros, podemos definir que, enquanto a probabilidade p de ocorrência de 
+nenhuma contagem para dada observação i, ou seja, p(Yi = 0), é também calculada 
+levando-se em consideração a soma de um componente dicotômico com um 
+componente de contagem, a probabilidade p de ocorrência de determinada 
+contagem m (m = 1, 2, ...), ou seja, p(Yi = m), segue agora a expressão da 
+probabilidade da distribuição Poisson-Gama.
+Modelos Inflacionados de Zeros
+do Tipo Binomial Negativo (ZINB)
+22
+=== pág 23 ===
+
+(
+)
+(
+)
+(
+) (
+)
+(
+)
+1
+.
+1
+1
+0
+1
+.
+1
+.
+.
+.
+1
+.
+,
+1, 2, ...
+1 !
+i
+i
+i
+i
+i
+i
+logit
+logit
+bneg
+m
+i
+i
+logit
+p Y
+p
+p
+m
+e
+p Y
+m
+p
+     m
+ 
+ 
+
+
+
+
+
+
+
+
+−
+−
+−
+
+
+
+
+
+
+=
+=
++
+−
+
+
+
++
+
+
+
+
+
+
+
+
+=
+=
+−
+=
+
+
+−
+
+
+
+
+
+
+(
+)
+1
+1
+2
+2
+.
+.
+...
+.
+1
+1
+i
+i
+i
+q
+qi
+logit
+W
+W
+W
+p
+e
+
+
+
+−
++
++
++ +
+=
++
+(
+)
+1
+1
+2
+2
+.
+.
+...
+.
+i
+i
+k
+ki
+i
+X
+X
+X
+bneg
+e 
+
+
+
++
++
++ +
+=
+Modelos Inflacionados de Zeros
+do Tipo Binomial Negativo (ZINB)
+23
+=== pág 24 ===
+
+24
+=== pág 25 ===
+
+Escolha do Modelo
+25
+=== pág 26 ===
+
+Obrigado!
+Prof. Dr. Luiz Paulo Fávero |

@@ -1,0 +1,1695 @@
+# 22 - Séries Temporais / Séries Temporais 12, 19 e 26.05.2026_SL.pdf
+
+=== pág 1 ===
+
+Séries Temporais I, II e III
+Prof. Fabiano Guasti Lima
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Conteúdo 
+Programado
+Leitura de dados em série temporal; Plotagem e decomposição de séries 
+temporais; Método de Holt-Winters; Decomposição de séries não sazonais; 
+Alisamento exponencial (exponential smoothing); Decomposição de séries 
+sazonais e ajustamento sazonal; Forecast; Modelos ARIMA; Diferenciação de 
+séries temporais; Seleção de modelos ARIMA; Forecast para modelos ARIMA; 
+Exemplos e exercícios adicionais dos modelos estudados.
+Séries temporais
+3
+
+=== pág 4 ===
+
+Referências
+https://otexts.com/fpp3/
+4
+
+=== pág 5 ===
+
+Referências
+5
+
+=== pág 6 ===
+
+Séries temporais
+• Índice IBOVESPA diário;
+• Retorno das ações da Petrobrás mensal;
+• Índices Mensais da Inflação no Brasil;
+• Taxas de Câmbio Real/US$ diário
+Conjunto de observações ordenadas no tempo.
+Se   n>=50, chama-se sucessão cronológica.
+- Ordem: dependência de ordem!
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+6
+
+=== pág 7 ===
+
+Elementos de uma série temporal
+Índice
+IBOVESPA (B3)        diário
+MEDIDA
+FATO
+Unidade 
+de tempo
+Fonte: B3, julho,2024 – Acesso em 24/07/2024
+7
+
+=== pág 8 ===
+
+Univariadas e Multivariadas
+•
+Univariadas: apenas uma variável conectada ao tempo
+•
+Multivariadas: duas ou mais variáveis conectadas ao tempo
+Fonte: googlefinance, abril/2026
+8
+
+=== pág 9 ===
+
+Exemplos Séries Temporais
+Fonte: https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas/dados-estatisticos/dados-estatisticos 
+9
+
+=== pág 10 ===
+
+Exemplos Séries Temporais
+Fonte: CVM, abr/2026
+10
+
+=== pág 11 ===
+
+Exemplos Séries Temporais
+Fonte: http://sidc.be/silso/infosnmtot
+11
+
+=== pág 12 ===
+
+Exemplo Séries Temporais
+12
+
+=== pág 13 ===
+
+Fonte: https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/
+Acesso: 04/09/2024 – 9h30 AM
+Exemplo Séries Temporais
+13
+
+=== pág 14 ===
+
+Exemplos Séries Temporais
+14
+
+=== pág 15 ===
+
+15
+Exemplos Séries Temporais
+
+=== pág 16 ===
+
+Objetivos do Estudo de Séries de Tempo
+Investigação do 
+mecanismo que gera a 
+série temporal
+Fazer previsões de valores 
+futuros da série
+Descrever apenas o 
+comportamento da série 
+Procurar periodicidades 
+relevantes nos dados
+Objetivos das 
+análises de 
+séries temporais
+16
+
+=== pág 17 ===
+
+Histórico...
+• Stigler (1699) – primeiro esquema “empírico” da demanda publicado por Charles Davenant;
+• Rodulfo Enini (1907) – primeiros estudos;
+• 1930 – Econometric Society;
+• Antes de 1955 – Modelos Clássicos de Decomposição;
+• 1957 – 1962 – Modelos de Alisamento Exponencial (Holt-Winters e Brown);
+• Décadas de 60/70 – Modelos de Box-Jenskins (ARIMA);
+• Década de 80 – Modelos estruturais clássicos e bayesianos (Filtro de Kalman);
+• Década de 80/90 – Cointegração e econometria de Séries Temporais.
+17
+
+=== pág 18 ===
+
+Séries Temporais
+George Box 
+(1919-2013)
+Gwilym Jenkins 
+(1932-1982)
+Todos os modelos 
+estão errados, mas 
+alguns são úteis.
+Fonte: Google Imagens
+18
+
+=== pág 19 ===
+
+Classificação das Séries Temporais
+• Discretas: são séries em que o intervalo de observações (t) pertence a um conjunto 
+discreto. Ou seja, as observações são feitas em intervalos de tempo fixos. 
+• Contínuas: são séries em que as observações são obtidas continuamente através de 
+algum intervalo no tempo.
+19
+
+=== pág 20 ===
+
+Classificação das Séries Temporais
+• Determinística: quando pode ser descrita por uma função matemática para 
+estabelecer exatamente os valores futuros da série. 
+• Estocástica: quando os valores futuros da série somente podem ser estabelecidos em 
+termos probabilísticos, pois o modelo compõe-se também de um termo aleatório. 
+20
+
+=== pág 21 ===
+
+Métodos CLÁSSICOS
+• DECOMPOSIÇÃO: projeções por decomposição da série
+• SUAVIZAÇÃO EXPONENCIAL: método de amortecimento (suavização), ideal para 
+tendências e inclui variação sazonal
+• Aditivo: para variação sazonal constante
+• Multiplicativo: variação sazonal varia na série
+21
+
+=== pág 22 ===
+
+Médias Móveis
+Fonte: https://covid.saude.gov.br/ 
+22
+
+=== pág 23 ===
+
+Componentes  de uma série temporal
+Movimento oculto no dados, seguindo uma 
+direção - crescente, decrescente ou 
+estacionária
+Flutuações regulares dentro de um período
+completo de tempo(dia, semana, mês, etc.)
+- Representam um tipo de padrão que se repete.
+(picos, depressões) normalmente dentro de um 
+ano
+Flutuações de longo prazo nos dados e são 
+similares aos fatores sazonais. Padrão que se
+repete com regularidade mas sem período fixo
+23
+
+=== pág 24 ===
+
+Série com tendência e sazonalidade
+Sazonalidade são as flutuações regulares dentro de um período completo de tempo 
+(um dia, uma semana, um mês, etc). 
+O importante sobre fatores sazonais é que eles representam um tipo de padrão que se 
+repete.
+2004
+2005
+2006
+Tendência
+Sazonais
+24
+
+=== pág 25 ===
+
+Ciclos São flutuações a longo prazo nos dados e são similares aos fatores sazonais. 
+Eles podem ser difíceis de serem identificados a menos que uma série de dados longa 
+esteja disponível.
+Ciclos
+25
+Série com ciclo
+
+=== pág 26 ===
+
+• Muitas séries apresentam junto a uma tendência variações cíclicas e sazonais;
+• Estas variações aparecem devido a clima, fatores econômicos, hora, etc;
+• Se estas variações podem ser observadas, a sua  consideração pode ajudar a 
+melhorar as previsões.
+• São usados o método da decomposição:
+• MULTIPLICATIVO
+• ADITIVO
+26
+Série com tendência, sazonalidade e variações cíclicas
+
+=== pág 27 ===
+
+Aditivo 
+Y = T+C+S+E
+• Y - valor da série no instante  t
+• T - componente de tendência para o instante t
+• C - componente cíclica para o instante t
+• S - componente sazonal para o instante t
+• E - componente aleatória para o instante t
+27
+
+=== pág 28 ===
+
+Multiplicativo 
+Y = T*C*S*E
+• Y - valor da série no instante  t
+• T - componente de tendência para o instante t
+• C - componente cíclica para o instante t
+• S - componente sazonal para o instante t
+• E - componente aleatória para o instante t
+28
+
+=== pág 29 ===
+
+O modelo multiplicativo é normalmente aplicado a dados em que o tamanho dos efeitos 
+sazonais aumentam.
+0
+100
+200
+300
+400
+500
+600
+700
+0
+10
+20
+30
+40
+50
+60
+29
+Modelo Multiplicativo
+
+=== pág 30 ===
+
+0
+2000
+4000
+6000
+8000
+10000
+0
+10
+20
+30
+40
+50
+60
+O modelo aditivo geralmente é considerado mais adequado para dados em que as 
+flutuações sazonais permanecem aproximadamente do mesmo tamanho com o tempo.
+30
+Modelo Aditivo
+
+=== pág 31 ===
+
+Estatísticas de Erro das Previsões
+• ME: Mean Error – É a média da diferença entre realizado e o previsto.
+• MAE: Mean Absolute Error – É a média da diferença absoluta entre realizado e previsto
+𝑒𝑟𝑟𝑜𝑡= 𝑋𝑡−෠𝑋𝑡
+𝑀𝐸= σ𝑡=1
+ℎ
+𝑒𝑟𝑟𝑜𝑡
+ℎ
+𝑀𝐴𝐸= σ𝑡=1
+ℎ
+𝑒𝑟𝑟𝑜𝑡
+ℎ
+31
+
+=== pág 32 ===
+
+Estatísticas de Erro das Previsões
+𝑅𝑀𝑆𝐸=
+σ𝑡=1
+ℎ
+𝑒𝑟𝑟𝑜𝑡2
+ℎ
+• RMSE: Root Mean Square Error – É o desvio padrão total da amostra da diferença 
+entre o previsto e o realizado.
+32
+
+=== pág 33 ===
+
+Estatísticas de Erro das Previsões
+• MPE: Mean Percentage Error – É  a diferença percentual do erro.
+• MAPE: Mean Absolute Percentage Error – É a diferença absoluta percentual do erro.
+𝑀𝑃𝐸=
+σ𝑡=1
+ℎ
+𝑒𝑟𝑟𝑜𝑡
+𝑋𝑡
+ℎ
+× 100%
+𝑀𝐴𝑃𝐸=
+σ𝑡=1
+ℎ
+𝑒𝑟𝑟𝑜𝑡
+𝑋𝑡
+ℎ
+× 100%
+33
+
+=== pág 34 ===
+
+Estatísticas de Erro das Previsões
+• TIC: Theil Inequality Coefficient – Theil´s U
+É o grau de ajuste da previsão. Quanto menor, melhor. Zero ideal.
+𝑇ℎ𝑒𝑖𝑙´𝑠 𝑈=
+σ𝑡=1
+ℎ
+෠𝑋𝑡+1 −𝑋𝑡+1
+𝑋𝑡
+2
+σ𝑡=1
+ℎ
+𝑋𝑡+1 −𝑋𝑡
+𝑋𝑡
+2
+34
+
+=== pág 35 ===
+
+Estatísticas de Erro das Previsões
+• ACF1: First-Order Autocorrelation Function – Autocorrelação dos resíduos.
+𝐴𝐶𝐹𝑘= 𝑐𝑜𝑣(𝑅𝑖𝑡, 𝑅𝑖,𝑡−𝑘)
+𝑣𝑎𝑟𝑖â𝑛𝑐𝑖𝑎(𝑅𝑖𝑡)
+35
+
+=== pág 36 ===
+
+Métodos Estudados
+SIMPLES
+Naive
+Mean
+Drift
+CLÁSSICA
+Suavização 
+Exponencial
+ARIMA
+OUTRAS
+Regressão
+Redes Neurais
+Decomposição
+36
+
+=== pág 37 ===
+
+Métodos SIMPLES
+• NAIVE: Projeta o último valor para o futuro
+• NAIVE SAZONAL: Considera o último valor no mesmo período de tempo (para séries 
+com sazonalidade)
+• Média: usa a média histórica como previsão para o futuro
+• Drift: faz uma previsão que acompanha a tendência da série (equivale a traçar uma 
+renta entre o primeiro e o último ponto)
+37
+
+=== pág 38 ===
+
+Métodos SIMPLES
+• NAIVE: Projeta o último valor para o futuro
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+38
+
+=== pág 39 ===
+
+Métodos SIMPLES
+• MÉDIA: média de toda a série 
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+39
+
+=== pág 40 ===
+
+Métodos SIMPLES
+• DRIFT: equivale a traçar uma renta entre o primeiro e o último ponto
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+40
+
+=== pág 41 ===
+
+Métodos SIMPLES
+• NAIVE SAZONAL: Projeta o último período sazonal
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+41
+
+=== pág 42 ===
+
+•
+Série temporal que não apresenta tendência e nem sazonalidade;
+•
+Série temporal com Tendência mas sem sazonalidade – Suavização Exponencial de Holt (SEH)
+•
+Série temporal com Tendência e Sazonalidade – Suavização Exponencial de Holt-Winters
+42
+Modelos de Suavização Exponencial (SES)
+
+=== pág 43 ===
+
+•
+Dá pesos maiores às observações mais recentes captando melhor as mudanças de comportamento.
+•
+Previsão é igual ao último valor exponencial suavizado.
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+43
+Suavização Exponencial Simples (SES)
+
+=== pág 44 ===
+
+𝑆𝐸ℎ= 𝑆𝐸×
+1 + ℎ−1 . 𝛼2
+Erro para h = 1
+44
+Suavização Exponencial Simples (SES) – Previsão 
+
+=== pág 45 ===
+
+Suavização Exponencial de Holt (SEH)
+• Para Séries temporais com tendência linear
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+45
+
+=== pág 46 ===
+
+46
+Suavização Exponencial de Holt (SEH) – Previsão 
+
+=== pág 47 ===
+
+෠𝑋𝑡ℎ= ෠𝑋𝑡± 𝑍Τ
+𝛼2 . 𝑆𝐸(ℎ)
+𝑆𝐸ℎ= SE.
+1 + 𝑘. 𝛼2 
+𝑘= ෍
+𝑖=2
+ℎ
+1 + 𝛽. (𝑖−1) 2
+47
+Suavização Exponencial de Holt (SEH) – Previsão 
+
+=== pág 48 ===
+
+Suavização Exponencial de Holt-Winters (HW - Aditivo)
+• Para Séries temporais com comportamento sazonal (c=período sazonal).
+• Modelo Aditivo
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+መ𝑆𝑡= 𝛾෠𝑋𝑡−෠𝐿𝑡−1 + 1 −𝛾. 𝑆𝑡−𝑐
+෠𝑇𝑡= 𝛽෠𝐿𝑡−෠𝐿𝑡−1 + 1 −𝛽. 𝑇𝑡−1
+෠𝐿𝑡= 𝛼෠𝑋𝑡−መ𝑆𝑡−𝑐+ 1 −𝛼. (𝐿𝑡−1 + 𝑇𝑡−1)
+0 ≤𝛼≤1
+0 ≤𝛽≤1
+0 ≤𝛾≤1 −𝛼
+෠𝑋𝑡+ℎ=෠𝐿𝑡+ ℎ෠𝑇𝑡+ መ𝑆𝑡+ℎ−𝑐ℎ´
+ℎ´ = 𝐼𝑁𝑇
+ൗ
+ℎ−1
+𝑐+ 1
+෠𝑋𝑡=෠𝐿𝑡−1 + ෠𝑇𝑡−1+ መ𝑆𝑡−𝑐
+48
+
+=== pág 49 ===
+
+෠𝑋𝑡ℎ= ෠𝑋𝑡± 𝑍Τ
+𝛼2 . 𝑆𝐸(ℎ)
+𝑆𝐸ℎ= SE.
+1 + ෍
+𝑖=1
+ℎ−1
+𝜑𝑖
+2
+𝜑𝑖= ቊ
+𝛼1 + 𝛽𝑖, 𝑐≠𝑖−1
+𝛼1 + 𝛽𝑖+ 𝛾1 −𝛼, 𝑐= 𝑖−1
+Suavização Exponencial de Holt-Winters (HW - Aditivo) – Previsão 
+49
+
+=== pág 50 ===
+
+• Para Séries temporais com comportamento sazonal (c=período sazonal).
+• Modelo Multiplicativo
+
+
+
+
+n
+n
+t
+t
+X
+X
+X
+X
+,
+,
+,
+2
+1
+1
+
+=
+=
+መ𝑆𝑡= 𝛾෠𝑋𝑡/෠𝐿𝑡−1 + 1 −𝛾. 𝑆𝑡−𝑐
+෠𝑇𝑡= 𝛽෠𝐿𝑡−෠𝐿𝑡−1 + 1 −𝛽. 𝑇𝑡−1
+෠𝐿𝑡= 𝛼෠𝑋𝑡/ መ𝑆𝑡−𝑐+ 1 −𝛼. (𝐿𝑡−1 + 𝑇𝑡−1)
+0 ≤𝛼≤1
+0 ≤𝛽≤1
+0 ≤𝛾≤1 −𝛼
+෠𝑋𝑡+ℎ=(෠𝐿𝑡+෠𝑇𝑡). መ𝑆𝑡+ℎ−𝑐ℎ´
+ℎ´ = 𝐼𝑁𝑇
+ൗ
+ℎ−1
+𝑐+ 1
+෠𝑋𝑡=(෠𝐿𝑡−1 + ෠𝑇𝑡−1). መ𝑆𝑡−𝑐
+50
+Suavização Exponencial de Holt-Winters (HW - Multiplicativo)
+
+=== pág 51 ===
+
+• Definirá o melhor modelo
+Previsão 
+Modelo ETS (Error, Trend, Seasonal)
+Legenda
+A
+Aditivo
+M
+Multiplicativo
+N
+Nenhum
+Z
+Automático
+Tendência
+Ad
+Aditivo Amortecido
+Md
+Multiplicativo Amortecido
+model = “AAA”
+Erro
+Tendência
+Sazonalidade
+A
+N
+N
+M
+A
+A
+Z
+M
+M
+Z
+Z
+51
+
+=== pág 52 ===
+
+Modelos de Séries Temporais
+• Série Estacionária: movimento de tendência não é significativo ao longo do tempo.
+Série Estacionária
+Série Não-Estacionária
+ Média móvel
+ Média móvel ponderada
+ Alisamento exponencial
+ Tendência linear
+ Método de Holt
+52
+
+=== pág 53 ===
+
+MODELOS    A R I M A 
+George Box (1919-2013)
+Gwilym Jenkins (1932-1982)
+“ Nos modelos ARIMA os dados falam por si mesmo” 
+Fonte: Google Imagens
+53
+
+=== pág 54 ===
+
+Modelos ARIMA (Box-Jenkins)
+• Robusto: pode ser aplicado em praticamente qualquer tipo de série temporal
+• Funciona melhor com dados estáveis, com poucos outliers (embora podemos removê-los) - 
+tsclean
+• Requer dados estacionários
+•
+Pode ser transformada usando diferenciação: remove tendências
+•
+Diferenciação: subtrai a observação atual da anterior
+•
+Diferenciação pode ser feita 1x: diferenciação de primeira ordem
+•
+Diferenciação 2x: diferenciação de segunda ordem (mais raro)
+54
+
+=== pág 55 ===
+
+• Modelos autorregressivos (AR): avalia a relação entre os períodos (lags): 
+autocorrelação – extrai a influência;
+• Integrado (I): Aplicado à diferenciação, quando necessário
+• Modelos médias móveis (MA): avalia erros entre períodos e extrai esses erros; 
+• Modelos autorregressivos e de médias móveis (ARMA)
+• Modelos autorregressivos integrados e de médias móveis (ARIMA)
+Tipos de Modelos – ARIMA não Sazonal
+55
+
+=== pág 56 ===
+
+Modelos ARIMA
+ARIMA
+(p,d,q)
+q: ordem da média móvel
+d: grau de diferenciação
+p: ordem da parte autorregressiva
+56
+
+=== pág 57 ===
+
+Modelos ARIMA
+•
+p = 1, significa que uma determinada observação pode ser explicada pela observação prévio + erro
+•
+p = 2, significa que uma determinada observação pode ser explicada por duas observação prévias + erro
+•
+d = 0, significa que não é aplicada diferenciação
+•
+d = 1, significa que será aplicada diferenciação de primeira ordem
+•
+d = 2, significa que será aplicada diferenciação de segunda ordem
+•
+q = 1, significa que uma determinada observação pode ser explicada pelo erro da observação prévia
+•
+q = 2, significa que uma determinada observação pode ser explicada pelo erro de duas observações 
+prévias.
+57
+
+=== pág 58 ===
+
+Modelos ARIMA
+• AR(1) ou ARIMA(1,0,0) – Apenas elemento autorregressivo de 1ª ordem
+• AR(2) ou ARIMA(2,0,0) – Apenas elemento autorregressivo de 2ª ordem
+• MA(1) ou ARIMA(0,0,1) – Apenas média móvel
+• ARMA(1,1) ou ARIMA(1,0,1) – Autorregressão e média móvel de 1ª ordem
+58
+
+=== pág 59 ===
+
+Modelos ARIMA – Como definir os valores de p, d, e q
+• p: ordem da parte autorregressiva: PACF
+• d: grau de diferenciação – Teste de Estacionariedade
+• q: ordem da média móvel: ACF
+59
+
+=== pág 60 ===
+
+Escolha dos Modelos
+• Critério de AIC – Critério de Informação de Akaike 
+• O AIC estima a quantidade relativa de informações perdidas por um determinado modelo: 
+quanto menos informações um modelo perde, maior a qualidade desse modelo e menor a 
+pontuação AIC.
+• Critério de BIC – Critério de Informação Bayesiano
+• BIC mais baixo implica em melhor ajuste.
+60
+
+=== pág 61 ===
+
+Modelos ARIMA
+• Série Estacionária: média e a autocovariância são constantes no tempo.
+• Formas detectar estacionariedade:
+• Gráfico ACF da série (processo não estacionário apresenta lento decaimento da sua função de 
+autocorrelação. 
+• Série com tendência é o motivo mais comum para não estacionariedade
+61
+
+=== pág 62 ===
+
+Modelos Simulados
+t
+t
+t
+X
+X
+
++
+=
+−1
+8,0
+t
+t
+t
+X
+
+
++
+−
+=
+−1
+3,0
+)
+1
+(
+AR
+)
+1
+(
+MA
+)
+1,1
+(
+ARMA
+t
+t
+t
+t
+X
+X
+
+
++
+−
+−
+=
+−
+−
+1
+1
+3,0
+8,0
+62
+
+=== pág 63 ===
+
+Exemplo: Processo AR(1) de baixa frequência
+)1,0
+(
+~
+,
+100
+,
+95
+,0
+0
+1
+N
+u
+Y
+u
+Y
+Y
+t
+t
+t
+t
+=
++
+
+=
+−
+-40
+-20
+0
+20
+40
+60
+80
+100
+120
+Sorteios i.i.d. N(0,1)
+Y(t) = 0,95 x Y(t-1) + u(t)
+63
+
+=== pág 64 ===
+
+Exemplo: Processo AR(1) de baixa frequência
+)1,0
+(
+~
+,
+100
+,
+95
+,0
+0
+1
+N
+u
+Y
+u
+Y
+Y
+t
+t
+t
+t
+=
++
+
+−
+=
+−
+-5
+0
+5
+10
+15
+20
+-220
+-170
+-120
+-70
+-20
+30
+80
+130
+Y(t) = - 0,95 x Y(t-1) + u(t)
+Sorteios i.i.d. N(0,1)
+64
+
+=== pág 65 ===
+
+Exemplo: Processo AR(12):
+)1,0
+(
+~
+,
+10
+,
+1,1
+0
+12
+N
+u
+Y
+u
+Y
+Y
+t
+t
+t
+t
+=
++
+
+=
+−
+-5
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+Y(t) = 1,1 x Y(t-12) + u(t)
+ 
+Sorteios i.i.d. N(0,1)
+65
+
+=== pág 66 ===
+
+• Os valores correntes de uma série Yt dependem apenas de seus valores passados e 
+dos erros aleatórios.
+• Exemplo AR(p): p é o número de defasagens
+Modelo AR(1)
+Yt =  φ1Yt-1 + εt
+Modelos Autorregressivos (AR)
+66
+
+=== pág 67 ===
+
+Teste de Estacionariedade
+[...] um processo estocástico é estacionário se suas média e variância forem constantes ao longo do 
+tempo e o valor da covariância entre dois períodos de tempo depender apenas da distância ou 
+defasagem entre os dois períodos, e não do período de tempo efetivo em que a covariância é 
+calculada (ENDERS, 2003). 
+Teste KPSS – Kwiatkowski-Phillps-Schmidt - Shin
+unitária)
+ 
+raiz
+ 
+(Possui
+ 
+ia
+estacionár
+ é 
+Não
+ 
+série
+ a :
+H
+unitária)
+ 
+raiz
+ 
+apresenta
+ 
+(Não
+ 
+ia
+estacionár
+ é 
+série
+ a
+:
+H
+1
+0
+67
+
+=== pág 68 ===
+
+Teste de Estacionariedade
+Teste de Dickey-Fuller
+Teste feito porque não se sabe se a série temporal possui  mais de 
+uma raiz unitária, pois o número de termos de diferenças defasadas 
+é, muitas vezes, determinado empiricamente.
+unitária)
+ 
+raiz
+ 
+(sem
+ 
+ia
+estacionár
+ é 
+série
+ a :
+H
+unitária)
+ 
+raiz
+ 
+(apresenta
+ 
+ia
+estacionár
+ é 
+não
+ 
+série
+ a
+:
+H
+1
+0
+Teste PP – Phillips-Perron
+unitária)
+ 
+raiz
+ 
+(sem
+ 
+ia
+estacionár
+ é 
+série
+ a :
+H
+unitária)
+ 
+raiz
+ 
+(apresenta
+ 
+ia
+estacionár
+ é 
+não
+ 
+série
+ a
+:
+H
+1
+0
+68
+
+=== pág 69 ===
+
+Autocorrelação
+69
+
+=== pág 70 ===
+
+É o coeficiente de correlação entre observações defasadas no tempo:
+1
+1
+1
+2
+1
+1
+1
+2
+2
+1
+1
+2
+1
+(
+)(
+)
+(
+) (
+)
+n
+t
+t
+t
+n
+t
+t
+t
+x
+x
+x
+x
+r
+x
+x
+x
+x
+−
++
+=
+−
++
+=
+−
+−
+=
+−
+−
+
+
+Autocorrelação
+onde as médias amostrais são: 
+1
+1
+1
+(
+1)
+n
+t
+i
+x
+x
+n
+−
+=
+=
+−
+
+2
+2
+(
+1)
+n
+t
+i
+x
+x
+n
+=
+=
+−
+
+e
+70
+
+=== pág 71 ===
+
+A expressão anterior pode ser generalizada para k períodos de tempo (defasagem):
+1
+1
+2
+1
+(
+)(
+)
+( )
+(
+)
+n k
+t
+t k
+t
+k
+n
+t
+t
+x
+x
+x
+x
+r
+FAC k
+x
+x
+−
++
+=
+−
+=
+−
+−
+=
+=
+−
+
+
+Como, tanto a covariância como a variância apresentam as mesmas unidades,  não tem 
+unidade. Oscila entre –1 e 1 e o gráfico feito colocando contra k é chamado de 
+correlograma amostral da FAC. 
+Função de Autocorrelação FAC(k)
+71
+
+=== pág 72 ===
+
+Correlogramas
+• FAC (ACF) – Função de Autocorrelação
+• Mostra as autocorrelações em uma série temporal
+• Linhas mostram significância (intervalo de confiança)
+• A 1ª autocorrelação é igual a 1. Cada traço do gráfico mostra uma defasagem e uma correlação 
+(autocorrelação).
+• FACP (PACF) – Função de Autocorrelação Parcial
+• Mede a autocorrelação não entre lags mas entre diferentes intervalos.
+72
+
+=== pág 73 ===
+
+FAC dos Modelos Simulados
+73
+
+=== pág 74 ===
+
+Características da FAC
+Padrão típico da FAC
+Padrão típico da FACP
+AR(p)
+Decai exponencialmente para 
+zero
+ou com padrão de onda
+senoidal amortecida, ou ambos.
+Valores significativos, ou seja, não 
+nulos, até a defasagem p
+MA(q)
+Valores significativos, ou seja, 
+não nulos, até a defasagem q
+Decai exponencialmente para zero.
+ARMA(p,q)
+Decai exponencialmente para 
+zero.
+Decai exponencialmente para zero.
+74
+
+=== pág 75 ===
+
+Etapas
+Processo
+Identificação
+descobrir os valores apropriados de p e q. Para isso usamos
+o correlograma e o correlograma parcial para perceber em que períodos de defasagem existe 
+mais correlação com a variável dependente ou de correlação entre as observações com k 
+períodos de defasagem.
+Estimação
+estimar os parâmetros dos termos auto-regressivo e de média móvel incluídos no modelo
+Checagem
+Um teste simples do modelo escolhido  é ver se os resíduos estimados desse modelo são 
+ruídos brancos; se são, podemos aceitar o ajuste específico; se não são, devemos começar 
+tudo de novo.
+75
+Metodologia de Box-Jenkins
+
+=== pág 76 ===
+
+Pode-se pensar num modelo ARIMA como uma função de regressão  
+ 
+populacional para Yt em que há apenas 2 tipos de “variáveis 
+ 
+ 
+explicativas”:
+            (1)
+ Valores passados de Yt →  A parte “autorregressiva”.
+ 
+      (2)
+ Valores presente e passados do distúrbio normal ut (ou “inovação”) →  A parte de 
+“médias móveis”.
+q
+t
+q
+t
+t
+p
+t
+p
+t
+t
+u
+u
+u
+Y
+Y
+Y
+−
+−
+−
+−
+−
+−
+−
++
++
++
+=
+
+
+
+
+...
+...
+1
+1
+1
+1
+▪ 
+Hiperparâmetro p: a defasagem máxima de Yt presente na equação.
+▪ 
+Hiperparâmetro q: a defasagem máxima de ut presente na equação.
+▪ 
+Hiperparâmetro d: ordem de integração, se o processo for não-estacionário 
+Modelo ARIMA(p,d,q)
+76
+
+=== pág 77 ===
+
+• Um processo linear estacionário autorregressivo de ordem p, ou simplesmente AR(p), é definido 
+como:
+Uma sequência et é um processo ruído branco se, para qualquer t:
+1) E(et) = 0 →média constante e nula
+2) Var (e t) = E (e t2) →variância constante
+3) Cov (e t, e t-1) = E (e te t-1) = 0 →ausência de autocorrelação
+Se e t ~ N, então será Ruído Branco Gaussiano
+Ruído Branco
+t
+p
+t
+t
+t
+t
+Y
+Y
+Y
+Y
+
+
+
+
++
++
++
++
+=
+−
+−
+−
+
+2
+1
+Modelo AR(p) - Fundamentos
+77
+
+=== pág 78 ===
+
+Exemplos de modelos da classe ARIMA:
+·
+ Modelo AR(1):  
+ 
+·
+ Modelo AR(2):  
+ 
+·
+ Modelo MA(1):  
+ 
+·
+ Modelo ARMA(1,1): 
+ 
+1
+1
+t
+t
+t
+Y
+Y
+u
+
+−
+=
++
+t
+t
+t
+t
+u
+Y
+Y
+Y
++
++
+=
+−
+−
+2
+2
+1
+1
+
+
+1
+1
+−
+−
+=
+t
+t
+t
+u
+u
+Y
+
+1
+1
+1
+1
+−
+−
+−
++
+=
+t
+t
+t
+t
+u
+u
+Y
+Y
+
+
+Classes de modelos
+78
+
+=== pág 79 ===
+
+Modelo ARIMA SAZONAL
+Modelo SARIMA(p,d,q)(P,D,Q)
+•
+Notação: SARIMA (0,0,0) (1,0,0)12
+•
+Notação: SARIMA (0,0,0) (0,0,1)12
+•
+Generalizando: SARIMA(p,d,q)(P,D,Q)s
+•
+P - número de termos autorregressivos sazonais (defasagens 
+no lado direito da equação)
+•
+d – número de diferenças sazonais
+•
+q – número de médias móveis sazonais (erros defasados no 
+lado direito da equação)
+•
+s – ciclo sazonal
+12 12
+t
+t
+t
+Y a Y
+e
+−
+=+
++
+12 12
+t
+t
+t
+Y a
+e
+e
+−
+=+
++
+79
+
+=== pág 80 ===
+
+Teste de Normalidade
+
+
+
+
+
+
+
+
+−
+=
+3
+3)
+(
+)
+(
+
+
+X
+E
+X
+A
+Assimetria
+Curtose
+
+
+
+
+
+
+
+
+−
+=
+4
+4)
+(
+)
+(
+
+
+X
+E
+X
+K
+Normal: A = 0 e K = 3
+Teste de Jarque Bera (1981)
+2
+2
+)
+3
+(
+24
+6
+−
+
+
+
+
+
+
++
+
+
+
+
+
+
+=
+K
+n
+A
+n
+JB
+normal
+ é 
+série
+ :
+0
+H
+)
+2
+(
+~
+2
+
+JB
+80
+
+=== pág 81 ===
+
+Obrigado!
+Prof. Fabiano Guasti Lima
+/fabiano-guasti-lima-b9830282/

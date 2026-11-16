@@ -1,0 +1,93 @@
+# 21 - Supervised Machine Learning Modelagem Multinível / Material complementar 07 e 14.04.2026_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR  
+Supervised Machine Learning: Modelagem Multinível 
+Professor Luiz Paulo Fávero 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+• Bickel, R. 2007. Multilevel analysis for applied research: it’s just 
+regression! New York: The Guilford Press. 
+ 
+• Courgeau, D. 2003. Methodology and epistemology of multilevel analysis. 
+London: Kluwer Academic Publishers. 
+ 
+• Fávero, L.P. 2010. The Sao Paulo Stock Exchange: a multilevel analysis of 
+firm and industry effects on profitability evolution and hedge strategies. 
+International Journal of Financial Markets and Derivatives, v. 1, p. 307-325. 
+ 
+• Fávero, L.P. 2017. The zero-inflated negative binomial multilevel model: 
+demonstrated by a Brazilian dataset. International Journal of Mathematics 
+in Operational Research, v. 11, p. 90-106. 
+ 
+• Fávero, L.P. 2008. Time, firm and country effects on performance: an 
+analysis under the perspective of hierarchical modeling with repeated 
+measures. BBR (Brazilian Business Review), v. 5, p. 163-180. 
+ 
+• Fávero, L.P.; Almeida, J.E.F. 2011. O comportamento dos índices de ações 
+em países emergentes: uma análise com dados em painel e modelos 
+hierárquicos. Revista Brasileira de Estatística, v. 72, p. 97-137. 
+ 
+• Fávero, L.P.; Belfiore, P. 2019. Data science for business and decision 
+making. Cambridge: Academic Press. 
+ 
+
+=== pág 3 ===
+• Fávero, L.P.; Belfiore, P. 2024. Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. Rio de 
+Janeiro: GEN. 
+ 
+• Fávero, L.P.; Confortini, D. 2010. Modelos multinível de coeficientes 
+aleatórios e os efeitos firma, setor e tempo no mercado acionário 
+Brasileiro. Pesquisa Operacional, v. 30, p. 703-727. 
+ 
+• Fávero, L.P.; Santos, M.A.; Serra, R.G. 2018. Cross-border branching in the 
+Latin American banking sector. International Journal of Bank Marketing, v. 
+36, p. 496-528. 
+ 
+• Fávero, L.P.; Serra, R.G.; Santos, M.A.; Brunaldi, E. 2018. Cross-classified 
+multilevel determinants of firm’s sales growth in Latin America. 
+International Journal of Emerging Markets, v. 13, p. 902-924. 
+ 
+• Goldstein, H. 2011. Multilevel statistical models. 4. ed. Chichester: John 
+Wiley & Sons. 
+ 
+• Hair Jr., J.F.; Fávero, L.P. 2019. Multilevel modeling for longitudinal data: 
+concepts and applications. RAUSP Management Journal, v. 54, p. 459-489. 
+ 
+• Lazega, E.; Snijders, T. 2016. Multilevel network analysis for the social 
+sciences: theory, methods and applications. New York: Springer. 
+ 
+• Rabe-Hesketh, S.; Skrondal, A. 2012. Multilevel and longitudinal modeling: 
+continuous responses (Vol. I). 3. ed. College Station: Stata Press. 
+ 
+
+=== pág 4 ===
+• Raudenbush, S.W.; Bryk, A.S. 2002. Hierarchical linear models: 
+applications and data analysis methods. 2. ed. Thousand Oaks: Sage 
+Publications. 
+ 
+• Santos, M.A.; Fávero, L.P.; Disatadio, L.F. 2016. Adoption of the 
+International Financial Reporting Standards (IFRS) on companies’ 
+financing structure in emerging economies. Finance Research Letters, v. 
+16, p. 179-189. 
+ 
+• Steele, F. 2017. Multilevel models for longitudinal data. Centre of 
+Multilevel Modelling, University of Bristol. Link  
+ 
+• Tabachnick, B.G.; Fidell, L.S. 2013. Using multivariate statistics. 6. ed. 
+Boston: Pearson. 
+ 
+• West, B.T.; Welch, K.B.; Galecki, A. 2016. T. Linear mixed models: a 
+practical guide using statistical software. 2. ed. Boca Raton: Chapman & 
+Hall / CRC Press. 
+ 
+• Yale, C.P.; Yoshizaki, H.T.Y.; Fávero, L.P. 2022. A new zero-inflated negative 
+binomial multilevel model for forecasting the demand of disaster relief 
+supplies in the State of Sao Paulo, Brazil. Mathematics, v. 10, n. 22, p. 1-
+11. 
+ 
+ 
+ 

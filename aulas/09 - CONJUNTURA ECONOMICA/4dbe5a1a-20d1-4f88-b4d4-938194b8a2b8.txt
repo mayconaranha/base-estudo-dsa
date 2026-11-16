@@ -1,0 +1,1326 @@
+# 09 - CONJUNTURA ECONOMICA / 4dbe5a1a-20d1-4f88-b4d4-938194b8a2b8.pdf
+
+=== pág 1 ===
+
+ANÁLISE  DA  CONJUNTURA ECONÔMICA EM 
+CENÁRIOS DE TECNOLOGIAS DISRUPTIVAS II
+Prof. Dr. Fernando de S. Coelho
+ 
+=== pág 2 ===
+
+
+Lei nº 9610/98
+ 
+=== pág 3 ===
+
+Fundamentos sobre o Nível de Atividade (16.09) 
+PIB, Inflação, Desemprego e seus índices
+1
+Princípios de Política Econômica (23.09)
+Fiscal, Monetária, Cambial e seus instrumentos
+2
+Mercados e Ambiente Econômico (23.09)
+ Análise da conjuntura econômica e projeção de cenários
+3
+Organização da nossa Disciplina em 2 Aulas & 3 Degraus
+Introdução à Análise Econômica  
+Preâmbulo e algumas definições usuais 
+3
+ 
+=== pág 4 ===
+
+O que nós aprendemos na aula 1, 
+ministrada no dia 16 de agosto?
+4
+ 
+=== pág 5 ===
+
+Ambiente Econômico
+Ambiente Político
+Ambiente Social
+Ambiente Ecológico
+Ambiente Tecnológico
+Ambiente Legal
+A Economia como Macroambiente
+Macroambiente
+Ambiente Setorial
+Organização
+5
+ 
+=== pág 6 ===
+
+A Análise Econômica tem alguns escolhas básicas
+Análise Microeconômica: agentes e mercado
+Análise Macroeconômica: agregados e políticas
+ 
+1. Que ambiente analisar?
+Conjuntural: curto/médio prazo, oscilações no panorama 
+Estrutural: longo prazo, alterações na base da economia
+ 
+2. Qual abordagem utilizar?
+3. Caixa de Ferramentas Mínima
+Conceitos: vocabulário econômico e suas definições  elementares
+Modelos: operacionalização dos conceitos econômicos para  realizar análises 
+Índices: expressões numéricas (taxas e indicadores) que representam a economia
+ 
+6
+ 
+=== pág 7 ===
+
+Vimos que, economicamente, os países objetivam:
+Crescimento do 
+Produto
+Estabilidade de Preços
+Geração de Emprego
+Nível de Atividade
+Indicador: PIB
+Indicador: Taxa de Inflação
+Indicador: Taxa de Desemprego
+7
+ 
+=== pág 8 ===
+
+PIB = C + I + G + (Ex – Im)
+Consumo
+Investimento
+Gastos do Governo
+Exportação
+Importação
+Operacionalizamos o conceito de PIB em um modelo*
+*Ótica do PIB  do dispêndio/despesa/demanda
+Temos, igualmente, as óticas da oferta/produção e da renda.   
+Para + informações:  
+https://www.ibge.gov.br/explica/pib.php 
+8
+ 
+=== pág 9 ===
+
+Entendemos os fatores que impactam nos 4 componentes
+Consumo
+Investimento
+Gastos do Governo
+Balança Comercial
+Nível de renda disponível (poder de compra, tributação)
+Expectativas (confiança, humor) das famílias
+Distribuição de renda na economia
+Ritmo das inovações tecnológicas
+Projeção da taxa de retorno do investimento
+Nível da taxa de juros (trade-off)
+Controle da atividade econômica
+Prestação de serviços públicos
+Provisão das políticas sociais
+Taxa de câmbio
+Competitividade internacional
+Políticas de comércio exterior
+9
+ 
+=== pág 10 ===
+
+•
+Oscilações da taxa de crescimento real no período; ver como foi baixa, quando não ocorreu queda (2014-2020)
+•
+Valor do PIB nominal em BRL aumentou ano a ano (uma vez que não é deflacionado). 
+•
+Valor do PIB nominal em USD variou de acordo com a taxa de câmbio.
+•
+O PIB per capita considera a estimativa da população no período a partir do Censo de 2010; e como o valor é em USD, depende da 
+taxa de câmbio. Recordar que o IBGE revisou os números do Censo de 2022, recentemente.  
+•
+PIB per capita em R$, 2024: 55.247,00
+10
+  Brasil
+01/12/2015
+01/12/2016
+01/12/2017
+01/12/2018
+01/12/2019
+01/12/2020
+01/12/2021
+01/12/2022
+01/12/2023
+01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+  PIB
+  Crescimento real do PIB - %
+-3,5
+-3,3
+1,3
+1,8
+1,2
+-3,3
+4,8
+3,0
+3,2
+3,4
+  PIB nominal - BRL bi
+5.996
+6.269
+6.585
+7.004
+7.389
+7.610
+9.012
+10.080
+10.943
+11.745
+  PIB nominal - USD bi
+1.800
+1.798
+2.063
+1.916
+1.872
+1.475
+1.670
+1.951
+2.192
+2.179
+  População - Milhões
+202,4
+203,9
+205,2
+206,5
+207,9
+209,2
+210,1
+210,9
+211,7
+212,6
+  PIB per capita - USD 
+8.893
+8.820
+10.054
+9.276
+9.007
+7.050
+7.949
+9.255
+10.356
+10.251
+Fonte: IBGE
+Analisamos o PIB brasileiro na última década
+ 
+=== pág 11 ===
+
+• Crescimento econômico é necessário, mas não é suficiente  para o 
+desenvolvimento socioeconômico; 
+• Logo, o referencial de desenvolvimento não se restringe ao crescimento! 
+• Multidimensionalidade do desenvolvimento a partir do final do séc. XX.
+• Vide, por exemplo, o conceito de desenvolvimento sustentável | ODS.
+• Com indicadores de desenvolvimento, qualidade de vida e distribuição de 
+renda como IDH/PNUD, IPQV/IBGE e Índice de Gini. 
+Mostramos que crescimento ≠ desenvolvimento
+11
+ 
+=== pág 12 ===
+
+Definimos inflação e aprendemos os 3 tipos de inflação!
+Inflação: o aumento do nível de preços de uma economia.
+▪Nível dos salários
+▪Disponibilidade de crédito
+▪Meios de Pagamento
+Inflação de Demanda
+▪Choque de oferta (-)
+▪Preços administrados
+▪Custos de prod./adm.
+Inflação de Oferta
+▪Memória inflacionária
+▪Expectativa dos agentes
+▪Indexação da economia
+Inflação Inercial
+12
+ 
+=== pág 13 ===
+
+Fonte: IGPM / inflação mensal (%), 1985-2000
+Cruzado
+Bresser
+Verão
+Collor 1
+Collor 2
+Real
+1985
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+0,00%
+20%
+40%
+60%
+80%
+100%
+1999
+Lembramos da hiperinflação ao processo de estabilização monetária
+Fim da âncora cambial a partir de jan./99
+13
+ 
+=== pág 14 ===
+
+Vimos os principais índices de inflação ao consumidor no país
+IPCA - IBGE
+Utilização: Meta de Inflação
+IGPM - FGV
+Utilização: Contratos
+IPC - FIPE
+Utilização: Impostos de SP
+ICV - DIEESE
+Utilização: Acordos Salariais
+Para + informações: https://portal-da-inflacao-ibre.fgv.br/#!/
+14
+ 
+=== pág 15 ===
+
+Fonte: IBGE, BACEN e FGV. 
+Analisamos a Taxa de Inflação brasileira na última década
+•
+Diferença de metodologia entre IPCA e IGP-M.
+•
+Uso da inflação oficial alternativo ao IGP-M para revisão de contratos durante a pandemia (2020-2021).
+•
+Meta de inflação: https://www.bcb.gov.br/controleinflacao/historicometas
+•
+IPCA acumulado 12 meses (set.-ago.): 5,13%; IPCA 2025 (jan.-ago.): 3,15%,; IPCA Agosto: -0,11%. 
+15
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+Inflação
+  IPCA - %
+10,7
+6,3
+2,9
+3,7
+4,3
+4,5
+10,1
+5,8
+4,6
+4,8
+  IGP–M - %
+10,5
+7,2
+-0,5
+7,5
+7,3
+23,1
+17,8
+5,5
+-3,2
+6,5
+ 
+=== pág 16 ===
+
+16
+PIA ou PIT
+PEA ou PFT
+Inativos
+A partir da população total do país (212,0  milhões), calcula-se:
+Taxa de Desemprego = Nº. de Desempregados /PEA
+Brasil (trimestre, encerrado em julho/25):  5,6%,  com 6,1 
+milhões de pessoas desocupadas; e 102,4 milhões ocupadas. 
+Para + informações: 
+https://www.ipea.gov.br/cartadeconjuntura/index.php/category/mercado-de-trabalho/
+174,1 milhões
+108,5 milhões
+65,6 milhões
+Compreendemos a Taxa de Desemprego
+ 
+=== pág 17 ===
+
+▪Incompatibilidades (...)
+▪Assimetria de Informação
+▪Rotatividade
+Friccional
+Conjuntural
+▪ Crise econômica
+▪ Sazonalidade
+▪Choque externo
+Estrutural
+▪Mecanização agrícola
+▪Automação industrial
+▪Inteligência  artificial 
+17
+17
+Diferenciamos os 3 Tipos de Desemprego
+ 
+=== pág 18 ===
+
+PNAD contínua - IBGE
+Metodologia:
+▪Pop. Idade Ativa (PIA):  14 anos ou mais
+▪Desocupado: sem ocupação, disponível
+▪211 mil domicílios em 3464 municípios
+▪Em torno de 2200 entrevistadores, por telefone
+▪Média trimestral (dados do mês com os dois meses 
+imediatamente anteriores)
+▪+ Info: https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-
+nacional-por-amostra-de-domicilios-continua-mensal.html
+Metodologia:
+▪
+Geração das estatísticas do emprego formal, 
+pelo Ministério do Trabalho e Emprego, por 
+meio de informações captadas dos 
+sistemas eSocial, Caged e Empregador Web.
+18
+E referenciamos os índices de desemprego no Brasil
+ 
+=== pág 19 ===
+
+Analisamos a Taxa de Desemprego brasileira na última década
+Fonte: IBGE e PNAD Contínua. Dados atuais para o  trimestre de 2025 encerrado em julho.
+Além da taxa de desocupação (ou desemprego), é fundamental analisar:
+•
+ Taxa de Participação: 62,3 % da PIA, com desalento em torno de 2,7  milhões de pessoas.
+•
+ Nível de Ocupação: 58,8% da PIA.
+•
+ Rendimento Médio: aprox. R$ 3.484,00.
+•
+ Massa Salarial: 352 bilhões/mês   
+•
+Taxa de Formalidade: 62,2 % (incluindo 39,1  milhões com carteira de trabalho e  12,8 milhões de servidores públicos)
+•
+Taxa de Informalidade: 37,8 % (incluindo 13,5 milhões sem carteira de trabalho e  25,8  milhões por conta própria).
+•
+Trabalhadores Domésticos: 6 milhões 
+•
+Subocupação da Força de Trabalho (por insuficiência de horas): 5 milhões de trabalhadores.
+•
+Número de pessoas subutilizadas: 16,4 milhões (desempregados + subocupados + desalentados + sem disponibilidade). 
+19
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+   Desemprego
+  Taxa nacional de desemprego - média anual (*)
+8,4
+11,4
+12,9
+12,4
+12,1
+13,5
+13,5
+9,5
+8,0
+6,9
+  Taxa nacional de desemprego - fim do ano (*)
+9,7
+12,8
+12,6
+12,3
+11,6
+14,7
+11,6
+8,4
+7,9
+6,6
+ 
+=== pág 20 ===
+
+20
+Discussões
+▪ Estamos em pleno emprego no Brasil ou em alguns dos ‘Brasis’?
+• NAIRU (Non-Accelerating Inflation Rate of Unemployment), ou taxa de desemprego não 
+aceleradora da inflação:  o nível de desemprego que mantém a taxa de inflação estável; 
+• Estrutural: alta informalidade no mercado de trabalho brasileiro e nível de precarização;
+• Comparação internacional: EUA (4,2%); Argentina (7,9%); Espanha (10,6%) – 2025/1.
+ 
+=== pág 21 ===
+
+Em resumo, pensar o nível de atividade de uma economia é:
+▪Crescimento Econômico
+▪Estabilidade de Preços
+▪Geração de Emprego
+Considerar os Objetivos
+▪PIB (% crescimento)
+▪Taxa de Inflação
+▪Taxa de Desemprego
+Analisar os Índices
+21
+ 
+=== pág 22 ===
+Fundamentos sobre Nível de Atividade:
+PIB, Inflação e Desemprego e seus índices
+Princípios de Política Econômica: 
+Fiscal, Monetária, Cambial e seus instrumentos
+Eis o nosso 2º degrau!
+22
+22
+
+ 
+=== pág 23 ===
+
+Problemas Econômicos e seus trade-off !? 
+Como equilibrar receitas e despesas dos governos diante do 
+crescimento vegetativo dos gastos públicos e das demandas 
+sociais?
+Como manter o crescimento econômico sem colocar em risco a 
+estabilidade de preços, considerando a pressão inflacionária?
+Logo, deve-se manter ou diminuir a taxa de juros do país  
+durante o último trimestre de 2025?
+Essas são algumas questões de política econômica de alcance conjuntural!
+23
+ 
+=== pág 24 ===
+
+Problemas Econômicos requerem Políticas Econômicas!
+▪ Política Fiscal
+▪ Política Monetária
+▪ Política Cambial
+Conjuntural
+▪ Política Industrial 
+▪ Política de Transição Energética 
+▪ Política de Distribuição de Renda
+Estrutural
+Política Econômica: intervenção do governo na economia
+24
+ 
+=== pág 25 ===
+
+Funções do Governo na Economia
+Função Alocativa
+Função Distributiva
+Função Estabilizadora
+Fornecimento 
+de 
+bens 
+públicos, 
+financiado por impostos e avaliado pelos 
+resultados eleitorais.
+Ex.: Infraestrutura e políticas sociais. 
+Combate ao desemprego, manutenção da 
+estabilidade 
+dos 
+preços 
+e 
+busca 
+pelo 
+crescimento econômico.
+Ex.: Controle da Demanda Agregada
+Ajuste na distribuição de renda visando à 
+redução da desigualdade social
+Ex.: Transferências e Impostos
+25
+ 
+=== pág 26 ===
+
+O Problema Fiscal no Setor Público
+Política Fiscal
+26
+ 
+=== pág 27 ===
+
+Balancete Simplificado de um Governo
+27
+Consumo do Governo
+   Bens e serviços nacionais
+   Bens e serviços importados
+   Salários pagos
+Transferências
+   A indivíduos
+   A empresas
+   Ao exterior
+Subsídios
+Investimentos Públicos
+Pagamentos de Juros 
+Impostos Diretos 
+   Dos indivíduos
+   Das empresas
+Impostos Indiretos 
+    Produção
+    Consumo
+Contribuições
+    Fundos
+    Taxas
+Transferências Intergovernamentais
+Receitas
+Despesas
+ 
+=== pág 28 ===
+
+Tipos de Impostos e Política Tributária Regressiva no Brasil
+Impostos Diretos
+Impostos Indiretos
+Sobre renda e propriedade 
+(respeitando o princípio de 
+progressividade)
+Ex.: IRPF, IPTU, IPVA
+Sobre a venda de serviços e 
+bens (contrariando o 
+princípio de progressividade)
+Ex.: ICMS, IPI, ISS
+28
+ 
+=== pág 29 ===
+
+Tributos no Brasil por Nível de Governo & Divisão da Arrecadação
+29
+ 
+=== pág 30 ===
+
+30
+ 
+=== pág 31 ===
+
+Resultado das Contas Públicas
+Despesas
+Receitas
+>
+Déficit Público
+Receitas > Despesas não financeiras (exceto pag. de juros)
+Superávit Primário
+Déficit Nominal
+Despesa Total > Receita Total 
+31
+ 
+=== pág 32 ===
+
+Resultado Primário & Nominal
+Ilustrando as contas públicas de um país fictício
+Receita
+1.000.000
+(R$ bilhões)
+50.000
+Resultado Primário 
+- 150.000
+Despesa Financeira
+- 100.000
+Resultado Nominal
+-  950.000
+Despesa não Financeira
+32
+ 
+=== pág 33 ===
+
+Como os governos podem financiar o déficit público?
+NFSP    =    Emissão de Moeda      e/ou        Emissão de Títulos
+(Banco Central, não usual)
+(Governo, tradicional)
+▪Pressão sobre a Demanda Agregada
+▪Inflação 
+▪Impacto na Taxa de Juros
+▪Aumento da Dívida Pública
+33
+ 
+=== pág 34 ===
+
+Visitem o site do Tesouro Direto! 
+34
+ 
+=== pág 35 ===
+
+Contas Públicas no Brasil na última década (2015-2024)
+Fonte: Tesouro Nacional
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+Finanças Públicas
+  Resultado primário - % do PIB
+-1,9
+-2,5
+-1,7
+-1,5
+-0,8
+-9,2
+0,7
+1,2
+-2,3
+-0,4
+  Resultado nominal - % do PIB
+-10,2
+-9,0
+-7,8
+-7,0
+-5,8
+-13,3
+-4,3
+-4,6
+-8,8
+-8,5
+  Dívida pública bruta - % do PIB
+65,5
+69,9
+73,7
+75,3
+74,4
+86,9
+77,3
+71,7
+73,8
+76,5
+  Dívida pública líquida - % do PIB
+36,0
+46,2
+51,4
+52,8
+54,7
+61,4
+55,1
+56,1
+60,4
+61,5
+35
+ 
+=== pág 36 ===
+
+O orçamento do governo de um pequeno país apresenta os seguintes 
+valores: as receitas totalizam R$ 220 bilhões/ano, as despesas (exceto 
+pagamento de juros) totalizam R$ 195 bilhões/ano e as despesas com juros 
+da dívida pública totalizam R$ 45 bilhões/ano. Pode-se afirmar que este país 
+tem 
+um 
+resultado 
+primário 
+e 
+um 
+resultado 
+nominal 
+que 
+são, 
+respectivamente:
+(A) Um superávit primário e um superávit nominal
+(B) Um superávit primário e um déficit nominal
+(C) Um déficit primário e um superávit nominal
+(D) Um déficit primário e um déficit nominal
+Enquete 1: aplicando o conhecimento desta aula
+36
+ 
+=== pág 37 ===
+
+O Problema Monetário na Economia
+Para conciliar crescimento econômico com a estabilidade de preços o Bacen deve:
+▪Administrar a taxa de juros básica
+para investimentos < taxa de retorno de longo prazo
+para capital de giro < margens 
+para consumo: não proibitivos
+▪Gerir o alcance da meta de inflação
+Controlar a oferta monetária (meios de pagamento)
+38
+ 
+=== pág 38 ===
+
+O BACEN determina a taxa de juros básica (SELIC); 15% (set. 2025). 
+  
+Conjuntura Nacional
+Crescimento & Hiato do Produto
+ Inflação: comportamento e meta
+ Mercado financeiro doméstico
+  
+Panorama Externo
+Risco-país (EMBI, CDS)
+ Taxa de juros internacional (EUA)
+ Mercado financeiro internacional 
+(oito reuniões/ano)
+Fonte: Banco Central
+  Brasil
+01/12/2015
+01/12/2016
+01/12/2017
+01/12/2018
+01/12/2019
+01/12/2020
+01/12/2021
+01/12/2022
+01/12/2023
+01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+Taxa de Juros
+  Selic - final do ano - %
+14,25
+13,75
+7,00
+6,50
+4,50
+2,00
+9,25
+13,75
+11,75
+12,25
+39
+ 
+=== pág 39 ===
+
+Open Market
+Taxa Compulsório
+Taxa de Redesconto
+Instrumentos Clássicos de Política Monetária
+40
+ 
+=== pág 40 ===
+
+São operações de compra e venda de títulos no 
+mercado 
+secundário 
+(papéis 
+emitidos 
+anteriormente pelo governo já em circulação).  
+Essas operações são realizadas pelo Banco 
+Central com o objetivo de gerir os meios de 
+pagamento (e a liquidez da economia). 
+O que são Operações de Open Market?
+Obs: o Bacen utiliza exclusivamente títulos públicos federais nessas operações de open market.
+41
+ 
+=== pág 41 ===
+
+Open Market: operações com títulos
+Venda                                                                         liquidez
+Recompra
+liquidez
+  
+BANCO CENTRAL
+Uso desse instrumento de Política Monetária
+para o controle da oferta monetária do país 
+Títulos
+R$
+R$
+Títulos
+42
+ 
+=== pág 42 ===
+
+Visitem o site do BACEN
+43
+Fonte: www.bcb.gov.br, 22 de setembro de 2025.  
+ 
+=== pág 43 ===
+
+Vídeo Instrutivo, Banco Central | Boletim Focus
+Vídeo para finalizar a Política Monetária: Banco Central & as Expectativas de Mercado!
+https://www.youtube.com/watch?v=tq5PnWYgRco
+44
+Banco Central do Brasil. 2022. BC te Explica #37 - Relatório Focus. Disponível no 
+Youtube:
+44
+
+ 
+=== pág 44 ===
+
+45
+Fonte: www.bcb.gov.br, 22 de setembro de 2025.  
+ 
+=== pág 45 ===
+
+As Transações Externas e a Taxa de Câmbio
+Economia Doméstica
+R$
+• Exportações
+• Remessa de Lucro
+• Pagamento de Juros
+• Amortização da Dívida
+Mercado Externo
+US$
+• Importações
+• Empréstimos
+• Investimento Direto
+• Capital de Curto Prazo
+Tx Câmbio: R$/US$
+46
+ 
+=== pág 46 ===
+
+Quais são os regimes cambiais?
+▪Bacen estipula uma taxa de câmbio fixa
+▪Vantagem: Previsibilidade cambial
+▪Desvantagem: Perda de credibilidade do Bacen pela ausência de liberdade cambial
+Câmbio Fixo
+Bandas Cambiais
+▪Bacen define limites máximo e mínimo para o câmbio
+▪Vantagem: Certa previsibilidade cambial
+▪Desvantagem: Perda de credibilidade do Bacen no mercado pela interferência no mercado
+Flutuação Suja
+▪Bacen negocia títulos cambiais (swaps) em momentos de stress 
+▪Vantagem: Certo ganho de credibilidade 
+▪Desvantagem: Incerteza quanto à atuação do Bacen
+Câmbio Flutuante
+▪Bacen não interfere no mercado de câmbio
+▪Vantagem: Ganho de  credibilidade
+▪Desvantagem: Imprevisibilidade cambial
+47
+ 
+=== pág 47 ===
+
+Balanço de Pagamentos: registro das transações externas
+Balança Comercial (I)
+▪Exportações
+▪Importações
+Balança de Serviços  e Rendas (II)
+▪Serviços (Juros, Remessas de Lucros, Aluguéis, Fretes, 
+Seguros, viagens Internacionais)
+Transferências Unilaterais (III)
+Saldo em Conta Corrente (IV = I + II + III)
+Conta Capital  e Financeira (V)
+▪Investimentos Diretos
+▪Empréstimos e Financiamentos Externos
+▪Amortizações
+▪Capitais de Curto Prazo
+Saldo do Balanço de Pagamentos (VI = IV + V)
+48
+ 
+=== pág 48 ===
+
+Cálculo do Balanço de Pagamentos (BP)
+Ilustrando o Balanço de Pagamentos de um país fictício
+Balança Comercial
+1.736
+(R$ milhões)
+7.206
+Conta Corrente
+(4.132)
+Conta Capital e Financeira
+3.074
+Balanço de Pagamentos
+5.470
+Balança de Serviços e Rendas
+Qual a relação entre o BP e a taxa de câmbio?
+49
+ 
+=== pág 49 ===
+
+Saldo do BP, Reservas Internacionais e Taxa de Câmbio 
+Flutuante
+Se o Saldo do Balanço de Pagamentos é positivo:
+• Aumentam as Reservas Internacionais
+• Valorização da Moeda Nacional
+• Apreciação Cambial
+Tx Câmbio: R$/US$
+Se o Saldo do Balanço de Pagamentos é negativo:
+• Diminuem as Reservas Internacionais
+• Desvalorização da Moeda Nacional
+• Depreciação Cambial
+Tx Câmbio: R$/US$
+50
+ 
+=== pág 50 ===
+
+Ilustrando o Balanço de Pagamentos do Brasil, didaticamente: 
+(em US$ bilhões,  anos selecionados 2011-2014, fonte: Bacen) 
+51
+ 
+=== pág 51 ===
+
+Suponha um país com exportações anuais  de US$ 505 bilhões e 
+importações anuais equivalentes a US$ 495 bilhões. Além disso, 
+considere que a conta capital tenha um superávit anual de US$ 15 
+bilhões e que a balança de serviços apresente um déficit de US$ 15 
+bilhões. Qual é o saldo do Balanço de Pagamentos desse país? 
+(A) Positivo, em US$ 10 bilhões.
+(B) Negativo, em US$ 10 bilhões. 
+(C) Positivo, em US$ 20 bilhões.
+(D) Negativo, em US$ 20 bilhões. 
+Enquete 2: aplicando o conhecimento desta aula
+52
+ 
+=== pág 52 ===
+
+Contas Externas no Brasil na última década (2015-2024)
+Fonte: Banco Central 
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+Balanço de Pagamentos
+  BRL / USD - final de período
+3,96
+3,26
+3,31
+3,88
+4,03
+5,19
+5,57
+5,28
+4,86
+6,18
+  Balança comercial - USD bi
+14
+40
+56
+47
+35
+50
+61
+62
+99
+75
+  Conta corrente - % PIB
+-3,5
+-1,7
+-1,2
+-2,8
+-3,5
+-1,7
+-2,4
+-2,2
+-1,3
+-2,8
+  Investimento direto no país - % PIB
+3,6
+4,1
+3,3
+4,1
+3,7
+3,0
+2,8
+4,7
+2,8
+3,2
+  Reservas internacionais - USD bi
+369
+372
+382
+387
+367
+356
+362
+325
+355
+330
+53
+ 
+=== pág 53 ===
+
+Em síntese: as políticas econômicas conjunturais
+Política Fiscal
+▪Resultado Primário
+▪Resultado Nominal
+▪Meta: % superávit primário /PIB
+Política Monetária
+▪Taxa de Juros Básica 
+▪Open Market e Compulsório
+▪Meta: meta de inflação
+Política Cambial
+▪Taxa de Câmbio
+▪Balanço de Pagamentos
+▪Meta: regime câmbio flutuante
+Tripé Macroeconômico
+54
+ 
+=== pág 54 ===
+55
+Nosso 3ºe último degrau para 
+encerrar a disciplina!
+Mercados e Ambiente Econômico
+   Análise da Conjuntura e Projeção de Cenários
+55
+55
+55
+ 
+=== pág 55 ===
+
+Macroeconomia & Ambiente de Negócios
+Macroeconomia:            nível de atividade   
+políticas econômicas 
+Passado Recente                  Conjuntura Atual
+Cenários Futuros
+Planejamento
+Ações
+Objetivos
+Setores e Organizações
+56
+ 
+=== pág 56 ===
+
+O Sistema Financeiro Nacional (SFN) e o Mercado de Crédito
+O SFN é composto pelas instituições responsáveis pela captação de recursos 
+financeiros, pela distribuição e circulação de valores e pela normatização e 
+fiscalização do processo. O conjunto dessas funções e suas organizações formam o 
+Mercado Financeiro, subdivido em:  
+57
+ 
+=== pág 57 ===
+
+▪Bancos, Cooperativas e Fintechs
+▪
+Sociedades Seguradoras
+▪
+Resseguradores
+▪
+Demais Instituições Financeiras
+▪
+Bolsas de Valores
+▪
+Bolsa de Mercadorias e Futuros
+▪
+Outros Intermediários Financeiros e 
+Administradores de Recursos de Terceiros.
+▪
+Entidades Abertas de Previdência 
+Complementar.
+▪
+Fundos de Pensão
+Estrutura do Sistema Financeiro Nacional no Brasil
+Órgãos Normativos
+Entidades Supervisoras
+Operadores
+▪CMN
+(Conselho Monetário Nacional)
+▪CNSP
+(Conselho Nacional de Seguros Privados)
+▪CNPC
+(Conselho Nacional de Previdência
+Complementar)
+▪BACEN
+▪CVM
+(Comissão de Valores Mobiliários)
+▪SUSEP
+(Superintendência de
+Seguros Privados)
+▪PREVIC
+(Superintendência Nacional de Previdência
+Complementar) 
+58
+ 
+=== pág 58 ===
+
+Brasil: conjuntura econômica – passado recente! 
+Fonte: IBGE, Banco Central e Tesouro Nacional
+59
+2020
+2021
+2022
+2023
+2024
+PIB e Desemprego
+  Crescimento real do PIB - %
+-3,3
+4,8
+3,0
+3,2
+3,4
+  PIB nominal - BRL bi
+7.610
+9.012
+10.080
+10.943
+11.745
+  PIB nominal - USD bi
+1.475
+1.670
+1.951
+2.192
+2.179
+  População - Milhões
+209,2
+210,1
+210,9
+211,7
+212,6
+  PIB per capita - USD 
+7.050
+7.949
+9.255
+10.356
+10.251
+  Taxa nacional de desemprego - média anual (*)
+13,5
+13,5
+9,5
+8,0
+6,9
+  Taxa nacional de desemprego - fim do ano (*)
+14,7
+11,6
+8,4
+7,9
+6,6
+Inflação
+  IPCA - %
+4,5
+10,1
+5,8
+4,6
+4,8
+  IGP–M - %
+23,1
+17,8
+5,5
+-3,2
+6,5
+Taxa de Juros
+  Selic - final do ano - %
+2,00
+9,25
+13,75
+11,75
+12,25
+Balanço de Pagamentos
+  BRL / USD - final de período
+5,19
+5,57
+5,28
+4,86
+6,18
+  Balança comercial - USD bi
+50
+61
+62
+99
+75
+  Conta corrente - % PIB
+-1,7
+-2,4
+-2,2
+-1,3
+-2,8
+  Investimento direto no país - % PIB
+3,0
+2,8
+4,7
+2,8
+3,2
+  Reservas internacionais - USD bi
+356
+362
+325
+355
+330
+Finanças Públicas
+  Resultado primário - % do PIB
+-9,2
+0,7
+1,2
+-2,3
+-0,4
+  Resultado nominal - % do PIB
+-13,3
+-4,3
+-4,6
+-8,8
+-8,5
+  Dívida pública bruta - % do PIB
+86,9
+77,3
+71,7
+73,8
+76,5
+  Dívida pública líquida - % do PIB
+61,4
+55,1
+56,1
+60,4
+61,5
+  Crescimento gasto público (% real, a.a., **)
+29,2
+-24,7
+6,0
+7,6
+3,2
+ 
+=== pág 59 ===
+
+PIB (% cres.)  
+Tx. de Desemprego (dez.)
+Tx. de Inflação (IPCA)
+Tx. de Juros (final do ano)
+Resultado Setor Público (% PIB)
+Tx. de Câmbio (final do ano)
+Projeção para 2025
+2,16 %
+6,0%
+    4,83%  (meta de inflação do CMN de 3,00%); 
+15,00%
+-0,50%  (Primário) | - 8,50% (Nominal)
+Brasil: projeção de cenários econômicos para 2025 e 2026 (base 22 set./2025)
+5,50 (R$/US$)
+Projeção para 2026
+1,80%
+7,0%
+4,29%
+12,25%
+-0,60%  (Primário) | -8,40% (Nominal)
+5,60 (R$/US$)
+60
+ 
+=== pág 60 ===
+
+Eu adquiri uma visão rápida do funcionamento da economia? 
+Compreendi, de forma descomplicada, algumas relações de 
+causa e efeito na conjuntura econômica e a dinâmica das políticas 
+econômicas conjunturais?
+Pensei algumas interferências do macroambiente econômico no 
+meu ambiente de negócios e no contexto de gestão da minha 
+organização, negócio ou área de trabalho?
+ 
+Nós atingimos os benefícios esperados nesta disciplina?
+61
+61
+
+ 
+=== pág 61 ===
+
+Algumas indicações bibliográficas para aprofundar a disciplina.
+62
+ 
+=== pág 62 ===
+
+Muito obrigado pela atenção de vocês na nossa disciplina!
+Facebook: fernandosouzacoelho
+Instagram: fdesouzacoelho
+Linkedin: fernando coelho usp
+63
+Sucesso na continuidade do curso
+de MBA e na trajetória profissional.
+ 
+=== pág 63 ===
+
+Obrigado!
+Prof. Dr. Fernando de S. Coelho | linkedin.com/in/fernando-coelho-usp
+ 

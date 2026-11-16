@@ -1,0 +1,54 @@
+# 27 - Árvores, Redes e Ensemble Models / Material complementar pós-aula 08.09.2026_MC.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+PÓS-AULA  
+Árvores, Redes e Ensemble Models III 
+Professora Valquíria Campos Alencar 
+
+=== pág 2 ===
+SUGESTÕES DE LINKS 
+ 
+• DecisionTreeClassifier: https://scikit-
+learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.
+html 
+Documentação do Scikit-learn sobre árvores de decisão para 
+problemas de classificação. Apresenta os principais parâmetros do 
+modelo, métodos disponíveis e exemplos de uso. 
+• DecisionTreeRegressor: https://scikit-
+learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.
+html 
+Documentação do Scikit-learn sobre árvores de decisão para 
+problemas de regressão, ou seja, quando o objetivo é prever valores 
+numéricos contínuos. Inclui parâmetros, métodos e exemplos de 
+aplicação. 
+• Ensembles — Gradient Boosting, Random Forests, Bagging, Voting 
+e Stacking: https://scikit-learn.org/stable/modules/ensemble.html 
+Material sobre métodos ensemble, que combinam múltiplos modelos 
+para obter previsões mais robustas. A página apresenta técnicas como 
+Random Forest, Gradient Boosting, Bagging, Voting e Stacking, com 
+explicações e exemplos. 
+• Cross-validation e avaliação de modelos: https://scikit-
+learn.org/stable/modules/grid_search.html 
+Material sobre técnicas para seleção e ajuste de modelos, 
+especialmente busca de hiperparâmetros com validação cruzada, como 
+Grid Search e Randomized Search. É útil para entender como testar 
+
+=== pág 3 ===
+diferentes configurações e selecionar o modelo com melhor 
+desempenho. 
+• Documentação da biblioteca XGBoost: 
+https://xgboost.readthedocs.io/en/stable/ 
+Documentação oficial do XGBoost, biblioteca bastante utilizada para 
+implementação de algoritmos de Gradient Boosting. Reúne informações 
+sobre instalação, parâmetros, APIs, exemplos e diferentes formas de 
+utilização da biblioteca. 
+• Introduction to Boosted Trees: 
+https://xgboost.readthedocs.io/en/stable/tutorials/model.html 
+Tutorial introdutório sobre o funcionamento dos modelos de árvores 
+com boosting. Apresenta os principais conceitos por trás do XGBoost e 
+ajuda a compreender a lógica matemática e computacional utilizada na 
+construção desses modelos. 
+ 
+ 
+ 

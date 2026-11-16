@@ -1,0 +1,310 @@
+# 02 - INTRODUCAO AO PYTHON / Tutorial Bibliotecas.pdf
+
+=== pág 1 ===
+1 
+  
+TUTORIAL: 
+BIBLIOTECAS 
+
+=== pág 2 ===
+2 
+SUMÁRIO 
+ 
+ 
+Tutorial acesso Biblioteca ABCD USP ..................................................................... 3 
+ 
+Tutorial acesso Biblioteca Pecege ........................................................................... 6 
+ 
+Tutorial acesso Biblioteca USP ................................................................................ 7 
+ 
+Tutorial acesso Biblioteca USP - Artigos da Revista Harvard Business Review ........ 8 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== pág 3 ===
+3 
+Tutorial acesso Biblioteca ABCD USP  
+ 
+1) 
+Acesse o link https://acesso.abcd.usp.br/index.php 
+ 
+2) 
+Clique em “Entrar!” 
+ 
+ 
+ 
+ 
+ 
+ 
+3) 
+Insira seu login e senha (Nº USP e senha) - Alunos que ainda não 
+possuem número USP, para solicitar, basta entrar em contato com 
+secretaria@mbauspesalq.com 
+ 
+ 
+ 
+ 
+
+=== pág 4 ===
+4 
+4) 
+Leia o Termo e a Política de Privacidade e caso esteja de acordo, 
+selecione a caixa “Concordo com os Termos de Uso e a Política de 
+Privacidade” e clique em “Continuar”. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5) 
+Clique em “Pesquisar” no canto superior direito e digite o nome do Livro 
+desejado. Por exemplo: Manual de Análise de Dados e dê um enter; 
+ 
+ 
+ 
+ 
+
+=== pág 5 ===
+5 
+6) 
+O livro aparecerá na tela, basta clicar em cima do livro e então 
+selecionar o botão “Abrir o livro” 
+ 
+ 
+ 
+ 
+ 
+7) 
+O livro será aberto e você poderá desfrutar de uma leitura confortável e 
+interativa. 
+ 
+ 
+ 
+
+=== pág 6 ===
+6 
+Tutorial acesso Biblioteca Pecege 
+ 
+Referência Disponível na “Biblioteca Pecege”: 
+ 
+1. Acesse o link http://biblioteca.pecege.org.br  
+ 
+ 
+2. Insira login e senha (em caso de dúvidas entrar em contato com 
+biblioteca@mbauspesalq.com) 
+ 
+ 
+3. Procure pelo Título sugerido pelo professor e clique em @ Conteúdo 
+digital 
+ 
+• Exemplo: Bazerman, M. H.; Neale, M. A. 1998. Negociando racionalmente. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== pág 7 ===
+7 
+Tutorial acesso Biblioteca USP 
+ 
+Material disponível na “Biblioteca USP”: 
+ 
+• Exemplo: Beckman, S. L.; Barry, M. 2007. Innovation as a Learning Process: 
+EMBEDDING DESIGN THINKING. 
+ 
+ 
+1. Acesse o link: 
+https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do  
+ 
+ 
+2. No campo Busca Geral, insira o título do artigo; 
+ 
+ 
+3. Clique sobre a imagem do artigo; 
+ 
+ 
+4. Abrirá uma nova janela. Clicar em “Go”.  
+ 
+ 
+5. Abrirá uma janela da EBSCO. Clique em Encontre sua Instituição e 
+digite: Universidade de São Paulo, clique na lupa. Selecione na lista a 
+Universidade de São Paulo – USP. Entre com seu número ou e-mail 
+USP e senha*. E boa leitura! 
+ 
+ 
+ 
+*Alunos que ainda não possuem número USP, para solicitar, basta entrar em 
+contato com secretaria@mbauspesalq.com   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== pág 8 ===
+8 
+Tutorial acesso Biblioteca USP - Artigos 
+da Revista Harvard Business Review 
+ 
+1) Acesse o site: 
+https://www.buscaintegrada.usp.br/primo_library/libweb/action/search.do  
+ 
+ 
+ 
+ 
+2) Clique em Identificação (canto superior direito) 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== pág 9 ===
+9 
+3) Clique em Sistemas USP (senha: uspdigital). 
+ 
+ 
+ 
+ 
+ 
+4) Digite seu número ou e-mail USP e a senha* 
+ 
+ 
+*Alunos que ainda não possuem número USP, para solicitar, basta entrar em 
+contato com secretaria@mbauspesalq.com   
+ 
+ 
+ 
+ 
+
+=== pág 10 ===
+10 
+5) No campo Busca Geral, digite Harvard Business Review e clique em 
+BUSCAR: 
+ 
+ 
+ 
+ 
+ 
+ 
+6) Abrirá a página abaixo. Clique na Imagem da revista Harvard Business 
+Review: 
+ 
+ 
+ 
+ 
+ 
+Clique aqui 
+
+=== pág 11 ===
+11 
+7) Abrirá essa outra página. Clique em Texto completo disponível via 
+EBSCOhost Business Source completo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8) Abrirá a aba abaixo. Clique em Buscar por nome, cidade ou e-mail 
+institucional 
+ 
+
+=== pág 12 ===
+12 
+9)  Na aba abaixo digite USP e no resultado de busca, selecione a 
+Universidade de São Paulo - USP  
+ 
+ 
+ 
+10) Após seguir as etapas, abrirá, essa janela. Clicar em nova busca 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== pág 13 ===
+13 
+11) Insira o título do artigo indicado pelo professor e clique em buscar.  
+Exemplo: Holtom, B.; Edmondson, A. C.; Niu, D. 2020. 5 Tips for 
+Communicating with Employees During a Crisis 
+ 
+ 
+ 
+12) Procure o artigo onde tenha imagem de Periódico e clique em acessar 
+agora (PDF) 
+ 
+ 
+
+=== pág 14 ===
+14 
+ 
+13) Prontinho. Tenha uma boa leitura! 
+ 
+ 

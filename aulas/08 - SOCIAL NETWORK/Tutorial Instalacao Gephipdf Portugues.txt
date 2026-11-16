@@ -1,0 +1,42 @@
+# 08 - SOCIAL NETWORK / Tutorial Instalacao Gephipdf Portugues.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+PRÉ-AULA 
+Social Network Analysis 
+Professora Adriana Maria Marques da Silva 
+
+=== pág 2 ===
+TUTORIAL DE INSTALAÇÃO DO 
+SOFTWARE GEPHI 
+ 
+1. Acesse o site do Gephi e baixe o instalador de acordo com o sistema 
+operacional de seu computador: https://gephi.org/users/download/ 
+ 
+2. Marque a opção “I accept the agreement” e clique em “Next” 
+ 
+
+=== pág 3 ===
+3. A não ser que você queira mudar o local da instalação, clique em “Next” 
+ 
+ 
+4. A não ser que você queira mudar o local do atalho (da área de trabalho), 
+clique em “Next” 
+ 
+ 
+
+=== pág 4 ===
+5. Marque todas as opções de leitura de arquivos e “Next” 
+ 
+ 
+6. Pronto, agora temos o resumo de tudo que será instalado e onde, agora 
+basta clicar “Next” para iniciar a instalação 
+ 
+
+=== pág 5 ===
+7. Aguarde enquanto a instalação é concluída 
+ 
+ 
+8. Pronto. Basta clicar “Finish”. 
+ 
+ 

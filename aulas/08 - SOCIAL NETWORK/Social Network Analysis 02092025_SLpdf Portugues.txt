@@ -1,0 +1,748 @@
+# 08 - SOCIAL NETWORK / Social Network Analysis 02092025_SLpdf Portugues.pdf
+
+=== pág 1 ===
+
+Social Network Analysis I
+Professora Adriana Silva
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+CONTEÚDO 
+PROGRAMÁTICO
+Tópicos:
+•
+O que é SNA
+•
+Para que serve
+•
+Como aplica
+•
+Estrutura de dados
+•
+Conceitos e teoria sobre a técnica 
+•
+Tipo de redes
+•
+Comunidades
+•
+Papeis
+•
+Cálculos na mão para entendimento das métricas
+•
+Métricas de Centralidade
+•
+Degree
+•
+Clustering Coeficient
+•
+Closeness
+•
+Betweenness
+•
+Comunidade
+•
+Resolution List
+3
+
+
+=== pág 4 ===
+
+Introdução ao SNA
+• Social Network Analysis
+• Customer Link Analysis
+• O poder do conhecimento dos relacionamentos...
+4
+
+
+=== pág 5 ===
+
+Mídias Sociais x Redes Sociais 
+•
+Não é referente ao Facebook 
+ou mídias sociais
+•
+É uma análise baseada em 
+interações (ligações, SMS, 3G, 
+etc)
+•
+Diferenciadas pelo número e 
+natureza das ligações a outros.
+5
+
+=== pág 6 ===
+
+Social Network Analysis
+O SNA permite, por exemplo, aos analistas de 
+marketing melhorem a visão do cliente, através 
+da identificação e incorporação de relações de 
+consumo (e seus atributos) e sua força, em perfis 
+e segmentação.
+ Os usuários podem:
+•
+ Usar em análises de clientes como Métricas da Rede, 
+para melhorar a eficácia da campanha
+•
+ Churn detecção / prevenção
+•
+ Up-sell e cross-sell
+•
+Entender melhor como os produtos / serviços são 
+adotados dentro da rede (ou seja, o marketing viral)
+6
+
+=== pág 7 ===
+
+Grafo
+7
+
+=== pág 8 ===
+
+• Social Network Analysis é o estudo das estruturas sociais compostas por:
+•
+nós (geralmente indivíduos ou entidades) que são ligados
+• (links) por um ou mais tipos de interdependência, como emails, contatos
+telefônicos, transações financeiras, endereço, etc. 
+O que é SNA?
+Área de influência do líder
+Líder
+Seguidor
+Outlier
+8
+
+=== pág 9 ===
+
+Teoria dos “Seis Graus de 
+Separação”, Stanley Milgram
+SNA: as origens
+9
+
+=== pág 10 ===
+
+A     B
+undirected
+Laços Sociais:
+• Os nós de uma Rede Social são os elementos que compõem uma dada população.
+• O link entre dois nós define a interação entre eles, determinados através de “evidências”.
+• O estudo de todos os links entre os nós nos permite medir a estrutura e nível de 
+atividade de uma população.
+• Conhecendo-se a forma como os indivíduos estão inter-relacionados, nos propicia uma
+sólida base analítica para compreensão de seus comportamentos, oportunidades, 
+limitações, etc.
+EXEMPLOS DE EVIDÊNCIAS DE LAÇOS SOCIAIS:
+e-mails
+Contas de telefone (CDR)
+Endereços
+Transações financeiras
+A →B
+directed
+10
+
+=== pág 11 ===
+
+Aplicação 1– Segmentação
+FUNCIONALIDADE: 
+Pontuar clientes
+segundo seus status na
+rede e links
+AÇÃO DE MARKETING:  
+Melhorar esquemas de 
+segmentação além da 
+rentabilidade, ciclo de vida, 
+demografia, etc)
+BENEFÍCIOS:
+Estratégias de 
+“tratamento” mais
+adequado a clientes
+baseadas nas redes sociais
+Marketing mais eficiente
+Aplicações do SNA
+11
+
+=== pág 12 ===
+
+Aplicação 2a – Retenção de “Líderes”
+FUNCIONALIDADE: 
+Identificar “Líderes”
+AÇÃO DE MARKETING:  
+Estratégias de retenção para 
+os líderes-chave
+BENEFÍCIOS:
+Mais eficiência nos gastos
+de Marketing
+Redução do churn / maior
+retenção
+Aplicações do SNA
+12
+
+=== pág 13 ===
+
+Aplicação 2b – Retenção de “Seguidores”
+FUNCIONALIDADE: 
+Detectar quando um 
+líder pode “abandonar”
+AÇÃO DE MARKETING:  
+Estratégias de retenção para 
+os seguidores em risco
+BENEFÍCIOS:
+Eficiência nos gastos de 
+Marketing
+Redução do churn / maior
+retenção
+Aplicações do SNA
+13
+
+=== pág 14 ===
+
+Aplicação 3 – Cross-sell em Líderes – Efeito Viral
+FUNCIONALIDADE: 
+Identificar líderes e 
+entender melhor a 
+adoção de novidades
+AÇÕES DE MARKETING:  
+Estratégias de cross / up-sell 
+para os líderes primeiro, 
+alavancando a adoção viral
+BENEFÍCIOS:
+Racionaliza gastos, 
+principalmente em
+subsídios
+Aplicações do SNA
+14
+
+=== pág 15 ===
+
+Aplicação 4 – Melhor seleção em Aquisição
+FUNCIONALIDADE: 
+Determinar e 
+compreender o perfil dos 
+líderes target
+AÇÕES DE MARKETING:  
+Estratégias de aquisição
+alavancando o poder
+influenciador dos líderes
+BENEFÍCIOS:
+Atrair líderes e seguidores
+dentro de suas
+comunidades
+Aplicações do SNA
+15
+
+=== pág 16 ===
+
+• Tipos de redes 
+• Comunidades
+• Papéis dos indivíduos dentro da rede
+Conceitos do SNA
+16
+
+=== pág 17 ===
+
+As redes podem ser directed ou undirected
+• Undirected links significa que não existe distinção entre dois vértices 
+associados com cada link, ou seja, não existe direção na relação do 
+link que conecta dois links.
+• Directed link significa que existe direção mas relações entre os nós. 
+Se o A liga 100 vezes para B
+Conceitos do SNA
+Tipos de redes
+17
+
+=== pág 18 ===
+
+• Um dos objetivos mais importantes na análise de redes é a detecção de 
+estruturas conhecidas como Comunidades. 
+• Estas são definidas, de forma intuitiva, como grupos de nós que estão mais 
+fortemente ligados entre si do que são para o resto da rede.
+Aplicação:
+Comunidades Internas – quando a predominância é da minha marca.
+Comunidade Externa – quando a predominância é de alguma concorrência.
+Conceitos do SNA
+Comunidades
+18
+
+=== pág 19 ===
+
+Líder
+Comunidade
+Community
+Outlier
+Seguidores
+Marginais
+Poucas conexões
+Bridge
+conectores de 
+diferentes 
+comunidades
+• Cada nó desempenha um papel dentro de sua comunidade
+• Cada nó tem diversas métricas de relacionamento, como centralidade, 
+número de conexões, etc.
+Papeis e métricas individuais
+Conceitos do SNA
+19
+
+=== pág 20 ===
+
+Regra
+Descrição
+Visualização
+Líder
+É o número telefônico dentro de uma comunidade que possui 
+uma conectividade recíproca com outros números telefônicos 
+dentro da mesma comunidade. É o nó por onde se percorre o 
+menor caminho dentro da comunidade (ponto central).
+Seguidor
+É o número telefônico que possui comportamento similar ao 
+líder, mas de menor magnitude. Deve ter conexão direta com o 
+líder. 
+Marginal 1
+Indivíduo com um perfil similar ao seguidor, mas não é próximo 
+ao líder. 
+Marginal 2
+Mantém-se à margem da comunidade. Não possui nenhuma 
+característica dos outros papéis. Possui baixa proximidade e 
+escassas relações recíprocas.
+Papeis e métricas individuais
+Conceitos do SNA
+20
+
+=== pág 21 ===
+
+As comunidades e seus membros podem mudar ao longo do tempo
+t
+t+1
+▪SNA ajuda a direcionar estas mudanças:
+▪Ações em comunidades mudam comunidades
+▪Ações em papéis mudam papéis individualmente ou eventos de 
+influência
+Conceitos do SNA
+Visão Estática versus Visão Dinâmica
+21
+
+=== pág 22 ===
+
+Processo de SNA (sugestão): 
+“passo a passo”
+▪Rede inteira
+▪Comunidades
+▪Rede inteira
+▪Comunidades
+▪“Atores”
+Explorar 
+informação
+existente
+Extração de 
+dados
+Determinar 
+links e forças
+A →B
+Estipular 
+“papéis”
+Detectar
+comunidades
+Qualificar
+Comunidades
+Results
+Aplicar 
+métricas 
+SNA
+1
+2
+3
+4
+5
+6
+7
+22
+
+=== pág 23 ===
+
+APLICAÇÕES
+23
+
+
+=== pág 24 ===
+
+Métricas de Centralidade
+• Centralidade 
+• Medidas de centralidade fornecem métricas de importância de um nó 
+em uma rede.
+• Dentre elas estão:
+• Degree (Grau)
+• Degree Ponderado (Grau Ponderado)
+• Clustering Coefficient
+• Closeness (centralidade de proximidade)
+• Betweenness (centralidade de intermediação)
+24
+
+=== pág 25 ===
+
+Métricas de Centralidade
+Degree - Centralidade
+• Degree (Grau)
+• Medida referente a quantidade de links  que um determinado nó possui (para uma 
+rede undirected)
+• Para uma rede Directed, out-degree refere-se a quantidade de links que saem de 
+um determinado nó, in-degree  é o número de links que o mesmo nó recebe. E 
+degree é a soma do in-degree com o out-degree do referido nó.
+25
+
+=== pág 26 ===
+
+Métricas de Centralidade
+Grau Ponderado - Centralidade
+• Degree Ponderado (Grau Ponderado)
+• É uma generalização do degree que leva em conta o peso dos links 
+(quando existente).
+26
+
+=== pág 27 ===
+
+Métricas de Centralidade
+Clustering Coefficient - Centralidade
+• Clustering Coefficient  
+• O clustering coefficient para um nó é o número de ligações entre os 
+seus nós vizinhos, dividido pelo número de links que poderia existir 
+entre eles.
+• Medida que nos diz como os vizinhos estão conectados e não o 
+próprio nó.
+𝐶𝑖= |{ 𝑢, 𝑣∈𝐴∶𝑢, 𝑣 ∈𝛿𝑖|
+|𝛿𝑖|(|𝛿𝑖| −1)
+27
+
+=== pág 28 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 3
+3 = 1
+28
+
+=== pág 29 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 3
+3 = 1
+𝐶𝐵= 3
+3 = 1
+29
+
+=== pág 30 ===
+
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 3
+3 = 1
+𝐶𝐵= 3
+3 = 1
+𝐶𝐶= 3
+3 = 1
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo
+30
+
+=== pág 31 ===
+
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 3
+3 = 1
+𝐶𝐵= 3
+3 = 1
+𝐶𝐶= 3
+3 = 1
+𝐶𝐷= 3
+3 = 1
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo
+31
+
+=== pág 32 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo 2
+𝐶𝐴=
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠=
+1
+3 =0,333
+32
+
+=== pág 33 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo 2
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 1
+3 =0,333
+𝐶𝐵= 0
+33
+
+=== pág 34 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo 2
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 1
+3 = 0,333
+𝐶𝐵= 0 
+𝐶𝐶= 1 
+34
+
+=== pág 35 ===
+
+Métricas de Centralidade
+Clustering Coefficient – Centralidade 
+• Exemplo 2
+𝐶𝐴= 𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠 𝑒𝑛𝑡𝑟𝑒 𝑒𝑙𝑒𝑠
+𝑞𝑢𝑎𝑛𝑡𝑎𝑠 𝑝𝑜𝑠𝑠í𝑣𝑒𝑖𝑠 𝑙𝑖𝑔𝑎çõ𝑒𝑠= 1
+3 = 0,333
+𝐶𝐵= 0 
+𝐶𝐶= 1 
+𝐶𝐷= 1 
+35
+
+=== pág 36 ===
+
+Métricas de Centralidade
+Clustering Coefficient
+• Exemplo 3
+𝐶𝐴= 0
+𝐶𝐵= 0 
+𝐶𝐶= 0 
+𝐶𝐷= 0 
+36
+
+=== pág 37 ===
+
+Métricas de Centralidade
+Closeness - Centralidade
+• Closeness Centrality (Centralidade de Proximação) 
+• A métrica closeness é uma medida de proximidade. É a média de caminho mais curtos 
+para chegar em outro indivíduo. Proximidade pode ser considerada como uma medida 
+do tempo que seria necessário para difundir uma informação a partir de um dado nó 
+para os outros nós na rede.
+• Distância média do nó em questão para todos os demais nós
+𝐶𝐶𝑢=
+𝑁−1
+൘
+σ𝑣∈𝑁\𝑢𝑑𝑢𝑣
+𝑁+ 𝑑𝑣𝑢
+𝑁
+2
+sendo 𝑑𝑢𝑣
+𝑁= ቊ
+𝑑𝑢𝑣, 𝑠𝑒𝑑𝑢𝑣< ∞
+𝑁, 𝑐𝑎𝑠𝑜𝑐𝑜𝑛𝑡𝑟á𝑟𝑖𝑜
+onde 𝑑𝑢𝑣é o caminho mais curto entre o nó 𝑢e 𝑣.
+37
+
+=== pág 38 ===
+
+Métricas de Centralidade
+Betweenness - Centralidade
+• Betweenness (Centralidade de Intermediação) 
+• A métrica Betweenness conta o número de vezes que um nó particular ocorre nos 
+menores caminhos entre outros nós. Nós com grandes betweenness são como os 
+“porteiros” da informação. Como estão nos caminhos mais curtos, são os 
+“conduzintes” (ou “manipuladores”) da informação.
+• Betweenness mede a frequência com que o nó aparece nos caminhos mais curtos entre 
+os nós.
+𝐶𝑏𝑢=
+෍
+𝑠≠𝑢≠𝑡∈𝑁
+𝑠≠𝑡
+𝜎𝑠𝑡(𝑢)
+𝜎𝑠𝑡
+onde 𝜎𝑠𝑡 é o número de caminhos
+e 𝜎𝑠𝑡(𝑢) é o número de caminhos curtos entre 𝑠 e 𝑡 passando por 𝑢 
+38
+
+=== pág 39 ===
+
+Métricas da Rede
+Estatísticas Gerais
+• Diversas  estatísticas podem ser calculadas para as redes e para os nós das redes :
+• Nós: número de nós no gráfico (|N|)
+• Arestas: número de links no gráfico (|A|)
+• Densidade do grafo: o número de links em um gráfico (|A|) dividido pelo número total de links no 
+gráfico completo (|N| (|N| - 1))
+• Comprimento médio do caminho: soma dos menores caminhos dividido pela quantidade de 
+menores caminhos
+• Excentricidade: distância do nó em questão até o nó mais distante dele na rede (dentre os 
+menores caminhos, o maior)
+• Raio: menor excentricidade
+• Diâmetro da Rede: maior excentricidade (maior peso dentre os menores caminhos)
+39
+
+=== pág 40 ===
+
+Gephi
+Software Livre
+• “Gephi é uma plataforma interativa de visualização e exploração de todos os 
+tipos de redes e sistemas complexos, grafos dinâmicos e hierárquicos.”
+• É um software escrito em Java e roda tanto no Windows, Linux e Mac.
+▪
+Atividade:
+▪Inicializar o software
+▪Conhecer o software
+▪Construir a rede feita à mão
+▪Extrair os resultados
+40
+
+=== pág 41 ===
+
+Software Gephi
+Introdução
+▪O passo a passo a seguir detalha como utilizar o Gephi a partir 
+de bases csv, ou para criação de redes dentro do próprio 
+software.
+41
+
+=== pág 42 ===
+
+2
+3
+4
+5
+6
+7
+8
+9
+Software Gephi
+1
+42
+
+=== pág 43 ===
+
+Software Gephi
+Introdução
+1. Tool Bar: atalhos para análises, visualizações de janelas, configurações, 
+salvar, ...
+2. Visão Geral: onde visualiza-se o gráfico e as métricas que podem ser
+calculadas
+3. Laboratório de dados: onde visualiza-se as tabelas criadas
+4. Visualização: onde visualiza-se o grafo para exportação
+5. Partição ou Classificação: janela onde pode-se pintar ou estipular
+tamanhos de nós ou links, a partir de alguma métrica (como modularidade,
+degree, closeness,…)
+6. Layout: janela para melhorar a forma de visualização do grafo baseado em
+algum algorítimo
+43
+
+=== pág 44 ===
+
+Software Gephi
+Introdução
+7.
+Grafo: janela para visualização da sua rede
+8. Contexto: Informações sobre sua rede (número de nós e links)
+9. Estatísticas: métricas disponíveis para cálculo da rede
+44
+
+=== pág 45 ===
+
+1
+2
+3
+4
+Software Gephi
+45
+
+=== pág 46 ===
+
+Software Gephi
+Introdução
+1. Aba Nós ou Arestas: Mostra a tabela de nós ou tabela de links, conforme
+sua seleção
+2. Adicionar nó ou Adicionar arestas: ícones utilizados para construção da rede
+dentro do próprio software
+3. Importar planilha ou Exportar tabela: ícones utilizados para inserção ou
+extração das tabelas de nós ou links.
+4. Atalhos para manipulação de dados: duplicar colunas, criar novas variáveis,
+etc…
+46
+
+=== pág 47 ===
+
+•
+Para abrir uma base de links ou nós a partir de um csv, ir pelo atalho de “Novo projeto”
+•
+Para abrir arquivos .net, .gdf, .gephi utilizar o atalho “Abrir arquivo”
+Software Gephi
+47
+
+=== pág 48 ===
+
+•
+Na aba “Laboratório de Dados” ir na opção “Importar planilha” para abrir um arquivo csv.
+•
+O arquivo csv deve conter no mínimo os campos “Source” e “Target”. Pode conter o 
+campo “weight” desde que este seja um campo numérico dentro do csv.
+Software Gephi
+48
+
+=== pág 49 ===
+
+•
+Em Import 
+Spreadcsheet, você 
+seleciona seu arquivo e 
+especifica se é uma 
+tabela de nós ou links.
+Software Gephi
+49
+
+=== pág 50 ===
+
+Software Gephi
+•
+Ao finalizar a base é 
+inserida dentro do Gephi 
+e os pontos são criados 
+para visualização.
+50
+
+=== pág 51 ===
+
+Gephi
+Software Livre
+• “Gephi é uma plataforma interativa de visualização e exploração de todos os 
+tipos de redes e sistemas complexos, grafos dinâmicos e hierárquicos.”
+• É um software escrito em Java e roda tanto no Windows, Linux e Mac.
+▪
+Atividade:
+▪Inicializar o software
+▪Conhecer o software
+▪Construir a rede feita à mão
+▪Extrair os resultados
+Exercício 
+com 
+professora
+51
+
+=== pág 52 ===
+
+Referências Bibliográficas
+• PINHEIRO, C. A. R. Social Network Analysis in Telecommunications. 
+USA: John Wiley, 2011, 284 p.
+• NEWMAN, M. E. J. Networks: An Introduction. New York: Oxford, 2010, 
+772 p.
+52
+
+=== pág 53 ===
+
+Obrigado!
+Professora Adriana Silva | linkedin.com/in/adrianamms 

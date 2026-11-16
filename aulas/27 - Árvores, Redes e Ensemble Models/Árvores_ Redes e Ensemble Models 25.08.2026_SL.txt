@@ -1,0 +1,652 @@
+# 27 - Árvores, Redes e Ensemble Models / Árvores, Redes e Ensemble Models 25.08.2026_SL.pdf
+
+=== pág 1 ===
+
+Árvores, Redes e 
+Ensemble Models I
+Prof.ª Dra. Valquíria Alencar
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+Agenda
+01.
+02.
+03.
+04.
+Conceitos Fundamentais
+Aplicações Estratégicas
+Treinamento do Modelo
+O que são e como funcionam as árvores de decisão ?
+Problemas reais e casos de uso
+Como a árvore aprende?
+Validação e Métricas
+Medindo desempenho e capacidade de generalização
+05.
+06.
+Desafios
+Overfitting e limitações comuns
+Hiperparâmetros
+Melhorando a performance do modelo
+
+3
+
+=== pág 4 ===
+
+01
+O que são e como funcionam 
+as árvores de decisão?
+
+4
+
+=== pág 5 ===
+Imagine que é uma sexta
+-feira à noite 
+e você está decidindo se vai pedir delivery ou não
+O que você pode levar em consideração 
+para tomar essa decisão ?
+• Tenho comida em casa?
+• Estou com vontade de cozinhar hoje?
+• Estou cansado depois do trabalho ?
+• Estou com vontade de comer algo 
+diferente?
+• Quero gastar dinheiro com delivery?
+• Tem promoção no aplicativo ?
+
+5
+
+=== pág 6 ===
+
+6
+
+=== pág 7 ===
+Conceitos Fundamentais
+Estrutura de uma Árvore de Decisão 
+Nó Raiz (Root Node)
+• O ponto de partida . Representa o 
+conjunto de dados completo .
+Nós Internos (Internal)
+• Pontos da árvore onde são feitas 
+perguntas sobre as características 
+dos dados para definir o próximo 
+caminho até a decisão final.
+Folhas (Leaf Nodes)
+• Resultados finais.
+
+7
+
+=== pág 8 ===
+O que são Árvores 
+de Decisão?
+Definição
+É um método de aprendizado de máquina 
+supervisionado não paramétrico que faz 
+previsões dividindo os dados em etapas 
+sucessivas
+, 
+como 
+uma 
+sequência 
+de 
+perguntas do tipo “verdadeiro ou falso”. 
+• modelo aprende com exemplos que já possuem a resposta
+• adapta sua estrutura conforme aprende com os dados
+
+8
+
+=== pág 9 ===
+Vantagens
+Pouca Preparação dos Dados
+Modelo White Box
+Flexibilidade nos Tipos de Dados
+Robustez a Dados Reais
+Cada previsão pode ser explicada por uma 
+sequência clara de regras e condições . Isso 
+aumenta a confiança nos resultados e facilita sua 
+comunicação .
+As árvores de decisão exigem menos tratamento 
+dos dados do que muitos outros algoritmos . Em 
+diversos casos, não é necessário normalizar ou 
+padronizar as variáveis.
+As árvores de decisão costumam apresentar bom 
+desempenho mesmo quando os dados não 
+seguem padrões estatísticos ideais .
+Podem trabalhar com variáveis numéricas e 
+categóricas
+ simultaneamente . Isso amplia sua 
+aplicação em diferentes problemas de negócio .
+
+9
+
+=== pág 10 ===
+
+02
+Problemas reais e Casos de uso
+
+10
+
+=== pág 11 ===
+Aplicações Práticas
+Exemplos de onde as árvores de decisão podem ser usadas
+Finanças e Crédito
+Saúde e Medicina
+Marketing e Negócios
+Educação
+Avaliação de risco de crédito 
+e detecção de fraudes em 
+transações bancárias .
+Predição do risco de 
+desenvolvimento de doenças , 
+com base em sintomas e 
+resultados de exames 
+médicos .
+Previsão de evasão (churn) e 
+segmentação de clientes para 
+campanhas personalizadas .
+Identificação de alunos com  
+risco de evasão com base em 
+fatores como frequência , 
+notas e participação nas 
+atividades .
+
+11
+
+=== pág 12 ===
+Exemplos reais
+
+12
+
+=== pág 13 ===
+Classificação vs. Regressão
+Qual é a diferença?
+Árvores de Classificação
+Árvores de Regressão
+Usadas quando a variável que 
+queremos prever é uma categoria .
+A folha da árvore retorna a classe 
+mais frequente dos dados que 
+caíram nela.
+Cliente cancela ou continua?
+Email é Spam ou Importante?
+Usadas quando a variável que 
+queremos prever é um número 
+contínuo ou quantitativo discreto .
+A folha da árvore retorna a média 
+dos valores dos dados que caíram 
+nela.
+Qual o preço de venda desta casa?
+Qual o tempo de entrega previsto?
+
+13
+
+=== pág 14 ===
+Exemplo de Classificação
+ 
+Predição de risco de doença cardíaca
+
+14
+
+=== pág 15 ===
+Exemplo de Regressão 
+Predição de preço de automóvel usado
+
+15
+
+=== pág 16 ===
+
+03
+Como a árvore aprende?
+
+16
+
+=== pág 17 ===
+Treinamento
+O modelo aprende os padrões usando os dados de 
+Treino. Usamos os dados de Teste (que ele nunca viu) como 
+uma "prova final" para medir sua capacidade de 
+generalizar o aprendizado para o mundo real. 
+Por que precisamos treinar?
+Separação dos dados em Treino e Teste
+Treino
+Teste
+80%
+20%
+Garantindo que o modelo aprenda padrões 
+e seja validado com dados novos.
+
+17
+
+=== pág 18 ===
+Como as previsões são feitas 
+em Classificação?
+Exemplo: prever inadimplência
+Base com 10 clientes:
+• 5 adimplentes 
+• 5 inadimplentes.
+Grupo inicial misturado - difícil decidir.
+A árvore pergunta: tem atraso anterior?
+Grupo 1 (com atraso): 4 inadimplentes, 1 adimplente
+Grupo 2 (sem atraso): 4 adimplentes, 1 inadimplente
+Agora os grupos ficaram mais organizados!
+Em árvores de 
+classificação, a
+ melhor 
+divisão é aquela que 
+separa melhor as classes, 
+reduzindo a impureza 
+dentro dos grupos.
+
+18
+
+=== pág 19 ===
+Exemplo: prever preço de imóveis
+Base com 6 imóveis:
+• R$ 200 mil
+• R$ 250 mil
+• R$ 300 mil
+• R$ 900 mil
+• R$ 1 milhão
+• R$ 1,1 milhão
+Então a árvore testa uma pergunta: 
+Área do imóvel > 100 m ²?
+Grupo 1 : 200, 250 e 300 mil
+Grupo 2: 900 mil, 1 milhão e 1,1 milhão
+Em regressão, a
+ árvore não 
+quer “separar classes”.
+ Ela quer reduzir o erro entre 
+o valor previsto e o valor real
+.
+Como as previsões são feitas 
+em Regressão?
+
+19
+
+=== pág 20 ===
+
+04
+Medindo desempenho e 
+capacidade de generalização
+
+20
+
+=== pág 21 ===
+
+05
+Classificação
+
+21
+
+=== pág 22 ===
+Métricas de Avaliação
+Classificação
+Acurácia (Accuracy)
+Precisão (Precision)
+Sensibilidade (Recall)
+F1-Score
+Mede a proporção de 
+acertos totais
+ do modelo.
+Ou seja: de todas as previsões 
+feitas, quantas estavam 
+corretas. 
+Mede o quanto o modelo 
+“acerta quando diz que é 
+positivo ”.  
+Crucial quando o custo de um 
+erro de "falso alarme" é alto.
+Mede a capacidade do 
+modelo de encontrar os 
+positivos reais
+. 
+Importante quando perder 
+casos positivos é crítico. 
+É a média harmônica
+ entre 
+precision e recall.
+Muito usada em bases 
+desbalanceadas
+, quando 
+queremos equilibrar: evitar 
+falsos positivos e negativos ao 
+mesmo tempo. 
+
+22
+
+=== pág 23 ===
+Valor Predito 
+0
+Matriz de confusão
+VN
+FP
+FN
+VP
+A base para o cálculo das principais métricas de avaliação de classificação
+Valor Real 
+0
+Valor Real 
+1
+Valor Predito 
+1
+
+23
+
+=== pág 24 ===
+Matriz de confusão
+A base para o cálculo das principais métricas de avaliação de classificação
+Métricas
+• Acurácia: (VP+VN) / (VP+VN+FP+FN)
+• Precisão: VP / (VP+FP)
+• Recall: VP / (VP+FN)
+• F1-Score: 2x (Precision x Recall)/(Precision + Recall)
+
+24
+
+=== pág 25 ===
+Valor Predito 
+Bom pagador
+Exemplo: Análise de Crédito
+VN
+Acertou que o cliente 
+honraria o pagamento .
+FP
+Previu inadimplência 
+para um bom pagador.
+FN
+Concedeu crédito a 
+quem não pagou.
+VP
+Evitou prejuízo ao 
+identificar o mau 
+pagador .
+Valor Real 
+Bom pagador
+Valor Real  
+Inadimplente
+Valor Predito 
+ Inadimplente
+
+25
+
+=== pág 26 ===
+Valor Predito 
+Baixo risco
+Exemplo: Predição de Doença
+VN
+Acertou que o paciente 
+tem baixo risco de 
+doença cardíaca.
+FP
+Previu alto risco para 
+uma pessoa de baixo 
+risco.
+FN
+Previu baixo risco 
+para uma pessoa de 
+alto risco.
+VP
+Acertou que o paciente 
+tem alto risco de doença 
+cardíaca.
+Valor Real 
+ Baixo risco
+Valor Real  
+Alto risco
+Valor Predito 
+ Alto risco
+
+26
+
+=== pág 27 ===
+Curva ROC
+Capacidade do modelo em distinguir classes
+Fonte: Martin Thoma
+
+27
+
+=== pág 28 ===
+
+06
+Regressão
+
+28
+
+=== pág 29 ===
+Métricas de Avaliação
+Regressão
+MSE
+RMSE
+MAE
+R² (R-Quadrado)
+Erro Quadrático Médio
+• Média dos erros ao 
+quadrado
+• Ideal: quando erros 
+grandes devem ser 
+fortemente penalizados
+Raiz Quadrada do MSE
+• Ideal: quando se deseja 
+interpretar o erro na 
+unidade original da variável
+Erro Médio Absoluto
+• Média das diferenças 
+absolutas
+• Ideal: quando se quer 
+uma métrica robusta a 
+outliers e fácil de 
+interpretar
+Coeficiente de Determinação
+• Proporção da variância 
+explicada pelo modelo.
+• Ideal: quando se deseja 
+avaliar a qualidade geral 
+do ajuste
+
+29
+
+=== pág 30 ===
+Métricas de Avaliação
+Exemplo na predição de preço de imóveis
+Em média, o modelo erra R$ 55 mil 
+para mais ou para menos!
+
+30
+Valores em mil reais.
+
+=== pág 31 ===
+Métricas de Avaliação
+Exemplo na predição de preço de imóveis
+Valores em mil reais.
+MSE = 3.850 
+RMSE = 62
+O erro do modelo é de 
+aproximadamente R$ 62 mil!
+
+31
+
+=== pág 32 ===
+
+07
+Validação Cruzada
+
+32
+
+=== pág 33 ===
+Validação cruzada (K
+-fold)
+Garantindo a robustez do modelo através de múltiplas partições dos dados
+Teste
+Treino
+Fold 5
+Fold 4
+Fold 3
+Fold 2
+Fold 1
+Teste
+Treino
+Treino
+Treino
+Treino
+Split 5
+Treino
+Teste
+Treino
+Treino
+Treino
+Split 4
+Treino
+Treino
+Teste
+Treino
+Treino
+Split 3
+Treino
+Treino
+Treino
+Teste
+Treino
+Split 2
+Treino
+Treino
+Treino
+Treino
+Teste
+Split 1
+
+33
+
+=== pág 34 ===
+
+08
+Overfitting e Limitações Comuns
+
+34
+
+=== pág 35 ===
+Desvantagens
+Overfitting
+Desbalanceamento
+Sensibilidade a pequenas mudanças
+Dificuldade de extrapolação
+Sensíveis a classes majoritárias , enviesando 
+a divisão dos nós.
+A árvore pode crescer demais e começar a 
+"decorar" os dados de treinamento , em vez de 
+aprender padrões gerais .
+O modelo pode gerar previsões pouco realistas 
+para valores fora da faixa dos dados de 
+treinamento, pois tem dificuldade em extrapolar 
+tendências de crescimento ou redução .
+Pequenas alterações no conjunto de treinamento 
+podem 
+gerar 
+uma 
+árvore 
+completamente 
+diferente .
+
+35
+
+=== pág 36 ===
+Overfitting
+Entendendo o que é sobreajuste
+Causas
+O que é?
+Como detectar?
+modelo aprende os dados de treinamento de forma 
+excessivamente
+ detalhada , capturando não apenas os 
+padrões relevantes, mas também ruídos e particularidades que 
+não representam o comportamento geral do problema . 
+Em vez de aprender regras que possam ser aplicadas a novos 
+dados, o modelo acaba "decorando" os exemplos vistos 
+durante o treinamento. 
+A acurácia no conjunto de treinamento é muito alta , mas cai 
+significativamente no conjunto de teste, mostrando que o 
+modelo não consegue generalizar bem para dados que nunca 
+viu.
+• Árvore muito profunda
+• Muitas variáveis ou atributos 
+irrelevantes
+• Pouca quantidade de dados de 
+treinamento
+
+36
+
+=== pág 37 ===
+
+09
+Melhorando a Performance 
+do Modelo
+
+37
+
+=== pág 38 ===
+
+38
+
+=== pág 39 ===
+Ajuste de Hiperparâmetros
+Entendendo o que são hiperparâmetros e como ajustá
+-los
+O que é?
+Qual é o objetivo?
+São configurações
+ definidas antes do treinamento do 
+modelo. 
+Elas 
+controlam 
+como 
+a 
+árvore 
+será 
+construída e influenciam diretamente sua capacidade 
+de generalização .
+O objetivo é encontrar o equilíbrio entre:
+• Underfitting : modelo muito simples, que aprende 
+pouco .
+• Overfitting : modelo muito complexo , que memoriza 
+os dados de treino.
+Boa generalização → desempenho consistente em novos 
+dados .
+Exemplos de hiperparâmetros
+• max_depth : profundidade máxima da árvore.
+• min_samples_split
+: mínimo de registros para 
+dividir um nó.
+• min_samples_leaf
+: mínimo de registros em uma 
+folha.
+• criterion : critério de divisão 
+Como encontrar os melhores valores?
+1.Definir combinações de hiperparâmetros.
+2.Treinar diferentes versões do modelo.
+3.Avaliar o desempenho usando validação cruzada.
+4.Selecionar a configuração com melhor resultado .
+
+39
+
+=== pág 40 ===
+
+40
+Sugestões de Leituras/Referências
+Livro-base
+•
+GÉRON, A. Mãos à obra: aprendizado de máquina com Scikit-Learn, Keras & TensorFlow. 2. ed. Rio de Janeiro: 
+Alta Books, 2021.
+Documentação técnica
+•
+SCIKIT-LEARN. Decision Trees. Disponível em: https://scikit-learn.org/stable/modules/tree.html. Referência oficial 
+da biblioteca, com explicação dos hiperparâmetros usados nos notebooks da disciplina.
+Leitura complementar
+•
+IBM. What is bias-variance tradeoff? Disponível em: https://www.ibm.com/think/topics/bias-variance-tradeoff. Texto 
+curto e didático sobre o compromisso viés-variância, conceito central para entender por que ensembles funcionam.
+
+=== pág 41 ===
+
+Obrigada!
+Prof.ª Dra. Valquíria Alencar | https://www.linkedin.com/in/valquiria-alencar/

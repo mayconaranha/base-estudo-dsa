@@ -1,0 +1,124 @@
+# 17 - Unsupervised Machine Learning - Exercicios / Unsupervised Machine Learning 27.01.2026_SL.pdf
+
+=== pág 1 ===
+
+UNSUPERVISED 
+MACHINE LEARNING: 
+Exercícios Aplicados
+Prof. Dr. Wilson Tarantin Junior
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Técnicas Não Supervisionadas
+•
+Contextualização
+•
+Avaliam a relação conjunta entre as variáveis (interdependência); também são chamadas de 
+técnicas exploratórias → o objetivo é descobrir os padrões ocultos nos dados, portanto 
+também são relevantes em análises exploratórias dos dados
+•
+Úteis para lidar com dados “não rotulados” → não há a proposição de modelos que especificam 
+relações de dependência Y = f(X)
+•
+Não são adequadas para fins de inferência, ou seja, não têm caráter preditivo para observações 
+de fora da amostra. Se observações forem adicionadas ou retiradas do banco de dados, é 
+adequado refazer a análise; o mesmo é válido se variáveis forem adicionadas ou retiradas
+3
+
+=== pág 4 ===
+
+Técnicas Não Supervisionadas
+4
+Análise de Cluster
+Análise Fatorial (PCA)
+Análise de Correspondência
+
+=== pág 5 ===
+
+Análise de Cluster
+•
+Objetivo: agrupamento de observações
+•
+Agrupar as observações em grupos homogêneos internamente e heterogêneos entre si
+•
+Dentro do grupo: observações semelhantes com base nas variáveis utilizadas na análise
+•
+Entre grupos distintos: observações diferentes com base nas variáveis utilizadas na análise
+•
+Considerando que a técnica fundamenta-se em medidas de distâncias (dissimilaridades) entre 
+observações, utilizamos na análise de variáveis métricas
+5
+
+=== pág 6 ===
+
+Análise Fatorial (PCA)
+•
+Objetivo: agrupamento das variáveis métricas
+•
+Agrupamento de variáveis: trata-se da combinação das variáveis originais em fatores
+•
+A técnica depende das correlações entre variáveis, então o foco é análise de variáveis métricas
+•
+Algumas possíveis finalidades:
+•
+Obter o comportamento conjunto de variáveis, combinando-as para redução estrutural 
+•
+Análise da validade de construtos pela identificação das variáveis alocadas aos fatores
+•
+Elaboração de rankings para classificação de desempenho por meio dos fatores
+•
+Criação de fatores ortogonais entre eles e posterior uso em modelos supervisionados
+6
+
+=== pág 7 ===
+
+Análise de Correspondência
+•
+Objetivo: identificar a associação entre variáveis categóricas
+•
+Verificar se existe associação estatisticamente significativa entre as variáveis qualitativas (duas 
+ou mais de duas variáveis) e entre suas categorias
+•
+Como as categorias das variáveis se associam entre elas?
+•
+Busca-se criar o mapa perceptual para visualizar tais associações
+•
+Análise pela proximidade das categorias no mapa perceptual
+7
+
+=== pág 8 ===
+
+Uso conjunto
+•
+É possível utilizar conjuntamente as técnicas não supervisionadas?
+•
+Sim, desde que sejam respeitadas as características das variáveis (quantitativas ou qualitativas)
+•
+Feito isso, o output de uma técnica pode ser utilizado como input em outra
+•
+Exemplos:
+•
+Utilizar o output do cluster como input em uma análise de correspondência
+•
+Realizar uma análise de cluster com base em fatores selecionados na análise fatorial
+•
+Obter as coordenadas das observações provenientes de um mapa perceptual da análise de 
+correspondência e utilizar em uma clusterização ou análise fatorial PCA
+8
+
+=== pág 9 ===
+
+9
+Sugestões de Leituras/Referências
+• Fávero, Luiz Paulo; Belfiore, Patrícia. (2024). Manual de análise de dados: estatística e 
+machine learning com Excel®, SPSS®, Stata®, R® e Python®. 2 ed. Rio de Janeiro: LTC.
+
+=== pág 10 ===
+
+Obrigado!
+Wilson Tarantin Junior | linkedin.com/in/wilson-tarantin-junior-359476190

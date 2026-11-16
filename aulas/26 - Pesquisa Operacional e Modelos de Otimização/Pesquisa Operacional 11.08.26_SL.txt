@@ -1,0 +1,1362 @@
+# 26 - Pesquisa Operacional e Modelos de Otimização / Pesquisa Operacional 11.08.26_SL.pdf
+
+=== pág 1 ===
+
+Pesquisa Operacional e 
+Modelos de Otimização I
+Prof. Cassiano Augusto Isler
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+Agenda da aula
+• Fundamentos da Pesquisa Operacional
+• Origens e escopo
+• Definições
+• Modelagem Matemática de Otimização
+• Variáveis de Decisão
+• Função Objetivo
+• Restrições
+• Exemplos de Problemas e Modelos Matemáticos
+3
+3
+
+
+=== pág 4 ===
+Fundamentos de Pesquisa 
+Operacional
+Origens e Escopo
+Exemplos de problemas de decisão
+4
+4
+
+
+=== pág 5 ===
+Pesquisa Operacional – Origens e Escopo
+• Como tomar decisões?
+5
+• Melhores?
+• Mais rápidas?
+5
+
+
+=== pág 6 ===
+• 500 entregas
+• 25 veículos
+• 1,0439 x 1042 combinações (formas de agrupamento)
+• 1.043.900.000.000.000.000.000.000.000.000.000.000.000.000
+• Sem considerar roteiros/sequências de entrega
+Pesquisa Operacional – Origens e Escopo
+6
+6
+
+
+=== pág 7 ===
+Pesquisa Operacional – Origens e Escopo
+• Pesquisa Operacional (ou P.O.), em inglês Operations Research, é a “ciência da tomada de decisão”
+7
+“Eu a chamo de ciência da tomada de decisão. Ou seja, todas as maneiras de abstrair 
+um problema e colocá-lo em uma forma matemática. 
+Isso engloba desde os matemáticos que estão tentando resolver problemas abstratos 
+até as pessoas que têm um problema real e precisam dar uma resposta ao chefe.
+ 
+Pesquisa Operacional é tudo isso e, dependendo de com quem você conversa, você 
+terá uma visão diferente do que é PO.” 
+George B. Dantzig, em entrevista republicada, in memoriam, na edição de junho de 2005 da revista OR/MS Today
+7
+
+
+=== pág 8 ===
+Fonte: https://towardsdatascience.com/why-operations-research-is-awesome-an-introduction-7a0b9e62b405 
+Pesquisa Operacional – Origens e Escopo
+88
+
+
+=== pág 9 ===
+• Origens há décadas para utilizar métodos científicos na gestão de organizações
+• Operações militares na 2ª Guerra Mundial 
+• Cientistas tentando aplicar métodos a problemas militares de natureza estratégica e tática
+• Métodos quantitativos 
+• Alocar recursos escassos de maneira eficiente
+Pesquisa Operacional – Origens e Escopo
+9
+9
+
+
+=== pág 10 ===
+• Transferência e distribuição de cargas
+Pesquisa Operacional – Origens e Escopo
+Economia de USD 45 
+milhões/ano
+10
+10
+
+
+=== pág 11 ===
+• Redes de Transporte
+Pesquisa Operacional – Origens e Escopo
+MALHA
+FROTA
+TRIPULAÇÃO
+ESTRATÉGI
+CO
+TÁTICO
+OPERACION
+AL
+11
+11
+
+
+=== pág 12 ===
+• Redes de Transporte
+Pesquisa Operacional – Origens e Escopo
+Economia de USD 40 milhões em 2001
+12
+12
+
+
+=== pág 13 ===
+• Operação de Terminais
+Pesquisa Operacional – Origens e Escopo
+• Movimentação de veículos e equipamentos cheios e vazios
+Economia: USD 80 milhões/ano
+13
+13
+
+
+=== pág 14 ===
+Aumento do lucro: € 60 milhões / ano
+Pesquisa Operacional – Origens e Escopo
+• Tabela de horários para o transporte de passageiros
+14
+14
+
+
+=== pág 15 ===
+Pesquisa Operacional – Origens e Escopo
+• Reconhecimento de imagens para tratamento médico
+15
+15
+
+
+=== pág 16 ===
+Pesquisa Operacional – Origens e Escopo
+• Tabela de jogos
+16
+16
+
+
+=== pág 17 ===
+Pesquisa Operacional – Definições
+• Como tratar a complexidade de problemas de P.O.?
+• Utilizando modelos...
+17
+17
+
+
+=== pág 18 ===
+TPN
+USP
+Pesquisa Operacional – Definições
+Túnel de vento 
+IPT
+• Como tratar da complexidade de problemas de P.O.?
+18
+18
+
+
+=== pág 19 ===
+• Modelo: representação explícita e simplificada de uma realidade, utilizada 
+com o propósito de compreender, modificar, administrar e controlar essa 
+realidade.
+• Modelo Matemático: representação de uma realidade através de 
+expressões matemáticas.
+• Modelo de Otimização: modelo matemático para identificar a melhor 
+solução (ótima) possível para um problema.
+Pesquisa Operacional – Definições
+19
+19
+
+
+=== pág 20 ===
+Pesquisa Operacional – Definições
+• Exemplo:  dois tipos de caixas (A e B) devem ser transportadas em 
+caminhões tal que, em cada viagem, deve haver a mesma proporção de 
+caixas dos tipos A e B. Um caminhão tem capacidade em peso de 4000 kg, 
+tal que caixas tipo A têm 10 kg cada e tipo B têm 15kg. Qual o número 
+máximo de caixas por viagem?
+10𝑥𝐴+ 15𝑥𝐵≤ 4000
+𝑥𝐴= 𝑥𝐵= 𝑥
+10𝑥+ 15𝑥≤ 4000
+25𝑥≤ 4000
+𝑥≤ 160
+𝑥𝐴=
+𝑥𝐵=
+quantidade de caixas do tipo A (10 kg)
+quantidade de caixas do tipo B (15 kg)
+20
+𝑥𝐴= 160
+𝑥𝐵= 160
+Resposta:
+Total de caixas =
+ 𝟑𝟐𝟎
+20
+
+
+=== pág 21 ===
+• Modelos matemáticos de otimização têm três componentes principais
+Modelos
+Pesquisa Operacional – Definições
+Função Objetivo
+ 
+ 
+Qual a meta?
+Restrições
+ 
+ 
+Quais condições limitam as variáveis de decisão?
+Variáveis de decisão
+ 
+ 
+O que se quer decidir?
+21
+21
+
+
+=== pág 22 ===
+Pesquisa Operacional – Definições
+• Exemplo:  dois tipos de caixas (A e B) devem ser transportadas em 
+caminhões tal que, em cada viagem, deve haver a mesma proporção de 
+caixas dos tipos A e B. Um caminhão tem capacidade em peso de 4000 kg, 
+tal que caixas tipo A têm 10 kg cada e tipo B têm 15kg. Qual o número 
+máximo de caixas por viagem?
+10𝑥𝐴+ 15𝑥𝐵≤ 4000
+𝑥𝐴= 𝑥𝐵= 𝑥
+𝑥𝐴=
+𝑥𝐵=
+quantidade de caixas do tipo A (10 kg)
+quantidade de caixas do tipo B (15 kg)
+Função Objetivo
+Maximizar quantidade 
+de caixas transportadas
+Restrições
+Variáveis de decisão
+𝑥𝐴= 𝑥𝐵= 160
+Solução Ótima
+22
+Total de caixas = 𝟑𝟐𝟎
+22
+
+
+=== pág 23 ===
+• Modelos de Programação Linear (PL): modelos matemáticos de otimização 
+em que todas as equações são no formato linear aditivo.
+Modelos
+Pesquisa Operacional – Definições
+• Variáveis de decisão: contínuas (domínio dos números Reais, ℝ) 
+• Função objetivo e restrições: expressões lineares
+ 
+ 
+𝑐1𝑥1 + 𝑐2𝑥2 + … + 𝑐𝑛𝑥𝑛 para constantes 𝑐1, 𝑐2, ..., 𝑐𝑛. 
+ 
+ 
+Por exemplo, 10𝑥1 + 3𝑥2 + 2𝑥3 + 9𝑥4 + 𝑥5 + 7𝑥6 + 5𝑥7
+23
+23
+
+
+=== pág 24 ===
+Modelos
+Pesquisa Operacional – Definições
+• Variantes de PL
+Modelos de Programação Linear Inteira (PLI): variáveis de decisão são números inteiros.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(0, 1, 2, ...)
+Modelos de Programação Linear Inteira Mista (PLIM): variáveis de decisão são números
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     contínuos ou inteiros.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+               (0.73, 0.85, 1, 1.06...)
+Modelos de Programação Não Linear (PNL): equações não-lineares (frações, polinômios etc.)
+3𝑥1𝑥2, 𝑥1
+2 (multiplicação de variáveis, polinômios)
+ 
+𝑠𝑒𝑛(𝑥), cos(𝑥), tan(𝑥) (função trigonométrica)
+24
+24
+
+
+=== pág 25 ===
+Modelagem Matemática de 
+Otimização
+Variáveis de decisão
+Função objetivo
+Restrições
+25
+25
+
+
+=== pág 26 ===
+Modelagem Matemática de Otimização
+Definir claramente o problema.
+Formular o 
+problema
+Coletar dados que afetam o problema.
+Observar 
+o sistema
+Construir um modelo matemático que represente o problema com base nos dados.
+Modelar
+Verificar se o modelo representa a realidade adequadamente e pode ser usado para 
+obter resultados realistas.
+Verificar 
+modelo
+Utilizar o modelo para comparar diferentes alternativas e selecionar a mais adequada.
+Selecionar 
+alternativa
+Comunicar os resultados e conclusões.
+Apresenta
+r resultado
+Auxiliar na implementação e monitoramento contínuo dos resultados, adaptando o 
+modelo quando necessário.
+Avaliar
+26
+26
+
+
+=== pág 27 ===
+Modelagem Matemática de Otimização
+• Traduzir um problema de otimização para uma representação matemática
+• Variáveis de decisão (respostas do modelo)
+• Função objetivo (equação para determinar a solução ótima)
+• Restrições (equações que limitam os valores das variáveis de decisão)
+• Em Programa Linear (PL), todas as equações devem ser lineares.
+27
+27
+
+
+=== pág 28 ===
+Modelagem Matemática de Otimização
+Entender o problema
+Identificar em palavras as respostas
+que se busca para o problema
+Descrever a função
+objetivo (em
+palavras)
+Descrever cada restrição
+(em palavras)
+Identificar as variáveis de 
+decisão
+Escrever a equação (linear) da função
+objetivo em função das variáveis de decisão
+Escrever a equação (linear) de 
+cada restrição em termos das 
+variáveis de decisão
+MODELO MATEMÁTICO
+• Etapas para construção de um modelo
+28
+28
+
+
+=== pág 29 ===
+Modelagem Matemática de Otimização
+• Modelo matemático trata de quantidades mensuráveis
+• Podem ser quantificadas, preferivelmente em uma unidade de medida
+• Como valores contínuos ou discretos
+ 
+Número total de horas em um processo industrial
+ 
+Número total de trabalhadores por turno de trabalho
+ 
+Número total de toneladas ou m3 produzidos, consumidos e/ou transportados
+ 
+Número de horas trabalhadas
+• Como valores binários (0 ou 1)
+ 
+Se um armazém é implantado na localidade (sim ou não)
+ 
+Se um cliente é atendido por um armazém (sim ou não)
+29
+29
+
+
+=== pág 30 ===
+• Restrições
+• Comparação de duas quantidades mensuráveis
+• Pelo menos um dos termos deve envolver o cálculo com variáveis de decisão
+• Podem ser:
+ 
+Menor ou igual ( ≤ )
+ 
+Igual ( = )
+ 
+Maior ou igual ( ≥ )
+• Ou que limitam valores das variáveis de decisão:
+ 
+Números Inteiros
+ 
+Valores Binários (0 ou 1)
+Modelagem Matemática de Otimização
+• Número total de horas em um processo industrial ≤ 40
+• Número mínimo de m3 produzidos ≥ 1.000
+• Se um armazém é implantado na localidade ∈ {0;1}
+30
+30
+
+
+=== pág 31 ===
+• Tipos de restrições
+• De limitação de quantidade de recursos que podem ser usados, de disponibilidade máxima, 
+de tempo etc.
+• Não pode usar/gastar/ocupar mais do que o total disponível
+• Nº de unidades transportadas ≤ Nº de unidades disponíveis
+• Horas gastas ≤  Horas disponíveis
+• Total produzido ≤  Capacidade de produção no período
+• De desempenho mínimo
+• Deve atingir meta/quota/número mínimo
+• Nº de unidades produzidas ≥ Nº de unidades requeridas
+• Toneladas embarcadas ≥ Mínimo a ser embarcado
+• De conservação
+• número de unidades entrando = número de unidades saindo
+Modelagem Matemática de Otimização
+31
+31
+
+
+=== pág 32 ===
+Exemplo – Corte de bobinas de aço
+Uma pequena metalúrgica busca maximizar sua receita com a venda de dois tipos fitas de 
+aço, que se diferenciam pela qualidade do acabamento de corte. Essas fitas são obtidas a 
+partir do corte de bobinas de grande largura, utilizando duas máquinas disponíveis na 
+produção. A primeira máquina, mais antiga, possui capacidade de corte diário de até 4.000 
+metros de fita, enquanto a segunda, mais moderna, consegue cortar até 6.000 metros por 
+dia. O lucro obtido pela venda das fitas depende da máquina utilizada: a produção na 
+máquina antiga gera um lucro de R$0,3 por metro cortado, enquanto a produção na 
+máquina moderna rende R$0,5 por metro cortado. No que se refere à mão de obra, cada 
+mil metros de fita cortada na máquina antiga requer 3 homens-hora, ao passo que a 
+máquina moderna consome apenas 2 homens-hora por mil metros. Considerando que a 
+disponibilidade diária de mão de obra é de 18 homens-hora para operar ambas as 
+máquinas, o objetivo é determinar quanto produzir em cada máquina de modo a 
+maximizar o lucro total da metalúrgica.
+Fonte: adaptado de Goldbarg, M.C; Luna, H.P.L. (2005) Otimização combinatória e programação linear: modelos e algoritmos. 2.ed. Rio de Janeiro: Elsevier. Pág. 104.
+32
+32
+
+
+=== pág 33 ===
+Exemplo – Corte de bobinas de aço
+33
+Uma pequena metalúrgica busca maximizar sua receita com a venda de dois 
+tipos fitas de aço, que se diferenciam pela qualidade do acabamento de corte. 
+Essas fitas são obtidas a partir do corte de bobinas de grande largura, utilizando 
+duas máquinas disponíveis na produção. A primeira máquina, mais antiga, 
+possui capacidade de corte diário de até 4.000 metros de fita, enquanto a 
+segunda, mais moderna, consegue cortar até 6.000 metros por dia. O lucro 
+obtido pela venda das fitas depende da máquina utilizada: a produção na 
+máquina antiga gera um lucro de R$0,3 por metro cortado, enquanto a 
+produção na máquina moderna rende R$0,5 por metro cortado. No que se 
+refere à mão de obra, cada mil metros de fita cortada na máquina antiga 
+requer 3 homens-hora, ao passo que a máquina moderna consome apenas 2
+homens-hora por mil metros. Considerando que a disponibilidade diária de 
+mão de obra é de 18 homens-hora para operar ambas as máquinas, o objetivo é 
+determinar quanto produzir em cada máquina de modo a maximizar o lucro 
+total da metalúrgica.
+33
+
+
+=== pág 34 ===
+Exemplo – Corte de bobinas de aço
+• ENTENDER O PROBLEMA
+• Quantidade de metros de fita a cortar em cada máquina
+ 
+Máquina Antiga
+ 
+Máquina Moderna
+• Meta
+ 
+Maximizar o lucro total diário
+• Condições
+ 
+Capacidade de corte de cada máquina
+ 
+Limitação de mão-de-obra
+34
+34
+
+
+=== pág 35 ===
+Exemplo – Corte de bobinas de aço
+• IDENTIFICAR AS RESPOSTAS QUE SE BUSCA
+35
+Uma pequena metalúrgica busca maximizar sua receita com a venda de dois tipos fitas de aço, que 
+se diferenciam pela qualidade do acabamento de corte. Essas fitas são obtidas a partir do corte de 
+bobinas de grande largura, utilizando duas máquinas disponíveis na produção. A primeira máquina, 
+mais antiga, possui capacidade de corte diário de até 4.000 metros de fita, enquanto a segunda, 
+mais moderna, consegue cortar até 6.000 metros por dia. O lucro obtido pela venda das fitas 
+depende da máquina utilizada: a produção na máquina antiga gera um lucro de R$0,3 por metro 
+cortado, enquanto a produção na máquina moderna rende R$0,5 por metro cortado. No que se 
+refere à mão de obra, cada mil metros de fita cortada na máquina antiga requer 3 homens-hora, ao 
+passo que a máquina moderna consome apenas 2 homens-hora por mil metros. Considerando que 
+a disponibilidade diária de mão de obra é de 18 homens-hora para operar ambas as máquinas, o 
+objetivo é determinar quanto produzir em cada máquina de modo a maximizar o lucro total da 
+metalúrgica.
+35
+
+
+=== pág 36 ===
+Exemplo – Corte de bobinas de aço
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+Quantidade metros de fita cortados na máquina antiga (𝑥)
+ 
+Quantidade metros de fita cortados na máquina moderna (𝑦)
+36
+36
+
+
+=== pág 37 ===
+Exemplo – Corte de bobinas de aço
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+Quantidade metros de fita cortados na máquina antiga (𝑥)
+ 
+Quantidade metros de fita cortados na máquina moderna (𝑦)
+ 
+• DESCREVER A FUNÇÃO OBJETIVO
+ 
+“... quanto produzir em cada máquina de modo a maximizar o lucro total da metalúrgica”
+A função objetivo é maximizar o lucro total diário da metalúrgica dado que cada metro de fita 
+cortada gera receita de R$0,3 na máquina antiga e R$0,5 na máquina moderna.
+ 
+37
+37
+
+
+=== pág 38 ===
+Exemplo – Corte de bobinas de aço
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+Quantidade metros de fita cortados na máquina antiga (𝑥)
+ 
+Quantidade metros de fita cortados na máquina moderna (𝑦)
+ 
+• DESCREVER A FUNÇÃO OBJETIVO
+ 
+“... quanto produzir em cada máquina de modo a maximizar o lucro total da metalúrgica”
+A função objetivo é maximizar o lucro total diário da metalúrgica dado que cada metro de fita 
+cortada gera receita de R$0,3 na máquina antiga e R$0,5 na máquina moderna.
+• ESCREVER A EQUAÇÃO DA FUNÇÃO OBJETIVO
+ 
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+38
+38
+
+
+=== pág 39 ===
+Uma pequena metalúrgica busca maximizar sua receita com a venda de dois tipos fitas de aço, que 
+se diferenciam pela qualidade do acabamento de corte. Essas fitas são obtidas a partir do corte de 
+bobinas de grande largura, utilizando duas máquinas disponíveis na produção. A primeira máquina, 
+mais antiga, possui capacidade de corte diário de até 4.000 metros de fita, enquanto a segunda, 
+mais moderna, consegue cortar até 6.000 metros por dia. O lucro obtido pela venda das fitas 
+depende da máquina utilizada: a produção na máquina antiga gera um lucro de R$0,3 por metro 
+cortado, enquanto a produção na máquina moderna rende R$0,5 por metro cortado. No que se 
+refere à mão de obra, cada mil metros de fita cortada na máquina antiga requer 3 homens-hora, ao 
+passo que a máquina moderna consome apenas 2 homens-hora por mil metros. Considerando que 
+a disponibilidade diária de mão de obra é de 18 homens-hora para operar ambas as máquinas, o 
+objetivo é determinar quanto produzir em cada máquina de modo a maximizar o lucro total da 
+metalúrgica.
+Exemplo – Corte de bobinas de aço
+• DESCREVER CADA RESTRIÇÃO
+Restrição de 
+Capacidade de Corte 
+da Máquina Antiga
+Restrição de 
+Capacidade de Corte 
+da Máquina Moderna
+39
+Restrição de 
+Disponibilidade de 
+Mão-de-Obra 
+39
+
+
+=== pág 40 ===
+Exemplo – Corte de bobinas de aço
+• Restrição de Capacidade de Corte da Máquina Antiga: “... antiga, possui capacidade de corte diário de até 
+4.000 metros de fita ...”
+𝑥≤ 4000 (metros)
+• Restrição de Capacidade de Corte da Máquina Moderna: “... moderna consegue cortar até 6.000 metros por 
+dia ...”
+𝑦≤ 6000 (metros)
+• ESCREVER EQUAÇÃO DE CADA RESTRIÇÃO
+40
+40
+
+
+=== pág 41 ===
+Exemplo – Corte de bobinas de aço
+• Restrição de Disponibilidade de Mão-de-Obra: “... cada mil metros de fita cortada na máquina antiga 
+requer 3 homens-hora, ao passo que a máquina moderna consome apenas 2 homens-hora por mil metros. 
+Considerando que a disponibilidade diária de mão de obra é de 18 homens-hora ...”
+3
+1000 𝑥+
+2
+1000 𝑦≤18 → 3𝑥+ 2𝑦≤18000 (homens-hora)
+• Restrição de Domínio das Variáveis: somente valores maiores ou igual a zero (não negativas).
+𝑥, 𝑦≥ 0
+• ESCREVER EQUAÇÃO DE CADA RESTRIÇÃO
+41
+41
+
+
+=== pág 42 ===
+Exemplo – Corte de bobinas de aço
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦 
+(Maximização do lucro total diário da metalúrgica )
+sujeito a
+ 
+ 𝑥 ≤ 4000 
+ 
+(Restrição de Capacidade de Corte da Máquina Antiga)
+ 
+ 𝑦≤ 6000 
+ 
+(Restrição de Capacidade de Corte da Máquina Moderna)
+ 
+3𝑥+ 2𝑦≤18000 
+(Restrição de Disponibilidade de Mão-de-Obra)
+ 
+𝑥, 𝑦≥ 0 
+ 
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+42
+42
+
+
+=== pág 43 ===
+Exemplos de Problemas e 
+Modelos Matemáticos
+43
+43
+
+
+=== pág 44 ===
+EXEMPLO 1
+Horas de estudo
+44
+44
+
+
+=== pág 45 ===
+Exemplo 1 – Horas de estudo
+Com seus conhecimentos de curso, um aluno estima que poderia se preparar para 
+o exame de uma disciplina 𝐷1 em 20 horas de estudo intensivo. Para outra 
+disciplina 𝐷2 ele precisa de 25 horas. Para passar, precisa obter no mínimo 50 
+pontos de 100 em cada uma das disciplinas. Além disso, deseja alcançar a maior 
+média ponderada possível, sendo que as disciplinas 𝐷1 e 𝐷2 têm peso 3 e 5, 
+respectivamente. Ele dispõe de apenas 30 horas para estudar. Qual a melhor 
+distribuição de horas de estudo considerando a proporcionalidade entre o esforço e 
+o rendimento dos seus estudos?
+Fonte: Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. Disponível em: https://www.mpsantos.com.br/Plinear.pdf. Página 29.
+45
+45
+
+
+=== pág 46 ===
+Exemplo 1 – Horas de estudo
+Com seus conhecimentos de curso, um aluno estima que poderia se preparar para 
+o exame de uma disciplina 𝑫𝟏 em 20 horas de estudo intensivo. Para outra 
+disciplina 𝑫𝟐 ele precisa de 25 horas. Para passar, precisa obter no mínimo 50 
+pontos de 100 em cada uma das disciplinas. Além disso, deseja alcançar a 
+maior média ponderada possível, sendo que as disciplinas 𝑫𝟏 e 𝑫𝟐 têm peso 3 e 
+5, respectivamente. Ele dispõe de apenas 30 horas para estudar. Qual a melhor 
+distribuição de horas de estudo considerando a proporcionalidade entre o 
+esforço e o rendimento dos seus estudos?
+Fonte: Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. Disponível em: https://www.mpsantos.com.br/Plinear.pdf. Página 29.
+46
+46
+
+
+=== pág 47 ===
+Exemplo 1 – Horas de estudo
+• ENTENDER O PROBLEMA
+• Aluno precisa estudar para ser aprovado em duas disciplinas
+ 
+Disciplina 1 (𝐷1)
+ 
+Disciplina 2 (𝐷2)
+• Meta
+ 
+Obter a máxima média ponderada
+• Condições
+ 
+Tempo total disponível
+ 
+Pontuação mínima nas disciplinas
+47
+47
+
+
+=== pág 48 ===
+Com seus conhecimentos de curso, um aluno estima que poderia se preparar para o exame de uma 
+disciplina 𝐷1 em 20 horas de estudo intensivo. Para outra disciplina 𝐷2 ele precisa de 25 horas. Para 
+passar, precisa obter no mínimo 50 pontos de 100 em cada uma das disciplinas. Além disso, deseja 
+alcançar a maior média ponderada possível, sendo que as disciplinas 𝐷1 e 𝐷2 têm peso 3 e 5, 
+respectivamente. Ele dispõe de apenas 30 horas para estudar. Qual a melhor distribuição de horas 
+de estudo considerando a proporcionalidade entre o esforço e o rendimento dos seus estudos?
+Exemplo 1 – Horas de estudo
+• IDENTIFICAR AS RESPOSTAS QUE SE BUSCA
+48
+48
+
+
+=== pág 49 ===
+Exemplo 1 – Horas de estudo
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+Quantidade de horas dedicadas à disciplina 1 (𝐻1)
+ 
+Quantidade de horas dedicadas à disciplina 2 (𝐻2)
+• DESCREVER A FUNÇÃO OBJETIVO E ESCREVER A EQUAÇÃO
+ 
+“Qual a melhor distribuição de horas de estudo considerando a proporcionalidade entre o esforço e o rendimento dos 
+seus estudos?”
+A função objetivo é maximizar a média ponderada.
+Tempo necessário para obter 100 pontos
+Disciplina 1: 20 horas →
+100
+20 = 5 𝑝𝑜𝑛𝑡𝑜𝑠 𝑝𝑜𝑟 ℎ𝑜𝑟𝑎 
+ 
+Disciplina 2: 25 horas →
+100
+25 = 4 𝑝𝑜𝑛𝑡𝑜𝑠 𝑝𝑜𝑟 ℎ𝑜𝑟𝑎
+ 
+Maximizar 𝑍 = 
+3. 5.𝐻1 +5.(4.𝐻2)
+3+5
+=
+15.𝐻1+20.𝐻2
+8
+ 
+       onde 𝐻1 = quantidade de horas dedicadas à disciplina 1
+                               
+ 
+ 
+            
+ 
+ 𝐻2 = quantidade de horas dedicadas à disciplina 2
+49
+49
+
+
+=== pág 50 ===
+Exemplo 1 – Horas de estudo
+• DESCREVER CADA RESTRIÇÃO
+Com seus conhecimentos de curso, um aluno estima que poderia se preparar para 
+o exame de uma disciplina 𝐷1 em 20 horas de estudo intensivo. Para outra 
+disciplina 𝐷2 ele precisa de 25 horas. Para passar, precisa obter no mínimo 50 
+pontos de 100 em cada uma das disciplinas. Além disso, deseja alcançar a maior 
+média ponderada possível, sendo que as disciplinas 𝐷1 e 𝐷2 têm peso 3 e 5, 
+respectivamente. Ele dispõe de apenas 30 horas para estudar. Qual a melhor 
+distribuição de horas de estudo considerando a proporcionalidade entre o esforço 
+e o rendimento dos seus estudos?
+Restrição de Tempo Disponível
+Pontos mínimos
+50
+50
+
+
+=== pág 51 ===
+Exemplo 1 – Horas de estudo
+• Restrição de Tempo Disponível: “... dispõe de apenas 30 horas ...”
+𝐻1 + 𝐻2 ≤ 30 (horas de estudo)
+• Restrição de pontos mínimos : “... mínimo 50 pontos de 100 em cada uma das disciplinas...”
+Disciplina 1: 5.𝐻1 ≥ 50 → 𝐻1 ≥10 (horas de estudo)
+  Disciplina 1: 4.𝐻2 ≥ 50 → 𝐻2 ≥12,5 (horas de estudo)
+• Restrição de Domínio das Variáveis: somente valores maiores ou igual a zero (não-negativas).
+𝐻1, 𝐻2 ≥ 0
+• ESCREVER EQUAÇÃO DE CADA RESTRIÇÃO
+51
+51
+
+
+=== pág 52 ===
+Exemplo 1 – Horas de estudo
+Maximizar 𝑍 = 
+15.𝐻1+20.𝐻2
+8
+ 
+(Maximização da Média Ponderada)
+sujeito a
+ 
+ 𝐻1 + 𝐻2 ≤ 30 
+(Restrição de Tempo Disponível)
+ 
+ 𝐻1 ≥10 
+ 
+(Restrição de Nota Mínima na Disciplina 1)
+ 
+ 𝐻2 ≥12,5 
+ 
+(Restrição de Nota Mínima na Disciplina 2)
+ 
+𝐻1, 𝐻2 ≥ 0  
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+52
+52
+
+
+=== pág 53 ===
+EXEMPLO 2
+Venda de livros
+53
+53
+
+
+=== pág 54 ===
+Uma livraria venderá um novo livro que está sendo lançado em duas versões, 
+com capa mole e capa dura, tendo recebido 40 cópias na primeira versão e 65 
+cópias da segunda. Entretanto, precisa de pelo menos 80 cópias de cada 
+versão para atender pedidos já feitos e, se possível, cópias adicionais para 
+atender a demanda dos interessados na abertura da loja. Um Centro de 
+Distribuição (CD) precisa planejar as entregas para atender da melhor forma 
+possível a demanda da livraria, sendo possível enviar até 10 caixas de livros 
+para atender a essa demanda em que cada caixa de livro do tipo leve possui 6 
+unidades em capa mole. O CD também possui 7 caixas de livros mistas, 
+sendo que cada caixa é composta por 5 unidades em capa dura e 2 unidades 
+em capa mole. 
+Exemplo 2 – Venda de livros
+54
+54
+
+
+=== pág 55 ===
+Exemplo 2 – Venda de livros
+Uma livraria venderá um novo livro que está sendo lançado em duas 
+versões, com capa mole e capa dura, tendo recebido 40 cópias na primeira 
+versão e 65 cópias da segunda. Entretanto, precisa de pelo menos 80 cópias 
+de cada versão para atender pedidos já feitos e, se possível, cópias 
+adicionais para atender a demanda dos interessados na abertura da loja. Um 
+Centro de Distribuição (CD) precisa planejar as entregas para atender da 
+melhor forma possível a demanda da livraria, sendo possível enviar até 10 
+caixas de livros para atender a essa demanda em que cada caixa de livro do 
+tipo leve possui 6 unidades em capa mole. O CD também possui 7 caixas de 
+livros mistas, sendo que cada caixa é composta por 5 unidades em capa 
+dura e 2 unidades em capa mole. 
+55
+55
+
+
+=== pág 56 ===
+Exemplo 2 – Venda de livros
+• ENTENDER O PROBLEMA
+• CD precisa entregar livros para livraria
+ 
+Caixas leves
+ 
+Caixas mistas
+• Meta
+ 
+CD precisa atender a livraria da melhor forma possível
+• Condições
+ 
+Estoque inicial (40 livros de capa mole e 65 de capa dura)
+ 
+Precisa de 80 cópias de cada versão (disponíveis e adicionais se possível
+ 
+CD pode enviar até 10 caixas
+Caixa leve possui 6 unidades de capa mole
+ 
+Caixa mista tem 5 unidades de capa dura e 2 unidades de capa mole
+ 
+Existem 7 caixas mistas de livros disponíveis
+56
+56
+
+
+=== pág 57 ===
+Exemplo 2 – Venda de livros
+• IDENTIFICAR AS RESPOSTAS QUE SE BUSCA
+Uma livraria venderá um novo livro que está sendo lançado em duas versões, com capa mole 
+e capa dura, tendo recebido 40 cópias na primeira versão e 65 cópias da segunda. Entretanto, 
+precisa de pelo menos 80 cópias de cada versão para atender pedidos já feitos e, se possível, 
+cópias adicionais para atender a demanda dos interessados na abertura da loja. Um Centro de 
+Distribuição (CD) precisa planejar as entregas para atender da melhor forma possível a 
+demanda da livraria, sendo possível enviar até 10 caixas de livros para atender a essa 
+demanda em que cada caixa de livro do tipo leve possui 6 unidades em capa mole. O CD 
+também possui 7 caixas de livros mistas, sendo que cada caixa é composta por 5 unidades em 
+capa dura e 2 unidades em capa mole. 
+57
+57
+
+
+=== pág 58 ===
+Exemplo 2 – Venda de livros
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+ Quantidade de caixas leves (𝐿)
+ 
+ Quantidade de caixas mistas (𝑀)
+• DESCREVER A FUNÇÃO OBJETIVO E ESCREVER A EQUAÇÃO
+ 
+“...CD precisa planejar as entregas para atender da melhor forma possível a demanda da livraria...”
+A função objetivo é maximizar a quantidade de livros entregues (acondicionados em caixas 
+diferentes)
+ 
+ 
+ 
+ 
+ 
+ 
+Maximizar 𝑄 = 6𝐿 + (5𝑀 + 2𝑀) = 6𝐿 + 7𝑀
+ 
+ 
+ 
+ 
+ 
+ 
+onde 𝐿= quantidade de caixas leves
+                               
+ 
+ 
+                      𝑀 = quantidade de caixas mistas
+58
+Capa Dura Capa Mole
+Total
+Caixa Leve
+0
+6
+6
+Caixa Mista
+5
+2
+7
+Nº exemplares
+58
+
+
+=== pág 59 ===
+Uma livraria venderá um novo livro que está sendo lançado em duas versões, com 
+capa mole e capa dura, tendo recebido 40 cópias na primeira versão e 65 cópias da 
+segunda. Entretanto, precisa de pelo menos 80 cópias de cada versão para atender 
+pedidos já feitos e, se possível, cópias adicionais para atender a demanda dos 
+interessados na abertura da loja. Um Centro de Distribuição (CD) precisa planejar as 
+entregas para atender da melhor forma possível a demanda da livraria, sendo possível 
+enviar até 10 caixas de livros para atender a essa demanda em que cada caixa de livro 
+do tipo leve possui 6 unidades em capa mole. O CD também possui 7 caixas de livros 
+mistas, sendo que cada caixa é composta por 5 unidades em capa dura e 2 unidades 
+em capa mole. 
+Exemplo 2 – Venda de livros
+• DESCREVER CADA RESTRIÇÃO
+Restrição Total de Caixas
+Restrição de Caixas Mistas
+Restrição de Livros de Capa Dura
+Restrição de Livros de Capa Mole
+59
+59
+59
+
+
+=== pág 60 ===
+Exemplo 2 – Venda de livros
+• ESCREVER EQUAÇÃO DE CADA RESTRIÇÃO
+• Restrição de Total de Caixas: “... enviar até 10 caixas de livros ...”
+𝐿 + 𝑀 ≤ 10 (caixas)
+• Restrição de Caixas Mistas: “... CD também possui 7 caixas de livros mistas...”
+𝑀 ≤ 7 (caixas)
+• Restrição de Livros de Capa Mole: “... tendo recebido 40 cópias na primeira versão (capa mole) ... precisa de 
+pelo menos 80 cópias de cada versão ... tipo leve possui 6 unidades em capa mole ... caixas de livros mistas, 
+sendo que cada caixa é composta por ... 2 unidades em capa mole...”
+6𝐿 + 2𝑀 + 40 ≥ 80 → 6𝐿 + 2𝑀 ≥ 40 (livros)
+• Restrição de Livros de Capa Dura: “... 65 cópias da segunda (capa dura) ... caixas de livros mistas, sendo que 
+cada caixa é composta por 5 unidades em capa dura...”
+5𝑀 + 65 ≥ 80 → 5𝑀 ≥ 15 → 𝑀 ≥ 3 (livros) 
+• Restrição de Domínio das Variáveis: números inteiros não-negativos
+𝐿, 𝑀 ∈ 𝑍+ 
+60
+60
+
+
+=== pág 61 ===
+• Modelo Matemático
+ 
+Maximizar 𝑄 = 6𝐿 + 7𝑀 
+(Maximizar Número Total de Livros pelo Tipo de Caixa)
+ 
+sujeito a
+ 
+𝐿 + 𝑀 ≤10  
+(Restrição de Total de Caixas)
+ 
+𝑀≤7  
+ 
+(Restrição de Caixas Mistas)
+ 
+6𝐿+ 2𝑀≥40 
+(Restrição de Livros de Capa Mole)
+ 
+𝑀≥3  
+ 
+(Restrição de Livros de Capa Dura)
+ 
+𝐿, 𝑀 ∈ ℤ+ 
+ 
+(Restrição de Domínio das Variáveis)
+Exemplo 2 – Venda de livros
+61
+61
+
+
+=== pág 62 ===
+EXEMPLO 3
+Nova ala de hospital
+62
+62
+
+
+=== pág 63 ===
+Exemplo 3 – Nova ala de hospital
+O diretor de um hospital está planejando a construção de uma nova ala com área total de até 1.200m². Nessa nova 
+ala, serão oferecidos três tipos de quartos: quartos individuais com um leito, quartos duplos com dois leitos e quartos 
+triplos com três leitos. 
+No entanto, a quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades. Além dessa 
+limitação, há uma restrição adicional que estabelece que o número de quartos com um leito não poderá exceder 30 
+unidades. Em termos de demanda, é necessário garantir que o número total de leitos disponibilizados na nova ala 
+seja de, no mínimo, 120 leitos. 
+Em relação ao espaço físico, a área ocupada por cada tipo de quarto é de 10 m² para os quartos com um leito, 15 m² 
+para os quartos com dois leitos e 18 m² para os quartos com três leitos. A receita mensal esperada para cada tipo de 
+quarto é estimada em $7500 para quartos individuais, $6000 para quartos duplos e $4500 para quartos triplos.
+Diante dessas condições, é necessário determinar a quantidade de quartos de cada tipo que deve ser construída 
+para obter a máxima receita mensal da nova ala hospitalar, respeitando as restrições de área disponível, capacidade 
+máxima de quartos, número mínimo de leitos e limite para os quartos individuais.
+63
+63
+
+
+=== pág 64 ===
+Exemplo 3 – Nova ala de hospital
+O diretor de um hospital está planejando a construção de uma nova ala com área total de até 1.200m². Nessa 
+nova ala, serão oferecidos três tipos de quartos: quartos individuais com um leito, quartos duplos com dois leitos 
+e quartos triplos com três leitos. 
+No entanto, a quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades. Além dessa 
+limitação, há uma restrição adicional que estabelece que o número de quartos com um leito não poderá exceder 
+30 unidades. Em termos de demanda, é necessário garantir que o número total de leitos disponibilizados na 
+nova ala seja de, no mínimo, 120 leitos. 
+Em relação ao espaço físico, a área ocupada por cada tipo de quarto é de 10 m² para os quartos com um leito, 15 
+m² para os quartos com dois leitos e 18 m² para os quartos com três leitos. A receita mensal esperada para cada 
+tipo de quarto é estimada em $7500 para quartos individuais, $6000 para quartos duplos e $4500 para quartos 
+triplos.
+Diante dessas condições, é necessário determinar a quantidade de quartos de cada tipo que deve ser construída 
+para obter a máxima receita mensal da nova ala hospitalar, respeitando as restrições de área disponível, 
+capacidade máxima de quartos, número mínimo de leitos e limite para os quartos individuais.
+64
+64
+
+
+=== pág 65 ===
+Exemplo 3 – Nova ala de hospital
+• ENTENDER O PROBLEMA
+• Diretor de hospital deseja ampliar ala com três opções de quartos
+ 
+Individual: um leito
+ 
+Duplo: dois leitos
+ 
+Triplo:  três leitos
+• Meta
+ 
+Maximizar receita mensal com quartos individuais, quartos duplos e quartos triplos
+• Condições
+ 
+Máximo de 70 quartos construídos
+ 
+Máximo de 30 quartos individuais 
+ 
+Mínimo de 120 leitos no total
+ 
+Área por tipo de quarto (10 m2 individual, 15 m2 duplos e 18 m2 triplo)
+ 
+Área máxima 1.200 m2
+65
+65
+
+
+=== pág 66 ===
+Exemplo 3 – Nova ala de hospital
+• IDENTIFICAR AS RESPOSTAS QUE SE BUSCA
+O diretor de um hospital está planejando a construção de uma nova ala com área total de 
+até 1.200m². Nessa nova ala, serão oferecidos três tipos de quartos: quartos individuais 
+com um leito, quartos duplos com dois leitos e quartos triplos com três leitos. 
+No entanto, a quantidade total de quartos a ser construída não poderá ultrapassar 70 
+unidades. Além dessa limitação, há uma restrição adicional que estabelece que o número 
+de quartos com um leito não poderá exceder 30 unidades. Em termos de demanda, é 
+necessário garantir que o número total de leitos disponibilizados na nova ala seja de, no 
+mínimo, 120 leitos. 
+Em relação ao espaço físico, a área ocupada por cada tipo de quarto é de 10 m² para os 
+quartos com um leito, 15 m² para os quartos com dois leitos e 18 m² para os quartos com 
+três leitos. A receita mensal esperada para cada tipo de quarto é estimada em $7500 para 
+quartos individuais, $6000 para quartos duplos e $4500 para quartos triplos.
+Diante dessas condições, é necessário determinar a quantidade de quartos de cada tipo 
+que deve ser construída para obter a máxima receita mensal da nova ala hospitalar, 
+respeitando as restrições de área disponível, capacidade máxima de quartos, número 
+mínimo de leitos e limite para os quartos individuais.
+66
+66
+
+
+=== pág 67 ===
+Exemplo 3 – Nova ala de hospital
+• IDENTIFICAR AS VARIÁVEIS DE DECISÃO
+ 
+Quantidade de quartos individuais (𝑞1)
+ 
+Quantidade de quartos duplos (𝑞2)
+ 
+Quantidade de quartos triplos (𝑞3)
+• DESCREVER A FUNÇÃO OBJETIVO E ESCREVER A EQUAÇÃO
+ 
+“...receita mensal esperada para cada tipo de quarto é estimada em $7500 para quartos individuais, 
+$6000 para quartos duplos e $4500 para quartos triplos...”
+A função objetivo é maximizar a receita mensal
+ 
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3 
+onde 𝑞1 = quantidade de quartos individuais
+                               
+ 
+ 
+             
+           𝑞2 = quantidade de quartos duplos
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+           𝑞3 = quantidade de quartos triplos
+67
+67
+
+
+=== pág 68 ===
+O diretor de um hospital está planejando a construção de uma nova ala com área total de até 
+1.200m². Nessa nova ala, serão oferecidos três tipos de quartos: quartos individuais com um leito, 
+quartos duplos com dois leitos e quartos triplos com três leitos. 
+No entanto, a quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades. 
+Além dessa limitação, há uma restrição adicional que estabelece que o número de quartos com um 
+leito não poderá exceder 30 unidades. Em termos de demanda, é necessário garantir que o número 
+total de leitos disponibilizados na nova ala seja de, no mínimo, 120 leitos. 
+Em relação ao espaço físico, a área ocupada por cada tipo de quarto é de 10 m² para os quartos 
+com um leito, 15 m² para os quartos com dois leitos e 18 m² para os quartos com três leitos. A 
+receita mensal esperada para cada tipo de quarto é estimada em $7500 para quartos individuais, 
+$6000 para quartos duplos e $4500 para quartos triplos.
+Diante dessas condições, é necessário determinar a quantidade de quartos de cada tipo que deve 
+ser construída para obter a máxima receita mensal da nova ala hospitalar, respeitando as restrições 
+de área disponível, capacidade máxima de quartos, número mínimo de leitos e limite para os 
+quartos individuais.
+Exemplo 3 – Nova ala de hospital
+• DESCREVER CADA RESTRIÇÃO
+Restrição de Área
+Restrição de Capacidade
+Restrição de Limite de Quartos Individuais
+Restrição de Número Mínimo de Leitos
+68
+68
+68
+
+
+=== pág 69 ===
+Exemplo 3 – Nova ala de hospital
+• Restrição de Área: “... área total de até 1.200m²...”
+10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200 (m2)
+• Restrição de Capacidade: “... quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades...”
+𝑞1 + 𝑞2 + 𝑞3 ≤70 (quartos)
+• Restrição de Limite de Quartos Individuais: “...número de quartos com um leito não poderá exceder 30 unidades. 
+...”
+𝑞1 ≤30 (quartos)
+• Restrição de Número Mínimo de Leitos: “... total de leitos disponibilizados na nova ala seja de, no mínimo, 120...”
+𝑞1 + 2𝑞2 + 3𝑞3 ≥120 (leitos)
+• Restrição de Domínio das Variáveis: números inteiros não-negativos.
+𝑞1, 𝑞2, 𝑞3 ∈ℤ+
+• ESCREVER EQUAÇÃO DE CADA RESTRIÇÃO
+69
+69
+
+
+=== pág 70 ===
+Exemplo 3 – Nova ala de hospital
+Maximizar 𝑅 = 7500𝑞1+ 6000𝑞2+4500𝑞3 
+(Maximizar a Receita Mensal)
+sujeito a
+ 
+ 10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200 
+ 
+(Restrição de Área)
+ 
+𝑞1 + 𝑞2 + 𝑞3 ≤70  
+ 
+ 
+(Restrição de Capacidade)
+ 
+𝑞1 ≤30 
+ 
+ 
+ 
+ 
+(Restrição de Limite de Quartos Individuais)
+ 
+𝑞1 + 2𝑞2 + 3𝑞3 ≥120 
+ 
+ 
+(Restrição de Número Mínimo de Leitos)
+ 
+𝑞1, 𝑞2, 𝑞3 ∈ℤ+ 
+ 
+ 
+ 
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+70
+70
+
+
+=== pág 71 ===
+Leitura Recomendada
+Bibliografia
+Motivação para próxima aula
+71
+71
+
+
+=== pág 72 ===
+Leitura Recomendada
+Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. 
+Disponível em: https://www.mpsantos.com.br/Plinear.pdf (Capítulo 1, pág. 16 – 23).
+Goldbarg, M.C; Luna, H.P.L. (2005) Otimização combinatória e programação linear: 
+modelos e algoritmos. 2.ed. Rio de Janeiro: Elsevier. (Capítulo 1, pág. 1–16; Capítulo 2,
+pág. 25– 38)
+72
+72
+
+
+=== pág 73 ===
+Bibliografia
+Bradley, S. P.; Hax, A. C.; & Magnanti (1977). Applied Mathematical Programming Addison-
+Wesley Pub. Co. Reading, Mass. http://web.mit.edu/15.053/www/AMP.htm
+Arenales, M. N.; Armentano, V. A.; Morabito Neto, R.; & Yanasse, H. H. (2007). Pesquisa 
+Operacional. Elsevier, 1ª edição.
+Winston, W. L. (2004). Operations research: Applications and Algorithms. Thomson 
+Learning, Inc.
+73
+73
+
+
+=== pág 74 ===
+Motivação para próxima aula – Como obter a solução ótima?
+• Corte de bobinas de aço
+Quantos metros de fita de aço produzir em 
+cada máquina (antiga e moderna)?
+Maximizar 𝑍 = 0,3𝑥+ 0,5𝑦
+sujeito a
+ 
+ 𝑥 ≤ 4000
+ 
+ 𝑦 ≤ 6000 
+ 
+3𝑥 + 2𝑦 ≤ 18000 
+ 
+𝑥, 𝑦 ≥ 0 
+74
+• Horas de estudo
+Qual a combinação de horas que maximiza a 
+média ponderada?
+Maximizar 𝑍 = 
+15.𝐻1+20.𝐻2
+8
+sujeito a
+ 
+ 𝐻1 + 𝐻2 ≤ 30  
+ 
+ 𝐻1 ≥10 
+ 
+ 
+ 𝐻_2 ≥12,5 
+ 
+ 
+𝐻1, 𝐻2 ≥ 0 
+ 
+74
+
+
+=== pág 75 ===
+Motivação para próxima aula – Como obter a solução ótima?
+• Venda de livros
+Qual a combinação de caixas leves e mistas 
+que maximiza a quantidade de livros?
+Maximizar 𝑄= 6𝐿 + 7𝑀
+sujeito a
+ 
+ 𝐿 + 𝑀≤10 
+ 
+𝑀≤7  
+ 
+6𝐿+ 2𝑀≥40 
+ 
+ 
+𝑀≥3 
+ 
+𝐿, 𝑀 ∈ ℤ+
+75
+• Nova ala de hospital
+Qual a combinação de tipos de quartos construídos 
+que maximiza a receita mensal? 
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3
+sujeito a
+10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200
+𝑞1 + 𝑞2 + 𝑞3 ≤ 70
+𝑞1 ≤30
+𝑞1 + 2𝑞2 + 3𝑞3 ≥120
+𝑞1, 𝑞2, 𝑞3 ∈ℤ+ 
+75
+
+
+=== pág 76 ===
+
+76
+Sugestões de Leituras/Referências
+•
+Bradley, S. P.; Hax, A. C.; Magnanti, T. L. 1977. Mathematical Programming: An Overview. Link
+•
+Goldbarg, M. C.; Luna, H. P. L. 2005. Otimização Combinatória e Programação Linear: Modelos e 
+Algoritmos. Link
+•
+Santos, M. P. 2000. Programação Linear. Link
+•
+Winston, W. L. 2004. An introduction to model building. Link
+
+=== pág 77 ===
+
+Obrigado!
+Prof. Cassiano Augusto Isler | https://www.linkedin.com/in/cassiano-isler/

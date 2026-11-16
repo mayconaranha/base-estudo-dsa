@@ -1,0 +1,371 @@
+# 24 - Coleta de Dados Crawlers e Web Scraping / Coleta de dados 30.06.26_SL.pdf
+
+=== pág 1 ===
+
+Coleta de Dados: 
+Crawlers e Web Scraping
+Prof. Guilherme Lima
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+x
+3
+Minhas redes
+guilhermelimadev
+guilherme-lima-developer
+3
+
+
+=== pág 4 ===
+44
+
+
+=== pág 5 ===
+55
+
+
+=== pág 6 ===
+66
+
+
+=== pág 7 ===
+77
+
+
+=== pág 8 ===
+88
+
+
+=== pág 9 ===
+99
+
+
+=== pág 10 ===
+10
+10
+
+
+=== pág 11 ===
+11
+11
+
+
+=== pág 12 ===
+12
+12
+
+
+=== pág 13 ===
+13
+13
+
+
+=== pág 14 ===
+14
+14
+
+
+=== pág 15 ===
+15
+15
+
+
+=== pág 16 ===
+16
+16
+
+
+=== pág 17 ===
+17
+17
+
+
+=== pág 18 ===
+18
+18
+
+
+=== pág 19 ===
+19
+19
+
+
+=== pág 20 ===
+20
+Ignorar os padrões definidos 
+por essas organizações pode 
+resultar em problemas
+— suas criações podem 
+simplesmente não funcionar 
+corretamente na internet.
+20
+
+
+=== pág 21 ===
+21
+Web scraping, na prática, é 
+quando seu programa 
+assume o papel de um 
+navegador, acessando e 
+interpretando sites 
+automaticamente.
+21
+
+
+=== pág 22 ===
+22
+22
+
+
+=== pág 23 ===
+23
+23
+
+
+=== pág 24 ===
+24
+24
+
+
+=== pág 25 ===
+25
+25
+
+
+=== pág 26 ===
+Ferramentas de Desenvolvedor 
+(DevTools)
+São um conjunto de recursos embutidos nos navegadores 
+modernos que permitem inspecionar, editar e depurar 
+páginas da web em tempo real.
+Como acessar
+26
+
+
+=== pág 27 ===
+27
+27
+
+
+=== pág 28 ===
+28
+A URL para a qual a solicitação foi 
+enviada
+O método HTTP usado
+O status da resposta
+28
+
+
+=== pág 29 ===
+29
+R E G R A S
+29
+
+
+=== pág 30 ===
+30
+30
+
+
+=== pág 31 ===
+31
+31
+
+
+=== pág 32 ===
+cliente-servidor
+Um modelo de comunicação entre 
+dois lados
+32
+
+
+=== pág 33 ===
+Resumindo
+Como as partes se 
+organizam.
+Como elas se comunicam
+Cliente-servidor
+HTTP
+33
+
+
+=== pág 34 ===
+34
+
+
+=== pág 35 ===
+SOBRE A  INTERNET
+Fundamentos da 
+Conectividade
+A Arquitetura das 
+Páginas Web
+Tornando a Web 
+Dinâmica
+O Ponto de Acesso 
+do Usuário
+Estilizando a 
+Experiência Visual
+O Fornecedor de 
+Conteúdo
+REDE
+HTML
+CSS
+JAVASCRIPT
+CLIENTE
+SERVIDOR
+35
+
+
+=== pág 36 ===
+36
+
+
+=== pág 37 ===
+BeautifulSoup
+37
+
+
+=== pág 38 ===
+Homenagem a um poema 
+Lewis Carroll
+38
+
+
+=== pág 39 ===
+BeautifulSoup
+Uma biblioteca do Python usada para analisar e extrair 
+informações de arquivos HTML de forma simples.
+●
+Ler páginas da web e extrair títulos, links, tabelas, 
+etc.;
+●
+Transformar o HTML em objetos Python 
+navegáveis, facilitando buscas por tags, classes, 
+IDs e conteúdos.
+39
+
+
+=== pág 40 ===
+WEB e um quarto bagunçado
+A web é desorganizada e imprevisível. 
+Um scraper pode falhar por um simples erro 
+de estrutura. 
+Por isso, mais do que culpar o site, é 
+essencial prever exceções e tornar seu 
+código resistente a imprevistos.
+40
+
+
+=== pág 41 ===
+41
+
+
+=== pág 42 ===
+Que tipo de erro, 
+Poderia 
+acontecer neste 
+código?
+42
+
+
+=== pág 43 ===
+Permissões e Ações Legais
+43
+
+
+=== pág 44 ===
+LGPD não menciona explicitamente o termo scraping
+De acordo com o artigo 7º, §3º da LGPD, o 
+tratamento de dados pessoais cujo acesso é 
+público deve considerar a finalidade, a boa-
+fé e o interesse público que justificaram sua 
+disponibilização.
+44
+
+
+=== pág 45 ===
+Uma história do mundo real
+45
+
+
+=== pág 46 ===
+2010
+Toda historia aqui
+Pete Warden
+46
+
+
+=== pág 47 ===
+200 milhões
+Toda historia aqui
+47
+
+
+=== pág 48 ===
+Nomes
+Localizações
+Amigos
+Interesses
+48
+
+
+=== pág 49 ===
+PARE COM ESSA ATIVIDADE!
+Pete Warden
+49
+
+
+=== pág 50 ===
+Big data? Posso pagar, dar um jeito. 
+Advogados? 
+Calma aí... 
+50
+
+
+=== pág 51 ===
+Três critérios precisam ser atendidos
+Termos de Serviço de 
+muitos sites proíbem 
+especificamente o uso 
+de scrapers.
+Scrapers derrubarem 
+um site ou limitarem 
+sua capacidade de 
+atender outros usuários
+A real intenção do 
+código, o que ele faz
+Consentimento
+Problemas físicos Intencionalidade
+51
+
+
+=== pág 52 ===
+Scraping na prática
+52
+
+
+=== pág 53 ===
+
+53
+Sugestões de Leituras/Referências
+Mitchell, R. 2024. Web Scraping with Python (3ª ed.). Editora Novatec
+O livro-referência do tema. Cobre exatamente a progressão da aula: requests, BeautifulSoup, navegação por árvore HTML, 
+formulários/login e Selenium para conteúdo dinâmico. Inclui um capítulo forte sobre ética e legalidade do scraping.
+Automate the Boring Stuff with Python (2ª ed.) — Al Sweigart
+Ideal para o público iniciante da aula. Tem capítulos práticos sobre requisições web, parsing de HTML e automação de 
+navegador, com leitura leve. (Disponível gratuitamente online em automatetheboringstuff.com.)
+Gourley, D.; Totty, B.; Sayer, M.; Aggarwal, A.; Reddy, S. 2002. O'Reilly Media
+Aprofunda o que a aula só tangencia: o protocolo HTTP por baixo do requests.get() — status codes, headers (como o 
+HEAD do seu código), cookies, sessões e cache. Entender HTTP é o que separa quem "usa requests" de quem "domina 
+coleta web".
+53
+
+
+=== pág 54 ===
+
+Obrigado!
+Prof. Guilherme Lima | https://www.linkedin.com/in/guilherme-lima-developer/

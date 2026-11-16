@@ -1,0 +1,1036 @@
+# 09 - CONJUNTURA ECONOMICA / 812a4d50-cef1-4159-a5e2-2b08f52d4369.pdf
+
+=== pág 1 ===
+
+ANÁLISE DA CONJUNTURA ECONÔMICA EM 
+CENÁRIOS DE TECNOLOGIAS DISRUPTIVAS I
+Prof. Dr. Fernando de S. Coelho
+ 
+=== pág 2 ===
+
+
+Lei nº 9610/98
+ 
+=== pág 3 ===
+
+Fernando de Souza Coelho
+Professor da USP no campus de São Paulo, ensinando e pesquisando 
+nos cursos de graduação e mestrado em Gestão de Políticas Públicas 
+da EACH-USP, e nas especializações e MBAs de diversas unidades – 
+como este da ESALQ-USP.
+Economista 
+pela 
+USP/Ribeirão 
+Preto. 
+Aperfeiçoamento 
+em 
+Administração no ITAM/México. Especialista em Desenvolvimento 
+Econômico pelo Weitz Center/Israel. 
+Mestre e Doutor em Administração Pública e Governo pela FGV/São 
+Paulo. Pós-doutorado em Gestão Pública pela LSE/Londres. Livre-
+Docente em Gestão Governamental pela USP/São Paulo.
+Apresentação do Professor
+3
+ 
+=== pág 4 ===
+
+Módulo: Data Science e Big Data no Ambiente de Negócios | 
+desde junho de 2025 
+Cloud 
+Computing
+Análise de 
+Redes Sociais
+Business 
+Intelligence
+Metodologias 
+Ágeis
+Computação   
+Evolucionária
+Conjuntura 
+Econômica
+ 
+Um ‘lego’ de disciplinas para 
+compreender o ambiente de 
+negócios e os modelos de 
+gestão (e seus instrumentos).  
+4
+ 
+=== pág 5 ===
+
+Conteúdo da nossa Disciplina
+       
+5
+     
+• Princípios de análise econômica; principais agregados/variáveis macroeconômicas 
+e suas relações (PIB, inflação, desemprego, taxa de juros, déficit público, taxa de 
+câmbio e balanço de pagamentos). 
+• Papel da Política Econômica (monetária, fiscal e cambial) e seus instrumentos. 
+Sistema Financeiro e seus mercados; 
+• Análise de conjuntura econômica e dos cenários doméstico e internacional. 
+ 
+=== pág 6 ===
+
+Objetivo da nossa Disciplina
+       
+Oferecer a você, futuro(a) gestor(a) e especialista em análise e ciência de dados, um 
+instrumental para compreensão das dados/informações econômicas e interpretação 
+do seu ambiente de negócios à luz da conjuntura e dos cenários macroeconômicos. 
+6
+ 
+=== pág 7 ===
+
+Benefícios Esperados da Disciplina
+Adquirir uma visão rápida do funcionamento da Economia; 
+Compreender de forma descomplicada algumas relações de causa e 
+efeito na conjuntura econômica e nas políticas econômicas; e
+Pensar a relação entre ambiente econômico e o contexto da gestão de 
+negócios em diferentes mercados e organizações sujeitos às tecnologias 
+disruptivas.   
+7
+ 
+=== pág 8 ===
+
+Fundamentos sobre o Nível de Atividade (16.09) 
+PIB, Inflação, Desemprego e seus índices
+1
+Princípios de Política Econômica (23.09)
+Fiscal, Monetária, Cambial e seus instrumentos
+2
+Sistema Financeiro, Mercados e Ambiente Econômico (23.09)
+ Análise da conjuntura econômica e projeção de cenários
+3
+Organização da nossa Disciplina em 2 Aulas & 3 Degraus
+Introdução à Análise Econômica  
+Preâmbulo e algumas definições usuais 
+8
+ 
+=== pág 9 ===
+
+Antes de subir o 1º degrau, qual é o nosso piso?
+Introdução à Análise Econômica:
+Preâmbulo e algumas definições usuais
+99
+
+ 
+=== pág 10 ===
+
+Ambiente Econômico
+Ambiente Político
+Ambiente Social
+Ambiente Ecológico
+Ambiente Tecnológico
+Ambiente Legal
+O Macroambiente e a Economia
+Macroambiente
+Ambiente Setorial
+Organização
+10
+ 
+=== pág 11 ===
+
+Análise do Macroambiente & a Ferramenta PESTEL
+11
+ 
+=== pág 12 ===
+
+Elementos Básicos para uma Análise Econômica
+Análise Microeconômica: agentes e mercado
+Análise Macroeconômica: agregados e políticas
+ 
+1. Que ambiente analisar?
+Conjuntural: curto/médio prazo, oscilações no panorama 
+Estrutural: longo prazo, alterações na base da economia
+ 
+2. Qual abordagem utilizar?
+3. Caixa de Ferramentas Mínima
+Conceitos: vocabulário econômico e suas definições  elementares
+Modelos: operacionalização dos conceitos econômicos para  realizar análises 
+Índices: expressões numéricas (taxas e indicadores) da economia
+ 
+12
+ 
+=== pág 13 ===
+
+Dificuldades Iniciais da Análise Macroeconômica
++
+=
+Desconhecimento do 
+Economês 
+Complexidade  das 
+relações de causa e efeito na 
+economia. 
+Aparência/percepção
+de Complicação!
+13
+ 
+=== pág 14 ===
+
+Economês & Análise dos Negócios
+14
+ 
+=== pág 15 ===
+
+A Gradativa Popularização da Economia na Mídia
+15
+ 
+=== pág 16 ===
+
+Para além do jargão Econômico, a complexidade das  Relações de Causa-Efeito!
+Aumento do imposto 
+de importação
+Aumento das receitas 
+do governo
+Impacto negativo na 
+balança comercial
+Possível redução do 
+déficit público
+Substituição dos 
+produtos importados 
+pelos  nacionais
+Aumento do preço dos 
+produtos estrangeiros
+Retaliações do setor 
+externo
+Queda das vendas dos 
+produtos nacionais no 
+exterior
+Impacto positivo na 
+balança comercial
+Aumento da inflação
+Oportunidade de queda da 
+taxa de juros
+(-------------) ?
+Conhecer os termos e as  duas ‘faces da moeda’, ou seja, o trade-off!
+16
+ 
+=== pág 17 ===
+
+Economia, Planejamento & Modelos Preditivos
+17
+ 
+=== pág 18 ===
+
+Ilustrando a Economia: o fluxo circular da renda – agentes e mercados
+Pessoas
+Empresas
+Mercado de Bens e Serviços
+Mercado de Fatores Produtivos
+(Trabalho e Capital)
+Governo
+Bancos
+Renda
+Consumo
+Salários, Juros
+e Aluguéis
+Aplicações e Empréstimos
+Impostos
+Gastos Públicos
+Impostos
+Aplicações
+e Captações
+Receita
+Banco Central
+Sindicatos
+Contribuição Sindical
+Títulos
+Públicos
+Open-Market
+Redesconto
+Compulsório
+Empréstimos
+Aplicações
+18
+ 
+=== pág 19 ===
+
+Aula de hoje:  o nosso 1º degrau na Economia!
+Fundamentos sobre Nível de Atividade:
+PIB, Inflação, Desemprego e os seus índices
+19
+19
+
+ 
+=== pág 20 ===
+
+Economicamente, os países objetivam:
+Crescimento do 
+Produto
+Estabilidade de Preços
+Geração de Emprego
+Nível de Atividade
+Indicador: PIB
+Indicador: Taxa de Inflação
+Indicador: Taxa de Desemprego
+20
+ 
+=== pág 21 ===
+
+É a medida aproximada da geração de renda de uma economia  em um 
+determinado período de tempo.
+O que é PIB?
+Indicador síntese de uma economia, tal como um 
+termômetro do fluxo de renda agregado (não 
+confundir com o estoque de riqueza). 
+Expressa em valor monetário o total dos bens e serviços finais 
+produzidos dentro dos limites geográficos de um território 
+(país, região, estado ou município). 
+21
+ 
+=== pág 22 ===
+
+PIB = C + I + G + (Ex – Im)
+Consumo
+Investimento
+Gastos do Governo
+Exportação
+Importação
+PIB: operacionalizando o conceito em um modelo*
+*Ótica do PIB  do dispêndio/despesa/demanda
+Temos, igualmente, as óticas da oferta/produção e da renda.   
+Para + informações:  
+https://www.ibge.gov.br/explica/pib.php 
+22
+ 
+=== pág 23 ===
+
+PIB do Brasil: ótica do dispêndio/despesa/demanda
+64%
+17%
+18%
+0,5%
+0,5%
+Exemplo: Economia brasileira em  2024 |  R$ 11,7 trilhões 
+Fonte: IBGE (2025)
+23
+ 
+=== pág 24 ===
+
+Demonstração do padrão do PIB em alguns países/regiões
+pela ótica do dispêndio/despesa/demanda | Dados para 2020. 
+65
+63
+66
+55
+68
+56
+39
+20
+14
+12
+20
+14
+20
+15
+15
+23
+24
+21
+21
+24
+45
+0
+0
+-2
+3
+-3
+0
+2
+Brasil
+Chile
+México
+União
+Européia
+Estados
+Unidos
+Japão
+China
+Fonte: OECD(2021); IBGE (2021)
+Balança Comercial e Serviços
+Investimentos
+Gastos Públicos 
+Consumo
+24
+ 
+=== pág 25 ===
+
+Os Componentes do PIB  e os seus Fatores de Impacto
+Consumo
+Investimento
+Gastos do Governo
+Balança Comercial
+Nível de renda disponível (poder de compra, tributação)
+Expectativas (confiança, humor) das famílias
+Distribuição de renda na economia
+Ritmo das inovações tecnológicas
+Projeção da taxa de retorno do investimento
+Nível da taxa de juros (trade-off)
+Controle da atividade econômica
+Prestação de serviços públicos
+Provisão das políticas sociais
+Taxa de câmbio
+Competitividade internacional
+Políticas de comércio exterior
+25
+ 
+=== pág 26 ===
+
+Ponto de Atenção 1 – Óticas do PIB
+26
+ 
+=== pág 27 ===
+
+Ponto de Atenção 2 – Cálculo do PIB trimestral e resultado por duas óticas
+Fonte: IBGE
+27
+ 
+=== pág 28 ===
+
+Ponto de Atenção 3 – Brasil: trajetória errática de crescimento do PIB (%)
+A Trajetória Stop and Go | Voo de Galinha!
+Fonte: IBGE e FGV. 
+28
+ 
+=== pág 29 ===
+
+Ponto de Atenção 4 – Taxa de crescimento do PIB: desenvolvidos x emergentes 
+(uma amostra entre o período de boom e a crise no triênio 2006-2008)
+2,9%
+2,4%
+2,9%
+2,9%
+11,1%
+9,7%
+2,8%
+2,0%
+1,8%
+3,8%
+7,4%
+0,3%
+1,4%
+0,5%
+1,4%
+1,6%
+1,4%
+1,3%
+7,9%
+5,4%
+6,8%
+9,3%
+EUA
+Japão
+Alemanha
+Reino
+Unido
+França
+Canadá
+Itália
+Índia
+Brasil
+Rússia
+China
+2006
+2007
+2008
+Fonte: FMI 
+29
+ 
+=== pág 30 ===
+
+Comportamento do PIB brasileiro na última década (2015-2024)
+•
+Oscilações da taxa de crescimento real no período; ver como foi baixa, quando não ocorreu queda (2014-2020)
+•
+Valor do PIB nominal em BRL aumentou ano a ano (uma vez que não é deflacionado). 
+•
+Valor do PIB nominal em USD variou de acordo com a taxa de câmbio.
+•
+O PIB per capita considera a estimativa da população no período a partir do Censo de 2010; e como o valor é em USD, depende da 
+taxa de câmbio. Recordar que o IBGE revisou os números do Censo de 2022, recentemente.  
+•
+PIB per capita em R$, 2024: 55.247,00
+30
+  Brasil
+01/12/2015
+01/12/2016
+01/12/2017
+01/12/2018
+01/12/2019
+01/12/2020
+01/12/2021
+01/12/2022
+01/12/2023
+01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+  PIB
+  Crescimento real do PIB - %
+-3,5
+-3,3
+1,3
+1,8
+1,2
+-3,3
+4,8
+3,0
+3,2
+3,4
+  PIB nominal - BRL bi
+5.996
+6.269
+6.585
+7.004
+7.389
+7.610
+9.012
+10.080
+10.943
+11.745
+  PIB nominal - USD bi
+1.800
+1.798
+2.063
+1.916
+1.872
+1.475
+1.670
+1.951
+2.192
+2.179
+  População - Milhões
+202,4
+203,9
+205,2
+206,5
+207,9
+209,2
+210,1
+210,9
+211,7
+212,6
+  PIB per capita - USD 
+8.893
+8.820
+10.054
+9.276
+9.007
+7.050
+7.949
+9.255
+10.356
+10.251
+Fonte: IBGE
+ 
+=== pág 31 ===
+
+Comportamento do PIB – Mundo e América Latina – desde 2015
+Fonte: Banco  Mundial e OCDE|  março  de 2025. 
+  Mundo
+Crescimento do PIB Mundial - %
+3,5
+3,3
+3,8
+3,6
+2,8
+-2,8
+6,3
+3,5
+3,2
+3,2
+Economia mundial e Principais Economias
+  EUA - %
+2,9
+1,8
+2,5
+3,0
+2,6
+-2,2
+6,1
+2,5
+2,9
+2,8
+  Zona do Euro - %
+2,0
+1,8
+2,7
+1,7
+1,6
+-6,2
+6,3
+3,6
+0,4
+0,8
+China - %
+7,1
+6,8
+7,0
+6,7
+6,0
+2,3
+8,4
+3,1
+5,4
+5,0
+Alguns países da América Latina 
+Argentina
+2,7
+-2,1
+2,8
+-2,6
+-2,0
+-9,9
+10,4
+5,3
+-1,6
+-1,7
+Chile
+3,3
+4,0
+2,5
+4,0
+0,6
+-6,1
+11,3
+2,2
+0,5
+2,6
+México
+3,3
+1,8
+1,9
+2,0
+-0,4
+-8,4
+6,0
+3,7
+3,3
+1,5
+2022
+2021
+2017
+2015
+2020
+2024
+2023
+2019
+2018
+2016
+31
+ 
+=== pág 32 ===
+
+Enquete 1: aplicando o conhecimento desta aula
+32
+ 
+=== pág 33 ===
+
+Qual dos fatores, abaixo, é plausível para explicar a taxa de crescimento 
+NEGATIVA do  PIB  brasileiro de -3,3%  no ano de 2020?
+(A) Diminuição da renda disponível das famílias.
+(B) Estabilização dos investimentos produtivos.
+(C) Incremento da desvalorização cambial.
+(D) Aumento dos gastos correntes do governo.
+Enquete 1: vamos a nossa pergunta sobre PIB 
+33
+ 
+=== pág 34 ===
+
+Enquete 1: resposta fundamentada pelos dados do PIB no Brasil
+35
+ 
+=== pág 35 ===
+
+•Crescimento econômico é necessário, mas não é suficiente  para o 
+desenvolvimento socioeconômico; 
+• Logo, o referencial de desenvolvimento não se restringe ao crescimento! 
+• Multidimensionalidade do desenvolvimento a partir do final do séc. XX.
+• Vide, por exemplo, o conceito de desenvolvimento sustentável | ODS.
+• Com indicadores de desenvolvimento, qualidade de vida e distribuição de 
+renda como IDH/PNUD, IPQV/IBGE e Índice de Gini. 
+Atenção: crescimento ≠ desenvolvimento
+36
+ 
+=== pág 36 ===
+
+Exemplo:  IDH 2025, para dados de 2023. 
+37
+Fonte: PNUD/ONU, 2025. 
+ 
+=== pág 37 ===
+
+Equidade
+       Social
+Conservação
+           Ambiental 
+Eficiência 
+ Econômica
+Baixa
+Eficiência
+Econômica
+Pobreza e 
+desigualdade
+social
+Degradação
+ambiental
+DESENVOLVIMENTO
+SUSTENTÁVEL
+38
+ 
+=== pág 38 ===
+
+Recapitulando: os primeiros aprendizados desta aula!
+✓ O que é análise de conjuntura macroeconômica
+✓ O PIB como indicador de crescimento econômico
+✓ A ótica do dispêndio - PIB = C + I + G + (Ex – Im) 
+✓ Os fatores de impacto de cada um dos componentes do PIB
+✓ A diferença entre crescimento econômico e desenvolvimento
+✓ IDH como indicador para pensarmos o desenvolvimento
+39
+ 
+=== pág 39 ===
+
+Afinal, o que é inflação? Quais são os tipos de inflação?
+Inflação: o aumento do nível de preços de uma economia.
+▪Nível dos salários
+▪Disponibilidade de crédito
+▪Meios de Pagamento
+Inflação de Demanda
+▪Choque de oferta (-)
+▪Preços administrados
+▪Custos de prod./adm.
+Inflação de Oferta
+▪Memória inflacionária
+▪Expectativa dos agentes
+▪Indexação da economia
+Inflação Inercial
+40
+ 
+=== pág 40 ===
+
+Inflação de Demanda: ilustração gráfica do fenômeno
+P2
+Demanda Agregada
+Preço
+Quantidade
+Oferta Agregada
+P1
+Q
+41
+ 
+=== pág 41 ===
+
+Inflação de Oferta: dois exemplos lúdicos do fenômeno
+Exemplo 2
+Brasil (2022), aumento do preço dos automóveis. 
+Desabastecimento das cadeias produtivas na pandemia. 
+Brasil (2025), aumento do preço do café.
+Choque de oferta (-), por eventos climáticos e aumento 
+das exportações.
+Exemplo 1
+42
+ 
+=== pág 42 ===
+
+Inflação Inercial: explicação da complexidade do fenômeno
+Espiral Inflacionário
+Inflação Inercial
+Expectativa
+Memória Inflacionária
+Inflação Anterior
+Contratos de Curto Prazo
+Indexação
+43
+ 
+=== pág 43 ===
+
+Fonte: IGPM / inflação mensal (%), 1985-2000
+Cruzado
+Bresser
+Verão
+Collor 1
+Collor 2
+Real
+1985
+1986
+1987
+1988
+1989
+1990
+1991
+1992
+1993
+1994
+0,00%
+20%
+40%
+60%
+80%
+100%
+1999
+Brasil (1985-2000): da hiperinflação à estabilização monetária
+44
+Fim da âncora cambial a partir de jan./99
+ 
+=== pág 44 ===
+
+Brasil: principais índices de inflação ao consumidor
+IPCA - IBGE
+Utilização: Meta de Inflação
+IGPM - FGV
+Utilização: Contratos
+IPC - FIPE
+Utilização: Impostos de SP
+ICV - DIEESE
+Utilização: Acordos Salariais
+Para + informações: https://portal-da-inflacao-ibre.fgv.br/#!/
+45
+ 
+=== pág 45 ===
+
+Fonte: IBGE, BACEN e FGV. 
+Taxa de Inflação brasileira na última década (2015-2024)
+•
+Diferença de metodologia entre IPCA e IGP-M.
+•
+Uso da inflação oficial alternativo ao IGP-M para revisão de contratos durante a pandemia (2020-2021).
+•
+Meta de inflação: https://www.bcb.gov.br/controleinflacao/historicometas
+•
+IPCA acumulado 12 meses (set.-ago.): 5,13%; IPCA 2025 (jan.-ago.): 3,15%,; IPCA Agosto: -0,11%. 
+46
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+Inflação
+  IPCA - %
+10,7
+6,3
+2,9
+3,7
+4,3
+4,5
+10,1
+5,8
+4,6
+4,8
+  IGP–M - %
+10,5
+7,2
+-0,5
+7,5
+7,3
+23,1
+17,8
+5,5
+-3,2
+6,5
+ 
+=== pág 46 ===
+
+O que explica, de maneira plausível, a taxa de inflação no Brasil dentro da meta 
+de inflação no quadriênio 2017-2020 (2,9%, 3,7%, 4,3% e 4,5%, respectivamente)?
+(A) Redução da inflação inercial.
+(B) Diminuição da oferta de crédito para os consumidores.
+(C) Não reajuste dos preços administrados pelo governo.
+(D) Baixa demanda agregada das famílias por bens e serviços.
+Enquete 2: vamos a nossa pergunta sobre Inflação
+47
+ 
+=== pág 47 ===
+
+População Total e Mercado de Trabalho
+49
+ 
+=== pág 48 ===
+
+Mercado de Trabalho e Taxa de Desemprego
+50
+PIA ou PIT
+PEA ou PFT
+Inativos
+A partir da população total do país (212,0  milhões), calcula-se:
+Taxa de Desemprego = Nº. de Desempregados /PEA
+Brasil (trimestre, encerrado em julho/25):  5,6%,  com 6,1 
+milhões de pessoas desocupadas; e 102,4 milhões ocupadas. 
+Para + informações: 
+https://www.ipea.gov.br/cartadeconjuntura/index.php/category/mercado-de-trabalho/
+174,1 milhões
+108,5 milhões
+65,6 milhões
+ 
+=== pág 49 ===
+
+Tipos de Desemprego: definições e causas 
+▪Incompatibilidades (...)
+▪Assimetria de Informação
+▪Rotatividade
+Friccional
+Conjuntural
+▪ Crise econômica
+▪ Sazonalidade
+▪Choque externo
+Estrutural
+▪Mecanização agrícola
+▪Automação industrial
+▪Inteligência  artificial 
+51
+51
+ 
+=== pág 50 ===
+
+Brasil: índices de desemprego
+PNAD contínua - IBGE
+Metodologia:
+▪Pop. Idade Ativa (PIA):  14 anos ou mais
+▪Desocupado: sem ocupação, disponível
+▪211 mil domicílios em 3464 municípios
+▪Em torno de 2200 entrevistadores, por telefone
+▪Média trimestral (dados do mês com os dois meses 
+imediatamente anteriores)
+▪+ Info: https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-
+nacional-por-amostra-de-domicilios-continua-mensal.html
+Metodologia:
+▪
+Geração das estatísticas do emprego formal, 
+pelo Ministério do Trabalho e Emprego, por 
+meio de informações captadas dos 
+sistemas eSocial, Caged e Empregador Web.
+52
+ 
+=== pág 51 ===
+
+Taxa de Desemprego brasileiro na última década (2015-2024)
+Fonte: IBGE e PNAD Contínua. Dados atuais para o  trimestre de 2025 encerrado em julho.
+Além da taxa de desocupação (ou desemprego), é fundamental analisar:
+•
+ Taxa de Participação: 62,3 % da PIA, com desalento em torno de 2,7  milhões de pessoas.
+•
+ Nível de Ocupação: 58,8% da PIA.
+•
+ Rendimento Médio: aprox. R$ 3.484,00.
+•
+ Massa Salarial: 352 bilhões/mês   
+•
+Taxa de Formalidade: 62,2 % (incluindo 39,1  milhões com carteira de trabalho e  12,8 milhões de servidores públicos)
+•
+Taxa de Informalidade: 37,8 % (incluindo 13,5 milhões sem carteira de trabalho e  25,8  milhões por conta própria).
+•
+Trabalhadores Domésticos: 6 milhões 
+•
+Subocupação da Força de Trabalho (por insuficiência de horas): 5 milhões de trabalhadores.
+•
+Número de pessoas subutilizadas: 16,4 milhões (desempregados + subocupados + desalentados + sem disponibilidade). 
+53
+  Brasil
+01/12/2015 01/12/2016 01/12/2017 01/12/2018 01/12/2019 01/12/2020 01/12/2021 01/12/2022 01/12/2023 01/12/2024
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+   Desemprego
+  Taxa nacional de desemprego - média anual (*)
+8,4
+11,4
+12,9
+12,4
+12,1
+13,5
+13,5
+9,5
+8,0
+6,9
+  Taxa nacional de desemprego - fim do ano (*)
+9,7
+12,8
+12,6
+12,3
+11,6
+14,7
+11,6
+8,4
+7,9
+6,6
+ 
+=== pág 52 ===
+
+Em resumo, pensar o nível de atividade de uma economia é:
+▪Crescimento Econômico
+▪Estabilidade de Preços
+▪Geração de Emprego
+Considerar os Objetivos
+▪PIB (% crescimento)
+▪Taxa de Inflação
+▪Taxa de Desemprego
+Analisar os Índices
+54
+ 
+=== pág 53 ===
+
+PIB (% crescimento)  
+Tx. de Desemprego (%)
+Tx. de Inflação (%)
+   Questão da próxima aula: como as políticas econômicas contribuem com o nível de atividade?
+Projeção  2025
+2,16% (mercado);  e 2,5% (governo)
+6,2% (média); 6,0% (final do ano)
+IPCA:  4,83%  (meta de inflação do CMN de 3,00%); 
+Pressupostos
+Brasil: Nível de Atividade
+projeção 2025 (base 12 set.)
+55
+ 
+=== pág 54 ===
+
+Macroeconomia & Ambiente de Negócios
+Macroeconomia:            nível de atividade   
+políticas econômicas 
+Passado Recente                  Conjuntura Atual
+Cenários Futuros
+Planejamento
+Ações
+Objetivos
+Setores e Organizações
+56
+ 
+=== pág 55 ===
+
+Algumas indicações bibliográficas para aprofundar a aula de hoje.
+57
+ 
+=== pág 56 ===
+
+Muito obrigado pela atenção de vocês na aula de hoje.
+Vejo vocês na nossa aula 2, 
+na próxima terça-feira, 23/09! de Agosto!
+Facebook: fernandosouzacoelho
+Instagram: fdesouzacoelho
+Linkedin: fernando coelho usp
+58
+ 
+=== pág 57 ===
+
+Obrigado!
+Prof. Dr. Fernando de S. Coelho | linkedin.com/in/fernando-coelho-usp
+ 

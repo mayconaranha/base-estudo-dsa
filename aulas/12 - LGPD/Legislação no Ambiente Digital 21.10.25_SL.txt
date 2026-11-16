@@ -1,0 +1,1465 @@
+# 12 - LGPD / Legislação no Ambiente Digital 21.10.25_SL.pdf
+
+=== pág 1 ===
+
+Legislação no Ambiente Digital 
+(LGPD) 
+Prof. Hélio Ferreira Moraes
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Apresentação
+Prof. Hélio Ferreira Moraes
+https://www.linkedin.com/in/heliomoraes/ 
+•
+Advogado (1995) e Engenheiro Eletrônico (1990) pela USP 
+•
+DPO Certificado pela Exin na trilha LGPD Essential (PDPE - 2019), GDPR Foundation (PDPF – 
+2020) e Practitioner (PDPP – 2020), ISO 27001 Foundation (2020). 
+•
+Treinador credenciado pela Exin para ministrar treinamentos dos módulos Essentials, Foundation e 
+Practitioner.
+•
+LLM BINACIONAL LGPD & GDPR (2022), Brasil e Portugal, pela FMP/RS e Centro de Investigação 
+em Direito Privado da Faculdade de Direito da Universidade de Lisboa (Portugal)
+3
+
+=== pág 4 ===
+
+Direito Digital – Evolução Histórica e prática
+•
+A evolução tecnológica contínua impacta a sociedade e, consequentemente, o direito. 
+•
+Os primeiros desafios legais trazidos pela internet, como questões de direitos autorais e privacidade 
+online, até os desafios atuais, como; 
+•
+Regulamentação de big data
+•
+Internet das coisas (IoT)
+•
+Regulamentação de criptomoedas
+•
+Metaverso
+4
+•
+Fake News
+•
+Deep fakes
+•
+Inteligência Artificial 
+•
+Economia digital.
+•
+O direito não é inimigo da tecnologia! Ele é condição para seu florescimento sustentável, fornecendo 
+segurança, estabelecendo limites justos, criando confiança e garantindo que a inovação sirva às 
+pessoas.
+
+=== pág 5 ===
+
+Direito Digital – Definição e Características
+DEFINIÇÃO: 
+Ramo do direito que se dedica a estudar e 
+regulamentar as questões jurídicas relacionadas 
+à tecnologia da informação, internet e 
+ambientes digitais. 
+É uma área que busca compreender e 
+solucionar os desafios legais emergentes da 
+sociedade digital e se tornou essencial na era 
+moderna, onde a maioria das atividades 
+humanas, seja no comércio, comunicação ou 
+entretenimento, ocorre em plataformas digitais.
+CARACTERÍSTICAS: 
+Interdisciplinaridade: Envolve direito, tecnologia, 
+ética, segurança da informação, economia e 
+sociologia.
+Dinamismo e constante atualização: Acompanha a 
+rápida evolução tecnológica, por isso as normas 
+precisam ser flexíveis e adaptáveis.
+Globalidade e transnacionalidade: Internet não 
+conhece fronteiras, logo, problemas ultrapassam 
+jurisdições nacionais.
+Proteção de direitos fundamentais: Busca 
+equilibrar inovação com garantias individuais.
+Flexibilidade normativa: Uso de princípios gerais 
+(como proporcionalidade, finalidade, minimização de 
+dados), tendo uma abordagem “tecnologicamente 
+neutra”, para não engessar inovações.
+5
+
+=== pág 6 ===
+
+Direito Digital – Definição, Características e Aplicações
+6
+Anos 70
+➢Ted Hoff inventa o 
+microprocessador 
+no Vale do Silício 
+(71)
+➢Microcomputador 
+Altair (75)
+➢Microsoft (76)
+➢Apple II (77)
+Anos 80
+Anos 90
+Anos 
+2010
+Anos 
+2020
+➢PC - Apple e 
+IBM (81)
+➢Macintosh (84)
+➢Computadores em 
+rede
+➢Redes de banda 
+larga IBN
+➢Telefonia celular
+➢Internet comercial
+➢WP Bitcoin (08)
+➢Assistentes Virtuais
+➢Realidade 
+Aumentada/Virtual
+➢Tablets
+➢Carros Autônomos
+➢Redes 5G
+➢Computação quantica
+➢Tokenização de ativos
+➢Metaverso
+➢Inteligência Artificial
+Anos 
+2000
+➢Mp3 players e os 
+iPods
+➢Câmeras digitais
+➢Orkut ou Myspace
+➢GPS
+➢Pendrive
+➢Amazon
+
+=== pág 7 ===
+
+A internet e novos desafios
+7
+Privacidade e 
+Proteção de 
+dados e 
+remoção de 
+conteúdo
+Liberdade de 
+expressão e 
+Identificação na 
+rede
+Monitoramento 
+dos empregados 
+e códigos de 
+conduta
+Incidentes de 
+Segurança e 
+Fraudes digitais
+Uso indevido de 
+marcas 
+Direito de 
+arrependimento 
+nos meios 
+online
+
+=== pág 8 ===
+
+Direito Digital no Mundo
+MARCOS LEGISLATIVOS NO MUNDO
+8
+Lei de Direitos Autorais do 
+Milênio Digital (DMCA) – (EUA 
+- 1998):
+ 
+uma das leis mais importantes 
+em termos de direitos autorais 
+digitais, criminaliza a 
+produção e disseminação de 
+tecnologia, dispositivos ou 
+serviços destinados a 
+contornar medidas de 
+proteção de direitos autorais.
+Regulamento Geral sobre a 
+Proteção de Dados (GDPR) – 
+(EU - 2018):
+impõe regras estritas sobre o 
+tratamento de dados pessoais 
+e concede aos indivíduos 
+direitos significativos sobre 
+seus dados, tem alcance 
+global, afetando empresas 
+fora da UE que tratam dados 
+de cidadãos da UE.
+Lei de Privacidade do Consumidor 
+da Califórnia (CCPA) – (EUA – 
+2020):
+ uma das leis estaduais de 
+privacidade de dados mais 
+abrangentes nos EUA, oferece aos 
+residentes da Califórnia direitos 
+extensos sobre seus dados 
+pessoais, incluindo o direito de saber 
+quais dados são coletados e o direito 
+de solicitar a exclusão desses dados.
+
+=== pág 9 ===
+
+Direito Digital Brasil 
+Lei nº 12.965/2014: estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil. 
+É frequentemente referido como a "Constituição da Internet" no país.
+Neutralidade da Rede: Exige que o tráfego de dados na internet seja tratado sem discriminação por 
+conteúdo, origem e destino, serviço, terminal ou aplicação.
+Privacidade e Proteção de Dados: Estabelece a proteção da privacidade e dos dados pessoais como 
+um direito fundamental do usuário.
+Liberdade de Expressão: Garante a liberdade de expressão online e estabelece que a responsabilidade 
+pelo conteúdo gerado pelos usuários recai sobre os próprios usuários, exceto em casos específicos 
+determinados por ordem judicial
+Guarda de Registros: Define regras para a guarda e proteção de registros de conexão (1 ano) e de 
+acesso a aplicações de internet (6 meses).
+Responsabilidade dos Provedores: Estabelece que os provedores de conexão não são responsáveis 
+pelo conteúdo gerado por terceiros, mas os provedores de aplicações na internet podem ser 
+responsabilizados civilmente em determinadas circunstâncias (não exclusão por ordem judicial ou em 
+caso de notificação por crime sexual).
+9
+Marco Civil da Internet (MCI) - Brasil (2014)
+
+=== pág 10 ===
+
+Marco Legal das Criptomoedas
+10
+Lei nº 14.478/2022
+Vigência: após 180 dias (22/12/22) 
+– final de junho de 2023
+Lei de Criptomoedas nº 14.478/2022
+Todas as representações (ativos) digitais de valor, que podem ser 
+negociados ou transferidos eletronicamente e para pagamento ou 
+para investimento.
+Não regulamentados pela Lei
+Reais e ativos vinculados a moedas tradicionais estrangeiras
+Programas de pontos, recompensas e fidelidade
+Parecer CVM nº 40 (14/10/22)
+Valores mobiliários e ativos financeiros - Criptoativos - Consolida 
+as orientações para a classificação de criptoativos como valores 
+mobiliários. Forma como poderá exercer poderes para 
+normatizar, fiscalizar e disciplinar a atuação dos integrantes do 
+mercado de capitais.
+IN 1888 – 2019
+Define as regras para declaração de operações com criptoativos 
+para pessoas físicas e prestadores de serviços estabelecidos no 
+Brasil.
+
+=== pág 11 ===
+
+Autoridade Governamental
+11
+Regras para prestadoras de serviços de ativos digitais
+Lei nº 14.478/2022
+1
+Condições para o exercício de cargos estatutários e/ou de administração
+Condições e prazos, para a autorização de funcionamento e movimentações acionárias
+Regras de supervisão
+Regras de cancelamento, de ofício ou a pedido, das autorizações de funcionamento
+Fixação de hipóteses em que as atividades serão incluídas no mercado de câmbio ou submeter à 
+regulamentação de capitais brasileiros no exterior e capitais estrangeiros no País
+2
+3
+4
+5
+
+=== pág 12 ===
+
+Direito Digital Brasil x Mundo
+Marcos Legislativos no mundo
+12
+
+=== pág 13 ===
+
+LGPD (Lei nº 13.709/2018)
+13
+OBJETO
+Tratamento de dados pessoais
+Realizado por pessoa física ou
+Jurídica Pública ou privada
+Independentemente do meio
+(digital inclusive)
+OBJETIVO
+Proteger os direitos 
+fundamentais de:
+•
+Liberdade
+•
+Privacidade
+•
+Livre desenvolvimento da 
+personalidade
+
+=== pág 14 ===
+
+A finalidade da Lei Geral de 
+Proteção de Dados, é de proteger...
+14
+a) Os dados das pessoas físicas e jurídicas
+b) O tratamento de dados realizado 
+exclusivamente no meio digital
+c) Os direitos fundamentais da pessoa 
+física (privacidade, liberdade etc.)
+d) As atividades de proteção de dados 
+realizadas por empresas públicas.
+
+=== pág 15 ===
+
+Princípios
+15
+Finalidade
+Adequação
+Necessidade
+Segurança
+Livre acesso
+Qualidade
+Transparência
+BOA FÉ
+Não discriminação
+Responsabilização
+Prevenção
+
+=== pág 16 ===
+
+Bases legais
+16
+Todo tratamento de dados pessoais deve estar classificado em uma hipótese legal adequada, que pode ser:
+Consentimento 
+Legítimo 
+Interesse
+Cumprimento de 
+obrigação legal ou 
+regulatória
+Execução de 
+contrato
+Exercício 
+regular de 
+direitos
+Prevenção a 
+fraude
+Execução de 
+políticas 
+públicas
+Proteção ao 
+crédito
+Proteção a vida
+Tutela da Saúde
+Estudos por 
+órgãos de 
+pesquisa
+
+=== pág 17 ===
+
+Definições essenciais- LGPD (Lei nº 13.709/2018)
+17
+Dados pessoais:  
+qualquer informação 
+relativa a pessoa 
+física identificada ou 
+identificável
+Transferência
+Empresa
+Dados pessoais 
+sensível: 
+origem racial ou 
+étnica, dados de 
+saúde, biométricos, 
+religiosos e outros
+Titular: 
+pessoa natural (física) à 
+qual os dados pessoais 
+pertencem  
+Controlador: 
+Pessoa natural ou jurídica, de direito 
+público ou privado, a quem competem 
+as decisões referentes ao tratamento 
+de dados pessoais.
+Operador: 
+Pessoa natural ou jurídica, de 
+direito público ou privado, que 
+realiza o tratamento de dados 
+pessoais em nome do controlador.
+Tratamento 
+Qualquer operação com dados pessoais (ex.: coleta, avaliação, classificação, acesso, controle e armazenamento)
+
+=== pág 18 ===
+
+Definições essenciais- LGPD (Lei nº 13.709/2018)
+18
+Agência Nacional de 
+Proteção de Dados (ANPD):
+órgão responsável por zelar, 
+implementar e fiscalizar o 
+cumprimento da Lei Geral de 
+Proteção de Dados Pessoais (LGPD) 
+no Brasil.
+Encarregado (DPO): 
+ Pessoa ou entidade designada por 
+um controlador de dados para atuar 
+em seu nome no tratamento de dados 
+pessoais, sendo o canal de 
+comunicação entre o controlador, os 
+titulares dos dados e a Agência 
+Nacional de Proteção de Dados 
+Suboperador:
+ pessoa ou empresa contratada pelo 
+operador para auxiliar no tratamento 
+de dados pessoais, sempre em nome 
+do controlador.
+
+=== pág 19 ===
+
+O que são dados pessoais? 
+19
+a) Apenas dados cadastrais como nome, 
+endereço e números de documentos
+b) Somente aqueles que se referem à 
+intimidade
+c) Informações sobre a saúde financeira 
+da empresa
+d) Qualquer informação referente  pessoa 
+física, identificada ou identificável
+
+=== pág 20 ===
+
+Direito dos titulares 
+20
+•
+Confirmação da existência de tratamento
+•
+Acesso 
+•
+Correção de dados incompletos, inexatos ou desatualizados 
+•
+Anonimização, bloqueio ou eliminação 
+•
+Portabilidade
+•
+Eliminação dos dados pessoais tratados com base no consentimento
+•
+Informações sobre compartilhamento dos dados
+•
+Negativa de consentimento: informações e consequências
+•
+Revogação do consentimento
+•
+Peticionamento contra o controlador
+•
+Oposição ao tratamento não consentido
+•
+Revisão de decisão automatizada
+•
+Informações sobre os critérios da decisão automatizada​
+
+=== pág 21 ===
+
+Dados Pessoais Sensíveis
+•
+Dados pessoais sensíveis: é um rol determinado pela ANPD (Agência Nacional de Proteção de Dados), e 
+tem tratamento diferenciado, pois podem gerar discriminação, são eles;  
+21
+Origem racial 
+ou étnica 
+As bases legais para tratamento são diferentes, não podendo ser Legítimo Interesse, Proteção ao crédito 
+ou Execução de contrato ou procedimentos preliminares.
+Opiniões Políticas
+Convicção religiosa 
+Filiação a sindicados ou 
+organização de caráter religioso, 
+filosófico ou político 
+Orientação sexual/ 
+de gênero
+Informações de saúde 
+ou à vida sexual 
+Dados genéticos ou 
+biométricos. 
+
+=== pág 22 ===
+
+Transferência Internacional
+Define critérios para a transferência internacional de dados, complementando o art. 33 da LGPD, como por exemplo: 
+•
+Elaboração do método para regular a transferência, pode ser: 
+•
+Cláusula padrão contratual 
+•
+Normas Corporativas Globais​
+•
+Cláusulas Contratuais Específicas
+22
+Regulado pela Resolução nº19 da ANPD
+Cláusulas Padrão Contratual
+Normas Corporativas Globais
+Cláusulas Padrão Especificas
+Disponibilizadas pela ANPD no anexo II da 
+resolução em questão
+Devem ser empresas do 
+mesmo grupo/conglomerado
+Para situações que não são abrangidas 
+pelas Clausulas Padrão Contratual
+Não precisa de prévia autorização
+Precisa ser submetida a aprovação 
+da ANPD
+Precisa justificar a necessidade para 
+a ANPD que aprova
+Prós: Já estão aprovadas pela ANPD e não 
+há prejuízo em sua utilização, não 
+prejudicando negativamente os negócios e 
+pode se usar com terceiros. Também é a 
+forma mais rápida de se regularizar
+Contras: Não é alterável
+Prós: Soluções únicas para cada empresa, 
+e uma vez implementada, os dados 
+pessoais podem ser transferidos livremente
+Contras: Processo demorado e complexo 
+que envolve tempo e custo. A sua 
+implementação exige consideração sobre 
+como torná-las vinculativas e como 
+estruturar a responsabilidade da empresa 
+em caso de violação.
+Usada apenas em momentos 
+pontuais, portanto, precisa ser avaliada 
+a necessidade no caso concreto.
+
+=== pág 23 ===
+
+Transferência Internacional
+23
+Brasil 
+Exterior 
+Legenda
+              Controlador 
+              Operador 
+              
+               Suboperador
+Operação que NÃO é 
+regulada pela Resolução 
+nº 19 da ANPD
+Operação que é regulada 
+pela Resolução nº 19 da 
+ANPD
+Regulado pela Resolução nº19 da ANPD
+
+=== pág 24 ===
+
+Sanções Administrativas
+24
+Com indicação de prazo para a 
+adoção de medidas corretivas.
+Advertência
+Até 2% da receita do grupo no Brasil no 
+último exercício, limitada a R$50 milhões.
+Multa simples ou diária
+Após devidamente apurada e 
+confirmada a infração.
+Publicização
+Do banco de dados pessoais a 
+que se refere a infração. 
+Bloqueio
+Eliminação
+Dos dados pessoais a que 
+se refere a infração. 
+Suspensão parcial
+Suspensão parcial do funcionamento 
+do banco de dados por até 6 meses, 
+prorrogável por igual período
+Proibição parcial ou total
+Proibição parcial ou total do exercício 
+de atividades relacionadas a 
+tratamento de dados
+
+=== pág 25 ===
+
+Qual agente de tratamento trata 
+dados em nome e sob orientações 
+de outro agente?
+25
+a) Controlador
+b) Encarregado
+c) Operador
+d) ANPD (Autoridade Nacional de 
+Proteção de Dados Pessoais)
+
+=== pág 26 ===
+
+Compliance Digital
+26
+
+=== pág 27 ===
+
+Compliance Digital 
+•
+A falta de Compliance afeta significativamente as empresas, gerando impactos : 
+27
+•
+Financeiros: 
+•
+Reputacionais: 
+https://exame.com/negocios/equifax-pagara-ate-us-700-milhoes-por-vazamento-de-dados-pessoais/ 
+https://www.cisoadvisor.com.br/31-das-empresas-brasileiras-perdem-reputacao-apos-ataques/ 
+
+=== pág 28 ===
+
+Maior vazamento de dados da História 
+28
+https://www.cnnbrasil.com.br/tecnologia/vazamento-expoe-bilhoes-de-senhas-do-google-apple-e-meta-diz-site/  
+•
+Não se tem certeza da origem do vazamento, mas As informações podem ter sido obtidas, 
+provavelmente, a partir de ações de phishing. 
+
+=== pág 29 ===
+
+Maior vazamento de dados do Brasil 
+29
+https://www.cnnbrasil.com.br/tecnologia/fotos-e-ate-salarios-estao-entre-os-dados-vazados-de-223-milhoes-de-brasileiros/ 
+•
+Também não se tem certeza de onde se originou o vazamento, mas acreditam que tenham sido o 
+compilado de dados extraídos de diversas fontes. 
+
+=== pág 30 ===
+
+Consequências do vazamento para o titular
+30
+•
+Fraudes financeiras
+•
+Roubo de identidade
+•
+Danos à reputação
+•
+Sofrimento de danos morais e materiais. 
+
+=== pág 31 ===
+
+Compliance Digital
+31
+•
+2022- Changpeng Zhao (CEO of Binance) vendeu a sua 
+participação na FTX de volta para Bankman-Fried. Zhao disse 
+em novembro que também venderia os tokens FTT recebidos em 
+pagamento devido a sua preocupação com a estabilidade 
+financeira da FTX, o que ocasionou uma queda nos preços do 
+FTT.
+•
+Os traders correram para retirar ativos da FTX, causando uma 
+falta de capital de USD 8 bilhões. A Binance ofereceu um 
+empréstimo para FTX, mas depois recuou, forçando a FTX a 
+pedir falência em 11/11/22.
+•
+O colapso da FTX provocou investigações do  Departamento de 
+Justiça e da SEC (Securities and Exchange Commission) focada 
+em identificar se a FTX usou indevidamente fundos dos clientes 
+para suportar a Alameda Research, uma plataforma de trading 
+crypto. que Bankman-Fried ajudou a fundar. 
+•
+Em 12/12/22, Bankman-Fried foi preso nas Bahamas por mentir 
+aos investidores e cometer fraude. No dia seguinte, a S.E.C. 
+também abriu processo civil por fraude de valores mobiliários.
+
+=== pág 32 ===
+
+Regras que independem da regulamentação  Lei nº 14.478/2022
+Boas práticas de governança
+Analisar riscos, transparência, proteção a poupança e dados pessoais  
+Alinhamento com o CDC e demais legislações 
+Atuação na prevenção contra financiamento do terrorismo e proliferação de armas de 
+destruição em massa 
+32
+
+=== pág 33 ===
+
+Qual alternativa possui princípios da 
+LGPD?
+33
+a) Consensualismo, equilíbrio econômico, 
+publicidade
+b) Moralidade administrativa, função 
+social, autonomia de vontades
+c) Liberdade das partes, impessoalidade, 
+moralidade
+d) Finalidade, necessidade, transparência, 
+segurança
+
+=== pág 34 ===
+
+Transparência x privacidade
+Lei de Acesso à Informação (LAI)
+A transparência no Brasil é amplamente regida 
+pela Lei de Acesso à Informação (LAI), Lei nº 
+12.527/2011. Esta lei estabelece que o acesso à 
+informação pública é um direito fundamental e 
+impõe aos órgãos públicos a obrigação de 
+divulgar informações de interesse público, salvo 
+em casos específicos onde a lei exige sigilo.
+Objetivos da Transparência
+Combate à Corrupção: A transparência é vista 
+como uma ferramenta essencial no combate à 
+corrupção, permitindo que cidadãos e órgãos de 
+controle tenham acesso a informações que 
+possam revelar atos ilícitos.
+Fortalecimento da Democracia: Ao garantir 
+acesso à informação, a LAI promove uma maior 
+participação cidadã e fortalece as instituições 
+democráticas.
+34
+Transparência: Princípio Fundamental na Administração Pública
+
+=== pág 35 ===
+
+Transparência x privacidade
+Desafios de Conciliação
+O desafio no Brasil é conciliar a necessidade de 
+transparência, especialmente em relação às 
+atividades governamentais, com o direito à 
+privacidade dos indivíduos. Enquanto a LAI 
+promove um ambiente de abertura e acesso à 
+informação, a LGPD impõe limites para proteger 
+dados pessoais.
+Casos de Conflito
+Divulgação de Informações de Funcionários 
+Públicos: Um exemplo de conflito surge na 
+divulgação de informações de funcionários 
+públicos. Enquanto a transparência exige certa 
+divulgação, a LGPD protege contra a exposição 
+indevida de dados pessoais.
+Dados Públicos x Dados Sensíveis: A 
+distinção entre o que constitui dados públicos e 
+dados sensíveis é um ponto crítico, onde o 
+direito à privacidade pode limitar a extensão da 
+transparência.
+35
+O Equilíbrio entre Transparência e Privacidade
+
+=== pág 36 ===
+
+Transparência x privacidade
+36
+O Equilíbrio entre Transparência e Privacidade
+
+=== pág 37 ===
+
+Transparência x privacidade
+37
+https://www.jota.info/coberturas-especiais/protecao-de-
+dados/lai-v-lgpd-itu-tera-de-divulgar-dados-completos-de-
+remuneracao-de-servidores-16082022 
+O Equilíbrio entre Transparência e Privacidade
+
+=== pág 38 ===
+
+Relembrando: Para todo tratamento 
+de dados pessoais, deve haver o 
+consentimento do titular?
+38
+a) Verdadeiro
+b) Falso
+
+=== pág 39 ===
+
+Segurança da informação 
+Tipos de ataques cibernéticos 
+39
+Phishing: Engano por e-mails, mensagens ou sites falsos.
+Malware (Software Malicioso)
+Vírus: infectam arquivos e se espalham.
+Ransomware: sequestra dados e exige resgate.
+Spyware: espiona atividades do usuário.
+Trojan: disfarçado de programa legítimo, permite acesso remoto. 
+Engenharia Social: Manipulação psicológica para obter informações.
+Ataques DDoS (Negação de Serviço): Envio massivo de requisições para derrubar servidores, afetando sites, aplicativos e serviços online.
+Brute Force (Força Bruta): Tentativas automáticas de adivinhar senhas.
+Exploração de Vulnerabilidades: Uso de falhas em sistemas ou softwares, para permitir acesso não autorizado ou controle total.
+Man-in-the-Middle (MitM): Interceptação de comunicações entre duas partes.
+Risco maior em redes Wi-Fi públicas sem criptografia.
+SQL Injection: Inserção de comandos maliciosos em formulários web, para manipular ou roubar dados de bancos de dados.
+Cross-Site Scripting (XSS): Injeção de scripts maliciosos em páginas web, podendo roubar cookies, redirecionar usuários ou alterar conteúdo.
+
+=== pág 40 ===
+
+Segurança da informação 
+Aumento de ataques cibernéticos no Brasil em 2025
+40
+https://exame.com/inteligencia-artificial/brasil-registra-315-bilhoes-de-tentativas-de-ataques-ciberneticos-somente-em-2025-aponta-fortinet/ 
+https://www.cnnbrasil.com.br/economia/negocios/ataques-ciberneticos-sobem-30-no-pais-pos-tarifaco-empresa-ve-hacktivismo/   
+
+=== pág 41 ===
+
+Segurança da informação 
+Phishing
+41
+https://institutodelongevidade.org/longevidade-e-comportamento/tecnologia/phishing-golpe-virtual 
+- Phishing é uma fraude online na qual criminosos se passam por uma entidade confiável, como uma 
+empresa, banco ou órgão governamental, para enganar a vítima e roubar dados pessoais e/ ou 
+confidenciais. 
+
+=== pág 42 ===
+
+Segurança da informação 
+Phishing
+42
+
+=== pág 43 ===
+
+Segurança da informação 
+Ransomware
+43
+Forma mais agressiva de malware, acessa e criptografa os dados. 
+Criminosos geralmente agem exigindo pagamento em troca da liberação dos dados
+Vulnerabilidade
+Bloqueio/ Sequestro
+Extorsão
+E-mails fraudulentos
+Falha de segurança de 
+empregado
+Ações nocivas, 
+geralmente utilizada 
+criptografia
+Pagamento de resgate ou 
+restauração das configurações 
+de fábrica
+
+=== pág 44 ===
+
+Segurança da informação 
+De quem é a responsabilidade?
+44
+Informação e dados pessoais existem em toda a empresa, e muitos não estão em 
+computadores
+Todos são responsáveis por cuidar das informações e dados pessoais espalhados nas 
+áreas em planilhas, tabelas, comunicações no WhatsApp, etc.
+Leis como a LGPD afetam toda a sociedade, são chamadas de leis sociais, como se fosse 
+um Código de Defesa do Consumidor
+
+=== pág 45 ===
+
+Segurança da informação 
+Ameaças internas: Falha Humana
+45
+Upload de arquivos de 
+máquinas da empresa 
+para dispositivos 
+pessoais, e vice-versa
+Compartilhamento de 
+senhas ou informações, sem 
+observância de restrições de 
+acesso
+Uso de aplicativos de 
+comunicação não 
+oficiais, para fins 
+profissionais
+
+=== pág 46 ===
+
+Segurança da informação 
+Ameaças internas: Falha Humana
+46
+Envio de 
+e-mail e/ou documentos 
+pessoais, para e-mail da 
+empresa
+Envio de       
+e-mail e/ou documentos da 
+empresa para e-mails 
+pessoais
+
+=== pág 47 ===
+
+Segurança da informação 
+Ameaças internas: Falha Humana
+47
+Documentos e arquivos em cima das 
+mesas, ou armazenados em gavetas 
+e armários sem segurança adequada
+Computador desbloqueado sem a 
+vigilância/presença do usuário (home 
+office ou na empresa)
+
+=== pág 48 ===
+
+Segurança da informação 
+Ameaças internas: Falha Humana
+48
+Qualquer evento que 
+possa causar dano, 
+confirmado ou não, é 
+um incidente de 
+segurança, devendo 
+comprometer: 
+• Confidencialidade
+• Integridade
+• Disponibilidade 
+Destruição
+Revelação 
+não 
+autorizada
+Acesso 
+indevido
+Perda
+Alteração
+
+=== pág 49 ===
+
+Relembrando: A quem cabe tomar as 
+decisões referentes à forma e duração 
+do tratamento dos dados?
+49
+a) Operador
+b) Controlador
+c) Encarregado
+d) ANPD (Autoridade Nacional de Proteção 
+de Dados Pessoais)
+
+=== pág 50 ===
+
+Incidentes de Segurança
+50
+Segurança da informação é responsabilidade de todos
+Superior Tribunal de Justiça (STJ) que responsabilizou a 
+Enel por um vazamento de dados de clientes, mesmo após 
+a empresa tentar argumentar que a falha foi causada por um 
+ataque cibernético de terceiros. O tribunal considerou que a 
+Enel não adotou as medidas de segurança necessárias para 
+proteger os dados, violando a Lei Geral de Proteção de Dados 
+(LGPD). 
+https://valor.globo.com/legislacao/noticia/2024/12/05/stj-responsabiliza-enel-por-vazamento-de-dados-de-
+cliente-apos-ataque-hacker.ghtml 
+Um operador de teleatendimento foi dispensado por justa 
+causa por acessar indevidamente contas bancárias de 
+clientes, entre eles um jogador de futebol e um cantor de 
+música sertaneja.
+https://ww2.trt2.jus.br/noticias/noticias/noticia/sentenca-confirma-justa-causa-de-trabalhador-por-
+acesso-indevido-a-conta-bancaria-de-figuras-publicas 
+
+=== pág 51 ===
+
+Incidentes de Segurança
+51
+Segurança da informação é responsabilidade de todos
+https://ww2.trt2.jus.br/noticias/noticias/noticia/empregado-viola-lgpd-em-pedido-de-rescisao-indireta-e-e-punido-com-justa-causa
+
+=== pág 52 ===
+
+Relembrando: São exemplos de 
+dados pessoais sensíveis:
+52
+a) Dados biométricos, origem racial, dados 
+de saúde
+b) Preferências de consumo, nº do cartão 
+de crédito, CPF
+c) Extrato bancário, CPF,  certidão de 
+casamento
+d) Certidão de nascimento, título de eleitor, 
+PIS
+
+=== pág 53 ===
+
+53
+Direito Digital nas estratégias jurídicas das empresas
+GOVERNANÇA DIGITAL:
+Estrutura para gerir e direcionar a 
+TI, alinhando-a com os objetivos 
+estratégicos da empresa. Essencial 
+para garantir que a transformação 
+digital seja eficaz, segura e 
+alinhada com as regulamentações 
+e políticas internas. Os desafios 
+incluem a gestão de dados, 
+privacidade, segurança cibernética 
+e conformidade com leis como a 
+LGPD.
+MATURIDADE DIGITAL:
+Empresas devem avaliar sua 
+prontidão para a transformação, 
+considerando infraestrutura 
+tecnológica, cultura 
+organizacional e competências 
+digitais. Investimento em 
+treinamento e desenvolvimento 
+de uma cultura que valoriza a 
+inovação e a adaptação digital.
+IMPACTO DA IA:
+A IA está remodelando processos de 
+negócios, oferecendo insights 
+avançados e automatizando tarefas 
+complexas. Incluem questões éticas, 
+viés algorítmico, necessidade de dados 
+de qualidade e habilidades 
+especializadas para gestão e 
+interpretação. As empresas precisam 
+de estratégias claras para 
+implementação de IA, incluindo 
+governança de dados, infraestrutura de 
+TI robusta e parcerias estratégicas para 
+desenvolvimento e implementação de 
+soluções de IA.
+
+=== pág 54 ===
+
+54
+Direito Digital nas estratégias jurídicas das empresas
+INTEGRAÇÃO EM OUTRAS 
+ÁREAS
+Trabalho conjunto com outras práticas 
+jurídicas para desenvolver soluções 
+integradas, abordando desde questões 
+de conformidade até aspectos jurídicos 
+de novas tecnologias.
+DIRETORIA E CONSELHOS
+Necessidade de atualização constante sobre 
+tecnologias emergentes e práticas de 
+governança digital, ao mesmo tempo que 
+encontrar o equilíbrio certo entre adotar 
+inovações tecnológicas e gerenciar os riscos 
+associados. Liderar a mudança cultural 
+necessária para uma transformação digital 
+bem-sucedida, superando a resistência 
+interna.
+GOVERNANÇA E 
+COMPLIANCE
+Revisão de políticas, contratos e 
+códigos de conduta para alinhar 
+as práticas digitais com as 
+melhores práticas de mercado e 
+legislação vigente.
+GESTÃO DE CRISES
+Apoio em investigações de 
+incidentes, interface com 
+autoridades e reguladores, e 
+gestão de impactos negativos em 
+eventos de segurança da 
+informação.
+INOVAÇÃO E STARTUPS
+Análise jurídica de startups e 
+empresas inovadoras, abordando 
+aspectos legais de novos modelos 
+de negócios e tecnologias 
+emergentes.
+
+=== pág 55 ===
+
+55
+Direito Digital nas estratégias jurídicas das empresas
+PROTEÇÃO DE DADOS E 
+PRIVACIDADE
+Estruturação e implementação de 
+programas de adequação à 
+LGPD, consultoria em proteção 
+de dados para o dia a dia das 
+empresas e gestão de crises 
+decorrentes de vazamentos de 
+dados.
+SEGURANÇA DA 
+INFORMAÇÃO
+Avaliação jurídica sobre 
+segurança da informação e 
+fraudes digitais, incluindo 
+mitigação de riscos cibernéticos, 
+gestão de crises e remediação 
+após incidentes.
+INTELIGÊNCIA ARTIFICIAL 
+(BIG DATA E DATA 
+ANALYTICS)
+Consultoria para garantir que o 
+uso de IA respeite normas 
+aplicáveis, siga princípios éticos e 
+esteja estruturado para mitigar 
+riscos.
+BLOCKCHAIN, TOKENIZAÇÃO 
+E CRIPTOMOEDAS
+Assessoria em projetos baseados 
+em blockchain, incluindo 
+investimentos com tokens e 
+criptomoedas, e questões jurídicas 
+relacionadas às NFTs.
+METAVERSO
+Estruturação de ambientes digitais 
+seguros juridicamente que 
+promovam desenvolvimento 
+empresa sem violar direitos de 
+terceiros e proteger a empresa.
+COMÉRCIO ELETRÔNICO
+Elaboração e revisão de políticas 
+de privacidade, termos de uso, 
+contratos e regulamentos para e-
+commerce.
+
+=== pág 56 ===
+
+Relembrando: A que se refere o 
+princípio da necessidade?
+56
+a) Os dados não podem estar 
+desatualizados
+b) Dever de aplicar medidas técnicas para 
+garantir a segurança dos dados
+c) Deve ser utilizado o mínimo de dados 
+para atingimento da finalidade
+d) O titular deve ter acesso facilitado às 
+suas informações
+
+=== pág 57 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Reduzir somente ao necessário
+Abandonar a prática de pedir informações que não são essenciais para a execução do contrato de compra e 
+venda com o consumidor.
+Regras de acesso
+Os dados devem ser armazenados considerando a necessidade de acesso, que deve ser limitado através 
+de regras. Outra opção é manter uma base centralizada, com acesso exclusivo a um time gestor.
+Manter correto e atualizado
+Adotar os cuidados necessários para que os dados dos consumidores estejam sempre corretos e 
+atualizados.
+57
+Impactos da LGPD no cadastro
+
+=== pág 58 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+O titular precisar estar informado
+É preciso ser transparente e passar informações completas para os titulares sobre quais serão as 
+finalidades dos dados pessoais coletados.
+Cuidado na abordagem
+Mesmo que o lead tenha entrado em contato ativamente com a sua empresa, é preciso se identificar, 
+informar ao lead sobre o tratamento de seus dados, ter conhecimento da origem dos dados, manter o 
+controle com o lead.
+O lead pode mudar de ideia
+Ainda que o lead tenha solicitado um contato ou proposta comercial, ele pode, a qualquer momento, 
+interromper essa comunicação.
+58
+O indivíduo é um lead, mas também um titular
+
+=== pág 59 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Entender a origem do dado
+Evitar a famosa “compra de base de dados”. Caso obtenha dados com parceiros, certifique-se da origem, de 
+como foram obtidos e se podem ser compartilhados com você.
+Melhoria de qualidade nos dados
+Os dados coletados devem ser necessários ao desenvolvimento da estratégia, evitando que as empresas 
+coletem informações exageradas ou mesmo desnecessárias aos fins propostos.
+Finalidade para qual foi disponibilizado 
+Somente utilizar os dados para as finalidades informadas quando da coleta. Uma vez atingida a finalidade, 
+anonimizar ou excluir os dados.
+59
+Impactos da LGPD na análise de dados
+
+=== pág 60 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Uso cuidadoso de dados pessoais de acesso público
+Embora dispensem o consentimento, o uso de tais dados possui limitações, como atender aos princípios da 
+finalidade, adequação e necessidade 
+Dados sensíveis
+Segmentação de campanha com dados sensíveis deve ser justificada. Públicos fragmentados por raça, 
+gênero, orientação sexual, opinião política, religião, requerem maior atenção.
+Dados antigos
+Deve fazer o clearance, ou seja, é preciso que as empresas verifiquem toda a base atual, assegurando que 
+todos os inscritos autorizaram o envio dos e-mails. Aqueles que não consentiram explicitamente devem ser 
+abordados e a permissão solicitada. 
+60
+Impactos da LGPD na análise de dados
+
+=== pág 61 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Segregação de dados sensíveis ou confidenciais
+Separe o armazenamento de dados sensíveis ou confidenciais dos dados comuns. Adicionar alguma 
+barreira, mas não bloquear o acesso a tais dados, pode ser usado como um sinal para indicar que merece 
+um maior grau de cuidado.
+Estratégia do jardim murado
+Adote a estratégia de dividir os processos no pipeline de processamento de dados para rastrear e identificar 
+dados sensíveis ou confidenciais e impedir que eles se espalhem para lugares não intencionais ou 
+desconhecidos.
+61
+Impactos da LGPD na análise de dados
+
+=== pág 62 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Newsletter 
+Assessoria de Imprensa e/ou de Relações Públicas
+Treinamento de parceiros
+Faça o possível para que eles também estejam em conformidade com a LGPD  
+Dados cadastrais dos targets 
+Centralizado e sem acesso por diversas pessoas
+62
+Proteção de dados em marketing
+
+=== pág 63 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Políticas de privacidade
+Contemplar todas as estratégias de marketing digital. 
+Texto claro e de fácil compreensão.
+Consentimento
+Deve ser livre, transparente e inequívoco.
+Usar e abusar de alertas, pop-ups e banners para informar o usuário sobre os dados que está coletando.
+OPT-IN
+Deixar o box desmarcado. O cliente marcará se aceita fornecer seu dado. A marcação representará seu 
+aceite e  se tem interesse na oferta.
+63
+Proteção de dados no marketing digital
+
+=== pág 64 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Uso de cookies, web beacons e pixels
+Informar sobre a instalação de cookies para coleta de dados, inclusive se eles forem utilizados para 
+campanhas no Facebook ou outras redes sociais, como é o caso do remarketing.
+Relevância no conteúdo/ inbound
+Adotar estratégia de interesse natural do usuário com a marca. Focar na qualidade do conteúdo que leve ao 
+consentimento do consumidor ao uso de seus dados pessoais.
+Conscientização dos profissionais do segmento
+Treinamento é essencial para substituir velhos hábitos. 
+Tanto times internos quanto de parceiros precisam de treinamento.
+64
+Proteção de dados no marketing digital
+
+=== pág 65 ===
+
+Cenários de usos e aplicações da LGPD nos negócios
+Uso cuidadoso da estratégia de preço dinâmico
+Preços definidos conforme certas características do consumidor podem ser considerado comportamento 
+discriminatório.
+Melhor escolha dos parceiros de marketing
+Certifique-se de que os seus parceiros de negócios também estão adequados às novas regras. Afinal, você 
+poderá ser responsável pelos atos por eles cometidos.
+Uso de tecnologias de identificação / monitoramento
+Tecnologias de identificação como o reconhecimento facial e biometria ou de monitoramento e 
+rastreamento, como web beacons, geolocalização e outros, elevam o risco de emissão de RIPD.
+65
+Proteção de dados no marketing digital
+
+=== pág 66 ===
+
+Análises de casos reais - Mundo 
+66
+•
+Facebook – Cambridge Analytica
+A consultoria política Cambridge Analytica acessou dados de 
+cerca de 87 milhões de usuários do Facebook para construir 
+perfis psicológicos e segmentar propaganda política. 
+O modelo de consentimento permitia que, ao autorizar um 
+app de teste de personalidade, também fossem coletados 
+dados de amigos do usuário sem consentimento explícito — 
+gerando um cruzamento massivo de dados para fins de 
+manipulação eleitoral. 
+Este escândalo foi um dos motivadores para o fortalecimento 
+de legislações de proteção de dados, como o GDPR (União 
+Europeia) e a LGPD (Brasil).
+
+=== pág 67 ===
+
+Análises de casos reais - Mundo 
+67
+•
+Clearview AI – reconhecimento facial massivo
+Clearview AI construiu um banco de dados com mais de 20 bilhões de imagens faciais retiradas de redes sociais e da internet, 
+sem consentimento claro dos titulares. A empresa oferecia seu sistema de reconhecimento facial para órgãos de segurança 
+pública e outras entidades, permitindo identificar pessoas a partir de fotos (mesmo sem que essas pessoas sabiam que suas 
+imagens estavam no banco). 
+Em vários países europeus, a Clearview foi multada ou proibida, por violar normas de privacidade e uso de dados biométricos. 
+https://www.bbc.com/news/technology-61550776 
+
+=== pág 68 ===
+
+Análises de casos reais - Brasil 
+68
+•
+META – Dados para treinamento de IA generativa
+A ANPD havia expedido medida preventiva suspendendo o uso de dados pessoais para treinamento da IA generativa pela empresa Meta, 
+por considerar que tal tratamento poderia acarretar risco iminente de ocorrência de danos graves e irreparáveis ou de difícil reparação aos 
+titulares. Como forma de ampliar a transparência, os usuários do Facebook e do Instagram receberão uma notificação por e-mail e no 
+próprio aplicativo com informações claras e acessíveis sobre o tratamento de dados realizado pela empresa para fins de treinamento de 
+seu sistema de inteligência artificial. 
+https://www.gov.br/anpd/pt-br/assuntos/noticias/meta-cumpre-exigencias-da-anpd-e-podera-retomar-com-restricoes-o-uso-de-dados-pessoais-para-treinamento-de-inteligencia-artificial 
+
+=== pág 69 ===
+
+Análises de casos reais - Brasil 
+69
+•
+Tools for humanity  – Compra de dados biométricos
+Em razão da coleta de dados biométricos pela empresa Tools for Humanity - TFH, que é responsável pela fabricação da câmera avançada 
+(Orb), utilizada para a coleta de dados da íris, da face e dos olhos dos titulares, com o objetivo de desenvolver “sistema de verificação de 
+condição de humana única”, conhecido como World ID. A ANPD proibiu a compra e recentemente foi aberta a CPI da Íris. 
+https://itforum.com.br/noticias/anpd-proibe-pagamento-tools-for-humanity/ 
+
+=== pág 70 ===
+
+Análises de casos reais - Brasil 
+70
+•
+Tiktok  – Dados de menores de idade
+A ANPD abriu processo sancionador contra o TikTok por suspeitas de tratamento irregular de dados de crianças e adolescentes. A plataforma 
+foi obrigada a desativar o recurso "feed sem cadastro" e melhorar os mecanismos de verificação de idade. A medida visa garantir 
+conformidade com a LGPD e proteger os direitos dos menores.
+https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-abre-processo-sancionador-e-emite-determinacoes-ao-tiktok 
+
+=== pág 71 ===
+
+Caso prático 1
+71
+•
+Cenário:
+Uma startup desenvolveu um aplicativo de monitoramento de saúde que coleta dados de usuários (peso, 
+frequência cardíaca, histórico de exercícios). A empresa deseja integrar com clínicas médicas para 
+oferecer planos personalizados.
+•
+Pontos para análise:
+•
+Base legal: Os dados de saúde são dados sensíveis pela LGPD. Qual a base jurídica adequada 
+(consentimento? tutela da saúde?)?
+•
+Privacy by Design:
+•
+Minimização de dados: todos os dados coletados são realmente necessários?
+•
+Pseudonimização ou anonimização podem ser aplicadas antes de compartilhar com clínicas?
+•
+Transparência: como comunicar de forma clara aos usuários o uso e compartilhamento?
+•
+Riscos:
+•
+Vazamento de dados sensíveis.
+•
+Uso secundário sem consentimento (ex.: vender dados a seguradoras).
+•
+Medidas técnicas: Criptografia em trânsito e repouso, gestão de acessos, relatórios de impacto 
+(DPIA).
+
+=== pág 72 ===
+
+Caso prático 2
+72
+•
+Cenário:
+Uma rede de e-commerce utiliza ferramentas de análise para rastrear comportamento dos clientes (cliques, tempo 
+na página, compras anteriores) e recomendar produtos. A equipe de marketing quer usar esses dados também 
+para campanhas segmentadas em redes sociais.
+•
+Pontos para análise:
+•
+Finalidade e compatibilidade: O uso para recomendação interna é compatível, mas para campanhas 
+externas exige nova análise de finalidade.
+•
+Privacy by Design:
+•
+Limitar coleta de dados de navegação para o estritamente necessário.
+•
+Dar opção de opt-out para marketing direcionado.
+•
+Garantir que dados de analytics sejam pseudonimizados antes de exportar.
+•
+LGPD:
+•
+Necessidade de consentimento para uso de dados para marketing em terceiros.
+•
+Direito de oposição do titular.
+•
+Riscos:
+•
+Reidentificação a partir de dados pseudonimizados.
+•
+Impacto reputacional em caso de percepção de uso abusivo de dados.
+
+=== pág 73 ===
+
+Referências
+•
+IBA
+https://www.ibanet.org/article/0634B90E-98DE-40E6-953F-2F63CB481F02 
+•
+MIGALHAS
+https://www.migalhas.com.br/depeso/399923/a-ia-o-sultao-e-o-astronauta--cuidado-com-a-regulacao-prematura
+https://www.migalhas.com.br/depeso/391634/5-anos-de-lgpd--comemorar-ou-lamentar
+https://www.migalhas.com.br/depeso/389970/threads-como-a-sombra-do-twitter
+https://www.migalhas.com.br/depeso/375522/comentarios-sobre-o-estudo-de-tratamento-de-dados-de-criancas-da-anpd
+https://www.migalhas.com.br/depeso/368597/o-que-nos-mostra-a-recente-onda-de-demissoes-online-dos-unicornios
+https://www.migalhas.com.br/depeso/355452/d-i-diversidade-e-inclusao-e-totalmente-compativel-com-lgpd
+https://www.migalhas.com.br/depeso/348102/lgpd-as-editoras-e-as-gravadoras-de-musica-como-aplicar-a-lei-a-essa
+https://www.migalhas.com.br/depeso/347145/a-deteccao-facial-na-linha-4-do-metro-paulista-e-a-lgpd
+https://www.migalhas.com.br/depeso/346904/planos-de-saude-digitais-e-os-cuidados-necessarios-com-a-privacidade
+https://www.migalhas.com.br/depeso/343785/a-lgpd-e-a-sustentabilidade-do-setor-de-saude
+https://www.migalhas.com.br/depeso/333818/habemus-lgpd
+73
+
+=== pág 74 ===
+
+Referências
+•
+CONJUR 
+https://www.conjur.com.br/2023-jul-18/helio-moraes-multa-anpd-vendas-base-dados/
+https://www.conjur.com.br/2022-jul-17/helio-moraes-crowdfunding-falta-ousadia-cvm/
+•
+JOTA
+https://www.jota.info/opiniao-e-analise/artigos/tendencias-mundiais-em-crypto-13072019
+•
+Direito que Viabiliza Tecnologia
+https://direitoparatecnologia.com.br/protecao-de-dados-para-empresas-o-que-voce-precisa-saber/ 
+https://direitoparatecnologia.com.br/a-anpd-esclarece-pontos-relevantes-acerca-do-controlador-operador-e-encarrega/
+https://direitoparatecnologia.com.br/anpd-primeira-resolucao-fiscalizacao-penalidades/
+https://direitoparatecnologia.com.br/pk-classifica-como-muita-alta-a-severidade-do-vazamento-de-senha-do-ministerio-da-saude-que-
+expos-dados-de-16-milhoes-brasileiros/
+https://direitoparatecnologia.com.br/lgpd-06-dicas-praticas-para-promover-a-mudanca-cultural-na-sua-organizacao/
+https://direitoparatecnologia.com.br/saude-o-setor-mais-multado-pelo-gdpr/
+https://direitoparatecnologia.com.br/tudo-que-voce-precisa-saber-sobre-a-lei-geral-de-protecao-de-dados/
+https://direitoparatecnologia.com.br/praticas-do-setor-imobiliario-que-representam-riscos-a-violacao-a-lgpd/
+https://direitoparatecnologia.com.br/lgpd-como-implementar-na-sua-empresa/ 
+74
+
+=== pág 75 ===
+
+Referências
+•
+Direito que Viabiliza Tecnologia
+https://direitoparatecnologia.com.br/10-principais-pontos-da-lei-de-protecao-de-dados-do-brasil/
+https://direitoparatecnologia.com.br/roadmap-de-adequacao-das-empresas-a-lgpd/
+https://direitoparatecnologia.com.br/integralizacao-de-capital-social-com-criptomoeda/
+https://direitoparatecnologia.com.br/o-que-sao-os-nfts-a-nova-febre-do-mundo-cripto/
+https://direitoparatecnologia.com.br/nova-norma-da-receita-sobre-criptomoedas/
+https://direitoparatecnologia.com.br/o-retorno-do-investimento-roi-do-legal-design/
+75
+Livro - Privacidade e proteção de dados pessoais (Série Universitária) 
+A Série Universitária foi desenvolvida pelo Senac São Paulo com o intuito de preparar profissionais para o 
+mercado de trabalho. Os títulos abrangem diversas áreas, abordando desde conhecimentos teóricos e práticos 
+adequados às exigências profissionais até a formação ética e sólida.
+Privacidade e proteção de dados pessoais é um guia seguro para entender o mundo da proteção da privacidade e de 
+dados pessoais e como aplicar a LGPD em uma organização. Entre os temas abordados estão os direitos dos titulares, 
+violações e regime de proteção de dados pessoais. O livro utiliza muitos exemplos práticos para esclarecer o papel da 
+ANPD na aplicação das sanções administrativas, além de abordar conceitos inovadores da inteligência artificial e 
+proteção de dados biométricos. O livro trata ainda sobre as melhores práticas em privacy by design e by default e 
+proteção de dados no marketing digital. O objetivo é proporcionar ao leitor uma visão geral sobre os aspectos essenciais 
+do compliance digital, incluindo etapas do programa de governança, documentos relevantes, requisições de titulares e 
+de terceiros na gestão de empresas.
+
+=== pág 76 ===
+
+Sugestão de Leitura
+•
+CERT.br. NIC.br. CGI.br. 2024. Cartilha de Proteção de Dados. Link 
+•
+CERT.br. NIC.br. CGI.br. 2024. Cartilha de Vazamento de Dados. Link 
+•
+ANPD. Glossário de Proteção de Dados Pessoais e Privacidade. Link  
+•
+ANPD. 2022. Guia Orientativo para Definições dos Agentes de Tratamento de Dados Pessoais 
+e do Encarregado. Link 
+•
+ANPD. 2021. Segurança da Informação para Agentes de Tratamento de Pequeno Porte. Link 
+•
+ANPD. Como Proteger seus Dados Pessoais. Link 
+76
+
+=== pág 77 ===
+
+Obrigado!
+Prof. Hélio Moraes | https://www.linkedin.com/in/heliomoraes/

@@ -1,0 +1,1605 @@
+# 26 - Pesquisa Operacional e Modelos de Otimização / Pesquisa Operacional_Aula III 21.08.26_SL.pdf
+
+=== pág 1 ===
+
+Pesquisa Operacional e 
+Modelos de Otimização III
+Prof. Dr. Cassiano Augusto Isler
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+Agenda da aula
+• Otimização Linear Inteira
+Venda de Livros
+Nova Ala Hospitalar
+• Otimização Linear Inteira Mista 
+Problema de Transporte
+Problema de Transporte e Transbordo com Ativação de Terminais
+33
+
+
+=== pág 4 ===
+Otimização Linear Inteira
+Venda de Livros 
+44
+
+
+=== pág 5 ===
+Otimização Linear Inteira
+• Exemplo – Venda de Livros
+5
+Uma livraria venderá um novo livro que está sendo lançado em duas versões, com capa 
+mole e capa dura, tendo recebido 40 cópias na primeira versão e 65 cópias da segunda. 
+Entretanto, precisa de pelo menos 80 cópias de cada versão para atender pedidos já feitos 
+e, se possível, cópias adicionais para atender a demanda dos interessados na abertura da 
+loja. Um Centro de Distribuição (CD) precisa planejar as entregas para atender da melhor 
+forma possível a demanda da livraria, sendo possível enviar até 10 caixas de livros para 
+atender a essa demanda em que cada caixa de livro do tipo leve possui 6 unidades em capa 
+mole. O CD também possui 7 caixas de livros mistas, sendo que cada caixa é composta por 
+5 unidades em capa dura e 2 unidades em capa mole. 
+5
+
+
+=== pág 6 ===
+Otimização Linear Inteira
+• VARIÁVEIS DE DECISÃO
+ 
+ Quantidade de caixas leves (𝐿)
+ 
+ Quantidade de caixas mistas (𝑀)
+• FUNÇÃO OBJETIVO
+ 
+“...CD precisa planejar as entregas para atender da melhor forma possível a demanda da livraria...”
+A função objetivo é maximizar a quantidade de livros entregues (acondicionados em caixas diferentes)
+ 
+ 
+ 
+ 
+ 
+ 
+Maximizar 𝑄 = 6𝐿 + (5𝑀 + 2𝑀) = 6𝐿 + 7𝑀
+ 
+ 
+ 
+ 
+ 
+ 
+onde 𝐿= quantidade de caixas leves
+                                
+ 
+            
+ 
+            𝑀 = quantidade de caixas mistas
+6
+• Exemplo – Venda de Livros
+Capa Dura Capa Mole
+Total
+Caixa Leve
+0
+6
+6
+Caixa Mista
+5
+2
+7
+Nº exemplares
+6
+
+
+=== pág 7 ===
+Otimização Linear Inteira
+• Restrição de Total de Caixas: “... enviar até 10 caixas de livros ...”
+𝐿 + 𝑀 ≤ 10 (caixas)
+• Restrição de Caixas Mistas: “... CD também possui 7 caixas de livros mistas...”
+𝑀≤7 (caixas)
+• Restrição de Livros de Capa Mole: “... tendo recebido 40 cópias na primeira versão (capa mole) ... precisa de pelo menos 80 cópias 
+de cada versão ... tipo leve possui 6 unidades em capa mole ... caixas de livros mistas, sendo que cada caixa é composta por ... 2 
+unidades em capa mole...”
+6𝐿 + 2𝑀 + 40 ≥ 80 → 6𝐿 + 2𝑀 ≥ 40  (livros)
+• Restrição de Livros de Capa Dura: “... 65 cópias da segunda (capa dura) ... caixas de livros mistas, sendo que cada caixa é composta 
+por 5 unidades em capa dura...”
+5𝑀 + 65 ≥ 80 → 5𝑀 ≥ 15 → 𝑀 ≥ 3 (livros) 
+• Restrição de Domínio das Variáveis: números inteiros
+𝐿, 𝑀 ∈ ℤ+ 
+• RESTRIÇÕES
+7
+• Exemplo – Venda de Livros
+7
+
+
+=== pág 8 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀 
+(Maximizar Número Total de Livros pelo Tipo de Caixa)
+ 
+sujeito a
+ 
+𝐿+ 𝑀≤ 10  
+(Restrição de Total de Caixas)
+ 
+𝑀≤7  
+ 
+(Restrição de Caixas Mistas)
+ 
+6𝐿+ 2𝑀≥40  
+(Restrição de Livros de Capa Mole)
+ 
+𝑀 ≥ 3  
+ 
+(Restrição de Livros de Capa Dura)
+ 
+𝐿, 𝑀 ∈ ℤ+ 
+ 
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+8
+• Exemplo – Venda de Livros
+8
+
+
+=== pág 9 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+9
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+9
+
+
+=== pág 10 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+10
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+10
+
+
+=== pág 11 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+11
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+11
+
+
+=== pág 12 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+12
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+𝐿 + 𝑀 =  10 
+𝐿𝐴; 𝑀𝐴= (2; 4)
+A
+2 + 4 = 6 < 10
+12
+
+
+=== pág 13 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+13
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+𝐿𝐵; 𝑀𝐵= (6; 4)
+B
+6.6 + 2.4 = 36 + 8 = 44 > 40
+6𝐿+ 2𝑀= 40 
+13
+
+
+=== pág 14 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+• SOLUÇÃO GRÁFICA
+14
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+(5,5)
+(6,4)
+(7,3)
+(6,3)
+14
+
+
+=== pág 15 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+𝐿𝐶; 𝑀𝐶= 0; 6
+             𝑄= 6.0 + 7.6
+                  = 0 + 42 = 42
+𝐿𝐷; 𝑀𝐷= 7; 0
+             𝑄= 6.7 + 7.0
+ 
+ = 42 + 0 = 42 
+• SOLUÇÃO GRÁFICA
+15
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+𝑄=42
+C
+D
+15
+
+
+=== pág 16 ===
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+𝐿𝐸; 𝑀𝐸= 0; 8
+             𝑄= 6.0 + 7.8
+                  = 0 + 56 = 56
+𝐿𝐹; 𝑀𝐹= 9,33; 0
+             𝑄= 6.9,33 + 7.0
+ 
+ = 56 + 0 = 56 
+• SOLUÇÃO GRÁFICA
+16
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+𝑸 aumenta
+𝑄=42
+𝑄=56
+C
+D
+E
+F
+16
+
+
+=== pág 17 ===
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+Otimização Linear Inteira
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+Solução ótima
+(𝑳∗; 𝑴∗) = (𝟓; 𝟓)
+𝑄∗= 6. 5 + 7.5
+   = 30 + 35
+            = 65 
+ 
+• SOLUÇÃO GRÁFICA
+17
+• Exemplo – Venda de Livros
+𝑄∗= 65
+limite de aumento de 𝑸
+(𝑳∗; 𝑴∗)
+17
+
+
+=== pág 18 ===
+Otimização Linear Inteira
+18
+• Exemplo – Venda de Livros
+O método Simplex de explorar 
+os vértices da região factível 
+não funciona
+Outros métodos são eficientes
+Algoritmo Branch-and-Bound
+• SOLUÇÃO ANALÍTICA
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+18
+
+
+=== pág 19 ===
+Otimização Linear Inteira
+19
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+1. Solução inicial
+𝐿1, 𝑀1 = 5,7; 3
+O valor da função objetivo é
+               𝑄1
+∗ = 6𝐿+ 7𝑀
+                = 6 .5,7 + 7.3 
+                 = 34,2 + 21 = 55,2
+Como 𝐿1 não é inteiro, é 
+necessário ramificar para valores 
+inteiros da variável.
+1
+Algoritmo Branch-and-Bound
+19
+
+
+=== pág 20 ===
+Otimização Linear Inteira
+20
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+2. Ramificação (branching)
+Como 𝐿= 5,7 não é inteiro, 
+cria-se dois subproblemas:
+Subproblema 2.1: 𝐿≤5
+Resolve-se o problema com essa 
+restrição.
+Solução ótima 𝐿∗; 𝑀∗2.1 = (5; 5)
+2.1
+Algoritmo Branch-and-Bound
+Solução ótima
+𝐿∗; 𝑀∗2.1 = (5; 5)
+𝑄2.1
+∗
+= 6.5 + 7.5 = 30 + 35 = 65
+20
+
+
+=== pág 21 ===
+Otimização Linear Inteira
+21
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+2.2
+Solução ótima
+𝐿∗; 𝑀∗2.2 = (6; 4)
+𝑄2.2
+∗
+= 6.6 + 7.4 = 36 + 28 = 64
+2. Ramificação (branching)
+Como 𝐿= 5,7 não é inteiro, 
+cria-se dois subproblemas:
+Subproblema 2.2: 𝐿≥6
+Resolve-se o problema com essa 
+restrição.
+Solução ótima 𝐿∗; 𝑀∗2.2 = (6; 4)
+Algoritmo Branch-and-Bound
+21
+
+
+=== pág 22 ===
+Otimização Linear Inteira
+22
+• Exemplo – Venda de Livros
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+3. Limitação (bounding)
+Quando uma solução inteira é 
+encontrada, ela é candidata à 
+solução ótima.
+No exemplo, as soluções 2.1 e 2.2 
+são candidatas:
+𝐿∗; 𝑀∗2.1 = 5; 5 →𝑄2.1
+∗
+= 65
+𝐿∗; 𝑀∗2.2 = 6; 4 →𝑄2.2
+∗
+= 64
+2.2
+2.1
+Algoritmo Branch-and-Bound
+22
+
+
+=== pág 23 ===
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+Otimização Linear Inteira
+23
+• Exemplo – Venda de Livros
+3. Limitação (bounding)
+Quando uma solução inteira é 
+encontrada, ela é candidata à 
+solução ótima.
+No exemplo, as soluções 2.1 e 2.2 
+são candidatas:
+𝐿∗; 𝑀∗2.1 = 5; 5 →𝑄2.1
+∗
+= 65
+𝐿∗; 𝑀∗2.2 = 6; 4 →𝑄2.2
+∗
+= 64
+Como 𝑄2.1
+∗
+> 𝑄2.2
+∗ então 2.1 é a 
+solução ótima.
+Algoritmo Branch-and-Bound
+limite de aumento de 𝑸
+(𝑳∗; 𝑴∗) = (𝟓; 𝟓)
+23
+
+
+=== pág 24 ===
+𝐿
+Quantidade de caixas Leves
+Quantidade de Caixas Mistas 
+2
+0
+4
+6
+8
+2
+10
+12
+4
+6
+8
+10
+12
+𝑀
+Otimização Linear Inteira
+24
+• Exemplo – Venda de Livros
+Geralmente a solução inicial é 
+a do modelo matemático com 
+variáveis 
+contínuas 
+(diz-se 
+solução relaxada).
+No exemplo, a solução ótima 
+relaxada é a solução ótima do 
+modelo com variáveis inteiras, 
+e 
+os 
+procedimentos 
+de 
+ramificação 
+(branching) 
+e 
+limitação 
+(bounding) 
+não 
+precisam ser executados.
+limite de aumento de 𝑸
+(𝑳∗; 𝑴∗) = (𝟓; 𝟓)
+Algoritmo Branch-and-Bound
+24
+
+
+=== pág 25 ===
+Otimização Linear Inteira
+• SOLUÇÃO Solver Excel
+25
+• Exemplo – Venda de Livros
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+25
+
+
+=== pág 26 ===
+Otimização Linear Inteira
+• SOLUÇÃO PuLP
+26
+• Exemplo – Venda de Livros
+Maximizar 𝑄 = 6𝐿 + 7𝑀
+sujeito a
+ 
+𝑀 ≥ 3 
+ 
+𝑀 ≤  7  
+ 
+𝐿 + 𝑀 ≤  10 
+ 
+6𝐿 + 2𝑀 ≥ 40  
+ 
+𝐿, 𝑀 ∈ℤ+ 
+ 
+26
+
+
+=== pág 27 ===
+Otimização Linear Inteira
+Nova Ala Hospitalar
+27
+27
+27
+
+
+=== pág 28 ===
+Otimização Linear Inteira
+28
+O diretor de um hospital está planejando a construção de uma nova ala com área total de até 
+1.200m². Nessa nova ala, serão oferecidos três tipos de quartos: quartos individuais com um leito, 
+quartos duplos com dois leitos e quartos triplos com três leitos. 
+No entanto, a quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades. 
+Além dessa limitação, há uma restrição adicional que estabelece que o número de quartos com um 
+leito não poderá exceder 30 unidades. Em termos de demanda, é necessário garantir que o 
+número total de leitos disponibilizados na nova ala seja de, no mínimo, 120 leitos. 
+Em relação ao espaço físico, a área ocupada por cada tipo de quarto é de 10 m² para os quartos 
+com um leito, 15 m² para os quartos com dois leitos e 18 m² para os quartos com três leitos. A 
+receita mensal esperada para cada tipo de quarto é estimada em $7500 para quartos individuais, 
+$6000 para quartos duplos e $4500 para quartos triplos.
+Diante dessas condições, é necessário determinar a quantidade de quartos de cada tipo que deve 
+ser construída para obter a máxima receita mensal da nova ala hospitalar, respeitando as restrições 
+de área disponível, capacidade máxima de quartos, número mínimo de leitos e limite para os 
+quartos individuais.
+• Exemplo – Nova Ala Hospitalar
+28
+
+
+=== pág 29 ===
+Otimização Linear Inteira
+29
+• Exemplo – Nova Ala Hospitalar
+29
+
+• VARIÁVEIS DE DECISÃO
+ 
+Quantidade de quartos individuais (𝑞1)
+ 
+Quantidade de quartos duplos (𝑞2)
+ 
+Quantidade de quartos triplos (𝑞3)
+• FUNÇÃO OBJETIVO
+ 
+“...receita mensal esperada para cada tipo de quarto é estimada em $7500 para quartos individuais, $6000 para 
+quartos duplos e $4500 para quartos triplos...”
+A função objetivo é maximizar a receita mensal
+ 
+ 
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3 onde 𝑞1 = quantidade de quartos individuais
+                                
+ 
+            
+ 
+           
+            𝑞2 = quantidade de quartos duplos
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            𝑞3 = quantidade de quartos triplos
+
+=== pág 30 ===
+Otimização Linear Inteira
+• RESTRIÇÕES
+30
+• Exemplo – Nova Ala Hospitalar
+30
+
+• Restrição de Área: “... área total de até 1.200m²...”
+10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200 (m2)
+• Restrição de Capacidade: “... quantidade total de quartos a ser construída não poderá ultrapassar 70 unidades...”
+𝑞1 + 𝑞2 + 𝑞3 ≤70 (quartos)
+• Restrição de Limite de Quartos Individuais: “...número de quartos com um leito não poderá exceder 30 unidades. ...”
+𝑞1 ≤30 (quartos)
+• Restrição de Número Mínimo de Leitos: “... total de leitos disponibilizados na nova ala seja de, no mínimo, 120...”
+𝑞1 + 2𝑞2 + 3𝑞3 ≥120 (leitos)
+• Restrição de Domínio das Variáveis: números inteiros.
+𝑞1, 𝑞2, 𝑞3 ∈ℤ+
+
+=== pág 31 ===
+Otimização Linear Inteira
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3 
+(Maximizar a Receita Mensal)
+sujeito a
+ 
+ 10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200 
+ 
+(Restrição de Área)
+ 
+𝑞1 + 𝑞2 + 𝑞3 ≤70 
+ 
+ 
+ 
+(Restrição de Capacidade)
+ 
+𝑞1 ≤30 
+ 
+ 
+ 
+ 
+(Restrição de Limite de Quartos Individuais)
+ 
+𝑞1 + 2𝑞2 + 3𝑞3 ≥120 
+ 
+ 
+(Restrição de Número Mínimo de Leitos)
+ 
+ 𝑞1, 𝑞2, 𝑞3 ∈ℤ+ 
+ 
+ 
+ 
+(Restrição de Domínio das Variáveis)
+• MODELO MATEMÁTICO
+31
+• Exemplo – Nova Ala Hospitalar
+31
+
+
+=== pág 32 ===
+Otimização Linear Inteira
+• Não é possível resolver graficamente pois as variáveis formam um espaço tridimensional para representação 
+das restrições e a função objetivo é um plano acima dessa terceira dimensão.
+• Somente soluções analíticas (Simplex, Branch-and-Bound etc.) implementadas em softwares são possíveis.
+• SOLUÇÃO GRÁFICA
+32
+• Exemplo – Nova Ala Hospitalar
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3
+sujeito a
+ 
+ 10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200
+ 
+ 𝑞1 +   2 + 𝑞3 ≤70
+ 
+ 𝑞1 ≤30
+ 
+ 𝑞1 + 2𝑞2 + 3𝑞3 ≥120
+ 
+ 𝑞1, 𝑞2, 𝑞3 ∈𝑍+
+32
+
+
+=== pág 33 ===
+Otimização Linear Inteira
+33
+• SOLUÇÃO Solver Excel
+• Exemplo – Nova Ala Hospitalar
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3
+sujeito a
+ 
+ 10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200
+ 
+ 𝑞1 + 𝑞2 + 𝑞3 ≤70
+ 
+ 𝑞1 ≤30
+ 
+ 𝑞1 + 2𝑞2 + 3𝑞3 ≥120
+ 
+ 𝑞1, 𝑞2, 𝑞3 ∈ℤ+
+33
+
+
+=== pág 34 ===
+Otimização Linear Inteira
+34
+• SOLUÇÃO PuLP
+• Exemplo – Nova Ala Hospitalar
+Maximizar 𝑅 = 7500𝑞1 + 6000𝑞2 + 4500𝑞3
+sujeito a
+ 
+ 10𝑞1 + 15𝑞2 + 18𝑞3 ≤1200
+ 
+ 𝑞1 + 𝑞2 + 𝑞3 ≤70
+ 
+ 𝑞1 ≤30
+ 
+ 𝑞1 + 2𝑞2 + 3𝑞3 ≥120
+ 
+ 𝑞1, 𝑞2, 𝑞3 ∈ℤ+
+34
+
+
+=== pág 35 ===
+Otimização Linear Inteira
+Mista
+Problema de Transporte
+35
+35
+35
+
+
+=== pág 36 ===
+Otimização Linear Inteira Mista
+• Existem problemas que envolvem variáveis contínuas e inteiras, resultando em modelos matemáticos de 
+otimização linear inteira mista
+• Comumente denominados como modelos de Programação Linear Inteira Mista (PLIM)
+36
+36
+
+
+=== pág 37 ===
+Otimização Linear Inteira Mista
+37
+• Exemplo – Problema de Transporte
+Uma empresa distribuidora possui dois centros de distribuição (CD1 e CD2) que abastecem três lojas (L1, L2 e L3). 
+Os centros de distribuição possuem as seguintes quantidades de produtos disponíveis:
+ 
+ 
+ 
+CD1: 40 toneladas 
+CD2: 60 toneladas
+Cada loja tem uma demanda específica:
+ 
+ 
+L1: 30 toneladas  
+L2: 35 toneladas  
+L3: 25 toneladas
+CD1
+CD2
+L1
+L2
+L3
+37
+
+
+=== pág 38 ===
+Otimização Linear Inteira Mista
+38
+Os custos de transporte (em $/tonelada) entre os CDs e as lojas são:
+• O transporte entre CD2 e L2 só pode ser feito em caminhões fechados, cada um transportando exatamente 7 
+toneladas, ou seja, a quantidade enviada por essa rota deve ser um múltiplo de 7 toneladas (variável inteira).
+• As demais quantidades podem ser fracionadas (variáveis contínuas).
+• Determinar quanto cada CD deve enviar para cada loja para minimizar o custo total de transporte, atendendo 
+às demandas e respeitando as capacidades, incluindo a restrição de integralidade entre CD2 e L2.
+Origem/Destino
+L1
+L2
+L3
+CD1
+5
+6
+5
+CD2
+5
+7
+7
+• Exemplo – Problema de Transporte
+38
+
+
+=== pág 39 ===
+Otimização Linear Inteira Mista
+39
+• Exemplo – Problema de Transporte
+39
+
+• VARIÁVEIS DE DECISÃO
+ 
+ Quantidade de produtos do CD1 para L1, L2 e L3 (𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2 e 𝑥𝑐𝑑1,𝑙3)
+ 
+ Quantidade de produtos do CD2 para L1 e L3 (𝑥𝑐𝑑2,𝑙1 e 𝑥𝑐𝑑2,𝑙3)
+ 
+ Quantidade de produtos do CD2 para L2 em múltiplos de 7 (𝑥𝑐𝑑2,𝑙2)
+ 
+ Quantidade de caminhões para transportar produtos do CD2 para L2 (𝑘)
+• FUNÇÃO OBJETIVO
+ 
+“... quanto cada CD deve enviar para cada loja para minimizar o custo total de transporte...”
+A função objetivo é minimizar o custo total de transporte garantindo que a demanda de produtos para cada loja (L) 
+seja satisfeita pela oferta de produtos nos Centros de Distribuição (CD).
+ 
+ 
+ 
+ 
+ 
+ 
+Minimizar 𝑍 
+ 
+ 
+ 
+ 
+ 
+Origem/Destino
+L1
+L2
+L3
+CD1
+5
+6
+5
+CD2
+5
+7
+7
+= 5𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 5𝑥𝑐𝑑1,𝑙3
+      +5𝑥𝑐𝑑2,𝑙1 + 7𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3
+
+=== pág 40 ===
+60 toneladas
+Otimização Linear Inteira Mista
+• Restrição de Oferta: “... centros de distribuição possuem as seguintes quantidades de produtos disponíveis...”
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 ≤40 (toneladas do CD1)
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑐𝑑2,𝑙3 ≤60 (toneladas do CD2)
+• Restrição de Demanda: “... cada loja tem uma demanda específica ...”
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 = 30 (toneladas para L1) 
+ 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 = 35 (toneladas para L2) 
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 = 25 (toneladas para L3)
+• Restrição de múltiplo de 7 entre CD 2 e L2: “... transporte entre CD2 e L2 só pode ser feito em caminhões fechados, 
+cada um transportando exatamente 7 toneladas...”
+𝑥𝑐𝑑2,𝑙2 = 7𝑘 onde 𝑘 é o número de caminhões de 7 toneladas ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35}
+• Restrição de Domínio das Variáveis: não-negativas e inteira não negativa
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3, 𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙2, 𝑥𝑐𝑑2,𝑙3 ≥0, k ∈ℤ+
+• RESTRIÇÕES
+40
+• Exemplo – Problema de Transporte
+40 toneladas
+40
+
+
+=== pág 41 ===
+Otimização Linear Inteira Mista
+• MODELO MATEMÁTICO
+41
+• Exemplo – Problema de Transporte
+Minimizar 𝑍 = 5𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 5𝑥𝑐𝑑1,𝑙3 + 5𝑥𝑐𝑑2,𝑙1 + 7𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3 
+(Minimizar Custo Total de Transporte)
+sujeito a
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 ≤40 
+ 
+ 
+(Restrição de Oferta – Quantidade disponível no CD1)
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥2,𝑙3 ≤60 
+ 
+ 
+(Restrição de Oferta – Quantidade disponível no CD2)
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 = 30 
+ 
+ 
+ 
+(Restrição de Demanda – Quantidade demanda pela L1)
+𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 = 35 
+ 
+ 
+ 
+(Restrição de Demanda – Quantidade demanda pela L2)
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 = 25 
+ 
+ 
+ 
+(Restrição de Demanda – Quantidade demanda pela L3)
+𝑥𝑐𝑑2,𝑙2 = 7𝑘 ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35} 
+ 
+(Restrição de múltiplo de 7 entre CD 2 e L2)
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3, 𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙2, 𝑥𝑐𝑑2,𝑙3 ≥0, 𝑘 ∈ℤ+ 
+(Restrição de Domínio das Variáveis)
+41
+
+
+=== pág 42 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO Solver Excel
+42
+• Exemplo – Problema de Transporte
+42
+
+
+=== pág 43 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO PuLP
+43
+• Exemplo – Problema de Transporte
+43
+
+
+=== pág 44 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO PuLP
+44
+• Exemplo – Problema de Transporte
+44
+
+
+=== pág 45 ===
+Minimizar 𝑍 = 4𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 9𝑥𝑐𝑑1,𝑙3 + 5𝑥𝑐𝑑2,𝑙1 + 4𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3 = 506
+sujeito a
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 ≤40 
+ 
+ 
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥2,𝑙3 ≤60  
+ 
+ 
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 = 30 
+ 
+ 
+𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 = 35 
+ 
+ 
+ 
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 = 25 
+ 
+ 
+ 
+𝑥𝑐𝑑2,𝑙2 = 7𝑘, 𝑘∈ℤ+ ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35} 
+ 
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3, 𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙2, 𝑥𝑐𝑑2,𝑙3 ≥0, 𝑘 ∈ℤ+ 
+Otimização Linear Inteira Mista
+45
+• Exemplo – Problema de Transporte
+• SOLUÇÃO ÓTIMA
+CD1
+CD2
+L1
+L2
+L3
+𝑥𝑐𝑑1,𝑙2 = 14
+𝑥𝑐𝑑2,𝑙1 = 30
+𝑥𝑐𝑑2,𝑙2 = 21
+(𝑘= 3)
+𝑥𝑐𝑑1,𝑙3 = 25
+Solução ótima
+45
+
+
+=== pág 46 ===
+Otimização Linear 
+Inteira Mista
+Problema de Transporte e Transbordo 
+com ativação de Terminais
+46
+46
+46
+
+
+=== pág 47 ===
+Otimização Linear Inteira Mista
+47
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Considere a possibilidade de incluir terminais de transbordo entre os Centros de Distribuição e as Lojas, e 
+continuar sendo possível o transporte direto entre os CDs e as lojas.
+T1
+T2
+L1
+L2
+L3
+CD1
+CD2
+47
+
+
+=== pág 48 ===
+Otimização Linear Inteira Mista
+48
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Considere o enunciado anterior complementado pelas seguintes características:
+• Dois pontos de transbordo: T1 e T2.
+• Cada um tem capacidade de processar até 50 toneladas.
+• Há um custo fixo de $10 para ativar T1 e o mesmo valor para ativar T2.
+• Se um terminal não for ativado, nenhuma carga pode passar por ele.
+Os novos custos de transporte (em $/tonelada) entre os CDs, terminais e as lojas são:
+48
+
+Origem/Destino
+L1
+L2
+L3
+T1
+T2
+CD1
+5
+6
+5
+1
+5
+CD2
+5
+7
+7
+1
+3
+T1
+2
+2
+2
+-
+-
+T2
+1
+3
+1
+-
+-
+
+=== pág 49 ===
+Otimização Linear Inteira Mista
+49
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+49
+
+• VARIÁVEIS DE DECISÃO
+• Transporte direto: 
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3: toneladas de CD1 para lojas L1, L2, L3
+𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙3​: toneladas de CD2 para lojas L1 e L3
+𝑥𝑐𝑑2,𝑙2 : toneladas de CD2 para L2, em múltiplos de 7
+𝑘: quantidade de caminhões para transportar produtos do CD2 para L2
+• Transporte via transbordo:
+𝑥𝑐𝑑1,𝑡1, 𝑥𝑐𝑑1,𝑡2, 𝑥𝑐𝑑2,𝑡1, 𝑥𝑐𝑑2,𝑡2: toneladas dos CDs para os transbordos
+𝑥𝑡1,𝑙1, 𝑥𝑡1,𝑙2, 𝑥𝑡1,𝑙3: toneladas do T1 para as lojas
+𝑥𝑡2,𝑙1, 𝑥𝑡2,𝑙2, 𝑥𝑡2,𝑙3​: toneladas do T2 para as lojas
+• Abertura dos transbordos:
+𝑦𝑡1, 𝑦𝑡2: indicam se os terminais T1 ou T2 estão ativados (1) ou não (0)
+
+=== pág 50 ===
+Otimização Linear Inteira Mista
+• FUNÇÃO OBJETIVO
+ 
+“... quanto cada CD deve enviar para cada loja para minimizar o custo total de transporte...”
+A função objetivo é minimizar o custo total de transporte garantindo que a demanda de produtos para cada 
+loja (L) seja satisfeita pela oferta de produtos nos Centros de Distribuição (CD).
+ 
+ 
+50
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+transporte direto
+transbordo CD -> terminais
+transbordo terminais -> lojas
+abertura de terminais
+Minimizar 𝑍 = 5𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 5𝑥𝑐𝑑1,𝑙3 + 5𝑥𝑐𝑑2,𝑙1 + 7𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3
+ 
+ 
+ 
+ 
++ 1𝑥𝑐𝑑1,𝑡1 + 5𝑐𝑐𝑑1,𝑡2 + 1𝑥𝑐𝑑2,𝑡1 + 3𝑥𝑐𝑑2,𝑡2
++ 2 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3 + 1𝑐𝑡2,𝑙1 + 3𝑥𝑡2,𝑙2 + 1𝑥𝑡2,𝑙3
++10𝑦𝑡1 + 10𝑦𝑡2
+50
+
+
+=== pág 51 ===
+Otimização Linear Inteira Mista
+• Restrição de Oferta
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑1,𝑡2 ≤40 (toneladas do CD1)
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑐𝑑2,𝑡1 + 𝑥𝑐𝑑2,𝑡2 ≤60 (toneladas do CD2)
+• Restrição de Demanda
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 + 𝑥𝑡1,𝑙1 + 𝑥𝑡2,𝑙1 = 30 (toneladas para L1)
+𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑡1,𝑙2 + 𝑥𝑡2,𝑙2 = 35 (toneladas para L2)
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑡1,𝑙3 + 𝑥𝑡2,𝑙3 = 25 (toneladas para L3)
+• RESTRIÇÕES
+51
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Transporte Direto
+Transbordo
+Transporte Direto
+Transbordo
+51
+
+
+=== pág 52 ===
+Otimização Linear Inteira Mista
+• Restrição Equilíbrio de Fluxos nos Transbordos
+ 
+ 
+ 
+ 
+ 
+ 
+• RESTRIÇÕES
+52
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 = 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 = 𝑥𝑡2,𝑙1 + 𝑥𝑡2,𝑙2 + 𝑥𝑡2,𝑙3
+52
+
+
+=== pág 53 ===
+Otimização Linear Inteira Mista
+• Restrição de Capacidade dos Terminais (somente se ativados)
+• RESTRIÇÕES
+53
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 ≤50. 𝑦𝑡1
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 ≤50. 𝑦𝑡2 
+53
+
+
+=== pág 54 ===
+Otimização Linear Inteira Mista
+• Restrição Domínio das Variáveis
+ 
+Transporte direto
+ 
+ 
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3 ≥0
+ 
+ 
+𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙2, 𝑥𝑐𝑑2,𝑙3 ≥0
+ 
+ 
+𝑘∈ℤ+
+• RESTRIÇÕES
+54
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Transporte via transbordo
+ 
+ 
+𝑥𝑐𝑑1,𝑡1, 𝑥𝑐𝑑1,𝑡2, 𝑥𝑐𝑑2,𝑡1, 𝑥𝑐𝑑2,𝑡2 ≥0
+ 
+ 
+𝑥𝑡1,𝑙1, 𝑥𝑡1,𝑙2, 𝑥𝑡1,𝑙3 ≥0
+ 
+ 
+𝑥𝑡2,𝑙1, 𝑥𝑡2,𝑙2, 𝑥𝑡2,𝑙3 ≥0
+ 
+Ativação de terminais
+ 
+ 
+𝑦𝑡1, 𝑦𝑡2 ∈{0,1}
+• Restrição de múltiplo de 7 entre CD 2 e L2: “... transporte entre CD2 e L2 só pode ser feito em caminhões 
+fechados, cada um transportando exatamente 7 toneladas...”
+𝑥𝑐𝑑2,𝑙2 = 7𝑘 onde 𝑘 é o número de caminhões de 7 toneladas ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35}
+54
+
+
+=== pág 55 ===
+Otimização Linear Inteira Mista
+• MODELO MATEMÁTICO
+55
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Minimizar 𝒁 = 5𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 5𝑥𝑐𝑑1,𝑙3 + 5𝑥𝑐𝑑2,𝑙1 + 7𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3 + 1𝑥𝑐𝑑1,𝑡1 + 5𝑐𝑐𝑑1,𝑡2 + 1𝑥𝑐𝑑2,𝑡1 + 3𝑥𝑐𝑑2,𝑡2
+ 
+            +2 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3 + 1𝑐𝑡2,𝑙1 + 3𝑥𝑡2,𝑙2 + 1𝑥𝑡2,𝑙3 + 10𝑦𝑡1 + 10𝑦𝑡2
+sujeito a
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑1,𝑡2 ≤40 
+(Restrição de Oferta de CD1)
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑐𝑑2,𝑡1 + 𝑥𝑐𝑑2,𝑡2 ≤60 
+(Restrição de Oferta de CD2)
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 + 𝑥𝑡1,𝑙1 + 𝑥𝑡2,𝑙1 = 30 
+ 
+(Restrição de Demanda para L1)
+𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑡1,𝑙2 + 𝑥𝑡2,𝑙2 = 35 
+ 
+(Restrição de Demanda para L2)
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑡1,𝑙3 + 𝑥𝑡2,𝑙3 = 25 
+ 
+(Restrição de Demanda para L3)
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 = 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3 
+ 
+(Restrição de Equilíbrio de Fluxo em T1)
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 = 𝑥𝑡2,𝑙1 + 𝑥𝑡2,𝑙2 + 𝑥𝑡2,𝑙3 
+ 
+(Restrição de Equilíbrio de Fluxo em T2)
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 ≤50. 𝑦𝑡1 
+ 
+ 
+(Restrição de Capacidade no Terminal 1)
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 ≤50. 𝑦𝑡2 
+ 
+ 
+(Restrição de Capacidade no Terminal 2)
+𝑥𝑐𝑑2,𝑙2 = 7𝑘, ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35} 
+ 
+(Restrição de múltiplo de 7 entre CD 2 e L2)
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3, 𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙3, 𝑥𝑐𝑑1,𝑡1, 𝑥𝑐𝑑1,𝑡2, 𝑥𝑐𝑑2,𝑡1, 𝑥𝑐𝑑2,𝑡2, 𝑥𝑡1,𝑙1, 𝑥𝑡1,𝑙2, 𝑥𝑡1,𝑙3, 𝑥𝑡2,𝑙1, 𝑥𝑡2,𝑙2, 𝑥𝑡2,𝑙3 ≥0, 𝑘∈ℤ+(Restrição de variáveis inteiras e não-negativas)
+𝑦𝑡1, 𝑦𝑡2 ∈{0,1} 
+ 
+ 
+(Restrição de variáveis binárias)
+55
+
+
+=== pág 56 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO Solver Excel
+56
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+56
+
+
+=== pág 57 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO PuLP
+57
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+57
+
+
+=== pág 58 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO PuLP
+58
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+58
+
+
+=== pág 59 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO PuLP
+59
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+59
+
+
+=== pág 60 ===
+Otimização Linear Inteira Mista
+• SOLUÇÃO ÓTIMA
+60
+• Exemplo – Problema de Transporte e Transbordo com Ativação de Terminais
+Minimizar 𝒁 = 4𝑥𝑐𝑑1,𝑙1 + 6𝑥𝑐𝑑1,𝑙2 + 9𝑥𝑐𝑑1,𝑙3 + 5𝑥𝑐𝑑2,𝑙1 + 4𝑥𝑐𝑑2,𝑙2 + 7𝑥𝑐𝑑2,𝑙3 + 3𝑥𝑐𝑑1,𝑡1 + 5𝑐𝑐𝑑1,𝑡2 + 6𝑥𝑐𝑑2,𝑡1 + 3𝑥𝑐𝑑2,𝑡2
+ 
+            +2 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3 + 1𝑐𝑡2,𝑙1 + 3𝑥𝑡2,𝑙2 + 1𝑥𝑡2,𝑙3 + 10𝑦𝑡1 + 12𝑦𝑡2 = 330
+sujeito a
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑1,𝑡2 ≤40 
+𝑥𝑐𝑑2,𝑙1 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑐𝑑2,𝑡1 + 𝑥𝑐𝑑2,𝑡2 ≤60 
+𝑥𝑐𝑑1,𝑙1 + 𝑥𝑐𝑑2,𝑙1 + 𝑥𝑡1,𝑙1 + 𝑥𝑡2,𝑙1 = 30 
+ 
+𝑥𝑐𝑑1,𝑙2 + 𝑥𝑐𝑑2,𝑙2 + 𝑥𝑡1,𝑙2 + 𝑥𝑡2,𝑙2 = 35 
+ 
+𝑥𝑐𝑑1,𝑙3 + 𝑥𝑐𝑑2,𝑙3 + 𝑥𝑡1,𝑙3 + 𝑥𝑡2,𝑙3 = 25 
+ 
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 = 𝑥𝑡1,𝑙1 + 𝑥𝑡1,𝑙2 + 𝑥𝑡1,𝑙3 
+ 
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 = 𝑥𝑡2,𝑙1 + 𝑥𝑡2,𝑙2 + 𝑥𝑡2,𝑙3 
+ 
+𝑥𝑐𝑑1,𝑡1 + 𝑥𝑐𝑑2,𝑡1 ≤50. 𝑦𝑡1 
+ 
+ 
+𝑥𝑐𝑑1,𝑡2 + 𝑥𝑐𝑑2,𝑡2 ≤50. 𝑦𝑡2 
+ 
+ 
+ 
+𝑥𝑐𝑑2,𝑙2 = 7𝑘, ⇒𝑥𝑐𝑑2,𝑙2 ∈{0,7,14, … , 35} 
+ 
+𝑥𝑐𝑑1,𝑙1, 𝑥𝑐𝑑1,𝑙2, 𝑥𝑐𝑑1,𝑙3, 𝑥𝑐𝑑2,𝑙1, 𝑥𝑐𝑑2,𝑙3, 𝑥𝑐𝑑1,𝑡1 ≥0
+ 
+𝑥𝑐𝑑1,𝑡2, 𝑥𝑐𝑑2,𝑡1, 𝑥𝑐𝑑2,𝑡2, 𝑥𝑡1,𝑙1, 𝑥𝑡1,𝑙2, 𝑥𝑡1,𝑙3, 𝑥𝑡2,𝑙1, 𝑥𝑡2,𝑙2, 𝑥𝑡2,𝑙3 ≥0
+ 
+𝑘∈ℤ+
+ 
+𝑦𝑡1, 𝑦𝑡2 ∈{0,1} 
+ 
+Solução ótima
+60
+
+T1
+T2
+L1
+L2
+L3
+CD1
+CD2
+𝑥𝑐𝑑1,𝑡1 = 40
+𝑥𝑐𝑑2,𝑡1 = 10
+𝑥𝑐𝑑2,𝑡2 = 40
+𝑥𝑡1,𝑙2 = 35
+𝑥𝑡1,𝑙3 = 15
+𝑥𝑡2,𝑙1 = 30
+𝑥𝑡2,𝑙3 = 10
+
+=== pág 61 ===
+Leitura Recomendada
+Bibliografia
+61
+61
+61
+
+
+=== pág 62 ===
+
+62
+Sugestões de Leituras/Referências
+•
+Santos, M. P. (2000) Programação Linear. Universidade do Estado do Rio de Janeiro. Disponível em: 
+https://www.mpsantos.com.br/Plinear.pdf (Capítulo 4, pág. 93–117).
+•
+Goldbarg, M.C; Luna, H.P.L. (2005) Otimização combinatória e programação linear: modelos e algoritmos. 2.ed. 
+Rio de Janeiro: Elsevier. (Capítulo 5, pág. 167–169; Capítulo 7, pág. 274– 291)
+
+=== pág 63 ===
+
+63
+Sugestões de Leituras/Referências
+•
+Bradley, S. P.; Hax, A. C.; & Magnanti (1977). Applied Mathematical Programming Addison-Wesley Pub. Co. 
+Reading, Mass. http://web.mit.edu/15.053/www/AMP.htm
+•
+Arenales, M. N.; Armentano, V. A.; Morabito Neto, R.; & Yanasse, H. H. (2007). Pesquisa Operacional. Elsevier, 
+1ª edição.
+•
+Winston, W. L. (2004). Operations research: Applications and Algorithms. Thomson Learning, Inc.
+
+=== pág 64 ===
+
+Obrigado!
+Prof. Cassiano Augusto Isler | https://www.linkedin.com/in/cassiano-isler/

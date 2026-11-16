@@ -1,0 +1,1074 @@
+# 10 - ANALYTICS E GESTAO DE RISCOS / Analytics e Gestão de Riscos 30.09 e 07.10.2025_SL.pdf
+
+=== pág 1 ===
+
+Analytics e Gestão de Riscos I e II
+Prof. Fabiano Guasti Lima
+1
+ 
+=== pág 2 ===
+
+
+Lei nº 9610/98
+2
+ 
+=== pág 3 ===
+
+3
+Sugestões de Leituras/Referências
+•
+Modelos de gestão de risco de mercado, operacional e compliance; Basiléia III; modelos de risco de 
+crédito; modelos para demais tipos de riscos aplicáveis (risco legal e regulamentar; risco social e 
+ambiental; reputacionais); casos reais e práticos.
+Programa
+Referência Bibliográfica
+•
+FAVERO, Luiz Paulo, 
+BELFIORE, Patrícia. 
+Análise de dados: 
+estatística e modelagem
+multivariada com Excel, 
+SPSS, Stata, R e Python. 2. 
+ed. Gen, LTC, 2024.
+LIMA, Fabiano Guasti. 
+Análise de Riscos. 3. 
+ed. São Paulo: Atlas,
+2023.
+ 
+=== pág 4 ===
+
+Agenda
+•
+Analytics para avaliação de Modelos de Risco:
+•
+Mercado
+•
+Crédito
+•
+Operacional
+•
+Scripts em Python 
+4
+ 
+=== pág 5 ===
+
+Modelos de Riscos
+para 
+Ativos Individuais
+5
+ 
+=== pág 6 ===
+
+PETR4
+Ibovespa
+Café Arábica
+jan/25
+R$    36,77
+120.125,39
+R$  2.241,90
+fev/25
+R$    37,50
+125.970,46
+R$  2.565,86
+mar/25
+R$    34,62
+123.046,85
+R$ 2.612,63 
+abr/25
+R$    37,30
+131.147,29
+R$  2.559,28
+Fontes: PETR4 e Ibovespa: B3, cotação do 1o dia útil de cada mês;  
+Café Arábica – CEPEA/Esalq – Imagens: google imagens
+Quem oscilou mais?
+6
+Risco e Retorno de Ativos Individuais
+ 
+=== pág 7 ===
+
+•
+Retorno
+•
+Discreto
+•
+Contínuo
+7
+Risco e Retorno de Ativos Individuais
+ 
+=== pág 8 ===
+
+PETR4
+Ibovespa
+Café Arábica
+jan/25
+R$    36,77
+120.125,39
+R$  2.241,90
+fev/25
+R$    37,50
+125.970,46
+R$  2.565,86
+mar/25
+R$    34,62
+123.046,85
+R$ 2.612,63 
+abr/25
+R$    37,30
+131.147,29
+R$  2.559,28
+Fontes: PETR4 e Ibovespa: B3, cotação do 1o dia útil de cada mês;  
+Café Arábica – CEPEA/Esalq – Imagens: google imagens
+𝑅𝑒𝑡𝑓𝑒𝑣= 37,50
+36,77 −1 = 1,99%
+Retorno Discreto
+8
+Risco e Retorno de Ativos Individuais
+ 
+=== pág 9 ===
+
+PETR4
+Ibovespa
+Café Arábica
+jan/25
+R$    36,77
+120.125,39
+R$  2.241,90
+fev/25
+R$    37,50
+125.970,46
+R$  2.565,86
+mar/25
+R$    34,62
+123.046,85
+R$ 2.612,63 
+abr/25
+R$    37,30
+131.147,29
+R$  2.559,28
+Fontes: PETR4 e Ibovespa: B3, cotação do 1o dia útil de cada mês;  
+Café Arábica – CEPEA/Esalq – Imagens: google imagens
+Retorno Contínuo
+𝑅𝑒𝑡𝑓𝑒𝑣= 𝑙𝑛37,50
+36,77
+= 1,97%
+9
+Risco e Retorno de Ativos Individuais
+ 
+=== pág 10 ===
+
+Bom, mas quem 
+oscilou mais?
+Retorno Discreto
+PETR4
+Ibovespa
+Café Arábica
+Janeiro
+-
+-
+-
+Fevereiro
+1,99%
+4,87%
+14,45%
+Março
+-7,68%
+-2,32%
+1,82%
+Abril
+7,74%
+6,58%
+-2,04%
+Retorno Contínuo
+PETR4
+Ibovespa
+Café Arábica
+Janeiro
+-
+-
+-
+Fevereiro
+1,97%
+4,75%
+13,50%
+Março
+-7,99%
+-2,35%
+1,81%
+Abril
+7,46%
+6,38%
+-2,06%
+10
+Risco e Retorno de Ativos Individuais
+ 
+=== pág 11 ===
+
+11
+Buscando dados
+ 
+=== pág 12 ===
+
+Risco no Contexto de
+Carteiras
+12
+ 
+=== pág 13 ===
+
+ Risco e Retorno no contexto de carteiras
+Ativo A
+Ativo B
+Ano 1
+13,41%
+26,62%
+Ano 2
+0,94%
+45,13%
+Ano 3
+10,21%
+20,21%
+Ano 4
+4,91%
+17,37%
+Ano 5
+10,53%
+15,67%
+Ativo A
+Ativo B
+RETORNO MÉDIO
+8%
+25%
+RISCO
+5%
+12%
+13
+ 
+=== pág 14 ===
+
+Harry Markowitz 
+(1927-2023)
+Fonte: Google Imagens
+https://www.math.ust.hk/~maykwok/courses/ma362/07F/markowitz_JF.pdf
+The Journal of Finance – Portfolio Selection  - Harry Markowtiz (1952), v.7, n.1, p. 77-91 
+14
+ 
+=== pág 15 ===
+
+ Risco e Retorno no contexto de carteiras
+Ativo A
+Ativo B
+RETORNO
+8%
+25%
+RISCO
+5%
+12%
+Investimento
+R$ 5.000,00
+R$ 5.000,00
+Percentual
+50%
+50%
+15
+ 
+=== pág 16 ===
+
+Ativo 
+Part. % 
+Retorno 
+Risco 
+A 
+a
+W 
+a
+R
+ 
+a
+S
+ 
+B 
+b
+W 
+b
+R
+ 
+b
+S
+ 
+Carteira 
+100% 
+C
+a
+a
+b
+b
+R
+W
+R
+W
+R
+=
+
++
+
+ 
+expressão abaixo 
+ 
+2
+2
+2
+2
+2
+(
+,
+)
+C
+a
+a
+b
+b
+a
+b
+a
+b
+a
+b
+S
+W S
+W S
+W W corr R
+R
+S S
+=
++
++
+2
+2
+2
+2
+2
+cov(
+,
+)
+C
+a
+a
+b
+b
+a
+b
+a
+b
+S
+W S
+W S
+W W
+R
+R
+=
++
++
+ou
+ Risco e Retorno no contexto de carteiras
+Covariância (Ra , Rb)
+16
+ 
+=== pág 17 ===
+
+https://www.youtube.com/watch?v=os0B1oQfNdo
+Fonte: Google Imagens
+Hear What Dr. Harry Markowitz, A Superhero Of Modern Economics, Has To Say About Investing –
+Entrevista 21/03/2019
+Sugestão de Vídeo:
+1990 – Prêmio Nobel de Economia
+17
+Harry Markowitz (1927-2023)
+ 
+=== pág 18 ===
+
+https://www.youtube.com/watch?v=lq2PL-Hxmio
+IFA.com with Mark Hebner - An Hour with Harry Markowitz, 
+Father of Modern Portfolio Theory – Entrevista - 19/06/2020
+Fonte: Google Imagens
+Sugestão de Vídeo:
+1990 – Prêmio Nobel 
+de Economia
+18
+Harry Markowitz (1927-2023)
+ 
+=== pág 19 ===
+
+0
+0,5
+1
+1,5
+2
+2,5
+3
+3,5
+4
+4,5
+0
+20000
+40000
+60000
+80000
+100000
+120000
+jul/09
+nov/10
+abr/12
+ago/13
+dez/14
+mai/16
+set/17
+fev/19
+jun/20
+Ibovespa X Dólar
+Ibovespa
+Dólar
+Fonte: Economática – Cotações de jan/2010 a set/2019 
+correl = - 0,627 
+19
+Efeito da Correlação
+ 
+=== pág 20 ===
+
+0
+5
+10
+15
+20
+25
+30
+0
+10
+20
+30
+40
+50
+60
+70
+jul/09
+nov/10
+abr/12
+ago/13
+dez/14
+mai/16
+set/17
+fev/19
+jun/20
+PETR4 X VALE3
+VALE3
+PETR4
+correl = 0,532 
+Fonte: Economática – Cotações de jan/2010 a set/2019 
+20
+Efeito da Correlação
+ 
+=== pág 21 ===
+
+Ativo A
+Ativo B
+RETORNO
+8%
+25%
+RISCO
+5%
+12%
+Investimento
+R$ 5.000,00
+R$ 5.000,00
+Percentual
+50%
+50%
+correl = - 0,60  
+21
+Risco e Retorno no contexto de carteiras
+ 
+=== pág 22 ===
+
+Carteira com mais de dois ativos
+𝑅𝑒𝑡𝐶𝑎𝑟𝑡= ෍
+𝑖=1
+𝑛
+𝑊𝑖× 𝑅𝑒𝑡_𝑎𝑡𝑖𝑣𝑜𝑖
+𝑅𝑖𝑠𝑐𝑜𝐶𝑎𝑟𝑡=
+𝑊1
+⋯
+𝑊𝑛×
+𝑐𝑜𝑣𝑎𝑟11
+⋯
+𝑐𝑜𝑣𝑎𝑟1𝑛
+⋮
+⋱
+⋮
+𝑐𝑜𝑣𝑎𝑟𝑛1
+⋯
+𝑐𝑜𝑣𝑎𝑟𝑛𝑛
+×
+𝑊1
+⋮
+𝑊𝑛
+22
+ 
+=== pág 23 ===
+
+Modelos de
+Risco de Crédito
+23
+ 
+=== pág 24 ===
+
+O risco de crédito é o risco de perda
+econômica decorrente do não
+cumprimento de obrigações
+contratuais por uma contraparte
+24
+Risco de Crédito
+ 
+=== pág 25 ===
+
+Resolução
+CMN 2.682/99
+Resolução
+CMN 4.966/21
+Resolução
+BCB 352/23
+25
+Risco de Crédito
+ 
+=== pág 26 ===
+
+Perda 
+Incorrida
+Perda 
+Esperada
+Evento de 
+crédito já 
+ocorrido ou em 
+vias de ocorrer
+Probabilidade 
+de ocorrer o 
+evento de 
+crédito futuro
+26
+Risco de Crédito
+ 
+=== pág 27 ===
+
+* A Responsabilidade pela idoneidade, originalidade e licitude dos conteúdos didáticos apresentados é do professor.
+. 
+27
+Provisão para perdas de crédito
+Metodologia Completa
+Classificação das operações de crédito
+AA
+A
+B
+C
+D
+E
+F
+G
+H
+Resolução 4.966/2021
+Estágio 1
+Estágio 2
+Estágio 3
+Estágio 3 = Ativo Problemático
+27
+
+ 
+=== pág 28 ===
+
+Direcionadores do risco de crédito
+Inadimplência (default) (b)
+• Uma contraparte está ou não em default (inadimplente)
+• Este evento envolve uma probabilidade de default (PD)
+Exposição a crédito no default (EAD) ou (EC)
+• Incerteza quanto ao valor da exposição do crédito no momento do default
+Perda dado default (condicionada ao evento) - PDF ou LGD
+• Incerteza quanto ao valor que pode ser recuperado após o default
+• 1 menos a taxa de recuperação do credor
+28
+Provisão para perdas de crédito
+Metodologia Completa
+ 
+=== pág 29 ===
+
+
+
+Perda de Crédito = b
+EC
+PD
+Perda de Crédito = b
+EC
+(1-t)
+
+
+Negociação com devedor com o intuito de recuperar 
+uma parte ou a totalidade do valor devido.
+• Chamaremos de t a taxa de recuperação
+• Logo, 1 – t é a perda percentual condicionada no
+evento de default
+29
+Provisão para perdas de crédito
+Metodologia Completa
+ 
+=== pág 30 ===
+
+* A Responsabilidade pela idoneidade, originalidade e licitude dos conteúdos didáticos apresentados é do professor.
+. 
+30
+Fonte: BCB – Relatório de Estabilidade Financeira (REF) – Nov/24
+Provisão para perdas de crédito
+Metodologia Completa
+30
+
+ 
+=== pág 31 ===
+
+Considere uma carteira com exposição total a crédito de R$100 mil  
+investida em três créditos.
+• Crédito A: EC = R$ 10 mil; p = 0,02
+• Crédito B: EC = R$ 20 mil; p = 0,05
+• Crédito C: EC = R$ 70 mil; p = 0,10
+Suposições: exposições constantes; taxa de recuperação = 0; 
+defaults independentes
+31
+Risco de Crédito
+ 
+=== pág 32 ===
+
+75,00%
+80,00%
+85,00%
+90,00%
+95,00%
+100,00%
+0,00%
+10,00%
+20,00%
+30,00%
+40,00%
+50,00%
+60,00%
+70,00%
+80,00%
+90,00%
+ -
+ 10.000,00 20.000,00 70.000,00 30.000,00 80.000,00 90.000,00 100.000,00
+DISTRIBUIÇÃO DAS PERDAS
+Perda Esperada
+R$ 8.200
+Perda Não
+Esperada
+R$ 61.800
+Perda Excepcional
+32
+Risco de Crédito
+ 
+=== pág 33 ===
+
+Comitê de Basiléia – localiza-se na cidade 
+de Basiléia (Suíça) formado por membros 
+de Bancos Centrais de países 
+desenvolvidos que debatem e formalizam 
+estudos e documentos.
+Basiléia I, II e III – outra denominação para o 
+Acordo de Capitais, que estabelece 
+indicadores de solvência e alavancagem 
+para IFs.
+Novo Acordo de Capital – trata-se de um 
+novo compêndio de melhores práticas para 
+gestão de riscos mundial (conhecido 
+também por Basiléia II). 
+BIS – é uma instituição financeira 
+denominada o banco central dos bancos 
+centrais ou em inglês: Bank for International 
+Settlements
+33
+Gestão de Riscos
+ 
+=== pág 34 ===
+
+BIS – Bank for International Settlements - 
+Banco de Compensação Internacional 
+Fundado em 1930, 
+é uma organização 
+internacional 
+responsável pela 
+supervisão 
+bancária. 
+Ele visa "promover a 
+cooperação entre 
+os bancos centrais 
+e outras agências 
+na busca de 
+estabilidade 
+monetária e 
+financeira". 
+Sediado em Basiléia 
+na Suíça, reúne 55 
+bancos centrais de 
+todo o mundo.
+34
+Gestão de Riscos
+ 
+=== pág 35 ===
+
+▪
+Bank for Internacional Settlements (BIS):
+•
+Fortalecer a cooperação financeira internacional
+▪
+Comitê da Basiléia sobre Supervisão Bancária (BCBS):
+•
+Solvência, liquidez e estabilidade do sistema bancário internacional
+▪
+Acordo da Basileia:
+•
+1988: Basiléia 1 – requerimento de capital para risco de crédito
+•
+1996: Requerimento de capital para risco de mercado
+•
+2004: Basiléia 2 – requerimento de capital para risco operacional
+•
+2007: Patrimônio de Referência (PR) e Patrimônio de Referência Exigido (PRE)
+•
+2009: Basileia 2,5 –  securitizações
+•
+2010: Basiléia 3
+35
+Gestão de Riscos
+ 
+=== pág 36 ===
+
+O Acordo Atual estabelece que o Capital do Banco deve
+ser maior ou igual à 8% da soma dos riscos incorridos:  
+O foco do Primeiro Acordo está no crédito, ou seja, as instituições 
+tinham de ter capital próprio suficiente para garantir as operações 
+realizadas, com limite mínimo foi definido em 8%.
+
+Capital 
+8%
+Risco de Mercado + Risco de Crédito
+36
+Gestão de Riscos
+ 
+=== pág 37 ===
+
+A ponderação dos ativos de crédito ao risco é principalmente função
+do tipo da exposição:
+Critério de Ponderação do Basiléia I
+PONDERAÇÃO
+ATIVO
+Caixa
+Solicitações de créditos relacionadas à países e seus
+bancos centrais
+0%, 20% ou 50% 
+(à critério do Banco
+Central Local)
+Solicitações de créditos relacionadas à empresas do  
+setor público não - federais
+20%
+Solicitações de crédito relacionadas aos bancos
+multilaterais de desenvolvimento (MDBs)
+50%
+Solicitações de crédito garantidas por propriedade
+residencial
+Solicitações de crédito relacionadas à bancos
+Solicitações de crédito relacionadas à empresas
+Todos os demais ativos
+0%
+100%
+37
+Gestão de Riscos
+ 
+=== pág 38 ===
+
+Ativo Ponderado Pelo Risco
+Exemplo:
+Índice da Basiléia
+Ativos
+$
+Caixa
+1.000
+Aplicações
+50.000
+Financiamento Imobiliário
+200.000
+Empréstimos
+300.000
+38
+Gestão de Riscos
+ 
+=== pág 39 ===
+
+Ativos
+$
+Pesos
+APR - $
+Caixa
+1.000
+0%
+0
+Aplicações
+50.000
+20%
+10.000
+Financiamento 
+Imobiliário
+200.000
+50%
+100.000
+Empréstimos
+300.000
+100%
+300.000
+TOTAL
+551.000
+410.000
+Ativo Ponderado Pelo Risco
+Exemplo:
+Índice da Basiléia
+39
+Gestão de Riscos
+ 
+=== pág 40 ===
+
+Nível 1:  Capital Social + Reservas de Capital + Reservas de Lucros
+       +/- Lucros ou (Prejuízos) Acumulados + Participações
+Nível 2:  Reservas de Reavaliação + Reservas de Contingência +
+       Dívidas Subordinadas + Instrumentos Híbridos de Capital
+Patrimônio
+$
+Nível 1
+40.000
+Nível 2
+30.000
+TOTAL
+70.000
+Ativo Ponderado Pelo Risco
+Exemplo:
+Índice da Basiléia
+40
+Gestão de Riscos
+ 
+=== pág 41 ===
+
+Índice
+APR
+410.000
+PR
+70.000
+PR/APR
+17,1%
+Instituição Adequada
+Exemplo:
+Índice da Basiléia
+41
+Gestão de Riscos
+ 
+=== pág 42 ===
+
+Modelos de
+Risco Operacional
+42
+ 
+=== pág 43 ===
+
+•
+Baseada na distribuição de perdas (frequência e severidade).
+•
+Utilizar dados históricos de frequência e valores de perdas operacionais.
+•
+Utilizar estimativas subjetivas de probabilidades e/ou valores relativos 
+às frequências e severidades.
+•
+Utilizar distribuições teóricas feitas com base em dados históricos ou 
+expertise do gestor.
+43
+Mensuração do Risco Operacional
+ 
+=== pág 44 ===
+
+Risco Operacional
+Seja n o número de eventos relacionados ao risco operacional
+dentro de um intervalo de tempo arbitrado. (EX. 1 ano)
+Seja S a severidade (magnitude) de cada perda considerando 
+que ela ocorreu.
+Considere também as Probabilidades associadas a cada um 
+dos valores de n e S.
+Tabula-se os resultados elaborando uma distribuição empírica 
+das combinações dos eventos com as respectivas magnitudes.
+44
+ 
+=== pág 45 ===
+
+             Exemplo:
+Número de Perdas Probabilidade
+Nenhuma
+70%
+1
+20%
+2
+10%
+Magnitude da Perda Probabilidade
+$ 500
+60%
+$ 10.000
+30%
+$ 50.000
+10%
+45
+ 
+=== pág 46 ===
+
+Próximos passos:
+• Combinar as possibilidades para gerar uma distribuição empírica 
+para as perdas potenciais operacionais
+• VaR Operacional
+• Calcular o VALOR EM RISCO para o nível de confiança 
+desejado
+• VaR Operacional = PIOR PERDA – perda esperada média
+             Exemplo:
+46
+ 
+=== pág 47 ===
+
+Fluxos de Caixa
+E SEUS RISCOS
+47
+ 
+=== pág 48 ===
+
+Investimento é avaliado com base nos benefícios esperados 
+futuros: FLUXOS DE CAIXA
+Distribuição TEMPORAL dos fluxos de caixa
+Movimentações operacionais efetivas de caixa, líquidas do 
+IR. Despesas não desembolsáveis
+48
+Fluxos de caixa e análise de investimentos
+ 
+=== pág 49 ===
+
+Investimento inicial
+Entradas de caixa operacionais
+Fluxo de caixa residual
+49
+Principais componentes do fluxo de caixa
+ 
+=== pág 50 ===
+
+RECEITAS
+-   DESPESAS OPERACIONAIS
+=  EBITDA
+-   DEPRECIAÇÃO
+=  LUCRO ANTES DO IMPOSTO DE RENDA = EBIT
+-   IMPOSTO DE RENDA
+=   LUCRO APÓS I.R. = NOPAT
++  DEPRECIAÇÃO
+=  ENTRADA DE CAIXA OPERACIONAL
+50
+Cálculo das entradas de caixa operacionais
+ 
+=== pág 51 ===
+
+• Investimento: 200 mil
+• Receitas:
+(mil)
+Ano 1
+Ano 2
+Ano 3
+Ano 4
+Receita
+170
+145
+125
+100
+• Despesas Operacionais:
+(mil)
+Ano 1
+Ano 2
+Ano 3
+Ano 4
+Desp. Op.
+23
+23
+20
+20
+• Depreciação Anual: 50,0 mil
+• Alíquota do IR = 40%
+• Taxa de Retorno Espertada = 14% a.a
+51
+Exemplo
+ 
+=== pág 52 ===
+
+Na análise de sensibilidade 
+é estudado o efeito que a 
+variação de um dado de 
+entrada pode ocasionar nos 
+resultados.
+Quando uma pequena 
+variação num parâmetro 
+altera drasticamente a 
+rentabilidade de um projeto, 
+diz-se que o projeto é muito 
+sensível a este parâmetro e 
+poderá ser interessante 
+concentrar esforços para 
+obter dados menos incertos.
+52
+Análise de sensibilidade
+ 
+=== pág 53 ===
+
+Este método possibilita a simulação de variáveis 
+selecionadas do projeto, levando-se em 
+consideração as distribuições de probabilidade 
+destas variáveis assumirem valores diferentes ao 
+longo da via útil do projeto.
+53
+Simulação de Monte Carlo
+ 
+=== pág 54 ===
+
+Análise de Risco e Sensibilidade do Projeto
+•
+Avaliar o risco, simulações (estimativas) de retornos possíveis para obter uma medida de variabilidade 
+entre os resultados;
+•
+Sensibilidade do NPV em relação à taxa de desconto dos fluxos de caixa.
+54
+ 
+=== pág 55 ===
+
+• Como se comportará o VPL caso a economia apresente um declínio/crescimento e como esse 
+fato influenciará o mercado de refrigerantes?
+• Os preços serão influenciados pelo declínio/crescimento da economia?
+• Caso ocorra uma mudança substancial na economia, a empresa conseguirá manter os 
+parâmetros estabelecidos inicialmente no projeto?
+• Existe a possibilidade de entrarem novos produtores no mercado?
+• Os prazos e os custos de implantação serão cumpridos regiamente?
+• Os preços utilizados para o cálculo do custo de produção sofrerão modificações significativas no 
+período considerado?
+• A empresa conseguirá atingir a eficiência desejada?
+55
+Cálculo do risco do projeto
+ 
+=== pág 56 ===
+
+Distribuição Triangular
+Distribuição Pert
+Distribuição Normal
+ALGUMAS DISTRIBUIÇÕES DE 
+PROBABILIDADE
+56
+ 
+=== pág 57 ===
+
+Obrigado!
+Prof.° Fabiano Guasti Lima | /fabiano-guasti-lima-b9830282/
+ 

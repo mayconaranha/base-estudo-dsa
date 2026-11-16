@@ -1,0 +1,506 @@
+# 08 - SOCIAL NETWORK / Social Network Analysis II 09092025_SLpdf Portugues.pdf
+
+=== pág 1 ===
+Social Network Analysis II
+Professora Adriana Silva
+
+=== pág 2 ===
+
+Lei nº 9610/98
+
+=== pág 3 ===
+3
+Revisando
+• Métricas
+• Degree 
+• Degree Ponderado 
+• Clustering Coefficient
+• Closeness 
+• Betweenness 
+• O que é?
+• Dados/informações
+• Contexto / Exemplos
+• Tipos de Redes
+• Comunidades
+• Papéis
+33
+
+
+=== pág 4 ===
+4
+Métricas da Rede
+Estatísticas Gerais
+• Diversas  estatísticas podem ser calculadas para as redes e para os nós das redes :
+• Nós: número de nós no gráfico (|N|)
+• Arestas: número de links no gráfico (|A|)
+• Densidade do grafo: o número de links em um gráfico (|A|) dividido pelo número total de links no 
+gráfico completo (|N| (|N| - 1))
+• Comprimento médio do caminho: soma dos menores caminhos dividido pela quantidade de 
+menores caminhos
+• Excentricidade: distância do nó em questão até o nó mais distante dele na rede (dentre os 
+menores caminhos, o maior)
+• Raio: menor excentricidade
+• Diâmetro da Rede: maior excentricidade (maior peso dentre os menores caminhos)
+4
+4
+
+
+=== pág 5 ===
+5
+Gephi
+Software Livre
+• “Gephi é uma plataforma interativa de visualização e exploração de todos os tipos de redes e 
+sistemas complexos, grafos dinâmicos e hierárquicos.”
+• É um software escrito em Java e roda tanto no Windows, Linux e Mac.
+▪
+Atividade:
+▪Inicializar o software
+▪Conhecer o software
+▪Construir a rede feita à mão
+▪Extrair os resultados
+5
+
+
+=== pág 6 ===
+Software Gephi
+Introdução
+▪O passo a passo a seguir detalha como utilizar o Gephi a partir de 
+bases csv, ou para criação de redes dentro do próprio software.
+6
+6
+
+
+=== pág 7 ===
+2
+3
+4
+5
+6
+7
+8
+9
+Software Gephi
+1
+7
+7
+
+
+=== pág 8 ===
+Software Gephi
+Introdução
+1. Tool Bar: atalhos para análises, visualizações de janelas, configurações, 
+salvar, ...
+2. Visão Geral: onde visualiza-se o gráfico e as métricas que podem ser
+calculadas
+3. Laboratório de dados: onde visualiza-se as tabelas criadas
+4. Visualização: onde visualiza-se o grafo para exportação
+5. Partição ou Classificação: janela onde pode-se pintar ou estipular
+tamanhos de nós ou links, a partir de alguma métrica (como modularidade,
+degree, closeness,…)
+6. Layout: janela para melhorar a forma de visualização do grafo baseado em
+algum algorítimo
+8
+8
+
+
+=== pág 9 ===
+Software Gephi
+Introdução
+7.
+Grafo: janela para visualização da sua rede
+8. Contexto: Informações sobre sua rede (número de nós e links)
+9. Estatísticas: métricas disponíveis para cálculo da rede
+9
+9
+
+
+=== pág 10 ===
+1
+2
+3
+4
+Software Gephi
+10
+10
+
+
+=== pág 11 ===
+Software Gephi
+Introdução
+1. Aba Nós ou Arestas: Mostra a tabela de nós ou tabela de links, conforme
+sua seleção
+2. Adicionar nó ou Adicionar arestas: ícones utilizados para construção da rede
+dentro do próprio software
+3. Importar planilha ou Exportar tabela: ícones utilizados para inserção ou
+extração das tabelas de nós ou links.
+4. Atalhos para manipulação de dados: duplicar colunas, criar novas variáveis,
+etc…
+11
+11
+
+
+=== pág 12 ===
+•
+Para abrir uma base de links ou nós a partir de um csv, ir pelo atalho de “Novo projeto”
+•
+Para abrir arquivos .net, .gdf, .gephi utilizar o atalho “Abrir arquivo”
+Software Gephi
+12
+12
+
+
+=== pág 13 ===
+•
+Na aba “Laboratório de Dados” ir na opção “Importar planilha” para abrir um arquivo csv.
+•
+O arquivo csv deve conter no mínimo os campos “Source” e “Target”. Pode conter o 
+campo “weight” desde que este seja um campo numérico dentro do csv.
+Software Gephi
+13
+13
+
+
+=== pág 14 ===
+•
+Em Import 
+Spreadcsheet, você 
+seleciona seu arquivo e 
+especifica se é uma 
+tabela de nós ou links.
+Software Gephi
+14
+14
+
+
+=== pág 15 ===
+Software Gephi
+•
+Ao finalizar a base é 
+inserida dentro do Gephi 
+e os pontos são criados 
+para visualização.
+15
+15
+
+
+=== pág 16 ===
+16
+Gephi
+Software Livre
+• “Gephi é uma plataforma interativa de visualização e exploração de todos os 
+tipos de redes e sistemas complexos, grafos dinâmicos e hierárquicos.”
+• É um software escrito em Java e roda tanto no Windows, Linux e Mac.
+▪
+Atividade:
+▪Inicializar o software
+▪Conhecer o software
+▪Construir a rede feita à mão
+▪Extrair os resultados
+Exercício 
+com 
+professora
+16
+
+
+=== pág 17 ===
+17
+CONTEÚDO 
+PROGRAMÁTICO
+Tópicos:
+•
+O que é SNA
+•
+Para que serve
+•
+Como aplica
+•
+Estrutura de dados
+•
+Conceitos e teoria sobre a técnica 
+•
+Tipo de redes
+•
+Comunidades
+•
+Papéis
+•
+Cálculos na mão para entendimento das 
+métricas
+•
+Métricas de Centralidade
+•
+Degree
+•
+Clustering Coeficient
+•
+Closeness
+•
+Betweenness
+•
+Comunidade
+•
+Resolution List
+•
+Layouts
+•
+Aplicação em Gephi, para 
+entendimento e 
+compreensão
+•
+Python para SNA
+•
+Exercícios 
+17
+17
+
+
+=== pág 18 ===
+18
+Detecção de Comunidades
+Comunidades - Modularidade
+• Comunidades
+• Community detection particiona uma rede em comunidades, onde os 
+links dentro da comunidade são mais fortes que os links entre 
+comunidades.
+18
+
+
+=== pág 19 ===
+19
+Detecção de Comunidades
+Comunidades - Modularidade
+• Como identificar uma comunidade
+▪Modularidade
+▪É a métrica mais popular para detecção de comunidades. É  uma métrica sobre a 
+qualidade da divisão.
+▪Modularidade é a fração entre os links que estão dentro da comunidade menos a 
+fração esperada se os links fossem dividos aleatoriamente (se a comunidade fosse 
+criada aleatoriamente).
+Cada nó é uma
+comunidade
+Otimização da Modularidade
+Primeira Interação
+Avaliação do ganho na modularidade
+Ciclo
+Interativo
+19
+
+
+=== pág 20 ===
+20
+Detecção de Comunidades
+Comunidades - Modularidade
+•
+Modularidade
+𝑄= 1
+2𝑤
+෍
+(𝑢,𝑣)∈𝐴
+𝑤𝑢𝑣−𝑤𝑢𝑤𝑣
+2𝑤
+∆𝐶𝑢, 𝐶𝑣
+𝑤=
+෍
+(𝑢,𝑣)∈𝐴
+𝑤𝑢𝑣
+𝑤𝑢= ෍
+𝑣∈𝛿𝑢
+𝑤𝑢𝑣
+onde 𝑄 é a modularidade
+𝑤𝑢𝑣 é o peso do links entre os nós 𝑢 e 𝑣.
+𝛿𝑢 é o universo de nós que contém o nó 𝑢.
+𝑤𝑢 é a soma dos pesos dos links que tem 𝑢.
+𝑤 é a soma dos links da rede.
+𝐶𝑢 é a comunidade que tem 𝑢.
+∆𝐶𝑢, 𝐶𝑣 é o delta definido como: ∆𝐶𝑢, 𝐶𝑣= ቊ1, 
+𝑠𝑒 𝐶𝑢= 𝐶𝑣
+0, 𝑐𝑎𝑠𝑜 𝑐𝑜𝑛𝑡𝑟á𝑟𝑖𝑜
+20
+
+
+=== pág 21 ===
+21
+Detecção de Comunidades
+Comunidades - Modularidade
+• Tem sido frequentemente observado, na prática, que o número de nós 
+contidos em comunidades (produzido por algoritmos de detecção de 
+comunidade) geralmente segue uma distribuição da lei de potência, isto 
+é, algumas comunidades contém um número muito grande de nós, 
+enquanto que a maioria das comunidades contém um pequeno número 
+de nós. Isto é especialmente verdadeiro para redes de grandes 
+dimensões. 
+21
+
+
+=== pág 22 ===
+22
+Detecção de Comunidades
+• Resolução
+• O valor atribuído a esta opção pode ser interpretado da seguinte forma: 
+• Suponha que o valor do Resolução seja 𝑥. Duas comunidades são mescladas se a soma 
+dos pesos dos links inter-relações da comunidade é de pelo menos 𝑥 vezes o valor 
+esperado da mesma soma se o gráfico é reconfigurado de forma aleatória. 
+• Portanto, um valor menor de Resolução produzirá mais comunidades contendo 
+um número menor de nós. No entanto, não existe uma fórmula explícita 
+detalhando o número de nós nas comunidades com relação ao valor de resolução. 
+• Deve-se usar tentativa e erro para chegar ao tamanho da comunidade esperada.
+• Utilize valores menores para gerar comunidades menores e valores maiores de 1 para 
+gerar menos comunidades maiores.
+Comunidades - Modularidade
+22
+
+
+=== pág 23 ===
+23
+Prática
+Exemplo: Detecção de comunidade nos dados de um clube de Karate
+• Este exemplo usa os dados de uma escola de Karate, que descreve a rede 
+social entre 34 membros de um clube de karate em uma universidade dos EUA 
+na década de 1970. Este é um banco de dados público, muito usado para testes 
+de detecção de comunidades. Ele contém 34 nós e 78 ligações. 
+▪
+Dado os dados, execute a as 
+comunidades no Gephi. Teste 
+diferentes resolutions.
+Dados: 
+karate.xlsx
+Não esqueça de 
+importar como uma 
+tabela de links!!!
+Exercício 
+com 
+professora
+23
+
+
+=== pág 24 ===
+24
+Python
+Software Livre
+• A biblioteca mais comum e mais utilizada em grafos é a igraph
+▪
+Atividade:
+▪Explorar os códigos Python
+» 1_SNA_conhecendo_codigos_Python.py
+24
+
+
+=== pág 25 ===
+25
+Comunidades – igraph
+Algoritmos de detecção de comunidade
+Uma lista de algoritmos disponíveis no IGraph inclui:
+•
+Modularidade Ótima
+•
+Edge Betweenness (2001)
+•
+Fast Greedy (2004)
+•
+Walktrap (2005)
+•
+Eigenvectors (2006)
+•
+Spinglass (2006)
+•
+Propagação de rótulo (2007)
+•
+Multi-nível (2008)
+•
+Mapa de informações (2008)
+25
+
+
+=== pág 26 ===
+26
+Comunidades – igraph
+Resumo
+• Para gráfico direcionado: vá com Info Map.
+• Se os recursos computacionais não forem um grande problema, e o gráfico for <700 
+vértices e 3500 arestas, escolha Edge Betweenness; produz o melhor resultado.
+• Se se preocupa com a modularidade, qualquer um dos algoritmos restantes será 
+aplicado;
+•
+Se o gráfico for particularmente pequeno: <100 vértices, use optimal modularity;
+•
+Se você quiser um algoritmo de primeira tentativa, use fast greedy ou walktrap
+•
+Se o gráfico for maior que 100 vértices e você quiser algo mais preciso do que fast greedy ou 
+walktrap, use o leading eigenvectors
+•
+Se você estiver procurando por uma solução semelhante ao agrupamento K-means, vá para 
+o Spinglass
+Fonte: https://yoyoinwanderland.github.io/2017/08/08/Community-Detection-in-Python/
+26
+
+
+=== pág 27 ===
+27
+Python
+Software Livre
+• A biblioteca mais comum e mais utilizada em grafos é a igraph
+▪Brincarmos com as comunidades
+» 2_SNA_exemplo_comunidades_base_Karate.py
+27
+
+
+=== pág 28 ===
+28
+Python
+Software Livre
+• A biblioteca mais comum e mais utilizada em grafos é a igraph
+▪Como extrair métrica por comunidade?
+» 3_SNA_exemplo_comunidades_base_karate.py
+28
+
+
+=== pág 29 ===
+Processo de SNA (sugestão): 
+“passo a passo”
+▪Rede inteira
+▪Comunidades
+▪Rede inteira
+▪Comunidades
+▪“Atores”
+Explorar 
+informação
+existente
+Extração de 
+dados
+Determinar 
+links e forças
+A →B
+Estipular 
+“papéis”
+Detectar
+comunidades
+Qualificar
+Comunidades
+Results
+Aplicar 
+métricas 
+SNA
+1
+2
+3
+4
+5
+6
+7
+29
+29
+
+
+=== pág 30 ===
+30
+Referências Bibliográficas
+• PINHEIRO, C. A. R. Social Network Analysis in Telecommunications. 
+USA: John Wiley, 2011, 284 p.
+• NEWMAN, M. E. J. Networks: An Introduction. New York: Oxford, 2010, 
+772 p.
+30
+
+
+=== pág 31 ===
+Obrigada!
+Professora Adriana Silva | linkedin.com/in/adrianamms

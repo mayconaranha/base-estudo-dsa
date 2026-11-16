@@ -1,0 +1,165 @@
+# 25 - Text Mining / Text Mining 28.07.2026_SL.pdf
+
+=== pág 1 ===
+
+Text Mining, Sentiment 
+Analysis e NLP III
+Prof. Guilherme Bezerra de Lima
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+POSITIVAS 
+NEGATIVAS  
+DESAFIO
+3
+
+
+=== pág 4 ===
+Processamento de Linguagem Natural (PLN) e Aprendizado de 
+Máquina (AM)
+Extrair emoções, atitudes e opiniões em texto.
+Qualidade do dado > Qualquer algoritmo de ponta.
+AS não é uma técnica única, mas um processo.
+ESPECTRO DE CATEGORIAS
+Muito Positivo
++2
+Positivo
++1
+Neutro
+0
+Negativo
+-1
+Muito Negativo
+-2
+4
+
+
+=== pág 5 ===
+AS COMO PIPELINE DE DECISÕES TÉCNICAS
+GRANULARIDADE
+Definição do nível de análise:
+documento, frase ou aspecto.
+ALGORITMO
+Escolha entre léxico, ML 
+clássico ou Deep Learning.
+MÉTRICA
+Validação técnica dos dados.
+5
+
+
+=== pág 6 ===
+GRANULARIDADE: DOCUMENTO, FRASE E ASPECTO
+NÍVEL DE DOCUMENTO
+Classifica o texto inteiro como uma única opinião. 
+Útil para reviews globais, mas pouco detalhado para análises complexas.
+NÍVEL DE FRASE
+Classifica cada sentença individualmente. 
+Primeiro identifica se é subjetiva ou objetiva, depois define a polaridade.
+NÍVEL DE ASPECTO
+O nível mais refinado. 
+Foca em características específicas e essenciais para um feedback detalhado.
+ESTRATÉGIA: A escolha da granularidade deve ser feita ANTES de definir a arquitetura do modelo.
+6
+
+
+=== pág 7 ===
+Em vez de atribuir um único rótulo geral a um texto inteiro, identifica os diferentes 
+aspectos (características, entidades ou tópicos específicos) 
+Aspect-Based Sentiment Analysis (ABSA)
+7
+
+
+=== pág 8 ===
+Em vez de atribuir um único rótulo geral a um texto inteiro, identifica os diferentes 
+aspectos (características, entidades ou tópicos específicos) 
+Exemplo 1 - Aspect-Based Sentiment Analysis (ABSA)
+O atendimento foi excelente, mas a 
+comida demorou muito para chegar.
+8
+
+
+=== pág 9 ===
+É uma abordagem de análise de sentimentos que, em vez de atribuir um único rótulo 
+geral a um texto inteiro, identifica os diferentes aspectos (características, entidades ou 
+tópicos específicos) 
+Exemplo 2 - Aspect-Based Sentiment Analysis (ABSA)
+O quarto do hotel estava limpo e 
+confortável, mas o Wi-Fi era 
+extremamente lento.
+9
+
+
+=== pág 10 ===
+Exemplo 2 - Aspect-Based Sentiment Analysis (ABSA)
+EXEMPLO COLAB
+10
+
+
+=== pág 11 ===
+DO DADO BRUTO À CLASSIFICAÇÃO
+01
+COLETA
+Obtenção de dados 
+brutos via APIs 
+(Twitter/X, reviews, 
+logs) ou web 
+scraping.
+02
+PRÉ-PROC
+Limpeza: 
+tokenização, 
+lematização, 
+stemming e remoção 
+de stopwords.
+03
+EXTRAÇÃO
+Transformação de 
+texto em vetores 
+numéricos (TF-IDF, 
+Word Embeddings).
+04
+CLASSIF
+Aplicação do modelo 
+(ML ou DL) para 
+rotular a polaridade 
+do sentimento.
+CRÍTICO: O pré-processamento impacta diretamente na acurácia final
+11
+
+
+=== pág 12 ===
+O QUE AINDA PRECISA SER RESOLVIDO
+1.
+Sarcasmo, ironia e emojis complexos.
+2.
+Dependência de dados do Twitter/X.
+3.
+Polaridade intermediária e ambiguidade.
+4.
+Viés linguístico.
+DESAFIOS ATUAIS
+ESSAS LACUNAS SÃO ONDE O DATA SCIENTIST AGREGA MAIOR VALOR DIFERENCIAL HOJE.
+12
+
+
+=== pág 13 ===
+Desafios além do texto, integrando imagens, áudio. 
+Interpretar emoções humanas de forma precisa exigirá modelos cada vez mais 
+inteligentes, capazes de compreender múltiplas fontes de informação e lidar com 
+ambiguidades e diversidade cultural.
+Previsões da Análise de Sentimento no Futuro
+13
+
+
+=== pág 14 ===
+14
+
+
+=== pág 15 ===
+
+Obrigado!
+Prof. Guilherme Bezerra de Lima | https://www.linkedin.com/in/guilherme-lima-developer/

@@ -1,0 +1,35 @@
+# 02 - INTRODUCAO AO PYTHON / Material complementar 21, 23 e 28.05.2025.pdf
+
+=== pág 1 ===
+MATERIAL COMPLEMENTAR 
+Introdução à Programação com Python 
+Professor Wilson Tarantin Junior 
+
+=== pág 2 ===
+SUGESTÃO DE LEITURA 
+ 
+Material disponível na Biblioteca ABCD_USP (Acessar Tutorial 
+Bibliotecas): 
+ 
+• 
+Grus, J. 2021. Data Science do zero: noções fundamentais com 
+Python. Alta Books. 
+ 
+ 
+ 
+Livros: 
+ 
+• 
+Bruce, P.; Bruce, A.; Gedeck, P. 2020. Practical Statistics for Data 
+Scientists. 2nd Edition. O'Reilly Media. 
+• 
+Fávero, L.P.; Belfiore, P. 2024. Manual de análise de dados: 
+estatística e machine learning com Excel®, SPSS®, Stata®, R® e 
+Python®. LTC. 
+• 
+McKinney, W. 2018. Python Para Análise de Dados: Tratamento de 
+Dados com Pandas, NumPy e IPython. Novatec. 
+• 
+Vanderplas, J. 2023. Python Data Science Handbook: Essential 
+Tools for Working with Data. 2 ed. O'Reilly Media 
+ 

@@ -1,0 +1,2875 @@
+# 13 - MODELAGEM MATEMÁTICA E ESTRUTURAÇÃO DE PROBLEMAS COMPLEXOS / Modelagem Matematica 28.10.2025_SL.pdf
+
+=== pág 1 ===
+Modelagem Matemática e 
+Estruturação de 
+Problemas Complexos I
+Prof. Dr. Marcos dos Santos
+
+=== pág 2 ===
+
+Lei nº 9610/98
+
+=== pág 3 ===
+Marcos dos Santos
+Oficial Superior, com mais de 30 anos de carreira na Marinha do Brasil;
+Colégio Naval e Escola Naval;
+Assessor do Ministério da Defesa de 2013 a 2023 (em Brasília);
+Na Marinha, atuou durante 12 anos como Pesquisador e Gerente de Projetos na 
+Divisão de Pesquisa Operacional;
+Especialização em Instrumentação Matemática (UFF);
+Aperfeiçoamento em Matemática (IMPA);
+Governança de TI na Fundação Getúlio Vargas (FGV);
+Mestrado em Engenharia de Produção - Pesquisa Operacional (COPPE/UFRJ);
+Doutorado e pós-doutorado em Sistemas, Apoio à Decisão e Logística (UFF);
+Pós-doutorado em Ciências e Tecnologias Espaciais (ITA);
+Diretoria da Sociedade Brasileira de Pesquisa Operacional (SOBRAPO);
+Professor do MBA em Data Science e Analytics da USP;
+Professor de Pesquisa Operacional (mestrado e doutorado) da UFF;
+Professor do Programa de Pós-graduação em Sistemas e Computação do IME;
+Professor de Data Science da Escola Naval (EN);
+Consultor em Tomada de Decisão e Transição Energética da Petrobras;
+Pesquisador índice H-38 na Base Scopus.
+Mais de 10.000 alunos em mais de 20 países.
+3
+
+=== pág 4 ===
+BACKGROUND
+4
+
+
+=== pág 5 ===
+QUANTO CUSTA UMA DECISÃO 
+EQUIVOCADA?
+5
+
+
+=== pág 6 ===
+REFERÊNCIA DA NOSSA AULA DE HOJE
+6
+Prefácio do Prof. Dr. Luiz Paulo Fávero
+6
+
+
+=== pág 7 ===
+7
+Fotos do acervo pessoal do professor, utilizada com autorização.
+7
+
+REFERÊNCIA DA NOSSA AULA DE HOJE
+
+=== pág 8 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+8
+MAIS DE 900 PESQUISAS APRESENTADAS E/OU 
+PUBLICADAS NO BRASIL E NO MUNDO
+8
+
+
+=== pág 9 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+O GRUPO DE PESQUISA É UMA REFERÊNCIA NO 
+BRASIL E NO MUNDO
+9
+9
+
+
+=== pág 10 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+O GRUPO DE PESQUISA É UMA REFERÊNCIA 
+NO BRASIL E NO MUNDO
+10
+10
+
+
+=== pág 11 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+INTRODUÇÃO
+(Tomada de Decisão)
+11
+11
+
+
+=== pág 12 ===
+O QUE É PESQUISA OPERACIONAL?
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+Operational Research (OR) is a scientific approach to the solution of problems in the
+management of complex systems that enables decision makers to make better decisions.
+Most of the problems OR tackles are messy and complex, often involving considerable uncertainty. OR uses
+advanced analytics, modelling, problem structuring, simulation, optimization and data science to determine the
+best solution to the problem and the best practical course of action.
+12
+12
+
+
+=== pág 13 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+O QUE É PESQUISA OPERACIONAL?
+13
+13
+13
+
+
+=== pág 14 ===
+AS ÁREAS DA PESQUISA OPERACIONAL
+Análise 
+Envoltória  
+de Dados
+Programação 
+Matemática
+Estatística
+Ciência de 
+Dados
+Teoria das 
+Filas
+Simulação a 
+Eventos 
+Discretos
+Teoria dos 
+Grafos
+Apoio 
+Multicritério  
+à Decisão
+P. Linear
+P. Inteira
+14
+14
+14
+
+
+=== pág 15 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+RETORNO A PARTIR DO USO DA PESQUISA OPERACIONAL
+15
+15
+
+
+=== pág 16 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+RETORNO A PARTIR DO USO DA PESQUISA OPERACIONAL
+16
+16
+
+
+=== pág 17 ===
+TOMADA DE DECISÃO
+Uma decisão precisa ser tomada sempre que 
+estamos diante de um problema que possui 
+mais de uma alternativa para sua solução. 
+Mesmo quando, para solucionar um problema, 
+possuímos uma única ação a tomar, temos as 
+alternativas de tomar ou não essa ação. 
+17
+17
+17
+
+
+=== pág 18 ===
+TOMADA DE DECISÃO
+O processo de decisão requer a existência de 
+um conjunto de alternativas factíveis para sua 
+composição, em que cada decisão tem 
+associados um ganho e uma perda. 
+18
+18
+18
+
+
+=== pág 19 ===
+MÉTODOS MULTICRITÉRIO
+Critério 1
+Critério 2
+Critério 3
+Critério 4
+Critério 5
+Alternativa 1
+Alternativa 2
+Alternativa 3
+Alternativa 4
+Solução do 
+Problema
+19
+19
+19
+
+
+=== pág 20 ===
+MÉTODOS MULTICRITÉRIO
+Problemas de tomada de decisão multicritério (do inglês, Multi-Criteria 
+Decision Making, abreviado por MCDM) são caracterizados por uma Matriz 
+de Decisão, que é composta de alternativas e critérios ponderados de 
+acordo com o tomador de decisão em questão. Métodos para solucionar 
+problemas MCDM têm sido amplamente utilizados para selecionar a 
+melhor alternativa entre um número finito de alternativas. Como exemplo 
+de métodos, podemos citar AHP, ANP, PrOPPAGA, THOR, SAPEVO e TOPSIS.
+AHP
+ELECTRE
+PrOPPAGA
+TOPSIS
+SAPEVO-M
+THOR
+AHP
+20
+20
+20
+
+
+=== pág 21 ===
+MATRIZ DE DECISÃO
+21
+21
+21
+
+
+=== pág 22 ===
+MÉTODO AHP
+(Analytic Hierarchy Process)
+22
+22
+22
+
+
+=== pág 23 ===
+MÉTODO AHP
+O Analytic Hierarchy Process (AHP) é um método para 
+auxiliar às pessoas na tomada de decisões complexas. 
+Mais do que determinar qual a decisão correta, o AHP 
+ajuda as pessoas a escolher e a justificar a sua escolha. 
+Baseado 
+em
+Matemática
+e
+Psicologia 
+(Escala 
+Psicométrica), ele foi desenvolvido na década de 1970 
+pelo Prof. Thomas Saaty, então na Escola Wharton 
+da Universidade da Pensilvânia.
+23
+23
+23
+
+
+=== pág 24 ===
+ARTIGO SEMINAL SOBRE O MÉTODO AHP
+O AHP é um método de tomada de decisão 
+multicritério simples de usar e flexível. Permite a 
+avaliação de problemas complexos, em que existam 
+critérios conflitantes entre si. É adequado para 
+diferentes problemáticas, uma vez que ela dependa 
+da interação humana para conduzir o processo de 
+comparação. 
+Saaty T. L. (1977) A scaling method for priorities in 
+hierarchical structures. J Math Psychol 15:234–281
+24
+24
+24
+
+
+=== pág 25 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+25
+25
+25
+
+
+=== pág 26 ===
+MÉTODO AHP NO BRASIL E NO MUNDO
+26
+26
+26
+
+
+=== pág 27 ===
+MÉTODO AHP NO BRASIL E NO MUNDO
+Ali Emrouznejad and Marianna Marra. The state of the art development of AHP (1979–2017): a literature review with a social network analysis. International Journal of Production Research, 2017.
+27
+27
+27
+
+
+=== pág 28 ===
+28
+28
+
+
+=== pág 29 ===
+O Método AHP aparenta ser difícil...
+29
+29
+
+
+=== pág 30 ===
+MÉTODO AHP
+Uma das principais características do método é a 
+possibilidade de trabalhar com questões subjetivas 
+quanto às atribuições de desempenho das variáveis do 
+problema. Simplificando, na aplicação do método AHP, 
+não é necessário definir um número preciso quanto ao 
+desempenho de uma variável em relação a outra 
+variável, onde uma atribuição verbal já satisfaz o 
+modelo. As atribuições do método AHP são realizadas 
+com base na Escala Fundamental de Saaty.
+Variável
+Variável
+Variável
+Variável
+Variável
+Variável
+Variável
+Variável
+30
+30
+
+
+=== pág 31 ===
+ESCALA FUNDAMENTAL DE SAATY
+(Escala Psicométrica)
+Escala Fundamental de Saaty
+Relação de Importância
+Grau de 
+Importância
+Recíproc
+a
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+31
+31
+
+
+=== pág 32 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+32
+32
+
+
+=== pág 33 ===
+MÉTODO AHP
+A
+B
+C
+A
+B
+C
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A avaliação é realizada par a par entre 
+as variáveis (critérios/alternativas)
+33
+33
+
+
+=== pág 34 ===
+A
+B
+C
+A
+5
+B
+C
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A avaliação é realizada par a par entre 
+as variáveis (critérios/alternativas)
+Neste caso A é mais importante que B
+MÉTODO AHP
+34
+34
+
+
+=== pág 35 ===
+A
+B
+C
+A
+5
+7
+B
+C
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A avaliação é realizada par a par entre 
+as variáveis (critérios/alternativas)
+Neste caso A é mais importante que B
+Neste caso A é muito mais importante que C
+MÉTODO AHP
+35
+
+
+=== pág 36 ===
+A
+B
+C
+A
+5
+7
+B
+3
+C
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A avaliação é realizada par a par entre 
+as variáveis (critérios/alternativas)
+Neste caso B possui importância moderada quanto à C
+MÉTODO AHP
+36
+36
+
+
+=== pág 37 ===
+A
+B
+C
+A
+5
+7
+B
+1/5
+3
+C
+1/7
+1/3
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A avaliação é realizada par a par entre 
+as variáveis (critérios/alternativas)
+MÉTODO AHP
+37
+37
+
+
+=== pág 38 ===
+MÉTODO AHP
+(Consistência das Atribuições)
+38
+38
+
+
+=== pág 39 ===
+A
+B
+C
+A
+5
+7
+B
+1/5
+3
+C
+1/7
+1/3
+Transitividade:
+Se   A > B   e   B > C , então:   A > C.
+Para ∀ A, B e C ∈R. 
+MÉTODO AHP
+39
+39
+
+
+=== pág 40 ===
+MÉTODO AHP
+A
+B
+C
+A
+5
+7
+B
+1/5
+3
+C
+1/7
+1/3
+Transitividade:
+Se   A > B   e   B > C , então:   A > C.
+Para ∀ A, B e C ∈R. 
+Mas como posso avaliar a 
+consistência das atribuições?
+40
+40
+
+
+=== pág 41 ===
+MÉTODO AHP
+A
+B
+C
+A
+5
+7
+B
+1/5
+3
+C
+1/7
+1/3
+Teste de Consistência:
+O AHP permite calcular uma razão de consistência (CR) 
+mediante a comparação do Índice de Consistência (CI) 
+das atribuições do decisor quanto a um índice de 
+consistência de uma matriz aleatória (RI). 
+Saaty fornece os valores de RI conforme a indicação 
+abaixo:
+Valores de RI:
+Ordem da Matriz
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+RI
+0
+0
+0,58
+0,9
+1,12
+1,24
+1,32
+1,41
+1,45
+1,49
+1,51
+1,48
+1,56
+1,57
+1,59
+41
+41
+
+
+=== pág 42 ===
+MÉTODO AHP
+Teste de Consistência:
+O AHP permite calcular uma razão de consistência (CR) 
+mediante a comparação do Índice de Consistência (CI) 
+das atribuições do decisor quanto a um índice de 
+consistência de uma matriz aleatória (RI). 
+Saaty fornece os valores de RI conforme a indicação 
+abaixo:
+Valores de RI:
+Ordem da Matriz
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+RI
+0
+0
+0,58
+0,9
+1,12
+1,24
+1,32
+1,41
+1,45
+1,49
+1,51
+1,48
+1,56
+1,57
+1,59
+Onde:
+𝐶. 𝐼. =
+(λ𝑚á𝑥 −𝑛)
+(𝑛−1) 
+ 
+𝐶. 𝑅. =
+𝐶.𝐼.
+𝑅.𝐼.   
+42
+42
+
+
+=== pág 43 ===
+MÉTODO AHP
+(Processo Geral do Modelo)
+43
+43
+
+
+=== pág 44 ===
+ESTRUTURA AXIOMÁTICA
+Definição do conjunto de critérios e alternativas
+Crit 1
+Crit 2
+...
+Crit n
+Alt 1
+𝑎11
+𝑎12
+...
+𝑎1𝑛
+Alt 2
+𝑎21
+𝑎22
+...
+𝑎2𝑛
+...
+...
+...
+...
+...
+Alt n
+𝑎𝑛1
+𝑎𝑛2
+...
+𝑎𝑛𝑛
+Construção da matriz de decisão composta 
+pelo conjunto de alternativas e critérios em 
+avaliação.
+44
+44
+
+
+=== pág 45 ===
+ESTRUTURA AXIOMÁTICA
+Obtenção das prioridades dos critérios
+Definição do conjunto de critérios e alternativas
+Avaliação dos critérios
+▪
+Atribuição 
+dos 
+julgamentos 
+de 
+importância entre os critérios;
+▪
+Teste de consistência das atribuições;
+▪
+Procedimento algébrico para obtenção 
+do vetor prioridade e pesos dos 
+critérios (𝑤𝑗).
+45
+45
+
+
+=== pág 46 ===
+ESTRUTURA AXIOMÁTICA
+Obtenção das prioridades locais das 
+alternativas em cada critério
+Definição do conjunto de critérios e alternativas
+Avaliação dos critérios
+Avaliação das alternativas em cada critério
+▪
+Atribuição 
+dos 
+julgamentos 
+de 
+importância entre as alternativas em 
+cada critério;
+▪
+Teste de consistência das atribuições;
+▪
+Procedimento algébrico para obtenção 
+do 
+vetor 
+prioridade 
+para 
+cada 
+alternativa em cada critério (𝑎𝑖𝑗).
+46
+46
+
+
+=== pág 47 ===
+ESTRUTURA AXIOMÁTICA
+Obtenção das prioridades globais das 
+alternativas na problemática
+Definição do conjunto de critérios e alternativas
+Avaliação dos critérios
+Avaliação das alternativas em cada critério
+Processo de agregação das preferências
+▪
+Ponderação dos vetores prioridades das 
+alternativas pelos pesos dos respectivos 
+critérios (𝑤𝑗𝑎𝑖𝑗);
+▪
+Soma das prioridades (σ 𝑤𝑗𝑎𝑖𝑗).
+47
+47
+
+
+=== pág 48 ===
+AVALIAÇÃO AHP
+(Modelo Clássico)
+48
+48
+
+
+=== pág 49 ===
+ESTRUTURAÇÃO DO PROBLEMA
+Comprar um 
+Smartphone
+Custo
+Câmera
+Armazenamento
+Bateria
+Xiaomi
+Samsung
+Iphone
+Objetivo Estratégico
+Critérios
+Alternativas
+49
+49
+
+
+=== pág 50 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+50
+50
+
+
+=== pág 51 ===
+AVALIAÇÃO DOS CRITÉRIOS
+Custo
+Câmera
+Armazenamento
+Bateria
+Primeiramente vamos analisar os 
+critérios, a fim de obter as suas 
+respectivas importâncias na forma de 
+uma porcentagem.
+51
+51
+
+
+=== pág 52 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+Câmera
+Armaz.
+Bateria
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+1
+1
+1
+1
+ATRIBUIÇÃO
+RECÍPROCA
+Número de comparações par a 
+par sempre será dada por: 
+𝑛(𝑛−1)
+2
+52
+52
+
+
+=== pág 53 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+Câmera
+Armaz.
+Bateria
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+53
+53
+
+
+=== pág 54 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+Câmera
+1
+Armaz.
+1
+Bateria
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+Diagonal Principal => todos os elementos 
+iguais a 1.
+54
+54
+
+
+=== pág 55 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+Câmera
+1/3
+1
+Armaz.
+1
+Bateria
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+O Custo tem importância 
+moderada quanto à câmera.
+Observe o Axioma da Reciprocidade.
+Se aij = 3, então aji = 1/3
+55
+55
+
+
+=== pág 56 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+Câmera
+1/3
+1
+Armaz.
+1/5
+1
+Bateria
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+O Custo é mais importante que o 
+armazenamento.
+56
+56
+
+
+=== pág 57 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+Armaz.
+1/5
+1
+Bateria
+1/7
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+O Custo é muito mais importante 
+que a bateria.
+57
+57
+
+
+=== pág 58 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+3
+Armaz.
+1/5
+1/3
+1
+Bateria
+1/7
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A Câmera possui importância 
+moderada em relação ao 
+armazenamento.
+58
+58
+
+
+=== pág 59 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+3
+7
+Armaz.
+1/5
+1/3
+1
+Bateria
+1/7
+1/7
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+A câmera é muito mais 
+importante que a bateria.
+59
+59
+
+
+=== pág 60 ===
+AVALIAÇÃO PAR A PAR DOS CRITÉRIOS
+Matriz de Ponderações (ou Julgamentos)
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+3
+7
+Armaz.
+1/5
+1/3
+1
+3
+Bateria
+1/7
+1/7
+1/3
+1
+Relação de Importância
+Grau de 
+Importância
+Recíproca
+Igualdade
+1
+1
+Intermediário
+2
+1/2
+Importância moderada
+3
+1/3
+Intermediário
+4
+1/4
+Mais importante
+5
+1/5
+Intermediário
+6
+1/6
+Muito mais importante
+7
+1/7
+Intermediário
+8
+1/8
+Extremamente mais importante
+9
+1/9
+O armazenamento possui importância 
+moderada em relação à bateria.
+60
+60
+
+
+=== pág 61 ===
+NORMALIZAÇÃO DOS JULGAMENTOS
+Custo
+Câmera
+Armaz.
+Design
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+3
+7
+Armaz.
+1/5
+1/3
+1
+3
+Design
+1/7
+1/7
+1/3
+1
+Custo
+Câmera
+Armaz.
+Design
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Design
+0,143
+0,143
+0,333
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+Câmera
+Armaz.
+Bateria
+𝑎𝑖𝑗
+σ 𝑎𝑖𝑗
+61
+61
+
+
+=== pág 62 ===
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,597
+Câmera
+Armaz.
+Bateria
+1 / 1,676 = 0,597
+62
+62
+
+NORMALIZAÇÃO DOS JULGAMENTOS
+
+=== pág 63 ===
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,597
+Câmera
+0,199
+Armaz.
+Bateria
+0,333 / 1,676 = 0,199
+63
+63
+
+NORMALIZAÇÃO DOS JULGAMENTOS
+
+=== pág 64 ===
+NORMALIZAÇÃO DOS JULGAMENTOS
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,597
+Câmera
+0,199
+Armaz.
+0,119
+Bateria
+0,2 / 1,676 = 0,119
+64
+64
+
+
+=== pág 65 ===
+NORMALIZAÇÃO DOS JULGAMENTOS
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,597
+Câmera
+0,199
+Armaz.
+0,119
+Bateria
+0,085
+0,143 / 1,676 = 0,085
+65
+65
+
+
+=== pág 66 ===
+NORMALIZAÇÃO DOS JULGAMENTOS
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Σ
+1,676
+4,476
+9,333
+18
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,597
+Câmera
+0,199
+Armaz.
+0,119
+Bateria
+0,085
+0,670
+0,536
+0,389
+0,223
+0,321
+0,389
+0,075
+0,107
+0,167
+0,032
+0,036
+0,055
+66
+66
+
+
+=== pág 67 ===
+NORMALIZAÇÃO DOS JULGAMENTOS
+Custo
+Câmera
+Armaz.
+Bateria
+Vetor 
+Prioridade
+Custo
+0,597
+0,670
+0,535
+0,389
+∴
+0,548
+Câmera
+0,199
+0,223
+0,321
+0,389
+0,283
+Armaz.
+0,119
+0,075
+0,107
+0,167
+0,117
+Bateria
+0,085
+0,032
+0,035
+0,055
+0,052
+𝑉𝑒𝑡𝑜𝑟=
+σ 𝑎𝑖𝑗
+𝑛 
+67
+67
+
+
+=== pág 68 ===
+AVALIAÇÃO AHP
+(Cálculo de Consistência)
+68
+68
+
+
+=== pág 69 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Design
+Custo
+1
+3
+5
+7
+Câmera
+1/3
+1
+3
+7
+Armaz.
+1/5
+1/3
+1
+3
+Design
+1/7
+1/7
+1/3
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Vetor Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+Utilizando o vetor prioridade dos 
+critérios, vamos ponderar a 
+nossa matriz de julgamentos.
+69
+69
+
+
+=== pág 70 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,548
+Câmera
+0,182
+Armaz.
+0,110
+Bateria
+0,078
+Vetor 
+Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+70
+70
+
+
+=== pág 71 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,548
+Câmera
+0,182
+Armaz.
+0,110
+Bateria
+0,078
+Vetor 
+Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+0,849
+0,283
+0,094
+0,040
+71
+71
+
+
+=== pág 72 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,548
+0,849
+Câmera
+0,182
+0,283
+Armaz.
+0,110
+0,094
+Bateria
+0,078
+0,040
+Vetor 
+Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+0,585
+0,351
+0,117
+0,039
+72
+72
+
+
+=== pág 73 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+1
+3
+5
+7
+Câmera
+0,333
+1
+3
+7
+Armaz.
+0,2
+0,333
+1
+3
+Bateria
+0,143
+0,143
+0,333
+1
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,548
+0,849
+0,585
+Câmera
+0,182
+0,283
+0,351
+Armaz.
+0,110
+0,094
+0,117
+Bateria
+0,078
+0,040
+0,039
+Vetor 
+Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+0,364
+0,364
+0,156
+0,052
+73
+
+=== pág 74 ===
+ANÁLISE DE CONSISTÊNCIA
+Custo
+Câmera
+Armaz.
+Design
+“Soma dos 
+Pesos”
+Custo
+0,548
+0,849
+0,585
+0,362
+Σ
+2,346
+∴
+2,346 / 0,548 = 4,281 
+Câmera
+0,182
+0,283
+0,351
+0,362
+1,180
+1,180 / 0,283 = 4,166
+Armaz.
+0,110
+0,094
+0,117
+0,155
+0,477
+0,477 / 0,117 = 4,077
+Design
+0,078
+0,040
+0,039
+0,052
+0,209
+0,209 / 0,052 = 4,038
+Custo
+Câmera
+Armaz.
+Bateria
+Custo
+0,548
+0,849
+0,585
+0,364
+Câmera
+0,182
+0,283
+0,351
+0,364
+Armaz.
+0,110
+0,094
+0,117
+0,156
+Bateria
+0,078
+0,040
+0,039
+0,052
+Vetor Prioridade
+Custo
+0,548
+Câmera
+0,283
+Armaz.
+0,117
+Bateria
+0,052
+Obtenção do lâmbda máximo:
+"𝑆𝑜𝑚𝑎 𝑑𝑜𝑠 𝑃𝑒𝑠𝑜𝑠"
+𝑉𝑒𝑡𝑜𝑟 𝑃𝑟𝑖𝑜𝑟𝑖𝑑𝑎𝑑𝑒
+෍= 𝟏𝟔, 𝟓𝟔𝟐
+λ𝑚á𝑥= 16,562
+4
+λ𝑚á𝑥= σ 𝑎𝑖
+𝑛
+λ𝑚á𝑥= 4,14
+74
+74
+
+
+=== pág 75 ===
+ANÁLISE DE CONSISTÊNCIA
+λ𝑚á𝑥= 4,14 
+R. 𝐼. = 0,9 (Valor indicado por Saaty para 4 variáveis)
+Valores obtidos até o momento:
+Temos que obter agora:
+𝐶. 𝐼. = (λ𝑚á𝑥 −𝑛)
+(𝑛−1)
+ 
+𝐶. 𝑅. = 𝐶.𝐼.
+𝑅.𝐼.   
+𝐶. 𝐼. = (4,14 −4)
+(4 −1)
+= 0,046
+A razão de consistência 
+manteve-se abaixo dos 10%, 
+sendo aceitável, conforme 
+indicado por Saaty.
+𝐶. 𝑅. = 0,046
+0,9 = 0,052  
+75
+75
+
+
+=== pág 76 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+76
+76
+
+
+=== pág 77 ===
+AVALIAÇÃO AHP
+(Modelos com Dados Quantitativos)
+77
+77
+
+
+=== pág 78 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Em grande parte das análises baseadas em modelos 
+multicritério, é comum possuirmos dados numéricos que 
+já representam as importâncias relativas das alternativas                
+em cada critério.
+Nesta situação, também é possível utilizar o 
+Método AHP!
+78
+78
+
+
+=== pág 79 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Xiaomi
+R$ 1500,00
+Samsung
+R$ 1800,00
+Iphone
+R$ 5000,00
+Câmera
+Xiaomi
+12 MP
+Samsung
+12 MP
+Iphone
+20 MP
+Armazenamento
+Xiaomi
+64 Gb
+Samsung
+128 Gb
+Iphone
+128 Gb
+Duração de Bateria
+Xiaomi
+24h
+Samsung
+18h
+Iphone
+10h
+79
+79
+
+
+=== pág 80 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+1500
+12
+64
+24h
+Samsung
+1800
+12
+128
+18h
+Iphone
+5000
+20
+128
+10h
+Processo de normalização
+Monotônico de 
+custo, ou seja, 
+quanto menor, 
+melhor!
+80
+80
+
+
+=== pág 81 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Xiaomi
+1500
+Samsung
+1800
+Iphone
+5000
+Processo de normalização
+Monotônico de 
+custo, ou seja, 
+quanto menor, 
+melhor!
+Σ
+0,001423
+Custo
+Xiaomi
+Samsung
+Iphone
+𝑥= 1
+𝑎𝑖𝑗
+Custo
+Xiaomi
+Samsung
+Iphone
+υ = 𝑎𝑖𝑗
+σ 𝑎𝑖𝑗
+𝑥𝑋𝑖𝑎𝑜𝑚𝑖=
+1
+1500 = 0,000667
+0,000667
+𝑥𝑆𝑎𝑚𝑠𝑢𝑛𝑔=
+1
+1800 = 0,000556
+𝑥𝐼𝑝ℎ𝑜𝑛𝑒=
+1
+5000 = 0,000200
+0,000556
+0,000200
+υ𝑋𝑖𝑎𝑜𝑚𝑖= 0,000667
+0,001423 = 0,4687
+υ𝑆𝑎𝑚𝑠𝑢𝑛𝑔= 0,000556
+0,001423 = 0,3906
+υ𝐼𝑝ℎ𝑜𝑛𝑒= 0,000200
+0,001423 = 0,1406
+0,4687
+0,3906
+0,1406
+81
+81
+
+
+=== pág 82 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+0,468
+12
+64
+24h
+Samsung
+0,390
+12
+128
+18h
+Iphone
+0,140
+20
+128
+10h
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+82
+82
+
+
+=== pág 83 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Câmera
+Xiaomi
+12
+Samsung
+12
+Iphone
+20
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+Câmera
+Xiaomi
+Samsung
+Iphone
+υ = 𝑎𝑖𝑗
+σ 𝑎𝑖𝑗
+υ𝑋𝑖𝑎𝑜𝑚𝑖= 12
+44 = 0,273
+υ𝑆𝑎𝑚𝑠𝑢𝑛𝑔= 12
+44 = 0,273
+υ𝐼𝑝ℎ𝑜𝑛𝑒= 20
+44 = 0,454
+0,273
+0,273
+0,454
+Σ
+44
+83
+83
+
+
+=== pág 84 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+0,468
+0,273
+64
+24h
+Samsung
+0,390
+0,273
+128
+18h
+Iphone
+0,140
+0,454
+128
+10h
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+84
+84
+
+
+=== pág 85 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Armazenamento
+Xiaomi
+64
+Samsung
+128
+Iphone
+128
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+Armazenamento
+Xiaomi
+Samsung
+Iphone
+υ = 𝑎𝑖𝑗
+σ 𝑎𝑖𝑗
+υ𝑋𝑖𝑎𝑜𝑚𝑖= 64
+320 = 0,2
+υ𝑆𝑎𝑚𝑠𝑢𝑛𝑔= 128
+320 = 0,4
+υ𝐼𝑝ℎ𝑜𝑛𝑒= 128
+320 = 0,4
+0,2
+0,4
+0,4
+Σ
+320
+85
+85
+
+
+=== pág 86 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+0,468
+0,273
+0,2
+24h
+Samsung
+0,390
+0,273
+0,4
+18h
+Iphone
+0,140
+0,454
+0,4
+10h
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+86
+86
+
+
+=== pág 87 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Duração de Bateria
+Xiaomi
+24h
+Samsung
+18h
+Iphone
+10h
+Processo de normalização
+Monotônico de 
+lucro, ou seja, 
+quanto maior, 
+melhor!
+Duração de Bateria
+Xiaomi
+Samsung
+Iphone
+υ = 𝑎𝑖𝑗
+σ 𝑎𝑖𝑗
+υ𝑋𝑖𝑎𝑜𝑚𝑖= 24
+52 = 0,462
+υ𝑆𝑎𝑚𝑠𝑢𝑛𝑔= 18
+52 = 0,346
+υ𝐼𝑝ℎ𝑜𝑛𝑒= 10
+52 = 0,192
+0,462
+0,346
+0,192
+Σ
+52
+87
+87
+
+
+=== pág 88 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+PERGUNTA:
+POR QUE DEVEMOS NORMALIZAR A MATRIZ DE DECISÃO?
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+0,468
+0,273
+0,2
+0,462
+Samsung
+0,390
+0,273
+0,4
+0,346
+Iphone
+0,140
+0,454
+0,4
+0,192
+88
+88
+
+
+=== pág 89 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+Processo de agregação
+Custo
+Câmera
+Armazenamento
+Duração de Bateria
+Xiaomi
+0,468 
+0,273
+0,200
+0,462
+Samsung
+0,390 
+0,273
+0,400
+0,346
+Iphone
+0,140
+0,454
+0,400
+0,192
+Vetor 
+Prioridade
+0,548
+0,283
+0,117
+0,052
+89
+89
+
+
+=== pág 90 ===
+AVALIAÇÃO COM DADOS QUANTITATIVOS
+1º
+2º
+3º
+Resultados
+Xiaomi
+Samsung
+Iphone
+90
+90
+
+
+=== pág 91 ===
+O Método AHP aparenta ser difícil...
+Mas viram só como foi tranquilo?
+91
+91
+
+
+=== pág 92 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+92
+92
+
+
+=== pág 93 ===
+O QUE DIZIA SAATY...
+“PRINT” DA OBRA ORIGINAL
+93
+93
+
+
+=== pág 94 ===
+FERRAMENTAS COMPUTACIONAIS
+94
+94
+
+
+=== pág 95 ===
+www.3decisionmethods.com 
+FERRAMENTAS COMPUTACIONAIS
+95
+95
+
+
+=== pág 96 ===
+REGISTRO DE PROGRAMA DE COMPUTADOR
+Referência: BOZZA, Gabriel; RUY, Milena Mayara; SANTOS, Marcos dos; MOREIRA, Miguel Ângelo Lellis; ROCHA JUNIOR, 
+Claudio de Souza; GOMES, Carlos Francisco Simões;
+Three Decision Methods (3DM) Software Web (v.1). 2020.
+96
+96
+
+
+=== pág 97 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+APLICAÇÃO DO MÉTODO EM PROBLEMAS REAIS
+Mão na massa!
+97
+97
+
+
+=== pág 98 ===
+www.3decisionmethods.com 
+Custo
+Câmera
+Armazenamento
+Duração de 
+Bateria
+Xiaomi
+1500
+12
+64
+24h
+Samsu
+ng
+1800
+12
+128
+18h
+Iphone
+5000
+20
+128
+10h
+98
+98
+
+
+=== pág 99 ===
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+CURSO DE TOMADA DE DECISÃO NA ESCOLA SUPERIOR DE DEFESA (ESD)
+EM BRASÍLIA/DF
+99
+99
+
+
+=== pág 100 ===
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+CURSO DE TOMADA DE DECISÃO NO INSTITUTO TECNOLÓGICO DE
+AERONÁUTICA (ITA) EM SÃO JOSÉ DOS CAMPOS/SP
+100
+100
+
+
+=== pág 101 ===
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PUBLICADOS NA FORMA DE ARTIGOS CIENTÍFICOS
+101
+101
+
+
+=== pág 102 ===
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PUBLICADOS NA FORMA DE ARTIGOS CIENTÍFICOS
+102
+102
+
+
+=== pág 103 ===
+103
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PUBLICADOS NA FORMA DE ARTIGOS CIENTÍFICOS
+103
+
+
+=== pág 104 ===
+104
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+104
+
+
+=== pág 105 ===
+105
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+105
+
+
+=== pág 106 ===
+106
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+106
+
+
+=== pág 107 ===
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+107
+
+
+=== pág 108 ===
+108
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+108
+
+
+=== pág 109 ===
+109
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+109
+
+
+=== pág 110 ===
+110
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+110
+
+
+=== pág 111 ===
+111
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+111
+
+
+=== pág 112 ===
+112
+APLICAÇÕES DO MÉTODO AHP EM PROBLEMAS REAIS
+PESQUISAS DE SUCESSO DO MBA DSA USP ESALQ
+112
+
+
+=== pág 113 ===
+113
+113
+
+
+=== pág 114 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+114
+O segredo do sucesso?
+114
+
+
+=== pág 115 ===
+115
+O segredo do sucesso?
+Investir nas pessoas… porque ninguém faz nada sozinho…
+Fotos do acervo pessoal do professor, utilizada com autorização.
+115
+
+
+=== pág 116 ===
+QUEM QUISER SE APROFUNDAR SOBRE PESQUISA OPERACIONAL
+116
+https://www.youtube.com/@CasadaPesquisaOperacional 
+116
+
+
+=== pág 117 ===
+Capitão de Fragata Marcos Santos, PhD em Modelagem Matemática e Tomada de Decisão
+117
+
+=== pág 118 ===
+118
+Sugestões de Leituras/Referências
+•
+Dos Santos, M.; Costa, I.; Gomes, C.F.S. 2021. Multicriteria Decision-Making In The Selection 
+Of Warships: A New Approach To The Ahp Method. International Journal of the Analytic 
+Hierarchy Process. Link
+•
+Carvalho, W.A.; Fernandes, S.B.; Gomes, C.F.S.; Dos Santos, M. 2023. Desocupação em 
+Áreas de Risco de Desastres: Identificando os Principais Critérios pelo Método AHP. Link
+•
+Dos Santos, M.; Gomes, C.F.S.; Moreira, M.A.L.; Costa, I.P.A. 2023. Ferramentas 
+Computacionais de Apoio à Tomada de Decisão. 1ª edição.
+118
+118
+
+
+=== pág 119 ===
+OBRIGADO
+119
+https://www.linkedin.com/in/profmarcosdossantos/ 
+119
+119
+119
+
+
+=== pág 120 ===
+Obrigado!
+Profº. Marcos dos Santos | linkedin.com/in/profmarcosdossantos

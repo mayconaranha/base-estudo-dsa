@@ -1,0 +1,654 @@
+# 06 - COMPUTAÇÃO EVOLUCIONÁRIA / Computacao Evolucionaria II_SL 12082025pdf Portugues.pdf
+
+=== pág 1 ===
+
+Computação evolucionária II
+Renata da Encarnação Onety
+Rubelmar Maia de Azevedo Cruz Neto
+
+=== pág 2 ===
+
+
+Lei nº 9610/98
+
+=== pág 3 ===
+
+Aula 2
+•
+Revisão
+•
+Um caso básico
+•
+Problema da mochila (continuação)
+•
+Problema do caixeiro viajante
+•
+Otimização multiobjetivo
+•
+Outros algoritmos
+3
+
+=== pág 4 ===
+
+Revisão
+•
+Pesquisa Operacional
+•
+Otimização
+•
+Modelagem
+•
+Computação evolucionária
+•
+Algoritmos Genéticos
+•
+Problema da Mochila
+•
+Problema da Mistura
+4
+Fonte: https://towardsdatascience.com/why-operations-research-is-awesome-an-introduction-7a0b9e62b405
+
+=== pág 5 ===
+
+Metáfora da teoria da evolução natural - Algoritmos Genéticos
+Problema da Mochila:
+•
+Gene: um item
+•
+Cromossomo: cada resposta ao problema. Um conjunto de itens.
+•
+Indivíduo: um conjunto de itens em uma mochila. Manifestação física do cromossomo+ fitness
+•
+População: um conjunto de possíveis mochilas
+•
+Genótipo: tem item, não tem item (sequência binária)
+•
+Fenótipo: valor (importância) total da mochila 
+•
+Fitness: qualidade da solução: maior quantidade de itens valiosos
+•
+Seleção: escolha das melhores combinações de itens para criar novas gerações
+•
+Cruzamento: Mistura de dois indivíduos (duas possíveis mochilas)
+•
+Mutação: Remoção ou inserção de um item da mochila
+5
+
+=== pág 6 ===
+
+Metáfora da teoria da evolução natural - Algoritmos Genéticos
+Problema da Mistura:
+•
+Gene: um ingrediente
+•
+Cromossomo: cada resposta ao problema
+•
+Indivíduo: um conjunto de proporções dos ingredientes = “receita” = cromossomo + fitness
+•
+População: um conjunto de “receitas”
+•
+Genótipo: sequência de valores do cromossomo
+•
+Fenótipo: proporções (valor) da mistura
+•
+Fitness: Qualidade da solução mais barata
+•
+Seleção: escolha das melhores combinações de ingredientes para criar novas gerações
+•
+Cruzamento: Mistura de duas “receitas”
+•
+Mutação: Alteração na proporção de algum ingrediente
+6
+
+=== pág 7 ===
+
+Algoritmos genéticos – Problema da mistura
+7
+Real 
+ 
+ 
+ 
+ 
+ 
+Binária
+x1
+x2
+x3
+0,35
+0,25
+0,4
+0,7
+0,2
+0,1
+0,3
+0,7
+0
+0,5
+0
+0,5
+x1
+x2
+x3
+00011001
+00011001
+00101000
+1000110
+0010100
+0001010
+0011110
+1000110
+0
+0110010
+0
+0110010
+Indivíduo 1
+Indivíduo n
+População
+Gene
+
+=== pág 8 ===
+
+Algoritmos genéticos
+8
+
+=== pág 9 ===
+
+Um caso básico...
+Com AG, calcule o ponto de ótimo da função x2. Considere os limites entre -5 e 5, com 1 casa 
+decimal.
+1) Caso simples e direto: função não linear – descer a montanha – ponto mais baixo – minimização. Ponto 
+de mínimo = Derivada x2 = 0.
+2) Com AG:
+•
+Valores aleatórios para compor a população
+•
+Plotar os pontos
+•
+Seleção
+•
+Cruzamento
+•
+Mutação
+•
+Elitismo
+9
+
+=== pág 10 ===
+
+Um caso básico...
+10
+
+=== pág 11 ===
+
+Função Não Linear 
+Multimodal
+11
+
+=== pág 12 ===
+
+Problema da mochila (continuação)
+Implementação no Python
+12
+12
+
+
+=== pág 13 ===
+
+Problema do caixeiro 
+viajante
+13
+
+13
+
+=== pág 14 ===
+
+Problema do caixeiro viajante
+Caixeiro-viajante com cinco cidades cujas coordenadas (x, y) são descritas na Tabela:
+14
+
+=== pág 15 ===
+
+Problema do caixeiro viajante
+Representação gráfica das cidades:
+15
+
+=== pág 16 ===
+
+Problema do caixeiro viajante
+Exemplo de sub-rotas:
+16
+
+=== pág 17 ===
+
+Problema do caixeiro viajante
+Exemplo de sub-rotas:
+17
+S = {1, 2, 4}                                                   S = {2, 3, 4, 5} 
+
+=== pág 18 ===
+
+Problema do caixeiro viajante
+Calcular as distâncias euclidianas entre cada par de cidades i e j 
+18
+Em Teoria dos Grafos: Matriz de Adjacência 
+(com pesos)
+
+=== pág 19 ===
+
+Problema do caixeiro viajante
+Variáveis de decisão:
+19
+Função objetivo:
+1 se o caixeiro-viajante vai da cidade i para a cidade j
+0 caso contrário
+xij = 
+Fobj = min Z = 
+       22,36x12  + 72,11x13 + 60,00x14 + 82,46x15 +
+ 
+      22,36x21 +                   + 50,00x23  + 53,85x24  +70,00x25+
+ 
+      72,11x31 + 50,00x32+                   + 63,25x34  +56,57x35+
+ 
+      60,00x41 + 53,85x42+ 63,25x43  +                    +28,28x45+
+ 
+      82,46x51 +70,00x52 + 56,57x53  + 28,28x54
+
+=== pág 20 ===
+
+Problema do caixeiro viajante
+Restrições:
+1. Cada nó j deve ser visitado uma única vez 
+2. Cada nó i deve ser visitado uma única vez 
+3. Não deve haver formação de sub-rotas com dois nós  
+4. Não deve haver formação de sub-rotas com três nós
+5. Não deve haver formação de sub-rotas com quatro nós
+6. Restrição de não negatividade
+20
+
+=== pág 21 ===
+
+Problema do caixeiro viajante
+Restrições:
+21
+1. Cada nó j deve ser visitado uma única vez:
+𝑥21 + 𝑥31 + 𝑥41 + 𝑥51 = 1 
+𝑗= 1
+𝑥12 + 𝑥32 + 𝑥42 + 𝑥52 = 1 
+𝑗= 2
+𝑥13 + 𝑥23 + 𝑥43 + 𝑥53 = 1 
+𝑗= 3
+𝑥14 + 𝑥24 + 𝑥34 + 𝑥54 = 1 
+𝑗= 4
+𝑥15 + 𝑥25 + 𝑥35 + 𝑥45 = 1 
+𝑗= 5
+2. Cada nó i deve ser visitado uma única vez:
+𝑥12 + 𝑥13 + 𝑥14 + 𝑥15 = 1 
+𝑖= 1
+𝑥21 + 𝑥23 + 𝑥24 + 𝑥25 = 1 
+𝑖= 2
+𝑥31 + 𝑥32 + 𝑥34 + 𝑥35 = 1 
+𝑖= 3
+𝑥41 + 𝑥42 + 𝑥43 + 𝑥45 = 1 
+𝑖= 4
+𝑥51 + 𝑥52 + 𝑥53 + 𝑥54 = 1 
+𝑖= 5
+
+=== pág 22 ===
+
+Problema do caixeiro viajante
+Restrições:
+22
+3. Não deve haver formação de sub-rotas com dois nós:
+𝑥12 + 𝑥21 ≤1
+𝑥13 + 𝑥31 ≤1
+𝑥14 + 𝑥41 ≤1
+𝑥15 + 𝑥51 ≤1
+𝑥23 + 𝑥32 ≤1
+𝑥24 + 𝑥42 ≤1
+𝑥25 + 𝑥52 ≤1
+𝑥34 + 𝑥43 ≤1
+𝑥35 + 𝑥53 ≤1
+𝑥45 + 𝑥54 ≤1
+
+=== pág 23 ===
+
+Problema do caixeiro viajante
+Restrições:
+23
+4. Não deve haver formação de sub-rotas com três nós:
+𝑥12 + 𝑥23 + 𝑥31 ≤2
+𝑥12 + 𝑥24 + 𝑥41 ≤2
+𝑥12 + 𝑥25 + 𝑥51 ≤2
+𝑥13 + 𝑥34 + 𝑥41 ≤2
+𝑥13 + 𝑥35 + 𝑥51 ≤2
+𝑥14 + 𝑥45 + 𝑥51 ≤2
+𝑥23 + 𝑥34 + 𝑥42 ≤2
+𝑥23 + 𝑥35 + 𝑥52 ≤2
+𝑥24 + 𝑥45 + 𝑥52 ≤2
+𝑥34 + 𝑥45 + 𝑥53 ≤2
+
+=== pág 24 ===
+
+Problema do caixeiro viajante
+Restrições:
+24
+5. Não deve haver formação de sub-rotas com quatro nós:
+𝑥12 + 𝑥23 + 𝑥34 + 𝑥41 ≤3
+𝑥12 + 𝑥23 + 𝑥35 + 𝑥51 ≤3
+𝑥12 + 𝑥24 + 𝑥45 + 𝑥51 ≤3
+𝑥13 + 𝑥34 + 𝑥45 + 𝑥51 ≤3
+𝑥23 + 𝑥34 + 𝑥45 + 𝑥52 ≤3
+6. Restrição de não negatividade:
+𝑥𝑖𝑗 ≥0, 𝑖≠𝑗, 𝑖= 1, … , 5 𝑒 𝑗= 1, … , 5
+
+=== pág 25 ===
+
+Problema do caixeiro viajante
+Solução:
+25
+x14 = 1
+x45 = 1
+x53 = 1
+x32 = 1
+x21 = 1
+z = 217,21
+1 → 4  → 5 → 3 → 2 → 1
+
+=== pág 26 ===
+
+Problema do caixeiro 
+viajante
+Algoritmos Genéticos
+Rodada 1
+26
+
+=== pág 27 ===
+
+27
+Problema do caixeiro 
+viajante
+Algoritmos Genéticos
+Rodada 2
+
+=== pág 28 ===
+
+Problema do caixeiro viajante
+Outros exemplos:
+•
+Planejamento de rotas: coleta de lixo, entregas, serviços, visitas de pontos turísticos, visitas ao 
+cliente, roteamento de robôs em fábrica, visita de enfermeiros de plantão
+•
+Sequenciamento de DNA, Sequenciamento de solda em eletrônicos
+•
+Sequenciamento do setup em máquinas
+28
+
+=== pág 29 ===
+
+Problema do caixeiro viajante
+Implementação no Excel Solver e Python
+29
+29
+
+
+=== pág 30 ===
+
+Métricas de avaliação
+•
+Melhor Fitness: Valor da função objetivo da melhor solução encontrada.
+•
+Fitness Médio: Média do valor da função objetivo na população.
+•
+Taxa de Convergência: quão rápido o AG converge para uma solução ótima (ou próxima do ótimo). 
+Número de gerações.
+•
+Desvio Padrão do Fitness: Diversidade da população. 
+•
+Alto desvio: População diversificada (útil nas gerações iniciais).
+•
+Baixo desvio: Convergência (útil nas gerações finais).
+•
+DoE (Design of Experiment): ajuste dos hiperparâmetros.
+•
+Tempo de Execução: Wall-clock time ou número de avaliações da função objetivo. 
+•
+Etc.
+30
+
+=== pág 31 ===
+
+Problema da carteira
+de investimentos
+31
+31
+
+31
+
+=== pág 32 ===
+
+Problema da carteira de investimentos
+•
+Nova carteira de investimentos
+•
+Maximizar retorno esperado com um nível de 
+risco assumido.
+•
+No máximo, 30% em cada uma das ações;
+•
+Risco da carteira (desvio-padrão), não 
+poderia ultrapassar o valor de 2,5%
+32
+
+=== pág 33 ===
+
+Problema da carteira de investimentos
+•
+Histórico parcial do retorno diário de cada uma das ações do período de 14/1/2009 a 13/1/2010 
+•
+Retorno médio e desvio-padrão
+33
+
+=== pág 34 ===
+
+Variáveis de decisão: 
+xj = porcentagem da ação j a ser alocada na carteira, j = 1,...,10. 
+Função objetivo:
+Max Z = 0,0037x1 + 0,0024x2 + 0,0014x3 + 0,0030x4 + 0,0024x5 + 0,0019x6 + 0,0028x7 + 0,0018x8 + 0,0025x9 + 0,0024x10 
+s.a.: 
+x1 + x2 + ... + x10 = 1 
+x1, x2, ... , x10 <= 0,30 
+0,0248x1 + 0,0216x2 + ... + 0,0247x10 <= 0,0250 
+x1, x2, ... , x10 >= 0 
+Problema da carteira de investimentos
+34
+
+=== pág 35 ===
+
+Variáveis de decisão: 
+xj = porcentagem da ação j a ser alocada na carteira, j = 1,...,10. 
+Função objetivo:
+Max Z = 0,0037x1 + 0,0024x2 + 0,0014x3 + 0,0030x4 + 0,0024x5 + 0,0019x6 + 0,0028x7 + 0,0018x8 + 0,0025x9 + 0,0024x10 
+s.a.: 
+x1 + x2 + ... + x10 = 1 
+x1, x2, ... , x10 <= 0,30 
+0,0248x1 + 0,0216x2 + ... + 0,0247x10 <= 0,0250 
+x1, x2, ... , x10 >= 0 
+Problema da carteira de investimentos
+35
+Retorno médio
+
+=== pág 36 ===
+
+Problema da carteira de investimentos
+36
+x1 = 30% (Banco do Brasil ON – BBAS3)
+x2 = 30% (Bradesco PN – BBDC4)
+x4 = 18,17% (Gerdau PN – GGBR4),
+x7 = 21,83% (Sid Nacional ON – CSNA3)
+x3, x5, x6, x8, x9, x10 = 0
+Resultado:
+𝑍= 0,3% (retorno médio diário de 0,3%) 
+
+=== pág 37 ===
+
+Problema da carteira de investimentos
+•
+O exemplo é baseado em dados históricos.
+•
+Se fizéssemos uma previsão para os dados futuros, a carteira tenderia a ser melhor otimizada!
+•
+Para previsão: Séries temporais (ARIMA, SARIMA, etc), Redes Neurais Recorrentes, XGBoost 
+etc.
+37
+
+=== pág 38 ===
+
+Otimização de Carteira 
+de Investimento
+38
+
+=== pág 39 ===
+
+Otimização de Carteira de Investimento
+39
+
+=== pág 40 ===
+
+Otimização multiobjetivo
+Método das Penalidades
+•
+Problema multiobjetivo → Problema de otimização de objetivo único com pesos (wi) aos diferentes 
+objetivos. 
+𝑀𝑎𝑥 𝑍= ෍
+𝑖=1
+𝑘
+𝑤𝑖𝑓𝑖(𝑥)
+40
+
+=== pág 41 ===
+
+Otimização multiobjetivo
+41
+GifData. 2025. Genetic Algorithm in Action: Balancing 
+Deformation and Mass in Truss Design. Disponível no Youtube: 
+Balancing Deformation and Mass in Truss Design
+GifData. 2025. Penalized Multi-Objective 
+Optimization of a Steel Truss Structure. Disponível no 
+Youtube.
+
+=== pág 42 ===
+
+Otimização multiobjetivo
+42
+Método da Fronteira de Pareto:
+Envolve a geração de um conjunto de soluções não-dominadas que formam a fronteira de Pareto, 
+onde nenhuma outra solução é melhor em todos os objetivos.
+Objetivo 1
+Objetivo 2
+
+=== pág 43 ===
+
+Otimização multiobjetivo
+43
+Algoritmo Genético Multiobjetivo:
+•
+NSGA-II (Non-dominated Sorting Genetic Algorithm II) - 2 a 3 objetivos
+•
+NSGA-III (Non-dominated Sorting Genetic Algorithm III) - 4 ou mais objetivos
+•
+SPEA2 (Strength Pareto Evolutionary Algorithm 2)
+•
+etc.
+
+=== pág 44 ===
+
+Outros algoritmos (otimização)
+•
+Colônia de Formigas
+•
+Enxame de abelhas  
+ 
+ 
+•
+Voo dos pássaros 
+•
+Sistemas imunológicos artificiais 
+ 
+ 
+ 
+ 
+ 
+•
+Simulated annealing
+•
+Busca Tabu
+•
+Híbridos
+•
+etc. 
+44
+
+=== pág 45 ===
+
+Questão interativa
+45
+Qual operador é mais importante? 
+•
+Seleção
+•
+Cruzamento
+•
+Mutação
+
+=== pág 46 ===
+
+Otimização Bi-Objetivo do Projeto Conceitual de Aeronaves de Baixo Número de Reynolds Utilizando Algoritmos 
+Genéticos (Caio Augusto Mascarenhas Dias Filho - TCC de Graduação Eng. Mecânica da Universidade do Estado do 
+Amazonas – UEA)
+Autor: Caio Augusto Mascarenhas Dias Filho
+46
+Trabalhos científicos
+
+=== pág 47 ===
+
+47
+Trabalhos científicos
+
+=== pág 48 ===
+
+48
+Solução obtida usando o algoritmo OR-Tools
+Trabalhos científicos
+
+=== pág 49 ===
+
+49
+Trabalhos científicos
+
+=== pág 50 ===
+
+50
+Trabalhos científicos
+
+=== pág 51 ===
+
+51
+Trabalhos científicos
+Otimização da promessa de 
+entrega em comércio eletrônico 
+com métodos determinísticos 
+de Programação Inteira Binária
+Rodrigo Antunes Geisel
+Renata da Encarnação Onety
+Otimização multiobjetivo do 
+orçamento de marketing digital 
+considerando alcance e retorno 
+sobre investimento
+Danilo Brito Steckelberg
+Renata da Encarnação Onety
+
+=== pág 52 ===
+
+Obrigado(a)!
+Renata     | https://www.linkedin.com/in/renataonety/
+Rubelmar | https://www.linkedin.com/in/rubelmar-maia-de-azevedo-c-neto-44720578/
